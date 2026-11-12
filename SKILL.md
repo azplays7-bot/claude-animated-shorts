@@ -34,7 +34,8 @@ User rules that apply:
   the `EffectComposer` is created asynchronously (useEffect → state) but already owns rendering; Remotion advances each
   frame once, before the composer exists, so every frame is the blank CSS background (~4 KB jpeg) with no error logged.
 - Stills env vars (`scripts/bridge-stills.mjs`): `CHROME_PATH` (browser binary; unset = Remotion's own),
-  `REMOTION_GL` (`angle` default; `swangle` for headless Linux without a GPU, ~10x slower), `COMP` (composition id),
+  `REMOTION_GL` (`angle` default; `swangle` for headless Linux without a GPU: ~10 s/frame at 1080x1920, so render
+  videos with `--concurrency=1 --timeout=240000`, parallel tabs time out on frame seek), `COMP` (composition id),
   `INPUT_PROPS` (JSON inputProps, e.g. `'{"post":{"ink":false}}'` for A/B stills), `REMOTION_TMP` (bundle temp dir).
 - A ~4 KB still means nothing drew. Bisect with `INPUT_PROPS='{"post":{"ink":false,"lens":false,"bloom":false,"grade":false}}'`,
   then a bare `ThreeCanvas` cube composition to separate WebGL problems from scene/post problems.
