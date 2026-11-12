@@ -26,6 +26,19 @@ User rules that apply:
 - Save after every step.
 - "Just do it" once the script is approved.
 
+## Project setup (once)
+- No Remotion project yet: run `<skill dir>/setup.sh <dir>`. It copies `templates/project/` (pinned package.json,
+  `src/index.ts`, `src/Root.tsx`), the bridge source to `src/videos/bridge/`, `templates/scripts/` to `scripts/` and
+  `templates/audio/` to `audio/`, then runs `npm install`. Smoke test: `npm run still` must give non-blank frames.
+- **Keep the pinned stack: React 18, @react-three/fiber 8, @react-three/postprocessing 2.x.** With postprocessing 3.x
+  the `EffectComposer` is created asynchronously (useEffect → state) but already owns rendering; Remotion advances each
+  frame once, before the composer exists, so every frame is the blank CSS background (~4 KB jpeg) with no error logged.
+- Stills env vars (`scripts/bridge-stills.mjs`): `CHROME_PATH` (browser binary; unset = Remotion's own),
+  `REMOTION_GL` (`angle` default; `swangle` for headless Linux without a GPU, ~10x slower), `COMP` (composition id),
+  `INPUT_PROPS` (JSON inputProps, e.g. `'{"post":{"ink":false}}'` for A/B stills), `REMOTION_TMP` (bundle temp dir).
+- A ~4 KB still means nothing drew. Bisect with `INPUT_PROPS='{"post":{"ink":false,"lens":false,"bloom":false,"grade":false}}'`,
+  then a bare `ThreeCanvas` cube composition to separate WebGL problems from scene/post problems.
+
 ## Pipeline
 1. **Topic and facts.** Pick one surprising true story with a physical cause and effect (it should be visual), plus a simple everyday analogy that explains it.
    - Write the facts with their source at the top of `SCRIPT.md`.
@@ -146,6 +159,7 @@ lighting 5-6, ink 6, textures 5-6, characters 7, depth 6-7, composition 6-7 (fro
 - Ink in the same merged effect pass as DOF gets overwritten. Ink must be its own pass before the blur.
 - Pixel-sized post parameters must scale with resolution: stills are at 0.5, the final at 1.333. R3F clamps dpr to ≥ 1, so `--scale 0.5` stills still render a 1080x1920 buffer.
 - **Disk:** every Remotion bundle copies `public/` (~1.3 GB) into `the temp folder\remotion-webpack-bundle-*` and never deletes it. 60+ GB filled the system drive during the bridge passes and a render died with ENOSPC. Always render with `export TEMP='<big drive>/remotion-tmp' TMP='<big drive>/remotion-tmp'` (bridge-stills.mjs sets it itself) and ask the user before deleting old bundle folders in the shared the temp folder (auto mode blocks the sweep). <big drive>/remotion-tmp fills too (~500 folders / 110 GB after the 4 bridge rounds): when a project is finished and nothing is rendering, delete its `remotion-webpack-bundle-*` and `puppeteer_dev_chrome_profile-*` folders there.
+- Kenney models live in `public/bridge/kenney/<name>.glb` and are optional: missing ones 404 in the log and are skipped.
 - In JS strings write `"<big drive>/remotion-tmp"`, never `"<big drive>\remotion-tmp"` (`\r` becomes a carriage return).
 - Remotion writes a silent audio track: mux with `-map 0:v:0 -map 1:a:0`.
 - Sub-agents can't write report files in this harness: ask them for a ≤150-word final message and save it yourself to `out/<name>/<n>/REPORT.md`.
