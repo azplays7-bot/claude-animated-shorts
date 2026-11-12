@@ -2,7 +2,7 @@
 # The project source (templates/bridge, templates/audio, templates/project, colab/render.mjs, colab/bed.py) is embedded
 # as one base64 tar.gz, so the notebook needs nothing from GitHub. Re-run after changing any template:
 #   python colab/build_notebook.py
-import base64, io, json, os, tarfile
+import base64, gzip, io, json, os, tarfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -11,7 +11,8 @@ OUT = os.path.join(HERE, "Cartoon_Short_Colab.ipynb")
 
 def payload():
     buf = io.BytesIO()
-    with tarfile.open(fileobj=buf, mode="w:gz", compresslevel=9) as tar:
+    gz = gzip.GzipFile(fileobj=buf, mode="wb", compresslevel=9, mtime=0)  # mtime=0: identical output on every rebuild
+    with tarfile.open(fileobj=gz, mode="w") as tar:
         def add(src, dst):
             for root, _dirs, files in os.walk(src):
                 for f in sorted(files):
@@ -31,6 +32,7 @@ def payload():
             ti.mtime, ti.uid, ti.gid, ti.uname, ti.gname = 0, 0, 0, "", ""
             with open(add_one, "rb") as fh:
                 tar.addfile(ti, fh)
+    gz.close()
     return base64.b64encode(buf.getvalue()).decode()
 
 
