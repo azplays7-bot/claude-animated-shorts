@@ -1,0 +1,77 @@
+{
+ "voice": "am_michael",
+ "lines": [
+  {
+   "i": 0,
+   "start": 0.25,
+   "end": 4.815,
+   "window_end": 4.85,
+   "speed": 1.255,
+   "text": "What if you invested just twenty dollars every month into Bitcoin, starting in twenty ten?"
+  },
+  {
+   "i": 1,
+   "start": 5.15,
+   "end": 10.377,
+   "window_end": 11.75,
+   "speed": 1.08,
+   "text": "No big investments. No secret strategy. Just twenty dollars, month after month."
+  },
+  {
+   "i": 2,
+   "start": 12.15,
+   "end": 17.185,
+   "window_end": 19.6,
+   "speed": 1.08,
+   "text": "Back then, Bitcoin was worth pennies. Almost nobody imagined what would happen next."
+  },
+  {
+   "i": 3,
+   "start": 20.25,
+   "end": 25.434,
+   "window_end": 26.75,
+   "speed": 1.08,
+   "text": "As Bitcoin gained attention, prices exploded. But the journey was far from easy."
+  },
+  {
+   "i": 4,
+   "start": 27.15,
+   "end": 32.057,
+   "window_end": 33.75,
+   "speed": 1.08,
+   "text": "There were brutal crashes, market panic, and years when investors lost confidence."
+  },
+  {
+   "i": 5,
+   "start": 34.15,
+   "end": 39.547,
+   "window_end": 39.65,
+   "speed": 1.08,
+   "text": "Yet our imaginary investor never stopped. Every single month, another twenty dollars."
+  },
+  {
+   "i": 6,
+   "start": 40.25,
+   "end": 45.839,
+   "window_end": 45.85,
+   "speed": 1.093,
+   "text": "Fast-forward to November twenty twenty-six. After more than sixteen years of investing..."
+  },
+  {
+   "i": 7,
+   "start": 46.15,
+   "end": 52.657,
+   "window_end": 52.85,
+   "speed": 1.327,
+   "text": "that three thousand, nine hundred forty dollars could have grown to somewhere between ninety-two and one hundred sixteen million dollars!"
+  },
+  {
+   "i": 8,
+   "start": 53.15,
+   "end": 59.55,
+   "window_end": 59.6,
+   "speed": 1.158,
+   "text": "That's the power of starting early. But remember, Bitcoin's incredible past returns were never guaranteed."
+  }
+ ]
+}
