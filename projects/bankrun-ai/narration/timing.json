@@ -1,0 +1,286 @@
+{
+ "voice": "am_puck",
+ "speed": 1.1,
+ "scenes": {
+  "1": [
+   0.25,
+   9.874
+  ],
+  "2": [
+   10.174,
+   18.902
+  ],
+  "3": [
+   20.0,
+   27.277
+  ],
+  "4": [
+   30.0,
+   38.225
+  ],
+  "5": [
+   38.525,
+   49.749
+  ],
+  "6": [
+   50.049,
+   57.851
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 5.797
+  },
+  {
+   "scene": 1,
+   "start": 5.937,
+   "end": 7.43
+  },
+  {
+   "scene": 1,
+   "start": 7.57,
+   "end": 9.874
+  },
+  {
+   "scene": 2,
+   "start": 10.174,
+   "end": 11.155
+  },
+  {
+   "scene": 2,
+   "start": 11.295,
+   "end": 12.895
+  },
+  {
+   "scene": 2,
+   "start": 13.035,
+   "end": 18.902
+  },
+  {
+   "scene": 3,
+   "start": 20.0,
+   "end": 23.157
+  },
+  {
+   "scene": 3,
+   "start": 23.297,
+   "end": 25.921
+  },
+  {
+   "scene": 3,
+   "start": 26.061,
+   "end": 27.277
+  },
+  {
+   "scene": 4,
+   "start": 30.0,
+   "end": 34.715
+  },
+  {
+   "scene": 4,
+   "start": 34.855,
+   "end": 38.225
+  },
+  {
+   "scene": 5,
+   "start": 38.525,
+   "end": 41.555
+  },
+  {
+   "scene": 5,
+   "start": 41.695,
+   "end": 45.193
+  },
+  {
+   "scene": 5,
+   "start": 45.333,
+   "end": 49.749
+  },
+  {
+   "scene": 6,
+   "start": 50.049,
+   "end": 52.844
+  },
+  {
+   "scene": 6,
+   "start": 52.984,
+   "end": 55.16
+  },
+  {
+   "scene": 6,
+   "start": 55.3,
+   "end": 56.751
+  },
+  {
+   "scene": 6,
+   "start": 56.891,
+   "end": 57.851
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 2.421,
+   "text": "In 2023, people tried to pull"
+  },
+  {
+   "scene": 1,
+   "start": 2.421,
+   "end": 5.797,
+   "text": "$42 BILLION out of ONE bank, in ONE DAY."
+  },
+  {
+   "scene": 1,
+   "start": 5.937,
+   "end": 7.43,
+   "text": "The next day, it was SHUT DOWN."
+  },
+  {
+   "scene": 1,
+   "start": 7.57,
+   "end": 9.874,
+   "text": "So what if EVERYONE took their money out AT ONCE?"
+  },
+  {
+   "scene": 2,
+   "start": 10.174,
+   "end": 11.155,
+   "text": "Here's the SECRET."
+  },
+  {
+   "scene": 2,
+   "start": 11.295,
+   "end": 12.895,
+   "text": "Your money ISN'T sitting in a vault."
+  },
+  {
+   "scene": 2,
+   "start": 13.035,
+   "end": 14.321,
+   "text": "Banks LEND most of it out,"
+  },
+  {
+   "scene": 2,
+   "start": 14.321,
+   "end": 16.746,
+   "text": "for HOUSES, CARS, and BUSINESSES,"
+  },
+  {
+   "scene": 2,
+   "start": 16.746,
+   "end": 18.902,
+   "text": "and keep only a SMALL SLICE as cash."
+  },
+  {
+   "scene": 3,
+   "start": 20.0,
+   "end": 21.0,
+   "text": "That works because people"
+  },
+  {
+   "scene": 3,
+   "start": 21.0,
+   "end": 23.157,
+   "text": "don't all withdraw on the SAME DAY."
+  },
+  {
+   "scene": 3,
+   "start": 23.297,
+   "end": 25.127,
+   "text": "But if everyone PANICS at once,"
+  },
+  {
+   "scene": 3,
+   "start": 25.127,
+   "end": 25.921,
+   "text": "the cash RUNS OUT."
+  },
+  {
+   "scene": 3,
+   "start": 26.061,
+   "end": 27.277,
+   "text": "That's called a BANK RUN."
+  },
+  {
+   "scene": 4,
+   "start": 30.0,
+   "end": 31.999,
+   "text": "To pay people back, the bank has to SELL"
+  },
+  {
+   "scene": 4,
+   "start": 31.999,
+   "end": 34.715,
+   "text": "its investments FAST, sometimes at a LOSS."
+  },
+  {
+   "scene": 4,
+   "start": 34.855,
+   "end": 37.074,
+   "text": "And when people at OTHER BANKS see the panic,"
+  },
+  {
+   "scene": 4,
+   "start": 37.074,
+   "end": 38.225,
+   "text": "they start RUNNING TOO."
+  },
+  {
+   "scene": 5,
+   "start": 38.525,
+   "end": 40.186,
+   "text": "In the 1930s GREAT DEPRESSION,"
+  },
+  {
+   "scene": 5,
+   "start": 40.186,
+   "end": 41.555,
+   "text": "about 9,000 BANKS failed."
+  },
+  {
+   "scene": 5,
+   "start": 41.695,
+   "end": 45.193,
+   "text": "So in 1933, America created the FDIC."
+  },
+  {
+   "scene": 5,
+   "start": 45.333,
+   "end": 49.749,
+   "text": "It insures up to $250,000 per depositor, per bank."
+  },
+  {
+   "scene": 6,
+   "start": 50.049,
+   "end": 51.897,
+   "text": "Since then, NO ONE has lost a PENNY"
+  },
+  {
+   "scene": 6,
+   "start": 51.897,
+   "end": 52.844,
+   "text": "of insured money."
+  },
+  {
+   "scene": 6,
+   "start": 52.984,
+   "end": 55.16,
+   "text": "And the Fed can lend banks EMERGENCY CASH."
+  },
+  {
+   "scene": 6,
+   "start": 55.3,
+   "end": 56.751,
+   "text": "It's WORKING, and it's PROTECTED."
+  },
+  {
+   "scene": 6,
+   "start": 56.891,
+   "end": 57.851,
+   "text": "FOLLOW for more!"
+  }
+ ]
+}
