@@ -1,0 +1,305 @@
+{
+ "voice": "am_puck",
+ "speed": 1.04,
+ "scenes": {
+  "1": [
+   0.35,
+   7.283
+  ],
+  "2": [
+   7.703,
+   14.69
+  ],
+  "3": [
+   15.11,
+   24.977
+  ],
+  "4": [
+   25.397,
+   34.719
+  ],
+  "5": [
+   35.139,
+   45.774
+  ],
+  "6": [
+   46.194,
+   59.058
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.697
+  },
+  {
+   "scene": 1,
+   "start": 2.857,
+   "end": 5.267
+  },
+  {
+   "scene": 1,
+   "start": 5.427,
+   "end": 7.283
+  },
+  {
+   "scene": 2,
+   "start": 7.703,
+   "end": 10.583
+  },
+  {
+   "scene": 2,
+   "start": 10.743,
+   "end": 14.69
+  },
+  {
+   "scene": 3,
+   "start": 15.11,
+   "end": 18.971
+  },
+  {
+   "scene": 3,
+   "start": 19.131,
+   "end": 24.977
+  },
+  {
+   "scene": 4,
+   "start": 25.397,
+   "end": 28.853
+  },
+  {
+   "scene": 4,
+   "start": 29.013,
+   "end": 32.149
+  },
+  {
+   "scene": 4,
+   "start": 32.309,
+   "end": 34.719
+  },
+  {
+   "scene": 5,
+   "start": 35.139,
+   "end": 38.937
+  },
+  {
+   "scene": 5,
+   "start": 39.097,
+   "end": 45.774
+  },
+  {
+   "scene": 6,
+   "start": 46.194,
+   "end": 48.669
+  },
+  {
+   "scene": 6,
+   "start": 48.829,
+   "end": 50.386
+  },
+  {
+   "scene": 6,
+   "start": 50.546,
+   "end": 54.023
+  },
+  {
+   "scene": 6,
+   "start": 54.183,
+   "end": 57.277
+  },
+  {
+   "scene": 6,
+   "start": 57.437,
+   "end": 59.058
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 1.145,
+   "text": "Imagine you put"
+  },
+  {
+   "scene": 1,
+   "start": 1.145,
+   "end": 2.697,
+   "text": "$1,000 in the bank."
+  },
+  {
+   "scene": 1,
+   "start": 2.857,
+   "end": 4.266,
+   "text": "You think it just sits there,"
+  },
+  {
+   "scene": 1,
+   "start": 4.266,
+   "end": 5.267,
+   "text": "waiting for you, right?"
+  },
+  {
+   "scene": 1,
+   "start": 5.427,
+   "end": 7.283,
+   "text": "Well, that's not exactly what happens!"
+  },
+  {
+   "scene": 2,
+   "start": 7.703,
+   "end": 9.72,
+   "text": "Banks use money from deposits"
+  },
+  {
+   "scene": 2,
+   "start": 9.72,
+   "end": 10.583,
+   "text": "to help make loans."
+  },
+  {
+   "scene": 2,
+   "start": 10.743,
+   "end": 13.477,
+   "text": "For example, a family might borrow money"
+  },
+  {
+   "scene": 2,
+   "start": 13.477,
+   "end": 14.69,
+   "text": "from the bank to buy a house."
+  },
+  {
+   "scene": 3,
+   "start": 15.11,
+   "end": 16.552,
+   "text": "But borrowing isn't free!"
+  },
+  {
+   "scene": 3,
+   "start": 16.552,
+   "end": 18.971,
+   "text": "The bank charges something called interest."
+  },
+  {
+   "scene": 3,
+   "start": 19.131,
+   "end": 21.048,
+   "text": "If you borrow $1,000"
+  },
+  {
+   "scene": 3,
+   "start": 21.048,
+   "end": 23.138,
+   "text": "at 8% interest for one year,"
+  },
+  {
+   "scene": 3,
+   "start": 23.138,
+   "end": 24.977,
+   "text": "that's $80 in interest."
+  },
+  {
+   "scene": 4,
+   "start": 25.397,
+   "end": 27.137,
+   "text": "Now imagine your savings account"
+  },
+  {
+   "scene": 4,
+   "start": 27.137,
+   "end": 28.853,
+   "text": "pays 1% interest."
+  },
+  {
+   "scene": 4,
+   "start": 29.013,
+   "end": 30.937,
+   "text": "You earn just $10 in a year"
+  },
+  {
+   "scene": 4,
+   "start": 30.937,
+   "end": 32.149,
+   "text": "on your $1,000."
+  },
+  {
+   "scene": 4,
+   "start": 32.309,
+   "end": 34.719,
+   "text": "Meanwhile, the bank earns interest from borrowers."
+  },
+  {
+   "scene": 5,
+   "start": 35.139,
+   "end": 37.675,
+   "text": "Banks can also earn money from investments,"
+  },
+  {
+   "scene": 5,
+   "start": 37.675,
+   "end": 38.937,
+   "text": "like government bonds."
+  },
+  {
+   "scene": 5,
+   "start": 39.097,
+   "end": 40.344,
+   "text": "And some banks charge fees"
+  },
+  {
+   "scene": 5,
+   "start": 40.344,
+   "end": 43.542,
+   "text": "for helping customers invest in mutual funds,"
+  },
+  {
+   "scene": 5,
+   "start": 43.542,
+   "end": 45.774,
+   "text": "which are baskets of investments."
+  },
+  {
+   "scene": 6,
+   "start": 46.194,
+   "end": 48.669,
+   "text": "Now imagine millions of customers doing this!"
+  },
+  {
+   "scene": 6,
+   "start": 48.829,
+   "end": 50.386,
+   "text": "That's how banks can make billions."
+  },
+  {
+   "scene": 6,
+   "start": 50.546,
+   "end": 52.409,
+   "text": "Of course, they also pay expenses,"
+  },
+  {
+   "scene": 6,
+   "start": 52.409,
+   "end": 54.023,
+   "text": "and sometimes lose money."
+  },
+  {
+   "scene": 6,
+   "start": 54.183,
+   "end": 55.035,
+   "text": "So remember:"
+  },
+  {
+   "scene": 6,
+   "start": 55.035,
+   "end": 57.277,
+   "text": "banks work to earn money using deposits."
+  },
+  {
+   "scene": 6,
+   "start": 57.437,
+   "end": 59.058,
+   "text": "Are you making the most of yours?"
+  }
+ ]
+}
