@@ -38,7 +38,7 @@ const MoneyBag: React.FC<{ size: number }> = ({ size }) => (
 
 /** subtitle line, numbers highlighted */
 const Caption: React.FC<{ t: number }> = ({ t }) => {
-  const i = CHUNKS.findIndex((c, k) => t >= c.start - 0.05 && t < (CHUNKS[k + 1] && CHUNKS[k + 1].scene === c.scene ? CHUNKS[k + 1].start - 0.05 : c.end + 0.25));
+  const i = CHUNKS.findIndex((c, k) => t >= c.start - 0.05 && t < (CHUNKS[k + 1] && CHUNKS[k + 1].scene === c.scene ? CHUNKS[k + 1].start - 0.05 : Math.min(c.end + 0.12, SCN[c.scene - 1][1] - 0.04)));
   if (i < 0) return null;
   const c = CHUNKS[i];
   const parts = c.text.split(/(\$[\d,]+|\d+%)/g);
