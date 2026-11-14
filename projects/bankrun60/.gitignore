@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 out/
 *.npy
 audio/mix.wav
