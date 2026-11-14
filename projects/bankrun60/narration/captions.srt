@@ -1,0 +1,104 @@
+1
+00:00:00,350 --> 00:00:02,036
+Imagine waking up tomorrow
+
+2
+00:00:02,036 --> 00:00:04,687
+and finding out everyone in your city
+
+3
+00:00:04,687 --> 00:00:06,686
+wants to take all their money out of the bank.
+
+4
+00:00:06,886 --> 00:00:07,761
+What would happen?
+
+5
+00:00:10,000 --> 00:00:11,024
+Here's the secret.
+
+6
+00:00:11,224 --> 00:00:13,347
+Banks don't keep every dollar you deposit
+
+7
+00:00:13,347 --> 00:00:14,552
+sitting in a vault.
+
+8
+00:00:14,752 --> 00:00:17,376
+They use much of that money to make loans,
+
+9
+00:00:17,376 --> 00:00:19,659
+like helping people buy homes and cars.
+
+10
+00:00:20,079 --> 00:00:22,588
+But what if everyone wanted their money back
+
+11
+00:00:22,588 --> 00:00:23,663
+at the exact same time?
+
+12
+00:00:23,863 --> 00:00:25,773
+The bank might not have enough cash ready
+
+13
+00:00:25,773 --> 00:00:27,532
+to give everyone immediately!
+
+14
+00:00:29,000 --> 00:00:30,387
+This is called a bank run.
+
+15
+00:00:30,587 --> 00:00:33,173
+If the bank has to sell things quickly to get cash,
+
+16
+00:00:33,173 --> 00:00:34,491
+it could lose money.
+
+17
+00:00:34,691 --> 00:00:36,419
+And panic could spread to other banks!
+
+18
+00:00:36,839 --> 00:00:38,097
+But here's the good news!
+
+19
+00:00:38,297 --> 00:00:42,834
+In the United States, the FDIC protects eligible bank deposits
+
+20
+00:00:42,834 --> 00:00:46,396
+up to $250,000 per depositor,
+
+21
+00:00:46,396 --> 00:00:49,135
+per insured bank, per ownership category.
+
+22
+00:00:49,555 --> 00:00:51,777
+So banks work because not everyone
+
+23
+00:00:51,777 --> 00:00:53,309
+needs all their money at once.
+
+24
+00:00:53,509 --> 00:00:55,856
+That's why banks manage cash carefully
+
+25
+00:00:55,856 --> 00:00:57,115
+and have safety systems.
+
+26
+00:00:57,315 --> 00:00:58,851
+Would you keep your money in a bank?
+

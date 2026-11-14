@@ -1,0 +1,17 @@
+[
+ {"scene": 1, "chunks": [["Imagine waking up tomorrow", "Imagine waking up tomorrow"], ["and finding out everyone in your city", "and finding out everyone in your city"], ["wants to take all their money out of the bank.", "wants to take all their money out of the bank."]]},
+ {"scene": 1, "chunks": [["What would happen?", "What would happen?"]]},
+ {"scene": 2, "chunks": [["Here's the secret.", "Here's the secret."]]},
+ {"scene": 2, "chunks": [["Banks don't keep every dollar you deposit", "Banks don't keep every dollar you deposit"], ["sitting in a vault.", "sitting in a vault."]]},
+ {"scene": 2, "chunks": [["They use much of that money to make loans,", "They use much of that money to make loans,"], ["like helping people buy homes and cars.", "like helping people buy homes and cars."]]},
+ {"scene": 3, "chunks": [["But what if everyone wanted their money back", "But what if everyone wanted their money back"], ["at the exact same time?", "at the exact same time?"]]},
+ {"scene": 3, "chunks": [["The bank might not have enough cash ready", "The bank might not have enough cash ready"], ["to give everyone immediately!", "to give everyone immediately!"]]},
+ {"scene": 4, "chunks": [["This is called a bank run.", "This is called a bank run."]]},
+ {"scene": 4, "chunks": [["If the bank has to sell things quickly to get cash,", "If the bank has to sell things quickly to get cash,"], ["it could lose money.", "it could lose money."]]},
+ {"scene": 4, "chunks": [["And panic could spread to other banks!", "And panic could spread to other banks!"]]},
+ {"scene": 5, "chunks": [["But here's the good news!", "But here's the good news!"]]},
+ {"scene": 5, "chunks": [["In the United States, the F D I C protects eligible bank deposits", "In the United States, the FDIC protects eligible bank deposits"], ["up to two hundred fifty thousand dollars per depositor,", "up to $250,000 per depositor,"], ["per insured bank, per ownership category.", "per insured bank, per ownership category."]]},
+ {"scene": 6, "chunks": [["So banks work because not everyone", "So banks work because not everyone"], ["needs all their money at once.", "needs all their money at once."]]},
+ {"scene": 6, "chunks": [["That's why banks manage cash carefully", "That's why banks manage cash carefully"], ["and have safety systems.", "and have safety systems."]]},
+ {"scene": 6, "chunks": [["Would you keep your money in a bank?", "Would you keep your money in a bank?"]]}
+]

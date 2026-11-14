@@ -1,0 +1,265 @@
+{
+ "voice": "am_puck",
+ "speed": 1.04,
+ "scenes": {
+  "1": [
+   0.35,
+   7.761
+  ],
+  "2": [
+   10.0,
+   19.659
+  ],
+  "3": [
+   20.079,
+   27.532
+  ],
+  "4": [
+   29.0,
+   36.419
+  ],
+  "5": [
+   36.839,
+   49.135
+  ],
+  "6": [
+   49.555,
+   58.851
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 6.686
+  },
+  {
+   "scene": 1,
+   "start": 6.886,
+   "end": 7.761
+  },
+  {
+   "scene": 2,
+   "start": 10.0,
+   "end": 11.024
+  },
+  {
+   "scene": 2,
+   "start": 11.224,
+   "end": 14.552
+  },
+  {
+   "scene": 2,
+   "start": 14.752,
+   "end": 19.659
+  },
+  {
+   "scene": 3,
+   "start": 20.079,
+   "end": 23.663
+  },
+  {
+   "scene": 3,
+   "start": 23.863,
+   "end": 27.532
+  },
+  {
+   "scene": 4,
+   "start": 29.0,
+   "end": 30.387
+  },
+  {
+   "scene": 4,
+   "start": 30.587,
+   "end": 34.491
+  },
+  {
+   "scene": 4,
+   "start": 34.691,
+   "end": 36.419
+  },
+  {
+   "scene": 5,
+   "start": 36.839,
+   "end": 38.097
+  },
+  {
+   "scene": 5,
+   "start": 38.297,
+   "end": 49.135
+  },
+  {
+   "scene": 6,
+   "start": 49.555,
+   "end": 53.309
+  },
+  {
+   "scene": 6,
+   "start": 53.509,
+   "end": 57.115
+  },
+  {
+   "scene": 6,
+   "start": 57.315,
+   "end": 58.851
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.036,
+   "text": "Imagine waking up tomorrow"
+  },
+  {
+   "scene": 1,
+   "start": 2.036,
+   "end": 4.687,
+   "text": "and finding out everyone in your city"
+  },
+  {
+   "scene": 1,
+   "start": 4.687,
+   "end": 6.686,
+   "text": "wants to take all their money out of the bank."
+  },
+  {
+   "scene": 1,
+   "start": 6.886,
+   "end": 7.761,
+   "text": "What would happen?"
+  },
+  {
+   "scene": 2,
+   "start": 10.0,
+   "end": 11.024,
+   "text": "Here's the secret."
+  },
+  {
+   "scene": 2,
+   "start": 11.224,
+   "end": 13.347,
+   "text": "Banks don't keep every dollar you deposit"
+  },
+  {
+   "scene": 2,
+   "start": 13.347,
+   "end": 14.552,
+   "text": "sitting in a vault."
+  },
+  {
+   "scene": 2,
+   "start": 14.752,
+   "end": 17.376,
+   "text": "They use much of that money to make loans,"
+  },
+  {
+   "scene": 2,
+   "start": 17.376,
+   "end": 19.659,
+   "text": "like helping people buy homes and cars."
+  },
+  {
+   "scene": 3,
+   "start": 20.079,
+   "end": 22.588,
+   "text": "But what if everyone wanted their money back"
+  },
+  {
+   "scene": 3,
+   "start": 22.588,
+   "end": 23.663,
+   "text": "at the exact same time?"
+  },
+  {
+   "scene": 3,
+   "start": 23.863,
+   "end": 25.773,
+   "text": "The bank might not have enough cash ready"
+  },
+  {
+   "scene": 3,
+   "start": 25.773,
+   "end": 27.532,
+   "text": "to give everyone immediately!"
+  },
+  {
+   "scene": 4,
+   "start": 29.0,
+   "end": 30.387,
+   "text": "This is called a bank run."
+  },
+  {
+   "scene": 4,
+   "start": 30.587,
+   "end": 33.173,
+   "text": "If the bank has to sell things quickly to get cash,"
+  },
+  {
+   "scene": 4,
+   "start": 33.173,
+   "end": 34.491,
+   "text": "it could lose money."
+  },
+  {
+   "scene": 4,
+   "start": 34.691,
+   "end": 36.419,
+   "text": "And panic could spread to other banks!"
+  },
+  {
+   "scene": 5,
+   "start": 36.839,
+   "end": 38.097,
+   "text": "But here's the good news!"
+  },
+  {
+   "scene": 5,
+   "start": 38.297,
+   "end": 42.834,
+   "text": "In the United States, the FDIC protects eligible bank deposits"
+  },
+  {
+   "scene": 5,
+   "start": 42.834,
+   "end": 46.396,
+   "text": "up to $250,000 per depositor,"
+  },
+  {
+   "scene": 5,
+   "start": 46.396,
+   "end": 49.135,
+   "text": "per insured bank, per ownership category."
+  },
+  {
+   "scene": 6,
+   "start": 49.555,
+   "end": 51.777,
+   "text": "So banks work because not everyone"
+  },
+  {
+   "scene": 6,
+   "start": 51.777,
+   "end": 53.309,
+   "text": "needs all their money at once."
+  },
+  {
+   "scene": 6,
+   "start": 53.509,
+   "end": 55.856,
+   "text": "That's why banks manage cash carefully"
+  },
+  {
+   "scene": 6,
+   "start": 55.856,
+   "end": 57.115,
+   "text": "and have safety systems."
+  },
+  {
+   "scene": 6,
+   "start": 57.315,
+   "end": 58.851,
+   "text": "Would you keep your money in a bank?"
+  }
+ ]
+}

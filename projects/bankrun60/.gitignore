@@ -1,0 +1,7 @@
+node_modules/
+out/
+*.npy
+audio/mix.wav
+audio/stem_*.wav
+audio/mix.wav
+audio/stem_*.wav
