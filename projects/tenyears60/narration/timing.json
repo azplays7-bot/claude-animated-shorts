@@ -1,0 +1,289 @@
+{
+ "voice": "am_puck",
+ "speed": 1.1,
+ "scenes": {
+  "1": [
+   0.25,
+   7.709
+  ],
+  "2": [
+   8.009,
+   16.555
+  ],
+  "3": [
+   16.855,
+   27.535
+  ],
+  "4": [
+   27.835,
+   37.867
+  ],
+  "5": [
+   38.167,
+   47.61
+  ],
+  "6": [
+   47.91,
+   58.318
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 3.301
+  },
+  {
+   "scene": 1,
+   "start": 3.421,
+   "end": 7.709
+  },
+  {
+   "scene": 2,
+   "start": 8.009,
+   "end": 9.651
+  },
+  {
+   "scene": 2,
+   "start": 9.771,
+   "end": 16.555
+  },
+  {
+   "scene": 3,
+   "start": 16.855,
+   "end": 22.167
+  },
+  {
+   "scene": 3,
+   "start": 22.287,
+   "end": 27.535
+  },
+  {
+   "scene": 4,
+   "start": 27.835,
+   "end": 29.691
+  },
+  {
+   "scene": 4,
+   "start": 29.811,
+   "end": 32.414
+  },
+  {
+   "scene": 4,
+   "start": 32.534,
+   "end": 37.867
+  },
+  {
+   "scene": 5,
+   "start": 38.167,
+   "end": 41.559
+  },
+  {
+   "scene": 5,
+   "start": 41.679,
+   "end": 47.61
+  },
+  {
+   "scene": 6,
+   "start": 47.91,
+   "end": 50.705
+  },
+  {
+   "scene": 6,
+   "start": 50.825,
+   "end": 54.729
+  },
+  {
+   "scene": 6,
+   "start": 54.849,
+   "end": 56.427
+  },
+  {
+   "scene": 6,
+   "start": 56.547,
+   "end": 58.318
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 1.229,
+   "text": "TEN YEARS from now,"
+  },
+  {
+   "scene": 1,
+   "start": 1.229,
+   "end": 3.301,
+   "text": "your life could look COMPLETELY DIFFERENT."
+  },
+  {
+   "scene": 1,
+   "start": 3.421,
+   "end": 4.855,
+   "text": "And one of the BIGGEST reasons"
+  },
+  {
+   "scene": 1,
+   "start": 4.855,
+   "end": 6.464,
+   "text": "might be what you decide to do"
+  },
+  {
+   "scene": 1,
+   "start": 6.464,
+   "end": 7.709,
+   "text": "with your money TODAY."
+  },
+  {
+   "scene": 2,
+   "start": 8.009,
+   "end": 9.651,
+   "text": "You don't need to be RICH to begin."
+  },
+  {
+   "scene": 2,
+   "start": 9.771,
+   "end": 12.366,
+   "text": "Imagine saving just $100 each month,"
+  },
+  {
+   "scene": 2,
+   "start": 12.366,
+   "end": 14.773,
+   "text": "while LEARNING how to start a SMALL BUSINESS"
+  },
+  {
+   "scene": 2,
+   "start": 14.773,
+   "end": 16.555,
+   "text": "with SKILLS you already have."
+  },
+  {
+   "scene": 3,
+   "start": 16.855,
+   "end": 19.928,
+   "text": "If you invested $100 EVERY MONTH"
+  },
+  {
+   "scene": 3,
+   "start": 19.928,
+   "end": 20.471,
+   "text": "for 10 YEARS,"
+  },
+  {
+   "scene": 3,
+   "start": 20.471,
+   "end": 22.167,
+   "text": "you'd put in $12,000."
+  },
+  {
+   "scene": 3,
+   "start": 22.287,
+   "end": 24.876,
+   "text": "At an AVERAGE 7% yearly return,"
+  },
+  {
+   "scene": 3,
+   "start": 24.876,
+   "end": 27.535,
+   "text": "it COULD grow to about $17,000!"
+  },
+  {
+   "scene": 4,
+   "start": 27.835,
+   "end": 29.691,
+   "text": "Or imagine starting a SMALL BUSINESS."
+  },
+  {
+   "scene": 4,
+   "start": 29.811,
+   "end": 32.414,
+   "text": "Your FIRST customer might only pay $50."
+  },
+  {
+   "scene": 4,
+   "start": 32.534,
+   "end": 34.032,
+   "text": "But by IMPROVING your skills"
+  },
+  {
+   "scene": 4,
+   "start": 34.032,
+   "end": 35.32,
+   "text": "and finding MORE CUSTOMERS,"
+  },
+  {
+   "scene": 4,
+   "start": 35.32,
+   "end": 37.867,
+   "text": "you could slowly build something MUCH BIGGER."
+  },
+  {
+   "scene": 5,
+   "start": 38.167,
+   "end": 39.703,
+   "text": "Of course, some businesses FAIL,"
+  },
+  {
+   "scene": 5,
+   "start": 39.703,
+   "end": 41.559,
+   "text": "and investments can LOSE money."
+  },
+  {
+   "scene": 5,
+   "start": 41.679,
+   "end": 44.363,
+   "text": "But 10 years of LEARNING, SAVING, and IMPROVING"
+  },
+  {
+   "scene": 5,
+   "start": 44.363,
+   "end": 45.939,
+   "text": "can give you OPPORTUNITIES"
+  },
+  {
+   "scene": 5,
+   "start": 45.939,
+   "end": 47.61,
+   "text": "you might never have had otherwise."
+  },
+  {
+   "scene": 6,
+   "start": 47.91,
+   "end": 49.682,
+   "text": "You don't have to become a MILLIONAIRE"
+  },
+  {
+   "scene": 6,
+   "start": 49.682,
+   "end": 50.705,
+   "text": "to CHANGE YOUR LIFE."
+  },
+  {
+   "scene": 6,
+   "start": 50.825,
+   "end": 53.332,
+   "text": "Having SAVINGS, useful SKILLS, and more CHOICES"
+  },
+  {
+   "scene": 6,
+   "start": 53.332,
+   "end": 54.729,
+   "text": "is already SUCCESS."
+  },
+  {
+   "scene": 6,
+   "start": 54.849,
+   "end": 56.427,
+   "text": "Your future won't BUILD ITSELF."
+  },
+  {
+   "scene": 6,
+   "start": 56.547,
+   "end": 58.318,
+   "text": "What SMALL STEP could you take TODAY?"
+  }
+ ]
+}
