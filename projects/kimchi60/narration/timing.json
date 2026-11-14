@@ -1,0 +1,265 @@
+{
+ "voice": "am_puck",
+ "speed": 1.06,
+ "scenes": {
+  "1": [
+   0.3,
+   7.799
+  ],
+  "2": [
+   10.1,
+   19.764
+  ],
+  "3": [
+   20.114,
+   28.253
+  ],
+  "4": [
+   30.1,
+   37.919
+  ],
+  "5": [
+   40.1,
+   47.844
+  ],
+  "6": [
+   50.1,
+   59.167
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.3,
+   "end": 3.052
+  },
+  {
+   "scene": 1,
+   "start": 3.212,
+   "end": 7.799
+  },
+  {
+   "scene": 2,
+   "start": 10.1,
+   "end": 13.791
+  },
+  {
+   "scene": 2,
+   "start": 13.951,
+   "end": 17.812
+  },
+  {
+   "scene": 2,
+   "start": 17.972,
+   "end": 19.764
+  },
+  {
+   "scene": 3,
+   "start": 20.114,
+   "end": 23.378
+  },
+  {
+   "scene": 3,
+   "start": 23.538,
+   "end": 28.253
+  },
+  {
+   "scene": 4,
+   "start": 30.1,
+   "end": 34.687
+  },
+  {
+   "scene": 4,
+   "start": 34.847,
+   "end": 37.919
+  },
+  {
+   "scene": 5,
+   "start": 40.1,
+   "end": 41.743
+  },
+  {
+   "scene": 5,
+   "start": 41.903,
+   "end": 44.804
+  },
+  {
+   "scene": 5,
+   "start": 44.964,
+   "end": 47.844
+  },
+  {
+   "scene": 6,
+   "start": 50.1,
+   "end": 52.639
+  },
+  {
+   "scene": 6,
+   "start": 52.799,
+   "end": 54.292
+  },
+  {
+   "scene": 6,
+   "start": 54.452,
+   "end": 59.167
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.3,
+   "end": 2.568,
+   "text": "Imagine turning a FEW HUNDRED dollars"
+  },
+  {
+   "scene": 1,
+   "start": 2.568,
+   "end": 3.052,
+   "text": "into MILLIONS."
+  },
+  {
+   "scene": 1,
+   "start": 3.212,
+   "end": 4.415,
+   "text": "That's the kind of DREAM"
+  },
+  {
+   "scene": 1,
+   "start": 4.415,
+   "end": 6.863,
+   "text": "that made a crypto trader known as KIMCHI"
+  },
+  {
+   "scene": 1,
+   "start": 6.863,
+   "end": 7.799,
+   "text": "FAMOUS online."
+  },
+  {
+   "scene": 2,
+   "start": 10.1,
+   "end": 13.791,
+   "text": "Kimchi says he started trading MEMECOINS in 2024."
+  },
+  {
+   "scene": 2,
+   "start": 13.951,
+   "end": 16.663,
+   "text": "Those are cryptocurrencies that can EXPLODE in price"
+  },
+  {
+   "scene": 2,
+   "start": 16.663,
+   "end": 17.812,
+   "text": "from INTERNET HYPE."
+  },
+  {
+   "scene": 2,
+   "start": 17.972,
+   "end": 19.764,
+   "text": "But they can also CRASH in SECONDS."
+  },
+  {
+   "scene": 3,
+   "start": 20.114,
+   "end": 22.043,
+   "text": "In JANUARY 2025,"
+  },
+  {
+   "scene": 3,
+   "start": 22.043,
+   "end": 23.378,
+   "text": "the TRUMP memecoin LAUNCHED."
+  },
+  {
+   "scene": 3,
+   "start": 23.538,
+   "end": 25.771,
+   "text": "Its price SKYROCKETED in just TWO DAYS,"
+  },
+  {
+   "scene": 3,
+   "start": 25.771,
+   "end": 28.253,
+   "text": "and Kimchi REPORTEDLY made millions."
+  },
+  {
+   "scene": 4,
+   "start": 30.1,
+   "end": 32.474,
+   "text": "Some reports CLAIMED he made an astonishing"
+  },
+  {
+   "scene": 4,
+   "start": 32.474,
+   "end": 34.687,
+   "text": "$40 MILLION trading TRUMP."
+  },
+  {
+   "scene": 4,
+   "start": 34.847,
+   "end": 36.359,
+   "text": "But that number has NEVER been"
+  },
+  {
+   "scene": 4,
+   "start": 36.359,
+   "end": 37.919,
+   "text": "INDEPENDENTLY VERIFIED."
+  },
+  {
+   "scene": 5,
+   "start": 40.1,
+   "end": 41.743,
+   "text": "And here's what most people FORGET."
+  },
+  {
+   "scene": 5,
+   "start": 41.903,
+   "end": 44.804,
+   "text": "TRUMP later FELL about 98% from its peak."
+  },
+  {
+   "scene": 5,
+   "start": 44.964,
+   "end": 46.273,
+   "text": "For every SUCCESS story,"
+  },
+  {
+   "scene": 5,
+   "start": 46.273,
+   "end": 47.844,
+   "text": "many traders LOSE MONEY."
+  },
+  {
+   "scene": 6,
+   "start": 50.1,
+   "end": 52.639,
+   "text": "Kimchi's story shows how FAST fortunes change."
+  },
+  {
+   "scene": 6,
+   "start": 52.799,
+   "end": 54.292,
+   "text": "But success ISN'T GUARANTEED."
+  },
+  {
+   "scene": 6,
+   "start": 54.452,
+   "end": 55.836,
+   "text": "RESEARCH, RISK MANAGEMENT,"
+  },
+  {
+   "scene": 6,
+   "start": 55.836,
+   "end": 57.751,
+   "text": "and knowing when to WALK AWAY"
+  },
+  {
+   "scene": 6,
+   "start": 57.751,
+   "end": 59.167,
+   "text": "matter more than CHASING MILLIONS."
+  }
+ ]
+}
