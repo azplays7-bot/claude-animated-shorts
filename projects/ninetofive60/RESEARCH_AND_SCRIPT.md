@@ -67,7 +67,7 @@
 ---
 
 ## PHASE 3: Finished narration (60 s)
-About 152 words, read at 2.5 words a second, which is a calm documentary pace. Timings are targets.
+163 words. At a brisk, natural documentary pace of about 2.7 words a second, that is about 60 s; at a slower 2.5 words a second it would run about 65 s. Timings are targets.
 
 | Scene | Time | Narration (exact) |
 |---|---|---|
@@ -78,7 +78,7 @@ About 152 words, read at 2.5 words a second, which is a calm documentary pace. T
 | 5 | 40–50 s | "Freedom is built slowly. An emergency fund first. Then investing: two hundred dollars a month for thirty years, at a seven percent average return, could grow to about two hundred forty-four thousand. Not guaranteed." |
 | 6 | 50–60 s | "And a steady job can help: most private workers can get a retirement plan. The nine-to-five isn't necessarily the trap. It's working your entire life without building financial freedom." |
 
-Scenes 4–6 run long at an even pace. Read them a little faster (about 2.9 words a second), or cut "Not guaranteed" from the voice and keep it on screen.
+To gain time, cut "Not guaranteed" from the voice and keep it on screen as a footnote.
 
 ---
 
@@ -108,7 +108,7 @@ That number then drains rapidly to "$41" as rent, utilities and card icons slide
 
 ## PHASE 4: Quality check
 - **Every on-screen number** is in the tables above with its source and reporting year. Hypotheticals (the compounding example and the 401(k) split) are labelled.
-- **Narration length:** about 152 words, roughly 60 s at a natural pace (see the note under the narration).
+- **Narration length:** 163 words, about 60 s at 2.7 words a second (see the note under the narration).
 - **Conspiracy claims removed:** the script never says the 9–5 was "designed to keep people poor", and the history scene presents the documented record.
 - **Physical realism:** every action is ordinary (sitting up, riding a bus, typing, reading a bill, dropping coins, walking). Aging is gradual and consistent.
 - **Balance:** the debt scenes are followed by the counterargument (employer plans, steady income) and the required closing line.
