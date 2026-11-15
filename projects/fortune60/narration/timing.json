@@ -1,0 +1,254 @@
+{
+ "voice": "am_puck",
+ "speed": 1.08,
+ "scenes": {
+  "1": [
+   0.25,
+   9.053
+  ],
+  "2": [
+   10.2,
+   17.445
+  ],
+  "3": [
+   20.2,
+   26.264
+  ],
+  "4": [
+   30.2,
+   38.128
+  ],
+  "5": [
+   40.2,
+   46.912
+  ],
+  "6": [
+   50.2,
+   58.824
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 7.269
+  },
+  {
+   "scene": 1,
+   "start": 7.389,
+   "end": 9.053
+  },
+  {
+   "scene": 2,
+   "start": 10.2,
+   "end": 15.341
+  },
+  {
+   "scene": 2,
+   "start": 15.461,
+   "end": 17.445
+  },
+  {
+   "scene": 3,
+   "start": 20.2,
+   "end": 22.632
+  },
+  {
+   "scene": 3,
+   "start": 22.752,
+   "end": 24.715
+  },
+  {
+   "scene": 3,
+   "start": 24.835,
+   "end": 26.264
+  },
+  {
+   "scene": 4,
+   "start": 30.2,
+   "end": 36.237
+  },
+  {
+   "scene": 4,
+   "start": 36.357,
+   "end": 38.128
+  },
+  {
+   "scene": 5,
+   "start": 40.2,
+   "end": 43.656
+  },
+  {
+   "scene": 5,
+   "start": 43.776,
+   "end": 46.912
+  },
+  {
+   "scene": 6,
+   "start": 50.2,
+   "end": 54.147
+  },
+  {
+   "scene": 6,
+   "start": 54.267,
+   "end": 54.971
+  },
+  {
+   "scene": 6,
+   "start": 55.091,
+   "end": 58.824
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 2.223,
+   "text": "Elon Musk's ESTIMATED fortune grew"
+  },
+  {
+   "scene": 1,
+   "start": 2.223,
+   "end": 5.709,
+   "text": "by an average of over $14,000"
+  },
+  {
+   "scene": 1,
+   "start": 5.709,
+   "end": 7.269,
+   "text": "EVERY SINGLE SECOND last year."
+  },
+  {
+   "scene": 1,
+   "start": 7.389,
+   "end": 9.053,
+   "text": "Wait till you see what that BECOMES."
+  },
+  {
+   "scene": 2,
+   "start": 10.2,
+   "end": 11.521,
+   "text": "In ONE MINUTE,"
+  },
+  {
+   "scene": 2,
+   "start": 11.521,
+   "end": 13.809,
+   "text": "that's nearly $864,000"
+  },
+  {
+   "scene": 2,
+   "start": 13.809,
+   "end": 15.341,
+   "text": "in average wealth growth."
+  },
+  {
+   "scene": 2,
+   "start": 15.461,
+   "end": 17.445,
+   "text": "More than many workers earn in a DECADE."
+  },
+  {
+   "scene": 3,
+   "start": 20.2,
+   "end": 20.836,
+   "text": "Every HOUR,"
+  },
+  {
+   "scene": 3,
+   "start": 20.836,
+   "end": 22.632,
+   "text": "almost $52 MILLION."
+  },
+  {
+   "scene": 3,
+   "start": 22.752,
+   "end": 24.715,
+   "text": "Imagine how many HOUSES that could buy."
+  },
+  {
+   "scene": 3,
+   "start": 24.835,
+   "end": 26.264,
+   "text": "And we're only getting STARTED."
+  },
+  {
+   "scene": 4,
+   "start": 30.2,
+   "end": 31.417,
+   "text": "In 24 HOURS,"
+  },
+  {
+   "scene": 4,
+   "start": 31.417,
+   "end": 34.33,
+   "text": "his estimated wealth grew by an average of"
+  },
+  {
+   "scene": 4,
+   "start": 34.33,
+   "end": 36.237,
+   "text": "$1.24 BILLION."
+  },
+  {
+   "scene": 4,
+   "start": 36.357,
+   "end": 38.128,
+   "text": "More than a BILLION, in a single DAY!"
+  },
+  {
+   "scene": 5,
+   "start": 40.2,
+   "end": 40.835,
+   "text": "Over a MONTH,"
+  },
+  {
+   "scene": 5,
+   "start": 40.835,
+   "end": 43.656,
+   "text": "that averages nearly $38 BILLION."
+  },
+  {
+   "scene": 5,
+   "start": 43.776,
+   "end": 44.764,
+   "text": "Across a whole YEAR,"
+  },
+  {
+   "scene": 5,
+   "start": 44.764,
+   "end": 46.912,
+   "text": "it's almost IMPOSSIBLE to imagine."
+  },
+  {
+   "scene": 6,
+   "start": 50.2,
+   "end": 51.113,
+   "text": "Over ONE YEAR:"
+  },
+  {
+   "scene": 6,
+   "start": 51.113,
+   "end": 54.147,
+   "text": "an estimated $454 BILLION."
+  },
+  {
+   "scene": 6,
+   "start": 54.267,
+   "end": 54.971,
+   "text": "The TWIST?"
+  },
+  {
+   "scene": 6,
+   "start": 55.091,
+   "end": 56.217,
+   "text": "It's NOT a paycheck."
+  },
+  {
+   "scene": 6,
+   "start": 56.217,
+   "end": 58.824,
+   "text": "It's the changing VALUE of the companies he owns."
+  }
+ ]
+}
