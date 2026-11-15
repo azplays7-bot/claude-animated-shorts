@@ -1,0 +1,628 @@
+<title>First Touch Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap">
+<style>
+  /* Layout: the 9:16 screen on the left (top on phones), the production bench beside it: your files, the shot controls, export, and the iPad guide. Single dark "edit suite" look. */
+  :root {
+    --bg: #0a0b0d; --panel: #13161b; --raised: #1a1e25; --line: #262c36; --fg: #eef0f3; --muted: #9aa3b1; --gold: #f2b84b; --gold-ink: #1d1404; --ok: #59d38c; --warn: #ffb35c;
+    --display: "Anton", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+    --body: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); }
+  .app { max-width: 1180px; margin: 0 auto; padding-block: 16px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 18px; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+  header h1 { font: 400 clamp(28px, 5vw, 40px)/1 var(--display); letter-spacing: 0.02em; margin: 0; }
+  header h1 b { font-weight: 400; color: var(--gold); }
+  header p { margin: 0; color: var(--muted); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .grid { display: grid; gap: 18px; grid-template-columns: 1fr; align-items: start; }
+  @media (min-width: 860px) { .grid { grid-template-columns: minmax(0, 430px) minmax(0, 1fr); } .left { position: sticky; top: max(16px, env(safe-area-inset-top, 0px)); } }
+  .left { display: grid; gap: 12px; min-width: 0; }
+  .stage { position: relative; width: min(100%, calc((100dvh - 180px) * 9 / 16)); min-width: 240px; max-width: 100%; aspect-ratio: 9 / 16; margin-inline: auto; background: #000; border-radius: 14px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,0.55), 0 0 0 1px var(--line); }
+  .stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .loading { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 24px; background: radial-gradient(circle at 50% 40%, #1b2230, #050608); color: var(--muted); font-size: 14px; }
+  .transport { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; }
+  .iconbtn { width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); font-size: 16px; cursor: pointer; display: grid; place-items: center; }
+  input[type=range] { width: 100%; accent-color: var(--gold); min-width: 0; }
+  .time { font: 600 13px var(--body); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .right { display: grid; gap: 14px; min-width: 0; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+  .panel h2 { font: 400 22px var(--display); letter-spacing: 0.03em; margin: 0; }
+  .panel p { margin: 0; color: var(--muted); }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .btn { height: 44px; padding: 0 18px; border-radius: 10px; border: 0; background: var(--gold); color: var(--gold-ink); font: 800 15px var(--body); cursor: pointer; display: inline-flex; align-items: center; }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+  .btn:disabled { opacity: 0.5; cursor: default; }
+  .btn:focus-visible, .iconbtn:focus-visible, select:focus-visible, input:focus-visible, label.btn:focus-within { outline: 3px solid var(--gold); outline-offset: 3px; }
+  label.btn input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  select { height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); padding: 0 10px; font: 600 14px var(--body); min-width: 0; max-width: 100%; flex: 1 1 220px; }
+  .field { display: grid; gap: 4px; flex: 1 1 200px; min-width: 0; }
+  .field span { font-size: 12px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  .field output { color: var(--fg); font-weight: 600; text-transform: none; letter-spacing: 0; }
+  .files { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .files li { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; background: var(--raised); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font-size: 13px; min-width: 0; }
+  .files li b { font-weight: 600; overflow-wrap: anywhere; }
+  .files li small { display: block; color: var(--muted); }
+  .chip { font: 800 10px var(--body); letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 7px; border-radius: 99px; background: #2a3140; color: var(--fg); white-space: nowrap; }
+  .chip.char { background: var(--gold); color: var(--gold-ink); }
+  .chip.anim { background: #1f3b2c; color: var(--ok); }
+  .chip.err { background: #3b231f; color: var(--warn); }
+  .bar { height: 8px; border-radius: 99px; background: var(--bg); overflow: hidden; border: 1px solid var(--line); }
+  .bar i { display: block; height: 100%; width: 0; background: var(--gold); }
+  .status { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; color: var(--fg); }
+  ol.steps li::marker { color: var(--gold); font-weight: 800; }
+  ol.steps small { color: var(--muted); display: block; }
+  kbd { font: 600 12px ui-monospace, Menlo, monospace; background: var(--raised); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+  video { width: 100%; max-height: 60vh; border-radius: 10px; background: #000; }
+  .note { font-size: 12px; color: var(--muted); }
+</style>
+
+<main class="app">
+  <header>
+    <h1>FIRST TOUCH <b>STUDIO</b></h1>
+    <p>Scene 1 · The boy with the ball · 10 s · 9:16</p>
+  </header>
+
+  <div class="grid">
+    <div class="left">
+      <div class="stage" id="stage">
+        <canvas id="gl" aria-label="3D scene"></canvas>
+        <canvas id="ov" aria-hidden="true"></canvas>
+        <div class="loading" id="loading">Loading the 3D engine…</div>
+      </div>
+      <div class="transport">
+        <button class="iconbtn" id="playBtn" type="button" aria-label="Pause">❚❚</button>
+        <input id="scrub" type="range" min="0" max="10" step="0.0333" value="0" aria-label="Position">
+        <span class="time" id="time">0.0 / 10.0 s</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <section class="panel" aria-labelledby="filesTitle">
+        <h2 id="filesTitle">Your Mixamo files</h2>
+        <p>Add your character and your animations together. FBX or GLB. The page works out which file is the character and which are animations.</p>
+        <div class="row">
+          <label class="btn" for="fileInput">Choose files…<input id="fileInput" type="file" multiple accept=".fbx,.glb,.FBX,.GLB,model/gltf-binary,application/octet-stream"></label>
+          <button class="btn ghost" id="sampleBtn" type="button">Use sample character</button>
+          <button class="btn ghost" id="forgetBtn" type="button" hidden>Forget saved files</button>
+        </div>
+        <ul class="files" id="fileList"></ul>
+        <div class="row">
+          <label class="field"><span>Run clip</span><select id="clipSel" aria-label="Run clip"></select></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Character height <output id="hOut">1.50 m</output></span><input id="hSlider" type="range" min="1.2" max="1.95" step="0.01" value="1.5"></label>
+          <label class="field"><span>Run speed <output id="sOut">auto</output></span><input id="sSlider" type="range" min="0.6" max="1.6" step="0.01" value="1"></label>
+        </div>
+        <p class="note" id="clipInfo"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="expTitle">
+        <h2 id="expTitle">Export MP4</h2>
+        <p>Renders all 300 frames at 1080 × 1920 on this device and builds an MP4 (video only; sound comes later in the edit).</p>
+        <div class="row"><button class="btn" id="exportBtn" type="button">Export MP4</button></div>
+        <div id="progress" hidden><div class="bar"><i id="bar"></i></div><div class="row" style="justify-content:space-between;margin-top:8px"><span class="status" id="ptext"></span><button class="btn ghost" id="cancelBtn" type="button">Cancel</button></div></div>
+        <div id="result" hidden><video id="preview" playsinline controls muted></video><div class="row" style="margin-top:10px"><button class="btn" id="saveBtn" type="button">Save MP4</button><span class="status" id="saveNote"></span></div></div>
+      </section>
+
+      <section class="panel" aria-labelledby="howTitle">
+        <h2 id="howTitle">Get your files from Mixamo on iPad</h2>
+        <ol class="steps">
+          <li>Open <b>mixamo.com</b> in Safari and sign in with your free Adobe account. <small>If the site looks cramped, tap <kbd>aA</kbd> › Request Desktop Website.</small></li>
+          <li>Pick or upload your character, then tap <b>Download</b>: Format <kbd>FBX Binary (.fbx)</kbd>, Skin <kbd>With Skin</kbd>, Pose <kbd>T-pose</kbd>. This is your <b>character file</b>.</li>
+          <li>Search animations for <b>Running</b> (or “Sprint”, “Jog Forward”). Tick <kbd>In Place</kbd>, then Download with Skin <kbd>Without Skin</kbd>, Frames per Second <kbd>30</kbd>. <small>If you forget In Place, the page removes the forward drift for you.</small></li>
+          <li>Safari saves both into <b>Files › Downloads</b>. Come back here, tap <b>Choose files…</b>, open Downloads, tap <b>Select</b>, pick both files, and tap <b>Open</b>.</li>
+          <li>The scene rebuilds with your character. Use <b>Run speed</b> if the feet slide, and <b>Character height</b> to make him a boy or a teenager.</li>
+        </ol>
+        <p class="note">Your files stay on your iPad: they are read in this page, never uploaded anywhere. The page remembers them on this device so they reload next time.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/mp4-muxer@5.1.3/build/mp4-muxer.js"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+import { Sky } from "three/addons/objects/Sky.js";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+
+const $ = (id) => document.getElementById(id);
+const DUR = 10, FPS = 30;
+const cl = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const ramp = (t, a, b) => cl((t - a) / (b - a));
+const ss = (x) => x * x * (3 - 2 * x);
+const lerp = (a, b, u) => a + (b - a) * u;
+const hash = (n) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+
+// ==================================================================== renderer, post
+const glCanvas = $("gl"), ovCanvas = $("ov"), ov = ovCanvas.getContext("2d");
+const renderer = new THREE.WebGLRenderer({ canvas: glCanvas, antialias: true, preserveDrawingBuffer: true, powerPreference: "high-performance" });
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 0.88;
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(38, 9 / 16, 0.05, 3000);
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(540, 960), 0.28, 0.5, 0.9);
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+
+// ==================================================================== sky + light: golden hour, sun low behind the run direction
+const SUN = new THREE.Vector3().setFromSphericalCoords(1, THREE.MathUtils.degToRad(84), THREE.MathUtils.degToRad(-118));   // low, toward -X/-Z
+function makeSky() {
+  const s = new Sky(); s.scale.setScalar(4500);
+  const u = s.material.uniforms; u.turbidity.value = 5; u.rayleigh.value = 1.8; u.mieCoefficient.value = 0.0022; u.mieDirectionalG.value = 0.82; u.sunPosition.value.copy(SUN);
+  return s;
+}
+scene.add(makeSky());
+{ const pm = new THREE.PMREMGenerator(renderer); const es = new THREE.Scene(); es.add(makeSky()); scene.environment = pm.fromScene(es, 0.04).texture; scene.environmentIntensity = 0.55; }
+scene.fog = new THREE.Fog(0xb08a6c, 90, 600);
+const sun = new THREE.DirectionalLight(0xffc98f, 3.4);
+sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02;
+Object.assign(sun.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9, near: 1, far: 140 }); sun.shadow.camera.updateProjectionMatrix();
+scene.add(sun, sun.target);
+scene.add(new THREE.HemisphereLight(0xa9c6ff, 0x4a3b22, 0.55));
+// soft bounce from the camera side, as a reflector would give on set
+const fill = new THREE.DirectionalLight(0xdfe8ff, 0.7); scene.add(fill, fill.target);
+
+// ==================================================================== textures (procedural, so the page has no image files)
+function canvasTex(w, h, draw, repeat = [1, 1], srgb = true) {
+  const c = document.createElement("canvas"); c.width = w; c.height = h; draw(c.getContext("2d"), w, h);
+  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(...repeat);
+  t.anisotropy = renderer.capabilities.getMaxAnisotropy(); if (srgb) t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+const grassTex = canvasTex(1024, 1024, (g, w, h) => {
+  const r = rng(3); g.fillStyle = "#3d6f2a"; g.fillRect(0, 0, w, h);
+  for (let i = 0; i < 1400; i++) { g.fillStyle = `rgba(${40 + r() * 40},${90 + r() * 50},${25 + r() * 25},0.18)`; g.beginPath(); g.arc(r() * w, r() * h, 20 + r() * 70, 0, 7); g.fill(); }
+  for (let i = 0; i < 90000; i++) { const x = r() * w, y = r() * h, l = 3 + r() * 7; g.strokeStyle = `rgba(${50 + r() * 70},${100 + r() * 80},${30 + r() * 40},${0.35 + r() * 0.4})`; g.lineWidth = 1; g.beginPath(); g.moveTo(x, y); g.lineTo(x + (r() - 0.5) * 3, y - l); g.stroke(); }
+  for (let i = 0; i < 300; i++) { g.fillStyle = `rgba(110,85,50,${0.15 + r() * 0.2})`; g.beginPath(); g.arc(r() * w, r() * h, 1 + r() * 4, 0, 7); g.fill(); }
+}, [120, 120]);
+const seatTex = canvasTex(512, 256, (g, w, h) => {
+  const r = rng(9); g.fillStyle = "#26282d"; g.fillRect(0, 0, w, h);
+  for (let row = 0; row < 8; row++) for (let i = 0; i < 32; i++) {
+    const x = i * 16 + 2, y = row * 32 + 8, hue = r() < 0.07 ? "#d8d8d8" : r() < 0.5 ? "#a3242c" : "#8f1f27";
+    g.fillStyle = hue; g.fillRect(x, y, 12, 16); g.fillStyle = "rgba(255,255,255,0.18)"; g.fillRect(x, y, 12, 3); g.fillStyle = "rgba(0,0,0,0.5)"; g.fillRect(x, y + 16, 12, 6);
+  }
+}, [26, 6]);
+const boardTex = canvasTex(1024, 128, (g, w, h) => {
+  const grd = g.createLinearGradient(0, 0, w, 0); grd.addColorStop(0, "#0d2b5c"); grd.addColorStop(1, "#163f86"); g.fillStyle = grd; g.fillRect(0, 0, w, h);
+  g.fillStyle = "#f2b84b"; g.fillRect(0, h - 12, w, 12);
+  g.font = "64px Anton, Impact, sans-serif"; g.fillStyle = "#ffffff"; g.textBaseline = "middle"; g.fillText("FUTURE STARS ACADEMY", 40, h / 2); g.fillStyle = "#f2b84b"; g.fillText("· TRAIN · DREAM ·", 640, h / 2);
+}, [1, 1]);
+const lampTex = canvasTex(256, 128, (g, w, h) => { g.fillStyle = "#222"; g.fillRect(0, 0, w, h); for (let y = 0; y < 4; y++) for (let x = 0; x < 8; x++) { g.fillStyle = "#fff6dc"; g.fillRect(6 + x * 31, 6 + y * 30, 24, 22); } });
+// soccer ball: truncated-icosahedron look from a Voronoi of icosahedron vertices (black pentagons) and face centres (white hexagons)
+const ballTex = (() => {
+  const ico = new THREE.IcosahedronGeometry(1, 0), p = ico.attributes.position, verts = [], cells = [];
+  for (let i = 0; i < p.count; i++) { const v = new THREE.Vector3().fromBufferAttribute(p, i).normalize(); if (!verts.some((q) => q.distanceTo(v) < 1e-3)) verts.push(v); }
+  for (let i = 0; i < p.count; i += 3) { const c = new THREE.Vector3(); for (let k = 0; k < 3; k++) c.add(new THREE.Vector3().fromBufferAttribute(p, i + k)); cells.push([c.normalize(), 0]); }
+  verts.forEach((v) => cells.push([v, 1]));
+  return canvasTex(512, 256, (g, w, h) => {
+    const img = g.createImageData(w, h), d = new THREE.Vector3();
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const th = (x / w) * Math.PI * 2, ph = (y / h) * Math.PI; d.set(-Math.cos(th) * Math.sin(ph), Math.cos(ph), Math.sin(th) * Math.sin(ph));
+      let b1 = -2, b2 = -2, kind = 0;
+      for (const [c, k] of cells) { const dt = c.dot(d) * (k ? 1.035 : 1); if (dt > b1) { b2 = b1; b1 = dt; kind = k; } else if (dt > b2) b2 = dt; }
+      const seam = b1 - b2 < 0.012; let v = kind ? 28 : 238; if (seam) v = kind ? 18 : 150;
+      const i = (y * w + x) * 4; img.data[i] = v; img.data[i + 1] = v; img.data[i + 2] = kind ? v : v - 6; img.data[i + 3] = 255;
+    }
+    g.putImageData(img, 0, 0);
+  });
+})();
+
+// ==================================================================== the pitch and the stadium
+const world = new THREE.Group(); scene.add(world);
+const std = (o) => new THREE.MeshStandardMaterial(o);
+{
+  const gm = std({ map: grassTex, roughness: 0.96, metalness: 0 });
+  gm.onBeforeCompile = (sh) => { sh.fragmentShader = sh.fragmentShader.replace("#include <map_fragment>", "#include <map_fragment>\n diffuseColor.rgb *= mix(0.84, 1.07, step(0.5, fract(vMapUv.x / 2.0)));"); };
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(600, 600), gm); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; world.add(ground);
+  const lineM = std({ color: 0xf4f4ee, roughness: 0.8 });
+  const L = (x, z, w, d) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), lineM); m.rotation.x = -Math.PI / 2; m.position.set(x, 0.006, z); m.receiveShadow = true; world.add(m); };
+  L(-12, 0, 0.12, 68); L(41, 0, 0.12, 68); L(14.5, -34, 106, 0.12); L(14.5, 34, 106, 0.12);
+  L(24.5, 0, 0.12, 40.3); L(32.75, -20.15, 16.5, 0.12); L(32.75, 20.15, 16.5, 0.12); L(35.5, 0, 0.12, 18.3); L(38.25, -9.15, 5.5, 0.12); L(38.25, 9.15, 5.5, 0.12);
+  const ring = new THREE.Mesh(new THREE.RingGeometry(9.09, 9.21, 96), lineM); ring.rotation.x = -Math.PI / 2; ring.position.set(-12, 0.006, 0); world.add(ring);
+  // goal with net
+  const post = std({ color: 0xffffff, roughness: 0.35 }), g = new THREE.Group();
+  const P = (x1, y1, z1, len, axis) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, len, 16), post); m.position.set(x1, y1, z1); if (axis === "z") m.rotation.x = Math.PI / 2; m.castShadow = true; g.add(m); };
+  P(0, 1.22, -3.66, 2.44); P(0, 1.22, 3.66, 2.44); P(0, 2.44, 0, 7.32, "z");
+  const netTex = canvasTex(64, 64, (c, w, h) => { c.clearRect(0, 0, w, h); c.strokeStyle = "rgba(255,255,255,0.9)"; c.lineWidth = 3; c.strokeRect(0, 0, w, h); }, [30, 10]);
+  const netM = std({ map: netTex, transparent: true, alphaTest: 0.3, side: THREE.DoubleSide, roughness: 0.9 });
+  const back = new THREE.Mesh(new THREE.PlaneGeometry(7.32, 2.6), netM); back.position.set(1.6, 1.1, 0); back.rotation.y = Math.PI / 2; back.rotation.x = 0; g.add(back);
+  const top = new THREE.Mesh(new THREE.PlaneGeometry(1.8, 7.32), netM); top.rotation.x = -Math.PI / 2; top.rotation.z = Math.PI / 2; top.position.set(0.8, 2.3, 0); g.add(top);
+  g.position.set(41, 0, 0); world.add(g);
+  // cones and a ball bag along the run
+  const coneM = std({ color: 0xff6a13, roughness: 0.55 });
+  for (let i = 0; i < 9; i++) { const c = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.3, 24), coneM); c.position.set(-20 + i * 4.5, 0.15, i % 2 ? 1.6 : -1.6); c.castShadow = true; c.receiveShadow = true; world.add(c); }
+  const spareBall = std({ map: ballTex, roughness: 0.45 });
+  for (let i = 0; i < 6; i++) { const b = new THREE.Mesh(new THREE.SphereGeometry(0.11, 32, 16), spareBall); b.position.set(-26 + (i % 3) * 0.24, 0.11 + (i > 2 ? 0.19 : 0), -3.2 + (i > 2 ? 0.12 : 0) + Math.floor(i % 3) * 0.02); b.rotation.set(i, i * 2, 0); b.castShadow = true; world.add(b); }
+  // stands: tiered seating on three sides, with roofs and advertising boards
+  const seatM = std({ map: seatTex, roughness: 0.7 }), concrete = std({ color: 0x55585e, roughness: 0.95 }), roofM = std({ color: 0x2b2f36, roughness: 0.6, metalness: 0.4 });
+  function stand(len, x, z, ry) {
+    const s = new THREE.Group();
+    const tiers = new THREE.Mesh(new THREE.PlaneGeometry(len, 26), seatM); tiers.rotation.x = -Math.PI / 2 + 0.55; tiers.position.set(0, 6.3, -11); tiers.receiveShadow = true; s.add(tiers);
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(len, 14, 1), concrete); wall.position.set(0, 7, -22.5); s.add(wall);
+    const front = new THREE.Mesh(new THREE.BoxGeometry(len, 1.4, 0.4), concrete); front.position.set(0, 0.7, 0); s.add(front);
+    const roof = new THREE.Mesh(new THREE.BoxGeometry(len, 0.5, 18), roofM); roof.position.set(0, 18.5, -13); roof.rotation.x = -0.08; roof.castShadow = true; s.add(roof);
+    for (let i = -len / 2 + 8; i < len / 2; i += 16) { const c = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.35, 18, 12), roofM); c.position.set(i, 9, -21); s.add(c); }
+    const board = new THREE.Mesh(new THREE.BoxGeometry(len, 0.9, 0.12), [concrete, concrete, concrete, concrete, std({ map: boardTex, emissive: 0xffffff, emissiveMap: boardTex, emissiveIntensity: 0.35, roughness: 0.5 }), concrete]);
+    boardTex.repeat.set(len / 18, 1); board.position.set(0, 0.45, 3); s.add(board);
+    s.position.set(x, 0, z); s.rotation.y = ry; world.add(s); return s;
+  }
+  stand(130, 14, -44, 0); stand(130, 14, 44, Math.PI); stand(90, 66, 0, -Math.PI / 2);
+  // floodlight towers
+  const lampM = std({ map: lampTex, emissive: 0xfff2d0, emissiveMap: lampTex, emissiveIntensity: 1.2 });
+  for (const [x, z] of [[-48, -50], [-48, 50], [76, -50], [76, 50]]) {
+    const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.9, 42, 12), roofM); pole.position.set(x, 21, z); world.add(pole);
+    const head = new THREE.Mesh(new THREE.BoxGeometry(8, 4, 0.6), [roofM, roofM, roofM, roofM, lampM, roofM]); head.position.set(x, 43, z); head.lookAt(14, 0, 0); world.add(head);
+  }
+  // distant hills and trees past the open end
+  const hillGeo = new THREE.CylinderGeometry(420, 420, 1, 160, 6, true), hp = hillGeo.attributes.position;
+  for (let i = 0; i < hp.count; i++) { const x = hp.getX(i), z = hp.getZ(i), y = hp.getY(i); const a = Math.atan2(z, x); const hgt = 30 + 28 * Math.sin(a * 3 + 1) + 16 * Math.sin(a * 7 + 2) + 9 * Math.sin(a * 17); hp.setY(i, y > 0 ? hgt : -2); }
+  hillGeo.computeVertexNormals();
+  world.add(new THREE.Mesh(hillGeo, std({ color: 0x3f4e3a, roughness: 1, side: THREE.BackSide })));
+  const treeGeo = new THREE.ConeGeometry(2.6, 9, 8), treeM = std({ color: 0x2a4026, roughness: 1 }), r = rng(5), N = 420;
+  const trees = new THREE.InstancedMesh(treeGeo, treeM, N), m4 = new THREE.Matrix4();
+  for (let i = 0; i < N; i++) { const a = r() * Math.PI * 2, d = 110 + r() * 200, s = 0.7 + r() * 0.9; m4.compose(new THREE.Vector3(Math.cos(a) * d + 14, 4.5 * s, Math.sin(a) * d), new THREE.Quaternion(), new THREE.Vector3(s, s, s)); trees.setMatrixAt(i, m4); }
+  world.add(trees);
+}
+// grass blades along the run, swaying
+const grassU = { uTime: { value: 0 } };
+{
+  const blade = new THREE.BufferGeometry();
+  blade.setAttribute("position", new THREE.Float32BufferAttribute([-0.005, 0, 0, 0.005, 0, 0, 0, 0.05, 0], 3));
+  blade.setAttribute("normal", new THREE.Float32BufferAttribute([0, 0, 1, 0, 0, 1, 0, 0.3, 1], 3));
+  const N = 110000, r = rng(17), bm = std({ color: 0xffffff, roughness: 0.9, side: THREE.DoubleSide });
+  bm.onBeforeCompile = (sh) => {
+    sh.uniforms.uTime = grassU.uTime;
+    sh.vertexShader = "uniform float uTime;\n" + sh.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\n float h = transformed.y / 0.05; vec4 ip = instanceMatrix[3]; transformed.x += h * h * 0.012 * sin(uTime * 2.3 + ip.x * 0.7 + ip.z * 1.3);");
+  };
+  const im = new THREE.InstancedMesh(blade, bm, N), m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), c = new THREE.Color();
+  for (let i = 0; i < N; i++) {
+    const x = -32 + r() * 62, z = (r() + r() + r() - 1.5) * 3.2, s = 0.6 + r() * 0.9;
+    e.set((r() - 0.5) * 0.4, r() * Math.PI, (r() - 0.5) * 0.4); q.setFromEuler(e);
+    m4.compose(new THREE.Vector3(x, 0, z), q, new THREE.Vector3(s, s * (0.7 + r() * 0.6), s)); im.setMatrixAt(i, m4);
+    c.setHSL(0.26 + r() * 0.05, 0.45 + r() * 0.2, 0.2 + r() * 0.12); im.setColorAt(i, c);
+  }
+  im.receiveShadow = true; world.add(im);
+}
+// warm dust motes floating in the low sun
+const motes = (() => {
+  const N = 700, r = rng(23), pos = new Float32Array(N * 3); for (let i = 0; i < N; i++) { pos[i * 3] = -30 + r() * 64; pos[i * 3 + 1] = r() * 4; pos[i * 3 + 2] = -6 + r() * 12; }
+  const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  const sprite = canvasTex(64, 64, (c, w, h) => { const gr = c.createRadialGradient(32, 32, 0, 32, 32, 32); gr.addColorStop(0, "rgba(255,230,180,1)"); gr.addColorStop(1, "rgba(255,230,180,0)"); c.fillStyle = gr; c.fillRect(0, 0, w, h); });
+  const p = new THREE.Points(g, new THREE.PointsMaterial({ size: 0.035, map: sprite, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, color: 0xffd9a0, opacity: 0.8 }));
+  scene.add(p); return { p, base: pos.slice() };
+})();
+// turf kicked up on each touch (deterministic, so export frames match preview)
+const turf = (() => {
+  const N = 4 * 16, g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(new Float32Array(N * 3), 3));
+  const p = new THREE.Points(g, new THREE.PointsMaterial({ size: 0.03, color: 0x5a4a2a, transparent: true, opacity: 0.9 })); scene.add(p); return p;
+})();
+
+// ==================================================================== the ball
+const ball = new THREE.Mesh(new THREE.SphereGeometry(0.11, 48, 32), std({ map: ballTex, roughness: 0.38, metalness: 0, envMapIntensity: 0.9 }));
+ball.castShadow = true; scene.add(ball);
+
+// ==================================================================== character + animation (Mixamo FBX or GLB)
+const actor = { root: null, mixer: null, action: null, clips: [], clip: null, hips: null, foot: null, natSpeed: 3.4, touchPhase: 0, footReach: 0.45, height: 1.5, label: "" };
+const simple = (n) => n.toLowerCase().replace(/^mixamorig\d*[:_]?/, "").replace(/[^a-z0-9]/g, "");
+function upgradeMaterials(root) {
+  root.traverse((o) => {
+    if (!o.isMesh) return;
+    o.castShadow = true; o.receiveShadow = true; o.frustumCulled = false;
+    const mats = Array.isArray(o.material) ? o.material : [o.material];
+    const out = mats.map((m) => {
+      if (m.isMeshStandardMaterial) { m.envMapIntensity = 0.8; return m; }
+      const n = std({ color: m.color ? m.color.clone() : 0xffffff, map: m.map || null, normalMap: m.normalMap || null, roughness: 0.72, metalness: 0 });
+      if (n.map) n.map.colorSpace = THREE.SRGBColorSpace;
+      if (m.transparent && m.map) { n.alphaTest = 0.4; n.transparent = false; }
+      if (m.opacity === 0) n.opacity = 1;
+      n.name = m.name; return n;
+    });
+    o.material = Array.isArray(o.material) ? out : out[0];
+  });
+}
+// map a clip onto this character's bones (handles mixamorig:, mixamorig1:, sanitized names) and strip root motion
+function bindClip(clip, root) {
+  const bones = {}; root.traverse((o) => { if (o.isBone || o.type === "Bone" || o.isObject3D) bones[simple(o.name)] = bones[simple(o.name)] || o.name; });
+  const tracks = [];
+  let rootDisp = null;
+  for (const tr of clip.tracks) {
+    const dot = tr.name.lastIndexOf("."); const node = tr.name.slice(0, dot), prop = tr.name.slice(dot + 1);
+    const target = bones[simple(node)]; if (!target) continue;
+    const t2 = tr.clone(); t2.name = target + "." + prop;
+    if (prop === "position") {
+      if (simple(node) === "hips") {
+        const v = t2.values, n = v.length / 3;
+        rootDisp = [v[(n - 1) * 3] - v[0], v[(n - 1) * 3 + 2] - v[2]];
+        for (let i = 0; i < n; i++) { v[i * 3] = v[0]; v[i * 3 + 2] = v[2]; }   // keep it running in place; we move him ourselves
+      } else continue;   // drop other position tracks: they carry another rig's proportions
+    }
+    if (prop === "scale") continue;
+    tracks.push(t2);
+  }
+  const c = new THREE.AnimationClip(clip.name, clip.duration, tracks); c.userData = { rootDisp };
+  return c;
+}
+// sample the cycle: when is the right foot planted furthest forward (ball contact), and how fast does a planted foot move back (= speed with no foot slide)
+function analyseGait() {
+  const { root, mixer, clip, hips } = actor;
+  const foot = actor.foot; if (!foot) return;
+  const S = 48, fx = [], fy = [], dur = clip.duration, wp = new THREE.Vector3(), rp = new THREE.Vector3();
+  for (let i = 0; i <= S; i++) { mixer.setTime((i / S) * dur); root.updateMatrixWorld(true); foot.getWorldPosition(wp); root.getWorldPosition(rp); fx.push(wp.x - rp.x); fy.push(wp.y); }
+  const minY = Math.min(...fy); let vs = [], best = -1e9, bi = 0;
+  for (let i = 0; i < S; i++) {
+    if (fy[i] < minY + 0.05 * actor.height && fy[i + 1] < minY + 0.05 * actor.height) vs.push(-(fx[i + 1] - fx[i]) / (dur / S));
+    if (fx[i] > best) { best = fx[i]; bi = i; }
+  }
+  const v = vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : 0;
+  actor.natSpeed = v > 1 && v < 10 ? v : 3.3 * actor.height / 1.5;
+  actor.touchPhase = (bi / S) * dur; actor.footReach = cl(best, 0.2, 0.9);
+}
+function setCharacter(root, clips, label) {
+  if (actor.root) scene.remove(actor.root);
+  upgradeMaterials(root);
+  const holder = new THREE.Group(); holder.add(root); scene.add(holder);
+  actor.root = holder; actor.inner = root; actor.label = label; actor.clips = clips;
+  actor.mixer = new THREE.AnimationMixer(root); actor.hips = null; actor.foot = null;
+  root.traverse((o) => { const n = simple(o.name); if (n === "hips") actor.hips = o; if (n === "righttoebase" || (!actor.foot && n === "rightfoot")) actor.foot = o; });
+  fitHeight(); fillClipSelect(); pickClip(+$("clipSel").value || 0);
+}
+function fitHeight() {
+  const { root, inner } = actor; if (!root) return;
+  inner.scale.setScalar(1); inner.position.set(0, 0, 0); inner.rotation.set(0, 0, 0); inner.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(inner, true), h = box.max.y - box.min.y || 1;
+  actor.height = +$("hSlider").value; const s = actor.height / h;
+  inner.scale.setScalar(s); inner.position.y = -box.min.y * s;
+  root.rotation.y = Math.PI / 2;   // Mixamo characters face +Z; our run goes along +X
+}
+function fillClipSelect() {
+  const sel = $("clipSel"); sel.innerHTML = "";
+  let pick = 0;
+  actor.clips.forEach((c, i) => { const o = document.createElement("option"); o.value = i; o.textContent = c.label; sel.appendChild(o); if (/run|sprint|jog|dribbl/i.test(c.label) && !/runn?ing.?jump/i.test(c.label) && pick === 0) pick = i; });
+  sel.value = pick;
+}
+function pickClip(i) {
+  const c = actor.clips[i]; if (!c) { $("clipInfo").textContent = "No animation found: add a Mixamo running animation."; return; }
+  actor.mixer.stopAllAction();
+  actor.clip = bindClip(c.clip, actor.inner);
+  actor.action = actor.mixer.clipAction(actor.clip); actor.action.play();
+  analyseGait();
+  const rd = actor.clip.userData.rootDisp;
+  $("clipInfo").textContent = `${c.label} · ${actor.clip.duration.toFixed(2)} s cycle · ${actor.clip.tracks.length} bone tracks · natural speed ${actor.natSpeed.toFixed(2)} m/s` + (rd && Math.hypot(rd[0], rd[1]) > 1 ? " · forward drift removed (not In Place)" : "");
+  updateSpeedLabel(); draw(true);
+}
+const speed = () => actor.natSpeed * +$("sSlider").value;
+function updateSpeedLabel() { $("sOut").textContent = `${speed().toFixed(2)} m/s`; $("hOut").textContent = `${(+$("hSlider").value).toFixed(2)} m`; }
+
+// ---- loading files
+const fbxLoader = new FBXLoader(), gltfLoader = new GLTFLoader();
+async function parseFile(name, buf) {
+  const ext = name.toLowerCase().split(".").pop();
+  if (ext === "fbx") { const o = fbxLoader.parse(buf, ""); return { scene: o, animations: o.animations || [] }; }
+  if (ext === "glb" || ext === "gltf") { const g = await gltfLoader.parseAsync(buf, ""); return { scene: g.scene, animations: g.animations || [] }; }
+  throw new Error("Use .fbx or .glb files");
+}
+function countSkin(o) { let n = 0; o.traverse((m) => { if (m.isSkinnedMesh) n += m.geometry.attributes.position.count; }); return n; }
+async function loadSet(files, label) {
+  const list = $("fileList"); list.innerHTML = "";
+  const parsed = [];
+  for (const f of files) {
+    const li = document.createElement("li"); li.innerHTML = `<span class="chip">…</span><div><b></b><small>Reading…</small></div>`; li.querySelector("b").textContent = f.name; list.appendChild(li);
+    try { const p = await parseFile(f.name, f.data); p.name = f.name; p.skin = countSkin(p.scene); p.li = li; parsed.push(p); }
+    catch (e) { li.querySelector(".chip").className = "chip err"; li.querySelector(".chip").textContent = "error"; li.querySelector("small").textContent = e.message || String(e); }
+  }
+  const chars = parsed.filter((p) => p.skin > 0).sort((a, b) => b.skin - a.skin);
+  if (!chars.length) { if (parsed.length) parsed.forEach((p) => (p.li.querySelector("small").textContent = "Animation only: add your character file (With Skin) too.")); return false; }
+  const ch = chars[0], clips = [];
+  for (const p of parsed) {
+    const chip = p.li.querySelector(".chip"), small = p.li.querySelector("small");
+    if (p === ch) { chip.className = "chip char"; chip.textContent = "character"; } else if (p.animations.length) { chip.className = "chip anim"; chip.textContent = "animation"; } else { chip.textContent = "unused"; }
+    small.textContent = p === ch ? `${p.skin.toLocaleString()} skinned vertices` + (p.animations.length ? ` · ${p.animations.length} clip(s)` : "") : `${p.animations.length} clip(s)`;
+    p.animations.forEach((a, k) => { const base = p.name.replace(/\.(fbx|glb|gltf)$/i, ""); clips.push({ clip: a, label: p.animations.length > 1 || a.name && !/mixamo\.com|take 001/i.test(a.name) ? `${base} — ${a.name}` : base }); });
+  }
+  setCharacter(ch.scene, clips, label);
+  return true;
+}
+// ---- remember files on this device (IndexedDB); purely a convenience
+const idb = { open() { return new Promise((res, rej) => { try { const r = indexedDB.open("first-touch-studio", 1); r.onupgradeneeded = () => r.result.createObjectStore("files"); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); } }); },
+  async put(v) { try { const d = await this.open(); await new Promise((res) => { const tx = d.transaction("files", "readwrite"); tx.objectStore("files").put(v, "set"); tx.oncomplete = res; tx.onerror = res; }); } catch (e) {} },
+  async get() { try { const d = await this.open(); return await new Promise((res) => { const r = d.transaction("files").objectStore("files").get("set"); r.onsuccess = () => res(r.result || null); r.onerror = () => res(null); }); } catch (e) { return null; } },
+  async del() { try { const d = await this.open(); d.transaction("files", "readwrite").objectStore("files").delete("set"); } catch (e) {} } };
+async function loadSample() {
+  const j = await (await fetch("xbot.json")).json(), bin = atob(j.glb_base64), buf = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+  await loadSet([{ name: "Sample character (Mixamo X Bot, three.js examples).glb", data: buf.buffer }], "sample");
+  const i = actor.clips.findIndex((c) => /run$/i.test(c.label)); if (i >= 0) { $("clipSel").value = i; pickClip(i); }
+}
+$("fileInput").onchange = async (e) => {
+  const fl = [...e.target.files]; if (!fl.length) return;
+  const files = await Promise.all(fl.map(async (f) => ({ name: f.name, data: await f.arrayBuffer() })));
+  const ok = await loadSet(files.map((f) => ({ name: f.name, data: f.data.slice(0) })), "yours");
+  if (ok) { await idb.put(files); $("forgetBtn").hidden = false; }
+  e.target.value = "";
+};
+$("sampleBtn").onclick = () => loadSample();
+$("forgetBtn").onclick = async () => { await idb.del(); $("forgetBtn").hidden = true; loadSample(); };
+$("clipSel").onchange = (e) => pickClip(+e.target.value);
+$("hSlider").oninput = () => { fitHeight(); analyseGait(); updateSpeedLabel(); draw(true); };
+$("sSlider").oninput = () => { updateSpeedLabel(); draw(true); };
+
+// ==================================================================== the 10-second shot
+// story time: real time except a slow-motion finish
+const SLOW_AT = 8.4, SLOW = 0.45;
+const storyT = (t) => (t < SLOW_AT ? t : SLOW_AT + (t - SLOW_AT) * SLOW);
+const X0 = -24;
+const BALL_R = 0.11;
+function ballAt(tau, px) {
+  const per = actor.clip ? actor.clip.duration : 0.7, ph = actor.touchPhase;
+  const k = Math.floor((tau - ph) / per), u = (tau - ph) / per - k;
+  const off0 = actor.footReach + BALL_R + 0.05, A = 0.42 + 0.12 * cl(speed() / 4);
+  const off = off0 + A * Math.pow(Math.sin(Math.PI * u), 0.85);
+  const y = BALL_R + 0.05 * Math.max(0, Math.sin(Math.PI * u * 3)) * (u < 0.33 ? 1 : 0);
+  return { x: px + off, y, z: 0.14 + 0.05 * Math.sin(k * 1.7), k, u };
+}
+const tmpV = new THREE.Vector3(), look = new THREE.Vector3();
+function cameraAt(t, p, b) {
+  const shake = (amt) => [Math.sin(t * 1.7) * amt + Math.sin(t * 4.3) * amt * 0.4, Math.sin(t * 2.3 + 1) * amt * 0.7];
+  if (t < 3.4) {   // 1: from the ball at grass level, craning up to reveal him (side tracking)
+    const u = ss(ramp(t, 0, 3.4)), [sx, sy] = shake(0.015);
+    camera.fov = lerp(30, 40, u);
+    camera.position.set(b.x + lerp(0.7, -0.4, u) + sx, lerp(0.12, 1.05, u) + sy, lerp(1.0, 3.6, u));
+    look.set(lerp(b.x, p.x + 0.3, u), lerp(0.1, 0.95, u), lerp(b.z, 0, u));
+  } else if (t < 6.6) {   // 2: low front dolly, telephoto, sun behind him
+    const u = ramp(t, 3.4, 6.6), [sx, sy] = shake(0.02);
+    camera.fov = 26;
+    camera.position.set(p.x + lerp(7.5, 5.2, u) + sx, 0.5 + sy, lerp(-1.2, 0.9, u));
+    look.set(p.x, 0.85, 0);
+  } else {   // 3: orbit from behind and rise to a wide, the goal ahead (slow motion at the end)
+    const u = ss(ramp(t, 6.6, 10)), a = lerp(Math.PI * 0.82, Math.PI * 1.18, u), d = lerp(3.4, 7.0, u), [sx, sy] = shake(0.03);
+    camera.fov = lerp(42, 44, u);
+    camera.position.set(p.x + Math.cos(a) * d + sx, lerp(0.9, 4.8, u) + sy, Math.sin(a) * d);
+    look.set(p.x + lerp(1.0, 1.6, u), lerp(0.9, 1.1, u), 0);
+  }
+  camera.lookAt(look); camera.updateProjectionMatrix();
+}
+function renderAt(t) {
+  const tau = storyT(t), p = new THREE.Vector3(X0 + speed() * tau, 0, 0);
+  if (actor.root) { actor.root.position.copy(p); actor.mixer.setTime(tau); }
+  const b = ballAt(tau, p.x);
+  ball.position.set(b.x, b.y, b.z); ball.rotation.set(0, 0, -(b.x - X0) / BALL_R);
+  // turf bits from the last few touches
+  const tp = turf.geometry.attributes.position;
+  for (let j = 0; j < 4; j++) {
+    const kk = b.k - j, tTouch = actor.touchPhase + kk * (actor.clip ? actor.clip.duration : 0.7), age = tau - tTouch, bx = X0 + speed() * tTouch + actor.footReach + 0.1;
+    for (let i = 0; i < 16; i++) { const idx = j * 16 + i, hx = hash(kk * 31 + i), hz = hash(kk * 17 + i * 3), hv = hash(kk * 7 + i * 5);
+      if (age < 0 || age > 0.7) { tp.setXYZ(idx, 0, -10, 0); continue; }
+      tp.setXYZ(idx, bx + (hx - 0.3) * 1.2 * age, Math.max(0.01, (0.8 + hv * 1.6) * age - 4.9 * age * age), 0.14 + (hz - 0.5) * 0.9 * age); }
+  }
+  tp.needsUpdate = true;
+  // motes drift
+  const mp = motes.p.geometry.attributes.position;
+  for (let i = 0; i < mp.count; i++) { mp.setXYZ(i, motes.base[i * 3] + Math.sin(tau * 0.3 + i) * 0.4, motes.base[i * 3 + 1] + ((tau * 0.08 + hash(i)) % 1) * 0.6, motes.base[i * 3 + 2] + Math.cos(tau * 0.25 + i * 1.3) * 0.4); }
+  mp.needsUpdate = true;
+  grassU.uTime.value = tau;
+  sun.position.copy(p).addScaledVector(SUN, 80); sun.target.position.copy(p); sun.target.updateMatrixWorld();
+  cameraAt(t, p, b);
+  fill.position.copy(camera.position).add(new THREE.Vector3(0, 2, 0)); fill.target.position.copy(p); fill.target.updateMatrixWorld();
+  composer.render();
+}
+// overlay: titles, cut flashes, vignette, fades (drawn on a 2D canvas so it also lands in the export)
+function drawOverlay(ctx, t, W, H) {
+  ctx.clearRect(0, 0, W, H);
+  const v = ctx.createRadialGradient(W / 2, H * 0.5, H * 0.25, W / 2, H * 0.5, H * 0.75); v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,0.55)"); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+  const k = W / 1080;
+  const a = ss(ramp(t, 0.7, 1.2)) * (1 - ss(ramp(t, 3.0, 3.35)));
+  if (a > 0) {
+    ctx.save(); ctx.globalAlpha = a; ctx.textAlign = "center"; ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 24 * k;
+    ctx.fillStyle = "#f2b84b"; ctx.font = `800 ${30 * k}px Inter, sans-serif`; ctx.letterSpacing = `${10 * k}px`; ctx.fillText("CHAPTER ONE", W / 2, 300 * k);
+    ctx.letterSpacing = `${3 * k}px`; ctx.fillStyle = "#ffffff"; ctx.font = `${118 * k}px Anton, Impact, sans-serif`; ctx.fillText("THE BOY", W / 2, 430 * k); ctx.fillText("WITH THE BALL", W / 2, 550 * k);
+    ctx.restore();
+  }
+  let blk = 1 - ss(ramp(t, 0, 0.45));
+  for (const c of [3.4, 6.6]) { const d = t - c; if (d >= 0 && d < 0.12) blk = Math.max(blk, 0.35 * (1 - d / 0.12)); }
+  blk = Math.max(blk, ss(ramp(t, 9.55, 10)));
+  if (blk > 0) { ctx.fillStyle = `rgba(0,0,0,${blk})`; ctx.fillRect(0, 0, W, H); }
+}
+
+// ==================================================================== preview loop
+let t = 0, playing = true, last = performance.now(), exporting = false, needsDraw = true, lastW = -1, lastH = -1;
+function size() {
+  if (exporting) return;
+  const r = $("stage").getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+  const w = Math.max(2, Math.round(r.width * dpr)), h = Math.max(2, Math.round(r.height * dpr));
+  if (lastW !== w || lastH !== h) { lastW = w; lastH = h; renderer.setPixelRatio(1); renderer.setSize(w, h, false); composer.setSize(w, h); bloom.resolution.set(w, h); ovCanvas.width = w; ovCanvas.height = h; needsDraw = true; }
+}
+function draw(force) { if (force) needsDraw = true; }
+function tick(now) {
+  requestAnimationFrame(tick);
+  if (exporting) return;
+  size();
+  const dt = Math.min(0.1, (now - last) / 1000); last = now;
+  if (playing && actor.root) { t += dt; if (t >= DUR) t = 0; needsDraw = true; }
+  if (!needsDraw || !actor.root) return;
+  needsDraw = false;
+  renderAt(t); drawOverlay(ov, t, ovCanvas.width, ovCanvas.height);
+  $("scrub").value = t; $("time").textContent = `${t.toFixed(1)} / ${DUR.toFixed(1)} s`;
+}
+$("playBtn").onclick = () => { playing = !playing; $("playBtn").textContent = playing ? "❚❚" : "▶"; $("playBtn").setAttribute("aria-label", playing ? "Pause" : "Play"); };
+$("scrub").oninput = (e) => { t = +e.target.value; needsDraw = true; };
+new ResizeObserver(() => (needsDraw = true)).observe($("stage"));
+
+// ==================================================================== export (WebCodecs + mp4-muxer)
+let cancel = false, result = null;
+let downloadsP = null; try { downloadsP = window.claude?.use ? window.claude.use("downloads").catch(() => null) : null; } catch (e) {}
+async function pickCodec(w, h) {
+  if (!("VideoEncoder" in window)) return null;
+  for (const [m, codec] of [["avc", "avc1.640028"], ["avc", "avc1.4d0028"], ["avc", "avc1.42e028"], ["vp9", "vp09.00.40.08"]]) {
+    const cfg = { codec, width: w, height: h, bitrate: 10_000_000, framerate: FPS }; if (m === "avc") cfg.avc = { format: "avc" };
+    try { if ((await VideoEncoder.isConfigSupported(cfg)).supported) return { m, cfg }; } catch (e) {}
+  }
+  return null;
+}
+$("exportBtn").onclick = async () => {
+  if (exporting || !actor.root) return;
+  const W = window.__EXPORT_W || 1080, H = Math.round(W * 16 / 9), frames = window.__EXPORT_FRAMES || DUR * FPS;
+  const vc = await pickCodec(W, H);
+  if (!vc || !window.Mp4Muxer) { $("progress").hidden = false; $("ptext").textContent = "This browser has no video encoder (WebCodecs). Use Safari 16.4+ or Chrome."; return; }
+  exporting = true; cancel = false; $("exportBtn").disabled = true; $("progress").hidden = false; $("result").hidden = true;
+  let lock = null; try { lock = await navigator.wakeLock?.request("screen"); } catch (e) {}
+  const out = document.createElement("canvas"); out.width = W; out.height = H; const octx = out.getContext("2d");
+  const ovl = document.createElement("canvas"); ovl.width = W; ovl.height = H; const lctx = ovl.getContext("2d");
+  renderer.setPixelRatio(1); renderer.setSize(W, H, false); composer.setSize(W, H); bloom.resolution.set(W, H);
+  try {
+    const muxer = new Mp4Muxer.Muxer({ target: new Mp4Muxer.ArrayBufferTarget(), video: { codec: vc.m, width: W, height: H, frameRate: FPS }, fastStart: "in-memory", firstTimestampBehavior: "offset" });
+    let err = null; const enc = new VideoEncoder({ output: (c, m) => muxer.addVideoChunk(c, m), error: (e) => (err = e) }); enc.configure(vc.cfg);
+    const t0 = performance.now();
+    for (let f = 0; f < frames; f++) {
+      if (cancel) throw new Error("cancelled"); if (err) throw err;
+      const tt = f / FPS; renderAt(tt); drawOverlay(lctx, tt, W, H);
+      octx.drawImage(glCanvas, 0, 0, W, H); octx.drawImage(ovl, 0, 0);
+      const vf = new VideoFrame(out, { timestamp: Math.round(f * 1e6 / FPS), duration: Math.round(1e6 / FPS) }); enc.encode(vf, { keyFrame: f % 30 === 0 }); vf.close();
+      while (enc.encodeQueueSize > 4) await new Promise((r) => setTimeout(r, 4));
+      if (f % 3 === 0) { const el = (performance.now() - t0) / 1000, eta = el / (f + 1) * (frames - f - 1); $("bar").style.width = ((f + 1) / frames * 100).toFixed(1) + "%"; $("ptext").textContent = `Frame ${f + 1} of ${frames} · ~${Math.ceil(eta)} s left`; await new Promise((r) => setTimeout(r, 0)); }
+    }
+    await enc.flush(); muxer.finalize();
+    result = new Blob([muxer.target.buffer], { type: "video/mp4" });
+    $("preview").src = URL.createObjectURL(result); $("result").hidden = false;
+    $("saveNote").textContent = `${(result.size / 1048576).toFixed(1)} MB · ${vc.m.toUpperCase()}`; $("ptext").textContent = "Done.";
+  } catch (e) { $("ptext").textContent = e.message === "cancelled" ? "Export cancelled." : "Export failed: " + (e.message || e); }
+  finally { try { lock?.release(); } catch (e) {} exporting = false; $("exportBtn").disabled = false; lastW = -1; size(); needsDraw = true; }
+};
+$("cancelBtn").onclick = () => (cancel = true);
+$("saveBtn").onclick = async () => {
+  if (!result) return; const name = "first-touch-scene1-1080x1920.mp4";
+  const dl = downloadsP ? await downloadsP : null;
+  if (dl) { try { await dl.save({ filename: name, data: result }); $("saveNote").textContent = "Saved. On iPad, choose “Save Video” in the share sheet to put it in Photos."; } catch (e) { $("saveNote").textContent = e?.code === "declined" ? "Save cancelled." : "Couldn't save: " + (e?.message || e); } return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(result); a.download = name; document.body.appendChild(a); a.click(); a.remove();
+};
+
+// ==================================================================== boot
+(async () => {
+  try {
+    const saved = await idb.get();
+    let ok = false;
+    if (saved && saved.length) { ok = await loadSet(saved.map((f) => ({ name: f.name, data: f.data.slice(0) })), "yours"); if (ok) $("forgetBtn").hidden = false; }
+    if (!ok) await loadSample();
+    $("loading").hidden = true; needsDraw = true;
+  } catch (e) { $("loading").textContent = "Couldn't start the 3D scene: " + (e.message || e); }
+  requestAnimationFrame(tick);
+  window.__studio = { renderAt: (x) => { t = x; playing = false; needsDraw = true; }, actor };
+})();
+</script>
