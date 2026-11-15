@@ -66,21 +66,17 @@
 
 ---
 
-## PHASE 3: Finished narration (60 s)
-163 words. At a brisk, natural documentary pace of about 2.7 words a second, that is about 60 s; at a slower 2.5 words a second it would run about 65 s. Timings are targets.
+## PHASE 3: Finished narration (60 s, as rendered)
+This is the voiceover used in the rendered video (Kokoro TTS voice am_michael). It was tightened from the first draft so each 20-second part holds its own sentences: the parts cut at exactly 20 s and 40 s. Every fact is unchanged; details cut from the voice (1979–2014, the $765 car payment, "not guaranteed", 72%) are on screen.
 
-| Scene | Time | Narration (exact) |
-|---|---|---|
-| 1 | 0–10 s | "Alarm. Commute. Forty hours. Payday… and a week later, it's gone. So is the nine-to-five a trap?" |
-| 2 | 10–20 s | "Workers fought for it. In 1886, hundreds of thousands struck for an eight-hour day. By 1940, federal law made forty hours the standard week." |
-| 3 | 20–30 s | "But pay crawled. From 1979 to 2014, typical weekly pay rose just eight percent after inflation. Today, nearly half of renters spend over thirty percent of their income on housing." |
-| 4 | 30–40 s | "Thirty-seven percent of adults couldn't cover a four-hundred-dollar surprise with cash. So many borrow, at around twenty-one percent interest. Add a car payment, and there's little left to save." |
-| 5 | 40–50 s | "Freedom is built slowly. An emergency fund first. Then investing: two hundred dollars a month for thirty years, at a seven percent average return, could grow to about two hundred forty-four thousand. Not guaranteed." |
-| 6 | 50–60 s | "And a steady job can help: most private workers can get a retirement plan. The nine-to-five isn't necessarily the trap. It's working your entire life without building financial freedom." |
-
-To gain time, cut "Not guaranteed" from the voice and keep it on screen as a footnote.
-
----
+| Part | Scene | Time | Narration (exact) |
+|---|---|---|---|
+| 1 | 1 | 0.3–6.5 s | "Alarm. Commute. Forty hours. Payday… and a week later, it's gone. So is the nine-to-five a trap?" |
+| 1 | 2 | 9.0–18.1 s | "In 1886, hundreds of thousands of workers struck for an eight-hour day. By 1940, federal law made forty hours the standard week." |
+| 2 | 3 | 20.3–29.8 s | "Over thirty-five years, typical pay rose just eight percent after inflation. Today, nearly half of renters spend over thirty percent of income on housing." |
+| 2 | 4 | 30.9–38.7 s | "Thirty-seven percent couldn't cover a four-hundred-dollar surprise with cash. So many borrow, at about twenty-one percent interest." |
+| 3 | 5 | 40.3–50.2 s | "Build freedom slowly: emergency fund first, then invest. Two hundred a month at seven percent, for thirty years, is about two hundred forty-four thousand." |
+| 3 | 6 | 50.5–58.9 s | "A steady job helps. The nine-to-five isn't necessarily the trap. It's working your entire life without building financial freedom." |
 
 ## Scene generation prompts (independent; each works on its own)
 

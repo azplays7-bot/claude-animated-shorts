@@ -1,0 +1,249 @@
+{
+ "voice": "am_michael",
+ "speed": 1.1,
+ "scenes": {
+  "1": [
+   0.3,
+   6.5
+  ],
+  "2": [
+   9.0,
+   18.123
+  ],
+  "3": [
+   20.25,
+   29.821
+  ],
+  "4": [
+   30.9,
+   38.679
+  ],
+  "5": [
+   40.25,
+   50.205
+  ],
+  "6": [
+   50.505,
+   58.915
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.3,
+   "end": 4.439
+  },
+  {
+   "scene": 1,
+   "start": 4.559,
+   "end": 6.5
+  },
+  {
+   "scene": 2,
+   "start": 9.0,
+   "end": 13.907
+  },
+  {
+   "scene": 2,
+   "start": 14.027,
+   "end": 18.123
+  },
+  {
+   "scene": 3,
+   "start": 20.25,
+   "end": 25.114
+  },
+  {
+   "scene": 3,
+   "start": 25.234,
+   "end": 29.821
+  },
+  {
+   "scene": 4,
+   "start": 30.9,
+   "end": 35.359
+  },
+  {
+   "scene": 4,
+   "start": 35.479,
+   "end": 38.679
+  },
+  {
+   "scene": 5,
+   "start": 40.25,
+   "end": 44.111
+  },
+  {
+   "scene": 5,
+   "start": 44.231,
+   "end": 50.205
+  },
+  {
+   "scene": 6,
+   "start": 50.505,
+   "end": 51.955
+  },
+  {
+   "scene": 6,
+   "start": 52.075,
+   "end": 54.891
+  },
+  {
+   "scene": 6,
+   "start": 55.011,
+   "end": 58.915
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.3,
+   "end": 2.193,
+   "text": "ALARM. COMMUTE. 40 HOURS."
+  },
+  {
+   "scene": 1,
+   "start": 2.193,
+   "end": 2.734,
+   "text": "PAYDAY..."
+  },
+  {
+   "scene": 1,
+   "start": 2.734,
+   "end": 4.439,
+   "text": "and a week later, it's GONE."
+  },
+  {
+   "scene": 1,
+   "start": 4.559,
+   "end": 6.5,
+   "text": "So is the 9-to-5 a TRAP?"
+  },
+  {
+   "scene": 2,
+   "start": 9.0,
+   "end": 10.223,
+   "text": "In 1886,"
+  },
+  {
+   "scene": 2,
+   "start": 10.223,
+   "end": 12.473,
+   "text": "hundreds of thousands of workers"
+  },
+  {
+   "scene": 2,
+   "start": 12.473,
+   "end": 13.907,
+   "text": "STRUCK for an 8-HOUR DAY."
+  },
+  {
+   "scene": 2,
+   "start": 14.027,
+   "end": 16.407,
+   "text": "By 1940, federal law"
+  },
+  {
+   "scene": 2,
+   "start": 16.407,
+   "end": 18.123,
+   "text": "made 40 HOURS the standard week."
+  },
+  {
+   "scene": 3,
+   "start": 20.25,
+   "end": 21.913,
+   "text": "Over 35 years,"
+  },
+  {
+   "scene": 3,
+   "start": 21.913,
+   "end": 25.114,
+   "text": "typical pay rose just 8% after INFLATION."
+  },
+  {
+   "scene": 3,
+   "start": 25.234,
+   "end": 27.117,
+   "text": "Today, nearly HALF of renters"
+  },
+  {
+   "scene": 3,
+   "start": 27.117,
+   "end": 29.821,
+   "text": "spend over 30% of income on HOUSING."
+  },
+  {
+   "scene": 4,
+   "start": 30.9,
+   "end": 32.79,
+   "text": "37% couldn't cover"
+  },
+  {
+   "scene": 4,
+   "start": 32.79,
+   "end": 35.359,
+   "text": "a $400 SURPRISE with cash."
+  },
+  {
+   "scene": 4,
+   "start": 35.479,
+   "end": 36.658,
+   "text": "So many BORROW,"
+  },
+  {
+   "scene": 4,
+   "start": 36.658,
+   "end": 38.679,
+   "text": "at about 21% INTEREST."
+  },
+  {
+   "scene": 5,
+   "start": 40.25,
+   "end": 41.549,
+   "text": "Build FREEDOM slowly:"
+  },
+  {
+   "scene": 5,
+   "start": 41.549,
+   "end": 44.111,
+   "text": "EMERGENCY FUND first, then INVEST."
+  },
+  {
+   "scene": 5,
+   "start": 44.231,
+   "end": 47.803,
+   "text": "$200 a month at 7%, for 30 years,"
+  },
+  {
+   "scene": 5,
+   "start": 47.803,
+   "end": 50.205,
+   "text": "is about $244,000."
+  },
+  {
+   "scene": 6,
+   "start": 50.505,
+   "end": 51.955,
+   "text": "A STEADY JOB helps."
+  },
+  {
+   "scene": 6,
+   "start": 52.075,
+   "end": 54.891,
+   "text": "The 9-to-5 isn't necessarily the TRAP."
+  },
+  {
+   "scene": 6,
+   "start": 55.011,
+   "end": 56.927,
+   "text": "It's working your ENTIRE LIFE"
+  },
+  {
+   "scene": 6,
+   "start": 56.927,
+   "end": 58.915,
+   "text": "without building FINANCIAL FREEDOM."
+  }
+ ]
+}
