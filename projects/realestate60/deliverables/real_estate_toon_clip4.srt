@@ -1,0 +1,20 @@
+1
+00:00:00,200 --> 00:00:01,292
+Mortgage: $1,200.
+
+2
+00:00:01,292 --> 00:00:03,343
+Taxes and insurance: $250.
+
+3
+00:00:03,343 --> 00:00:05,427
+Repairs and savings: $200.
+
+4
+00:00:05,547 --> 00:00:07,637
+That leaves $150 a month.
+
+5
+00:00:07,757 --> 00:00:09,421
+But one big REPAIR could wipe it out.
+

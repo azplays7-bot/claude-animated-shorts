@@ -1,0 +1,20 @@
+1
+00:00:00,200 --> 00:00:01,225
+Instead of moving in,
+
+2
+00:00:01,225 --> 00:00:02,781
+Alex RENTS it to a family.
+
+3
+00:00:02,901 --> 00:00:05,056
+They pay him $1,800 a month.
+
+4
+00:00:05,176 --> 00:00:06,410
+But that's NOT all profit.
+
+5
+00:00:06,410 --> 00:00:08,163
+Alex still has BILLS to pay.
+
