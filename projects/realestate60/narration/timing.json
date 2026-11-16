@@ -1,0 +1,288 @@
+{
+ "voice": "am_puck",
+ "speed": 1.12,
+ "scenes": {
+  "1": [
+   0.25,
+   6.194
+  ],
+  "2": [
+   10.2,
+   18.931
+  ],
+  "3": [
+   20.2,
+   28.163
+  ],
+  "4": [
+   30.2,
+   39.421
+  ],
+  "5": [
+   40.2,
+   49.059
+  ],
+  "6": [
+   50.2,
+   57.125
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 4.559
+  },
+  {
+   "scene": 1,
+   "start": 4.679,
+   "end": 6.194
+  },
+  {
+   "scene": 2,
+   "start": 10.2,
+   "end": 13.08
+  },
+  {
+   "scene": 2,
+   "start": 13.2,
+   "end": 17.189
+  },
+  {
+   "scene": 2,
+   "start": 17.309,
+   "end": 18.931
+  },
+  {
+   "scene": 3,
+   "start": 20.2,
+   "end": 22.781
+  },
+  {
+   "scene": 3,
+   "start": 22.901,
+   "end": 25.056
+  },
+  {
+   "scene": 3,
+   "start": 25.176,
+   "end": 28.163
+  },
+  {
+   "scene": 4,
+   "start": 30.2,
+   "end": 35.427
+  },
+  {
+   "scene": 4,
+   "start": 35.547,
+   "end": 37.637
+  },
+  {
+   "scene": 4,
+   "start": 37.757,
+   "end": 39.421
+  },
+  {
+   "scene": 5,
+   "start": 40.2,
+   "end": 42.824
+  },
+  {
+   "scene": 5,
+   "start": 42.944,
+   "end": 46.016
+  },
+  {
+   "scene": 5,
+   "start": 46.136,
+   "end": 49.059
+  },
+  {
+   "scene": 6,
+   "start": 50.2,
+   "end": 54.424
+  },
+  {
+   "scene": 6,
+   "start": 54.544,
+   "end": 57.125
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.25,
+   "end": 1.522,
+   "text": "What if you could OWN a house,"
+  },
+  {
+   "scene": 1,
+   "start": 1.522,
+   "end": 2.785,
+   "text": "let someone else LIVE in it,"
+  },
+  {
+   "scene": 1,
+   "start": 2.785,
+   "end": 4.559,
+   "text": "and get PAID every single month?"
+  },
+  {
+   "scene": 1,
+   "start": 4.679,
+   "end": 5.135,
+   "text": "Meet ALEX."
+  },
+  {
+   "scene": 1,
+   "start": 5.135,
+   "end": 6.194,
+   "text": "Here's how it WORKS."
+  },
+  {
+   "scene": 2,
+   "start": 10.2,
+   "end": 13.08,
+   "text": "Alex buys a $250,000 house."
+  },
+  {
+   "scene": 2,
+   "start": 13.2,
+   "end": 14.76,
+   "text": "He puts down $50,000,"
+  },
+  {
+   "scene": 2,
+   "start": 14.76,
+   "end": 17.189,
+   "text": "and borrows $200,000 from the BANK."
+  },
+  {
+   "scene": 2,
+   "start": 17.309,
+   "end": 18.931,
+   "text": "Now he pays it back EVERY MONTH."
+  },
+  {
+   "scene": 3,
+   "start": 20.2,
+   "end": 21.225,
+   "text": "Instead of moving in,"
+  },
+  {
+   "scene": 3,
+   "start": 21.225,
+   "end": 22.781,
+   "text": "Alex RENTS it to a family."
+  },
+  {
+   "scene": 3,
+   "start": 22.901,
+   "end": 25.056,
+   "text": "They pay him $1,800 a month."
+  },
+  {
+   "scene": 3,
+   "start": 25.176,
+   "end": 26.41,
+   "text": "But that's NOT all profit."
+  },
+  {
+   "scene": 3,
+   "start": 26.41,
+   "end": 28.163,
+   "text": "Alex still has BILLS to pay."
+  },
+  {
+   "scene": 4,
+   "start": 30.2,
+   "end": 31.292,
+   "text": "Mortgage: $1,200."
+  },
+  {
+   "scene": 4,
+   "start": 31.292,
+   "end": 33.343,
+   "text": "Taxes and insurance: $250."
+  },
+  {
+   "scene": 4,
+   "start": 33.343,
+   "end": 35.427,
+   "text": "Repairs and savings: $200."
+  },
+  {
+   "scene": 4,
+   "start": 35.547,
+   "end": 37.637,
+   "text": "That leaves $150 a month."
+  },
+  {
+   "scene": 4,
+   "start": 37.757,
+   "end": 39.421,
+   "text": "But one big REPAIR could wipe it out."
+  },
+  {
+   "scene": 5,
+   "start": 40.2,
+   "end": 41.149,
+   "text": "Here's the BIGGER win."
+  },
+  {
+   "scene": 5,
+   "start": 41.149,
+   "end": 42.824,
+   "text": "Every payment SHRINKS the loan."
+  },
+  {
+   "scene": 5,
+   "start": 42.944,
+   "end": 44.491,
+   "text": "And IF the home's value rises,"
+  },
+  {
+   "scene": 5,
+   "start": 44.491,
+   "end": 46.016,
+   "text": "Alex's EQUITY grows."
+  },
+  {
+   "scene": 5,
+   "start": 46.136,
+   "end": 47.471,
+   "text": "EQUITY is the home's value,"
+  },
+  {
+   "scene": 5,
+   "start": 47.471,
+   "end": 49.059,
+   "text": "minus what he still OWES."
+  },
+  {
+   "scene": 6,
+   "start": 50.2,
+   "end": 52.78,
+   "text": "Rent, payoff, and rising value CAN build wealth,"
+  },
+  {
+   "scene": 6,
+   "start": 52.78,
+   "end": 54.424,
+   "text": "but nothing is GUARANTEED."
+  },
+  {
+   "scene": 6,
+   "start": 54.544,
+   "end": 55.156,
+   "text": "The SECRET?"
+  },
+  {
+   "scene": 6,
+   "start": 55.156,
+   "end": 57.125,
+   "text": "Buy a home that makes financial SENSE."
+  }
+ ]
+}
