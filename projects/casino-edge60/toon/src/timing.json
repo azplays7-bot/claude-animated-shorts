@@ -1,0 +1,319 @@
+{
+ "voice": "am_puck",
+ "speed": 1.05,
+ "scenes": {
+  "1": [
+   0.35,
+   4.753
+  ],
+  "2": [
+   5.653,
+   12.83
+  ],
+  "3": [
+   13.73,
+   24.551
+  ],
+  "4": [
+   25.451,
+   30.729
+  ],
+  "5": [
+   31.629,
+   38.144
+  ],
+  "6": [
+   39.044,
+   43.298
+  ],
+  "7": [
+   44.198,
+   55.734
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.206
+  },
+  {
+   "scene": 1,
+   "start": 2.556,
+   "end": 4.753
+  },
+  {
+   "scene": 2,
+   "start": 5.653,
+   "end": 7.787
+  },
+  {
+   "scene": 2,
+   "start": 8.137,
+   "end": 12.83
+  },
+  {
+   "scene": 3,
+   "start": 13.73,
+   "end": 16.887
+  },
+  {
+   "scene": 3,
+   "start": 17.237,
+   "end": 18.283
+  },
+  {
+   "scene": 3,
+   "start": 18.633,
+   "end": 21.705
+  },
+  {
+   "scene": 3,
+   "start": 22.055,
+   "end": 24.551
+  },
+  {
+   "scene": 4,
+   "start": 25.451,
+   "end": 26.475
+  },
+  {
+   "scene": 4,
+   "start": 26.825,
+   "end": 30.729
+  },
+  {
+   "scene": 5,
+   "start": 31.629,
+   "end": 32.589
+  },
+  {
+   "scene": 5,
+   "start": 32.939,
+   "end": 38.144
+  },
+  {
+   "scene": 6,
+   "start": 39.044,
+   "end": 40.324
+  },
+  {
+   "scene": 6,
+   "start": 40.674,
+   "end": 43.298
+  },
+  {
+   "scene": 7,
+   "start": 44.198,
+   "end": 45.35
+  },
+  {
+   "scene": 7,
+   "start": 46.3,
+   "end": 46.876
+  },
+  {
+   "scene": 7,
+   "start": 47.226,
+   "end": 49.231
+  },
+  {
+   "scene": 7,
+   "start": 49.581,
+   "end": 52.397
+  },
+  {
+   "scene": 7,
+   "start": 52.747,
+   "end": 55.734
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.206,
+   "text": "Every casino has ONE weakness."
+  },
+  {
+   "scene": 1,
+   "start": 2.556,
+   "end": 3.338,
+   "text": "Stay to the END,"
+  },
+  {
+   "scene": 1,
+   "start": 3.338,
+   "end": 4.753,
+   "text": "and I'll show you what it is."
+  },
+  {
+   "scene": 2,
+   "start": 5.653,
+   "end": 6.242,
+   "text": "This is MAX."
+  },
+  {
+   "scene": 2,
+   "start": 6.242,
+   "end": 7.787,
+   "text": "Tonight, he's playing ROULETTE."
+  },
+  {
+   "scene": 2,
+   "start": 8.137,
+   "end": 9.687,
+   "text": "The wheel has 38 POCKETS:"
+  },
+  {
+   "scene": 2,
+   "start": 9.687,
+   "end": 12.83,
+   "text": "1 to 36, plus 0 and 00."
+  },
+  {
+   "scene": 3,
+   "start": 13.73,
+   "end": 15.699,
+   "text": "Bet $1 on EVERY number,"
+  },
+  {
+   "scene": 3,
+   "start": 15.699,
+   "end": 16.887,
+   "text": "that's $38."
+  },
+  {
+   "scene": 3,
+   "start": 17.237,
+   "end": 18.283,
+   "text": "One number WINS."
+  },
+  {
+   "scene": 3,
+   "start": 18.633,
+   "end": 20.5,
+   "text": "It pays 35 to 1,"
+  },
+  {
+   "scene": 3,
+   "start": 20.5,
+   "end": 21.705,
+   "text": "so you get back $36."
+  },
+  {
+   "scene": 3,
+   "start": 22.055,
+   "end": 23.543,
+   "text": "The casino keeps $2."
+  },
+  {
+   "scene": 3,
+   "start": 23.543,
+   "end": 24.551,
+   "text": "EVERY SPIN."
+  },
+  {
+   "scene": 4,
+   "start": 25.451,
+   "end": 26.475,
+   "text": "That's the HOUSE EDGE."
+  },
+  {
+   "scene": 4,
+   "start": 26.825,
+   "end": 27.802,
+   "text": "SLOTS, BLACKJACK, CRAPS,"
+  },
+  {
+   "scene": 4,
+   "start": 27.802,
+   "end": 30.729,
+   "text": "every game has one, built into the PAYOUTS."
+  },
+  {
+   "scene": 5,
+   "start": 31.629,
+   "end": 32.589,
+   "text": "And the ROOM helps."
+  },
+  {
+   "scene": 5,
+   "start": 32.939,
+   "end": 34.408,
+   "text": "CHIPS don't feel like cash,"
+  },
+  {
+   "scene": 5,
+   "start": 34.408,
+   "end": 35.9,
+   "text": "free DRINKS keep you seated,"
+  },
+  {
+   "scene": 5,
+   "start": 35.9,
+   "end": 38.144,
+   "text": "and many casinos hide the CLOCKS."
+  },
+  {
+   "scene": 6,
+   "start": 39.044,
+   "end": 40.324,
+   "text": "Anyone can win ONE night."
+  },
+  {
+   "scene": 6,
+   "start": 40.674,
+   "end": 42.234,
+   "text": "But over MILLIONS of bets,"
+  },
+  {
+   "scene": 6,
+   "start": 42.234,
+   "end": 43.298,
+   "text": "the MATH always wins."
+  },
+  {
+   "scene": 7,
+   "start": 44.198,
+   "end": 45.35,
+   "text": "So what's the WEAKNESS?"
+  },
+  {
+   "scene": 7,
+   "start": 46.3,
+   "end": 46.876,
+   "text": "TIME."
+  },
+  {
+   "scene": 7,
+   "start": 47.226,
+   "end": 49.231,
+   "text": "The edge only works if you KEEP PLAYING."
+  },
+  {
+   "scene": 7,
+   "start": 49.581,
+   "end": 50.992,
+   "text": "Max is UP $50,"
+  },
+  {
+   "scene": 7,
+   "start": 50.992,
+   "end": 52.397,
+   "text": "and he WALKS OUT the door."
+  },
+  {
+   "scene": 7,
+   "start": 52.747,
+   "end": 54.224,
+   "text": "The house can't win back money"
+  },
+  {
+   "scene": 7,
+   "start": 54.224,
+   "end": 55.734,
+   "text": "that already LEFT the building."
+  }
+ ]
+}
