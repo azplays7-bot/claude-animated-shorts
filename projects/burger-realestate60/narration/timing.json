@@ -1,0 +1,276 @@
+{
+ "voice": "am_puck",
+ "speed": 1.05,
+ "scenes": {
+  "1": [
+   0.35,
+   6.682
+  ],
+  "2": [
+   7.582,
+   17.361
+  ],
+  "3": [
+   18.261,
+   26.044
+  ],
+  "4": [
+   26.944,
+   38.311
+  ],
+  "5": [
+   39.211,
+   45.001
+  ],
+  "6": [
+   45.901,
+   55.347
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.355
+  },
+  {
+   "scene": 1,
+   "start": 2.705,
+   "end": 5.415
+  },
+  {
+   "scene": 1,
+   "start": 5.765,
+   "end": 6.682
+  },
+  {
+   "scene": 2,
+   "start": 7.582,
+   "end": 13.619
+  },
+  {
+   "scene": 2,
+   "start": 13.969,
+   "end": 17.361
+  },
+  {
+   "scene": 3,
+   "start": 18.261,
+   "end": 19.349
+  },
+  {
+   "scene": 3,
+   "start": 19.699,
+   "end": 23.219
+  },
+  {
+   "scene": 3,
+   "start": 23.569,
+   "end": 26.044
+  },
+  {
+   "scene": 4,
+   "start": 26.944,
+   "end": 29.589
+  },
+  {
+   "scene": 4,
+   "start": 29.939,
+   "end": 31.603
+  },
+  {
+   "scene": 4,
+   "start": 31.953,
+   "end": 38.311
+  },
+  {
+   "scene": 5,
+   "start": 39.211,
+   "end": 40.939
+  },
+  {
+   "scene": 5,
+   "start": 41.289,
+   "end": 45.001
+  },
+  {
+   "scene": 6,
+   "start": 45.901,
+   "end": 47.565
+  },
+  {
+   "scene": 6,
+   "start": 47.915,
+   "end": 52.885
+  },
+  {
+   "scene": 6,
+   "start": 53.235,
+   "end": 55.347
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.355,
+   "text": "McDonald's sells BILLIONS of burgers."
+  },
+  {
+   "scene": 1,
+   "start": 2.705,
+   "end": 3.993,
+   "text": "But a HUGE share of its money"
+  },
+  {
+   "scene": 1,
+   "start": 3.993,
+   "end": 5.415,
+   "text": "comes from something ELSE."
+  },
+  {
+   "scene": 1,
+   "start": 5.765,
+   "end": 6.682,
+   "text": "REAL ESTATE."
+  },
+  {
+   "scene": 2,
+   "start": 7.582,
+   "end": 10.475,
+   "text": "About 95% of its restaurants"
+  },
+  {
+   "scene": 2,
+   "start": 10.475,
+   "end": 11.748,
+   "text": "are run by FRANCHISEES,"
+  },
+  {
+   "scene": 2,
+   "start": 11.748,
+   "end": 13.619,
+   "text": "independent owners like SAM."
+  },
+  {
+   "scene": 2,
+   "start": 13.969,
+   "end": 15.97,
+   "text": "Sam runs the kitchen, hires the staff,"
+  },
+  {
+   "scene": 2,
+   "start": 15.97,
+   "end": 17.361,
+   "text": "and flips the BURGERS."
+  },
+  {
+   "scene": 3,
+   "start": 18.261,
+   "end": 19.349,
+   "text": "But here's the TWIST."
+  },
+  {
+   "scene": 3,
+   "start": 19.699,
+   "end": 21.562,
+   "text": "McDonald's often OWNS the building,"
+  },
+  {
+   "scene": 3,
+   "start": 21.562,
+   "end": 23.219,
+   "text": "and much of the LAND under it."
+  },
+  {
+   "scene": 3,
+   "start": 23.569,
+   "end": 25.057,
+   "text": "So every MONTH,"
+  },
+  {
+   "scene": 3,
+   "start": 25.057,
+   "end": 26.044,
+   "text": "Sam pays McDonald's RENT."
+  },
+  {
+   "scene": 4,
+   "start": 26.944,
+   "end": 28.671,
+   "text": "Rent is usually a SLICE of sales,"
+  },
+  {
+   "scene": 4,
+   "start": 28.671,
+   "end": 29.589,
+   "text": "with a MINIMUM."
+  },
+  {
+   "scene": 4,
+   "start": 29.939,
+   "end": 31.603,
+   "text": "Plus a ROYALTY on every sale."
+  },
+  {
+   "scene": 4,
+   "start": 31.953,
+   "end": 36.735,
+   "text": "In 2024, franchise RENT brought in about $10 BILLION,"
+  },
+  {
+   "scene": 4,
+   "start": 36.735,
+   "end": 38.311,
+   "text": "almost DOUBLE the royalties."
+  },
+  {
+   "scene": 5,
+   "start": 39.211,
+   "end": 40.939,
+   "text": "Burger sales can have a BAD year."
+  },
+  {
+   "scene": 5,
+   "start": 41.289,
+   "end": 42.55,
+   "text": "But the rent keeps COMING,"
+  },
+  {
+   "scene": 5,
+   "start": 42.55,
+   "end": 45.001,
+   "text": "and busy corners can RISE in value."
+  },
+  {
+   "scene": 6,
+   "start": 45.901,
+   "end": 47.565,
+   "text": "So it's not JUST selling burgers."
+  },
+  {
+   "scene": 6,
+   "start": 47.915,
+   "end": 50.947,
+   "text": "As one early executive famously put it,"
+  },
+  {
+   "scene": 6,
+   "start": 50.947,
+   "end": 52.885,
+   "text": "they're really in the REAL ESTATE business."
+  },
+  {
+   "scene": 6,
+   "start": 53.235,
+   "end": 54.62,
+   "text": "One of the BIGGEST landlords"
+  },
+  {
+   "scene": 6,
+   "start": 54.62,
+   "end": 55.347,
+   "text": "on the PLANET."
+  }
+ ]
+}
