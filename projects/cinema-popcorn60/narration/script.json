@@ -1,0 +1,192 @@
+[
+ {
+  "scene": 1,
+  "chunks": [
+   [
+    "You pay fifteen dollars for a movie ticket.",
+    "You pay $15 for a movie TICKET."
+   ]
+  ]
+ },
+ {
+  "scene": 1,
+  "chunks": [
+   [
+    "But the theater keeps very little of it.",
+    "But the theater keeps very LITTLE of it."
+   ]
+  ]
+ },
+ {
+  "scene": 2,
+  "chunks": [
+   [
+    "Its real money maker is behind this curtain.",
+    "Its REAL money maker is behind this CURTAIN."
+   ],
+   [
+    "Stay to the end.",
+    "Stay to the END."
+   ]
+  ]
+ },
+ {
+  "scene": 3,
+  "chunks": [
+   [
+    "First, the studio takes its cut:",
+    "First, the STUDIO takes its cut:"
+   ],
+   [
+    "often over half of each ticket, early on.",
+    "often over HALF of each ticket, early on."
+   ]
+  ]
+ },
+ {
+  "scene": 3,
+  "chunks": [
+   [
+    "Then rent, staff, power,",
+    "Then RENT, STAFF, POWER,"
+   ],
+   [
+    "and those giant screens.",
+    "and those giant SCREENS."
+   ]
+  ]
+ },
+ {
+  "scene": 3,
+  "chunks": [
+   [
+    "The lights haven't even dimmed,",
+    "The lights haven't even DIMMED,"
+   ],
+   [
+    "and most of your ticket is gone.",
+    "and most of your ticket is GONE."
+   ]
+  ]
+ },
+ {
+  "scene": 3,
+  "chunks": [
+   [
+    "From fifteen dollars, the theater might keep two.",
+    "From $15, the theater might keep $2."
+   ]
+  ]
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "So how does it survive?",
+    "So how does it SURVIVE?"
+   ]
+  ]
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "Before every show, hundreds of hungry people wait in one lobby,",
+    "Before every show, HUNDREDS of HUNGRY people wait in one lobby,"
+   ],
+   [
+    "and outside snacks aren't allowed.",
+    "and outside snacks AREN'T ALLOWED."
+   ]
+  ]
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "Behind it sits the most profitable thing in the building.",
+    "Behind it sits the most PROFITABLE thing in the building."
+   ]
+  ]
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "So what's behind the curtain?",
+    "So what's behind the CURTAIN?"
+   ]
+  ]
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "Popcorn.",
+    "POPCORN."
+   ]
+  ],
+  "pause": 0.6
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "A nine dollar tub costs about a dollar fifty to make.",
+    "A $9 tub costs about $1.50 to make."
+   ]
+  ]
+ },
+ {
+  "scene": 4,
+  "chunks": [
+   [
+    "Snacks are a third of sales,",
+    "Snacks are a THIRD of sales,"
+   ],
+   [
+    "but mostly profit.",
+    "but mostly PROFIT."
+   ]
+  ]
+ },
+ {
+  "scene": 5,
+  "chunks": [
+   [
+    "The ticket gets you in.",
+    "The ticket gets you IN."
+   ],
+   [
+    "The popcorn pays the bills.",
+    "The POPCORN pays the BILLS."
+   ]
+  ]
+ },
+ {
+  "scene": 5,
+  "chunks": [
+   [
+    "Cheap printers, pricey ink.",
+    "Cheap PRINTERS, pricey INK."
+   ],
+   [
+    "Cheap consoles, pricey games.",
+    "Cheap CONSOLES, pricey GAMES."
+   ]
+  ]
+ },
+ {
+  "scene": 5,
+  "chunks": [
+   [
+    "Next time something looks cheap,",
+    "Next time something looks CHEAP,"
+   ],
+   [
+    "find the popcorn.",
+    "find the POPCORN."
+   ]
+  ]
+ }
+]

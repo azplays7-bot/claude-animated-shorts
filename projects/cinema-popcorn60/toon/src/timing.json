@@ -1,0 +1,271 @@
+{
+ "voice": "am_puck",
+ "speed": 1.05,
+ "scenes": {
+  "1": [
+   0.35,
+   4.86
+  ],
+  "2": [
+   5.76,
+   9.451
+  ],
+  "3": [
+   10.351,
+   24.073
+  ],
+  "4": [
+   24.973,
+   45.294
+  ],
+  "5": [
+   46.194,
+   55.683
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.547
+  },
+  {
+   "scene": 1,
+   "start": 2.897,
+   "end": 4.86
+  },
+  {
+   "scene": 2,
+   "start": 5.76,
+   "end": 9.451
+  },
+  {
+   "scene": 3,
+   "start": 10.351,
+   "end": 14.703
+  },
+  {
+   "scene": 3,
+   "start": 15.053,
+   "end": 17.634
+  },
+  {
+   "scene": 3,
+   "start": 17.984,
+   "end": 21.248
+  },
+  {
+   "scene": 3,
+   "start": 21.598,
+   "end": 24.073
+  },
+  {
+   "scene": 4,
+   "start": 24.973,
+   "end": 26.21
+  },
+  {
+   "scene": 4,
+   "start": 26.56,
+   "end": 32.341
+  },
+  {
+   "scene": 4,
+   "start": 32.691,
+   "end": 35.529
+  },
+  {
+   "scene": 4,
+   "start": 35.879,
+   "end": 37.287
+  },
+  {
+   "scene": 4,
+   "start": 38.237,
+   "end": 39.026
+  },
+  {
+   "scene": 4,
+   "start": 39.376,
+   "end": 42.363
+  },
+  {
+   "scene": 4,
+   "start": 42.713,
+   "end": 45.294
+  },
+  {
+   "scene": 5,
+   "start": 46.194,
+   "end": 49.031
+  },
+  {
+   "scene": 5,
+   "start": 49.381,
+   "end": 52.795
+  },
+  {
+   "scene": 5,
+   "start": 53.145,
+   "end": 55.683
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.35,
+   "end": 2.547,
+   "text": "You pay $15 for a movie TICKET."
+  },
+  {
+   "scene": 1,
+   "start": 2.897,
+   "end": 4.86,
+   "text": "But the theater keeps very LITTLE of it."
+  },
+  {
+   "scene": 2,
+   "start": 5.76,
+   "end": 8.363,
+   "text": "Its REAL money maker is behind this CURTAIN."
+  },
+  {
+   "scene": 2,
+   "start": 8.363,
+   "end": 9.451,
+   "text": "Stay to the END."
+  },
+  {
+   "scene": 3,
+   "start": 10.351,
+   "end": 12.182,
+   "text": "First, the STUDIO takes its cut:"
+  },
+  {
+   "scene": 3,
+   "start": 12.182,
+   "end": 14.703,
+   "text": "often over HALF of each ticket, early on."
+  },
+  {
+   "scene": 3,
+   "start": 15.053,
+   "end": 16.438,
+   "text": "Then RENT, STAFF, POWER,"
+  },
+  {
+   "scene": 3,
+   "start": 16.438,
+   "end": 17.634,
+   "text": "and those giant SCREENS."
+  },
+  {
+   "scene": 3,
+   "start": 17.984,
+   "end": 19.423,
+   "text": "The lights haven't even DIMMED,"
+  },
+  {
+   "scene": 3,
+   "start": 19.423,
+   "end": 21.248,
+   "text": "and most of your ticket is GONE."
+  },
+  {
+   "scene": 3,
+   "start": 21.598,
+   "end": 24.073,
+   "text": "From $15, the theater might keep $2."
+  },
+  {
+   "scene": 4,
+   "start": 24.973,
+   "end": 26.21,
+   "text": "So how does it SURVIVE?"
+  },
+  {
+   "scene": 4,
+   "start": 26.56,
+   "end": 30.361,
+   "text": "Before every show, HUNDREDS of HUNGRY people wait in one lobby,"
+  },
+  {
+   "scene": 4,
+   "start": 30.361,
+   "end": 32.341,
+   "text": "and outside snacks AREN'T ALLOWED."
+  },
+  {
+   "scene": 4,
+   "start": 32.691,
+   "end": 35.529,
+   "text": "Behind it sits the most PROFITABLE thing in the building."
+  },
+  {
+   "scene": 4,
+   "start": 35.879,
+   "end": 37.287,
+   "text": "So what's behind the CURTAIN?"
+  },
+  {
+   "scene": 4,
+   "start": 38.237,
+   "end": 39.026,
+   "text": "POPCORN."
+  },
+  {
+   "scene": 4,
+   "start": 39.376,
+   "end": 42.363,
+   "text": "A $9 tub costs about $1.50 to make."
+  },
+  {
+   "scene": 4,
+   "start": 42.713,
+   "end": 44.454,
+   "text": "Snacks are a THIRD of sales,"
+  },
+  {
+   "scene": 4,
+   "start": 44.454,
+   "end": 45.294,
+   "text": "but mostly PROFIT."
+  },
+  {
+   "scene": 5,
+   "start": 46.194,
+   "end": 47.383,
+   "text": "The ticket gets you IN."
+  },
+  {
+   "scene": 5,
+   "start": 47.383,
+   "end": 49.031,
+   "text": "The POPCORN pays the BILLS."
+  },
+  {
+   "scene": 5,
+   "start": 49.381,
+   "end": 50.765,
+   "text": "Cheap PRINTERS, pricey INK."
+  },
+  {
+   "scene": 5,
+   "start": 50.765,
+   "end": 52.795,
+   "text": "Cheap CONSOLES, pricey GAMES."
+  },
+  {
+   "scene": 5,
+   "start": 53.145,
+   "end": 55.005,
+   "text": "Next time something looks CHEAP,"
+  },
+  {
+   "scene": 5,
+   "start": 55.005,
+   "end": 55.683,
+   "text": "find the POPCORN."
+  }
+ ]
+}
