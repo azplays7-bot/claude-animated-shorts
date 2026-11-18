@@ -446,10 +446,10 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       label(out, f, BT.getsin, "TICKET = DOOR", "#2f6fd6", ox + 0.1, 2.75, oz + 0.4, 1.4, BT.printers - 6);
       label(out, f, BT.bills, "POPCORN = PROFIT", "#e8742c", mx + 0.1, 2.75, mz + 0.4, 1.5, BT.printers - 6);
       if (f > BT.bills + 6) arc(out, f, [mx, 2.0, mz], [mx + 0.8, 3.6, mz - 1.5], 1.2, BT.bills + 6, BT.printers - 10, 7, 20, "coin", 256, 256, fxCoin, 0.4);
-      pop(out, f, BT.printers, BT.find - 2, "printer", 300, 300, fxPrinter, -1.15, 3.05, 8.2, 0.85);
-      pop(out, f, BT.printers + 16, BT.find - 2, "ink", 256, 256, fxInk, -0.35, 3.45, 8.3, 0.5);
-      pop(out, f, BT.consoles, BT.find - 2, "pad", 300, 300, fxPad, 0.75, 3.05, 8.2, 0.85);
-      pop(out, f, BT.consoles + 16, BT.find - 2, "game", 256, 256, fxGame, 1.45, 3.45, 8.3, 0.5);
+      pop(out, f, BT.printers, BT.consoles - 2, "printer", 300, 300, fxPrinter, -0.3, 2.2, 8.4, 0.75);
+      pop(out, f, BT.printers + 14, BT.consoles - 2, "ink", 256, 256, fxInk, 0.45, 2.55, 8.5, 0.45);
+      pop(out, f, BT.consoles, BT.find - 2, "pad", 300, 300, fxPad, -0.3, 2.2, 8.4, 0.75);
+      pop(out, f, BT.consoles + 14, BT.find - 2, "game", 256, 256, fxGame, 0.45, 2.55, 8.5, 0.45);
       pop(out, f, BT.find, 1800, "tub", 300, 400, fxTub, 0.1, 2.75, 8.6, 1.0);
       burst(out, f, BT.find, 0.1, 2.9, 8.6, 2.4);
       break;
