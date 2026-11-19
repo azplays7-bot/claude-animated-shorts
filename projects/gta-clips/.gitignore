@@ -1,3 +1,4 @@
 # clips contain third-party stream footage: keep them out of the repo
 out/
 out_commentary/
+out_best_gta_vi/

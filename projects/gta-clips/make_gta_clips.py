@@ -87,8 +87,11 @@ COMMENTARY = {  # clip number -> [(start s, line)], placed in gaps where the str
     14: [(0.2, "Typical Gamer just walked into a fight."), (3.0, "And these guys are not small."),
          (13.3, "He's testing the fighting."), (15.3, "So, is it better than GTA 5?"), (23.1, "Throw him into the wall!")],
 }
-NOCAPS = {13}                      # clips whose streamer speech-to-text is too garbled to caption
-FIX = {"GJ5": "GTA 5"}              # speech-to-text mistakes
+if os.environ.get("CLIPS_FILE"):  # clip list for another video: JSON list of [start, end, slug, hook, title, caption, tags]
+    CLIPS = [tuple(c) for c in json.load(open(os.environ["CLIPS_FILE"]))]
+    COMMENTARY = {}
+NOCAPS = set() if os.environ.get("CLIPS_FILE") else {13}                      # clips whose streamer speech-to-text is too garbled to caption
+FIX = {"GJ5": "GTA 5", "URIS": "URUS"}              # speech-to-text mistakes
 ONLY = {int(x) for x in os.environ.get("ONLY", "").split(",") if x}   # e.g. ONLY=7,8 renders just those
 VOICE, SPEED = "am_puck", 1.1
 
