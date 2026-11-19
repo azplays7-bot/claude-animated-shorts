@@ -32,6 +32,30 @@ CLIPS = [  # (start, end, slug, hook, title, caption, hashtags)
     (444.70, 476.50, "how_is_this_real", "\"HOW IS THIS GAME\\NREAL, BRO?\"",
      "GTA 6 graphics are unreal", "Driving around at night in GTA 6 hits different 🌴 Best-looking game ever?",
      ["#GTA6", "#IShowSpeed", "#Speed", "#gaming", "#gta6clips"]),
+    (57.40, 79.80, "car_theft_in_front_of_cops", "STEALING A CAR RIGHT IN\\NFRONT OF THE COPS",
+     "Stealing a car right in front of the cops in GTA 6", "The cop was RIGHT there 💀 Would you try this?",
+     ["#GTA6", "#Lacy", "#gaming", "#gta6clips", "#funny"]),
+    (79.80, 97.00, "clix_plane_wasted", "CLIX TRIES TO LAND\\NA PLANE ON WATER",
+     "Clix crashes a plane in GTA 6", "\"Relax, relax...\" 💀 Could you have landed it?",
+     ["#GTA6", "#Clix", "#gaming", "#gta6clips", "#fail"]),
+    (120.70, 147.40, "nothing_goes_right", "NOTHING IS GOING RIGHT\\NIN GTA 6 TODAY",
+     "Can't fly, can't drive: GTA 6 is hard", "From planes to construction zones 😭 Who's worse at driving?",
+     ["#GTA6", "#GTAVI", "#gaming", "#gta6clips", "#fail"]),
+    (147.40, 170.80, "skydive_over_the_city", "TYPICAL GAMER SKYDIVES\\NOVER THE CITY",
+     "Skydiving over the GTA 6 map", "This view is unreal 🪂 Would you jump?",
+     ["#GTA6", "#TypicalGamer", "#gaming", "#gta6clips", "#skydiving"]),
+    (170.80, 191.40, "cant_score_once", "BRO CAN'T MAKE\\NONE BASKET",
+     "Bro can't score once in GTA 6", "Third time's the charm... right? 🏀 Could you do better?",
+     ["#GTA6", "#GTAVI", "#gaming", "#gta6clips", "#basketball"]),
+    (191.40, 209.00, "crashing_looks_real", "CRASHING IN GTA 6\\NLOOKS SO REAL",
+     "Crashing in GTA 6 looks so real", "The physics in this game are crazy 🏍️ Rate this crash 1-10",
+     ["#GTA6", "#GTAVI", "#gaming", "#gta6clips", "#physics"]),
+    (264.70, 283.70, "map_is_massive", "THE GTA 6 MAP\\NIS MASSIVE",
+     "The GTA 6 map is massive", "Leonida is HUGE 🗺️ Where are you going first?",
+     ["#GTA6", "#GTAVI", "#gaming", "#gta6clips", "#gta6map"]),
+    (350.00, 377.60, "typical_gamer_fight", "TYPICAL GAMER PICKS A\\NFIGHT WITH A BIG GUY",
+     "Is GTA 6 fighting better than GTA 5?", "\"Big guy, big guy\" 😂 Is the fighting better than GTA 5?",
+     ["#GTA6", "#TypicalGamer", "#gaming", "#gta6clips", "#gta5"]),
 ]
 
 COMMENTARY = {  # clip number -> [(start s, line)], placed in gaps where the streamer isn't talking
@@ -45,7 +69,27 @@ COMMENTARY = {  # clip number -> [(start s, line)], placed in gaps where the str
         (9.0, "So where does he hide?"), (22.9, "Mid police chase. He ordered food."),
         (28.6, "Honestly, that worker deserves a raise.")],
     6: [(4.75, "Look at this lighting."), (24.7, "GTA 6 at night looks unreal.")],
+    7: [(0.2, "Stealing a car. Right in front of the cops."), (5.7, "The officer is literally watching."),
+        (13.2, "And they just drive off like nothing happened."), (17.0, "Bold strategy.")],
+    8: [(6.0, "He's coming in way too low."), (9.4, "Pull up. Pull up!"), (12.2, "That landing is not happening."),
+        (15.5, "Wasted.")],
+    9: [(1.0, "Trying to take off from the water."), (13.4, "Next up: driving."),
+        (16.2, "Through a construction zone. Great idea.")],
+    10: [(0.2, "He just jumped out of a plane."), (4.8, "Look at how big this city is."),
+         (8.0, "You can see the whole map from up here."), (11.0, "Now pull the chute."),
+         (19.4, "That view is insane.")],
+    11: [(3.2, "Trying to make just one basket."), (6.2, "Still nothing."), (8.4, "Not even close."),
+         (11.9, "How is this so hard?")],
+    12: [(1.6, "He's crashing on purpose now."), (4.2, "Look how he flies off the bike."),
+         (7.0, "The ragdoll physics are crazy.")],
+    13: [(0.1, "This is the GTA 6 map."), (4.0, "And this is just one part of it."), (6.5, "Zoom out. It keeps going."),
+         (11.6, "Leonida is huge."), (15.6, "Where do you even start?")],
+    14: [(0.2, "Typical Gamer just walked into a fight."), (3.0, "And these guys are not small."),
+         (13.3, "He's testing the fighting."), (15.3, "So, is it better than GTA 5?"), (23.1, "Throw him into the wall!")],
 }
+NOCAPS = {13}                      # clips whose streamer speech-to-text is too garbled to caption
+FIX = {"GJ5": "GTA 5"}              # speech-to-text mistakes
+ONLY = {int(x) for x in os.environ.get("ONLY", "").split(",") if x}   # e.g. ONLY=7,8 renders just those
 VOICE, SPEED = "am_puck", 1.1
 
 SWEARS = re.compile(r"^(fuck\w*|fucking|shit\w*|bitch\w*|pussy|motherfuck\w*|nigg\w*|bullshit)$", re.I)
@@ -78,9 +122,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 
 for n, (a, b, slug, hook, title, caption, tags) in enumerate(CLIPS, 1):
+    if ONLY and n not in ONLY:
+        continue
     d = b - a
     ev = [f"Dialogue: 0,{ts(0)},{ts(d)},Hook,,0,0,0,,{{\\fad(120,0)\\t(0,160,\\fscx106\\fscy106)\\t(160,300,\\fscx100\\fscy100)}}{hook}"]
-    ws = [(s - a, e - a, clean(t).upper()) for s, e, t in words if s >= a - 0.05 and e <= b + 0.3 and clean(t)]
+    ws = [(s - a, e - a, FIX.get(clean(t).upper(), clean(t).upper())) for s, e, t in words if s >= a - 0.05 and e <= b + 0.3 and clean(t)]
     groups, cur = [], []
     for w in ws:  # groups of up to 3 words, broken on pauses
         if cur and (len(cur) == 3 or w[0] - cur[-1][1] > 0.6):
@@ -109,6 +155,8 @@ for n, (a, b, slug, hook, title, caption, tags) in enumerate(CLIPS, 1):
                 wd = per * (len(w) + 1)
                 txt = " ".join(("{\\c&H5CFF7A&}" + x + "{\\c&HFFFFFF&}") if q == j else x for q, x in enumerate(ch))
                 ev.append(f"Dialogue: 2,{ts(t)},{ts(t + wd)},Com,,0,0,0,,{txt}"); t += wd
+    if n in NOCAPS:
+        caps = []
     caps = [c for c in caps if not any(c[0] < e2 and c[1] > s2 for s2, e2 in spans)]
     vwav = os.path.join(OUT, f"clip{n:02d}_vo.wav"); sf.write(vwav, np.stack([voice, voice], 1), 48000)
     for k in range(len(caps) - 1):
