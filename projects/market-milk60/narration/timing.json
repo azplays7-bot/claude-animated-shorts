@@ -1,0 +1,287 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.2,
+ "scenes": {
+  "1": [
+   0.12,
+   4.075
+  ],
+  "2": [
+   4.475,
+   10.571
+  ],
+  "3": [
+   10.971,
+   23.512
+  ],
+  "4": [
+   23.912,
+   33.971
+  ],
+  "5": [
+   34.371,
+   52.067
+  ],
+  "6": [
+   52.467,
+   55.675
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 3.128
+  },
+  {
+   "scene": 1,
+   "start": 3.328,
+   "end": 4.075
+  },
+  {
+   "scene": 2,
+   "start": 4.475,
+   "end": 6.117
+  },
+  {
+   "scene": 2,
+   "start": 6.317,
+   "end": 8.899
+  },
+  {
+   "scene": 2,
+   "start": 9.099,
+   "end": 10.571
+  },
+  {
+   "scene": 3,
+   "start": 10.971,
+   "end": 13.168
+  },
+  {
+   "scene": 3,
+   "start": 13.368,
+   "end": 14.669
+  },
+  {
+   "scene": 3,
+   "start": 14.869,
+   "end": 16.149
+  },
+  {
+   "scene": 3,
+   "start": 16.349,
+   "end": 19.272
+  },
+  {
+   "scene": 3,
+   "start": 19.472,
+   "end": 21.84
+  },
+  {
+   "scene": 3,
+   "start": 22.04,
+   "end": 23.512
+  },
+  {
+   "scene": 4,
+   "start": 23.912,
+   "end": 25.768
+  },
+  {
+   "scene": 4,
+   "start": 25.968,
+   "end": 26.864
+  },
+  {
+   "scene": 4,
+   "start": 27.064,
+   "end": 29.304
+  },
+  {
+   "scene": 4,
+   "start": 29.504,
+   "end": 31.659
+  },
+  {
+   "scene": 4,
+   "start": 31.859,
+   "end": 33.971
+  },
+  {
+   "scene": 5,
+   "start": 34.371,
+   "end": 35.949
+  },
+  {
+   "scene": 5,
+   "start": 36.149,
+   "end": 40.608
+  },
+  {
+   "scene": 5,
+   "start": 40.808,
+   "end": 44.093
+  },
+  {
+   "scene": 5,
+   "start": 44.293,
+   "end": 48.837
+  },
+  {
+   "scene": 5,
+   "start": 49.037,
+   "end": 52.067
+  },
+  {
+   "scene": 6,
+   "start": 52.467,
+   "end": 53.981
+  },
+  {
+   "scene": 6,
+   "start": 54.181,
+   "end": 55.675
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 3.128,
+   "text": "Grocery stores put the milk as far from the door as possible."
+  },
+  {
+   "scene": 1,
+   "start": 3.328,
+   "end": 4.075,
+   "text": "On purpose."
+  },
+  {
+   "scene": 2,
+   "start": 4.475,
+   "end": 6.117,
+   "text": "Watch. Max needs one thing. Milk."
+  },
+  {
+   "scene": 2,
+   "start": 6.317,
+   "end": 8.899,
+   "text": "He walks in, and bam! Fresh flowers and warm bread."
+  },
+  {
+   "scene": 2,
+   "start": 9.099,
+   "end": 10.571,
+   "text": "Smells amazing. Into the cart."
+  },
+  {
+   "scene": 3,
+   "start": 10.971,
+   "end": 13.168,
+   "text": "So where's the milk? All the way in the back corner."
+  },
+  {
+   "scene": 3,
+   "start": 13.368,
+   "end": 14.669,
+   "text": "So he walks past the chips,"
+  },
+  {
+   "scene": 3,
+   "start": 14.869,
+   "end": 16.149,
+   "text": "past the free sample lady,"
+  },
+  {
+   "scene": 3,
+   "start": 16.349,
+   "end": 19.272,
+   "text": "past cereal boxes with cartoon eyes staring right at him,"
+  },
+  {
+   "scene": 3,
+   "start": 19.472,
+   "end": 21.84,
+   "text": "past a giant tower of soda. Two for five!"
+  },
+  {
+   "scene": 3,
+   "start": 22.04,
+   "end": 23.512,
+   "text": "Every aisle, the cart gets heavier."
+  },
+  {
+   "scene": 4,
+   "start": 23.912,
+   "end": 25.768,
+   "text": "By the time he finally reaches the milk,"
+  },
+  {
+   "scene": 4,
+   "start": 25.968,
+   "end": 26.864,
+   "text": "his cart is full."
+  },
+  {
+   "scene": 4,
+   "start": 27.064,
+   "end": 29.304,
+   "text": "And checkout? Candy and gum, right at eye level."
+  },
+  {
+   "scene": 4,
+   "start": 29.504,
+   "end": 31.659,
+   "text": "He came in for a four dollar carton of milk,"
+  },
+  {
+   "scene": 4,
+   "start": 31.859,
+   "end": 33.971,
+   "text": "and walked out with sixty three dollars of stuff."
+  },
+  {
+   "scene": 5,
+   "start": 34.371,
+   "end": 35.949,
+   "text": "That's the trick. The milk is the bait."
+  },
+  {
+   "scene": 5,
+   "start": 36.149,
+   "end": 40.608,
+   "text": "Almost everyone needs it, so it goes in the back, and you walk past everything else to get it."
+  },
+  {
+   "scene": 5,
+   "start": 40.808,
+   "end": 44.093,
+   "text": "Part of it is practical. The big coolers sit by the loading dock."
+  },
+  {
+   "scene": 5,
+   "start": 44.293,
+   "end": 48.837,
+   "text": "And the pricey brands sit right at eye level, while the cheap ones hide down by your feet."
+  },
+  {
+   "scene": 5,
+   "start": 49.037,
+   "end": 52.067,
+   "text": "But every extra step is one more chance to grab something."
+  },
+  {
+   "scene": 6,
+   "start": 52.467,
+   "end": 53.981,
+   "text": "So next time you just need milk,"
+  },
+  {
+   "scene": 6,
+   "start": 54.181,
+   "end": 55.675,
+   "text": "walk in. Grab the milk. Get out."
+  }
+ ]
+}
