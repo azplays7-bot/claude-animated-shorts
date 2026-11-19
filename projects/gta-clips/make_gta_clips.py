@@ -1,9 +1,16 @@
 # Cuts vertical 1080x1920 clips from a 16:9 GTA 6 compilation: blurred fill, full frame in the middle (keeps every
 # facecam), hook title on top, word-by-word captions (swears starred) below, loudness-normalised audio.
-#   python3 make_gta_clips.py <source.mp4> <words.json from faster-whisper> <out_dir>
+#   python3 make_gta_clips.py <source.mp4> <words.json from faster-whisper> <out_dir> [<kokoro model dir>]
+# With the Kokoro folder it adds an AI commentator (COMMENTARY lines) with the game audio ducked under the voice.
 import json, os, re, subprocess, sys
+import numpy as np, soundfile as sf
 
 SRC, WORDS, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
+TTS = sys.argv[4] if len(sys.argv) > 4 else None   # folder with kokoro-v1.0.onnx + voices-v1.0.bin -> adds commentary
+kokoro = None
+if TTS:
+    from kokoro_onnx import Kokoro
+    kokoro = Kokoro(os.path.join(TTS, "kokoro-v1.0.onnx"), os.path.join(TTS, "voices-v1.0.bin"))
 os.makedirs(OUT, exist_ok=True)
 
 CLIPS = [  # (start, end, slug, hook, title, caption, hashtags)
@@ -13,7 +20,7 @@ CLIPS = [  # (start, end, slug, hook, title, caption, hashtags)
     (97.00, 117.40, "beach_police_escape", "HE REFUSED TO GET OUT\\NOF THE CAR",
      "Craziest police escape in GTA 6", "The cops said get out. He said no 😂 Would you have made it?",
      ["#GTA6", "#GTAVI", "#gaming", "#gta6clips", "#police"]),
-    (244.50, 264.70, "speed_chimp_cage", "SPEED FINDS A CHIMP\\NLOCKED IN A CAGE",
+    (247.30, 264.70, "speed_chimp_cage", "SPEED FINDS A CHIMP\\NLOCKED IN A CAGE",
      "Speed finds a chimp locked in a cage in GTA 6", "\"Why do you got him in a cage, bro?\" 😭 Free him or nah?",
      ["#GTA6", "#IShowSpeed", "#Speed", "#gaming", "#gta6clips"]),
     (304.40, 320.20, "hardest_game_ever", "\"THIS MIGHT BE THE HARDEST\\NGAME OF ALL TIME\"",
@@ -26,6 +33,20 @@ CLIPS = [  # (start, end, slug, hook, title, caption, hashtags)
      "GTA 6 graphics are unreal", "Driving around at night in GTA 6 hits different 🌴 Best-looking game ever?",
      ["#GTA6", "#IShowSpeed", "#Speed", "#gaming", "#gta6clips"]),
 ]
+
+COMMENTARY = {  # clip number -> [(start s, line)], placed in gaps where the streamer isn't talking
+    1: [(0.25, "Thirteen years of waiting. Here's his first drive.")],
+    2: [(7.55, "He really thought he could outrun them on sand."), (11.55, "Wait. He actually did it?"),
+        (16.2, "Okay, that was clean.")],
+    3: [(5.4, "He just called the chimp his brother.")],
+    4: [(0.25, "He's trying to land this plane. It's not going well."), (7.95, "And that's a crash."),
+        (10.35, "Flying in GTA 6 is not easy.")],
+    5: [(0.25, "The cops are on him, and he's on foot."), (5.0, "No car. No plan. Just running."),
+        (9.0, "So where does he hide?"), (22.9, "Mid police chase. He ordered food."),
+        (28.6, "Honestly, that worker deserves a raise.")],
+    6: [(4.75, "Look at this lighting."), (24.7, "GTA 6 at night looks unreal.")],
+}
+VOICE, SPEED = "am_puck", 1.1
 
 SWEARS = re.compile(r"^(fuck\w*|fucking|shit\w*|bitch\w*|pussy|motherfuck\w*|nigg\w*|bullshit)$", re.I)
 def clean(w):
@@ -49,6 +70,7 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Hook,Inter Black,82,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,7,0,8,50,50,330,1
+Style: Com,Inter Black,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,3,10,0,8,60,60,1360,1
 Style: Cap,Inter Black,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,8,3,8,60,60,1360,1
 
 [Events]
@@ -71,6 +93,24 @@ for n, (a, b, slug, hook, title, caption, tags) in enumerate(CLIPS, 1):
             end = g[i + 1][0] if i + 1 < len(g) else min(e + 0.35, d)
             txt = " ".join(("{\\c&H00E5FF&}" + t + "{\\c&HFFFFFF&}") if j == i else t for j, (_, _, t) in enumerate(g))
             caps.append([max(0, s), min(end, d), txt])
+    voice = np.zeros(int(d * 48000) + 48000, dtype=np.float32); spans = []
+    for t0, line in (COMMENTARY.get(n, []) if kokoro else []):
+        a24, sr = kokoro.create(line, voice=VOICE, speed=SPEED, lang="en-us")
+        a24 = np.asarray(a24, dtype=np.float32); a24 /= max(1e-6, np.abs(a24).max()); a24 *= 0.8
+        a48 = np.interp(np.arange(0, len(a24), sr / 48000), np.arange(len(a24)), a24).astype(np.float32)
+        nxt = min([s_ for s_, _, _ in ws if s_ > t0 + 0.05], default=d)
+        dur = len(a48) / 48000
+        assert t0 + dur <= min(nxt, d) + 0.35, (n, line, round(t0 + dur, 2), round(nxt, 2))
+        i0 = int(t0 * 48000); voice[i0:i0 + len(a48)] += a48; spans.append((t0, t0 + dur))
+        wl = line.upper().split(); per = dur / sum(len(w) + 1 for w in wl); t = t0
+        chunks = [wl[i:i + 3] for i in range(0, len(wl), 3)]
+        for ch in chunks:
+            for j, w in enumerate(ch):
+                wd = per * (len(w) + 1)
+                txt = " ".join(("{\\c&H5CFF7A&}" + x + "{\\c&HFFFFFF&}") if q == j else x for q, x in enumerate(ch))
+                ev.append(f"Dialogue: 2,{ts(t)},{ts(t + wd)},Com,,0,0,0,,{txt}"); t += wd
+    caps = [c for c in caps if not any(c[0] < e2 and c[1] > s2 for s2, e2 in spans)]
+    vwav = os.path.join(OUT, f"clip{n:02d}_vo.wav"); sf.write(vwav, np.stack([voice, voice], 1), 48000)
     for k in range(len(caps) - 1):
         caps[k][1] = min(caps[k][1], caps[k + 1][0])
     ev += [f"Dialogue: 1,{ts(s)},{ts(e)},Cap,,0,0,0,,{t}" for s, e, t in caps if e - s > 0.02]
@@ -81,11 +121,14 @@ for n, (a, b, slug, hook, title, caption, tags) in enumerate(CLIPS, 1):
           "[a]scale=-2:1920,crop=1080:1920,boxblur=28:2,eq=brightness=-0.18:saturation=1.2[bg];"
           "[b]scale=1080:-2[fg];"
           f"[bg][fg]overlay=0:(H-h)/2,ass={ass},fade=t=in:d=0.15,fade=t=out:st={d - 0.25:.3f}:d=0.25[v]")
-    af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:d=0.1,afade=t=out:st={d - 0.3:.3f}:d=0.3,aresample=48000"
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{d:.3f}", "-i", SRC,
-                    "-filter_complex", vf, "-map", "[v]", "-map", "0:a", "-af", af, "-r", "30",
+    af = (f";[0:a]aresample=48000,loudnorm=I=-17:TP=-2[g];[1:a]atrim=0:{d:.3f},asplit[v1][v2];"
+          "[g][v1]sidechaincompress=threshold=0.01:ratio=12:attack=15:release=400[gd];"
+          "[gd][v2]amix=inputs=2:normalize=0:duration=first,"
+          f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:d=0.1,afade=t=out:st={d - 0.3:.3f}:d=0.3,aresample=48000[aout]")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{a:.3f}", "-t", f"{d:.3f}", "-i", SRC, "-i", vwav,
+                    "-filter_complex", vf + af, "-map", "[v]", "-map", "[aout]", "-r", "30",
                     "-c:v", "libx264", "-crf", "19", "-preset", "medium", "-pix_fmt", "yuv420p",
                     "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", dst], check=True)
-    os.remove(ass)
+    os.remove(ass); os.remove(vwav)
     open(dst[:-4] + ".txt", "w").write(f"{title}\n\n{caption}\n\n{' '.join(tags)}\n")
     print(f"{os.path.basename(dst)}  {d:.1f} s")
