@@ -1,0 +1,980 @@
+[
+{
+"start": 0.0,
+"end": 0.28,
+"text": "MOST",
+"emph": false
+},
+{
+"start": 0.28,
+"end": 0.7,
+"text": "FOOTBALLERS",
+"emph": false
+},
+{
+"start": 0.7,
+"end": 1.04,
+"text": "RETIRE",
+"emph": false
+},
+{
+"start": 1.04,
+"end": 1.4,
+"text": "AROUND",
+"emph": false
+},
+{
+"start": 1.4,
+"end": 1.84,
+"text": "35",
+"emph": true
+},
+{
+"start": 2.38,
+"end": 2.56,
+"text": "PLAYERS",
+"emph": false
+},
+{
+"start": 2.56,
+"end": 2.78,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 2.78,
+"end": 3.02,
+"text": "AGE",
+"emph": false
+},
+{
+"start": 3.02,
+"end": 3.2,
+"text": "ARE",
+"emph": false
+},
+{
+"start": 3.2,
+"end": 3.4,
+"text": "ON",
+"emph": false
+},
+{
+"start": 3.4,
+"end": 3.78,
+"text": "TV",
+"emph": false
+},
+{
+"start": 3.78,
+"end": 4.26,
+"text": "TALKING",
+"emph": false
+},
+{
+"start": 4.26,
+"end": 4.54,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 4.54,
+"end": 4.9,
+"text": "FOOTBALL",
+"emph": false
+},
+{
+"start": 5.32,
+"end": 5.78,
+"text": "CRISTIANO",
+"emph": false
+},
+{
+"start": 5.78,
+"end": 6.16,
+"text": "RONALDO",
+"emph": true
+},
+{
+"start": 6.16,
+"end": 6.54,
+"text": "IS",
+"emph": false
+},
+{
+"start": 6.54,
+"end": 6.88,
+"text": "41",
+"emph": true
+},
+{
+"start": 7.34,
+"end": 7.42,
+"text": "AND",
+"emph": false
+},
+{
+"start": 7.46,
+"end": 7.62,
+"text": "HE'S",
+"emph": false
+},
+{
+"start": 7.62,
+"end": 7.82,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 7.82,
+"end": 8.2,
+"text": "CHASING",
+"emph": false
+},
+{
+"start": 8.2,
+"end": 9.22,
+"text": "1,000 GOALS",
+"emph": true
+},
+{
+"start": 9.68,
+"end": 9.78,
+"text": "HOW",
+"emph": false
+},
+{
+"start": 9.92,
+"end": 10.06,
+"text": "LET'S",
+"emph": false
+},
+{
+"start": 10.06,
+"end": 10.2,
+"text": "FOLLOW",
+"emph": false
+},
+{
+"start": 10.2,
+"end": 10.44,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 10.44,
+"end": 10.72,
+"text": "DAY",
+"emph": false
+},
+{
+"start": 11.28,
+"end": 11.44,
+"text": "MORNING",
+"emph": false
+},
+{
+"start": 11.66,
+"end": 11.74,
+"text": "HE",
+"emph": false
+},
+{
+"start": 11.78,
+"end": 11.92,
+"text": "WAKES",
+"emph": false
+},
+{
+"start": 11.92,
+"end": 12.12,
+"text": "UP",
+"emph": false
+},
+{
+"start": 12.12,
+"end": 12.46,
+"text": "RESTED",
+"emph": false
+},
+{
+"start": 12.46,
+"end": 12.78,
+"text": "BECAUSE",
+"emph": false
+},
+{
+"start": 12.78,
+"end": 12.92,
+"text": "HE",
+"emph": false
+},
+{
+"start": 12.92,
+"end": 13.16,
+"text": "TREATS",
+"emph": false
+},
+{
+"start": 13.16,
+"end": 13.44,
+"text": "SLEEP",
+"emph": true
+},
+{
+"start": 13.44,
+"end": 13.66,
+"text": "LIKE",
+"emph": false
+},
+{
+"start": 13.66,
+"end": 14.04,
+"text": "TRAINING",
+"emph": true
+},
+{
+"start": 14.64,
+"end": 14.96,
+"text": "REPORTEDLY",
+"emph": false
+},
+{
+"start": 15.04,
+"end": 15.1,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 15.16,
+"end": 15.32,
+"text": "EVEN",
+"emph": false
+},
+{
+"start": 15.32,
+"end": 15.72,
+"text": "INCLUDES",
+"emph": false
+},
+{
+"start": 15.72,
+"end": 16.04,
+"text": "SHORT",
+"emph": false
+},
+{
+"start": 16.04,
+"end": 16.34,
+"text": "NAPS",
+"emph": true
+},
+{
+"start": 16.34,
+"end": 16.54,
+"text": "THROUGH",
+"emph": false
+},
+{
+"start": 16.54,
+"end": 16.68,
+"text": "THE",
+"emph": false
+},
+{
+"start": 16.68,
+"end": 16.88,
+"text": "DAY",
+"emph": false
+},
+{
+"start": 17.28,
+"end": 17.48,
+"text": "BREAKFAST",
+"emph": false
+},
+{
+"start": 17.7,
+"end": 17.82,
+"text": "LOTS",
+"emph": false
+},
+{
+"start": 17.82,
+"end": 17.98,
+"text": "OF",
+"emph": false
+},
+{
+"start": 17.98,
+"end": 18.32,
+"text": "PROTEIN",
+"emph": true
+},
+{
+"start": 18.54,
+"end": 18.7,
+"text": "VERY",
+"emph": false
+},
+{
+"start": 18.7,
+"end": 18.96,
+"text": "LITTLE",
+"emph": false
+},
+{
+"start": 18.96,
+"end": 19.28,
+"text": "SUGAR",
+"emph": true
+},
+{
+"start": 19.68,
+"end": 19.78,
+"text": "HE",
+"emph": false
+},
+{
+"start": 19.8,
+"end": 19.96,
+"text": "ONCE",
+"emph": false
+},
+{
+"start": 19.96,
+"end": 20.22,
+"text": "MOVED",
+"emph": false
+},
+{
+"start": 20.22,
+"end": 20.56,
+"text": "TWO",
+"emph": false
+},
+{
+"start": 20.56,
+"end": 20.94,
+"text": "SODA",
+"emph": true
+},
+{
+"start": 20.94,
+"end": 21.32,
+"text": "BOTTLES",
+"emph": false
+},
+{
+"start": 21.32,
+"end": 21.54,
+"text": "OFF",
+"emph": false
+},
+{
+"start": 21.54,
+"end": 21.72,
+"text": "A",
+"emph": false
+},
+{
+"start": 21.72,
+"end": 21.86,
+"text": "PRESS",
+"emph": false
+},
+{
+"start": 21.86,
+"end": 22.22,
+"text": "TABLE",
+"emph": false
+},
+{
+"start": 22.22,
+"end": 22.52,
+"text": "AND",
+"emph": false
+},
+{
+"start": 22.52,
+"end": 22.7,
+"text": "HELD",
+"emph": false
+},
+{
+"start": 22.7,
+"end": 22.88,
+"text": "UP",
+"emph": false
+},
+{
+"start": 22.88,
+"end": 23.18,
+"text": "WATER",
+"emph": true
+},
+{
+"start": 23.56,
+"end": 23.64,
+"text": "AND",
+"emph": false
+},
+{
+"start": 23.68,
+"end": 23.96,
+"text": "ALCOHOL",
+"emph": false
+},
+{
+"start": 24.24,
+"end": 24.34,
+"text": "HE'S",
+"emph": false
+},
+{
+"start": 24.36,
+"end": 24.5,
+"text": "SAID",
+"emph": false
+},
+{
+"start": 24.5,
+"end": 24.62,
+"text": "HE",
+"emph": false
+},
+{
+"start": 24.62,
+"end": 24.9,
+"text": "DOESN'T",
+"emph": false
+},
+{
+"start": 24.9,
+"end": 25.14,
+"text": "DRINK",
+"emph": true
+},
+{
+"start": 25.74,
+"end": 25.88,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 25.88,
+"end": 26.26,
+"text": "TRAINING",
+"emph": true
+},
+{
+"start": 26.4,
+"end": 26.74,
+"text": "SPRINTS",
+"emph": true
+},
+{
+"start": 26.84,
+"end": 27.04,
+"text": "WEIGHTS",
+"emph": true
+},
+{
+"start": 27.04,
+"end": 27.4,
+"text": "EXTRA",
+"emph": true
+},
+{
+"start": 27.4,
+"end": 27.98,
+"text": "SHOOTING",
+"emph": false
+},
+{
+"start": 27.98,
+"end": 28.28,
+"text": "AFTER",
+"emph": false
+},
+{
+"start": 28.28,
+"end": 28.64,
+"text": "EVERYONE",
+"emph": false
+},
+{
+"start": 28.64,
+"end": 28.94,
+"text": "LEAVES",
+"emph": false
+},
+{
+"start": 29.46,
+"end": 29.5,
+"text": "TEAMMATES",
+"emph": false
+},
+{
+"start": 29.64,
+"end": 29.86,
+"text": "OFTEN",
+"emph": false
+},
+{
+"start": 29.86,
+"end": 30.2,
+"text": "SAY",
+"emph": false
+},
+{
+"start": 30.2,
+"end": 30.52,
+"text": "FIRST",
+"emph": true
+},
+{
+"start": 30.52,
+"end": 30.74,
+"text": "IN",
+"emph": false
+},
+{
+"start": 30.74,
+"end": 30.94,
+"text": "LAST",
+"emph": true
+},
+{
+"start": 30.94,
+"end": 31.24,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 31.56,
+"end": 31.72,
+"text": "THAT'S",
+"emph": false
+},
+{
+"start": 31.72,
+"end": 31.84,
+"text": "HOW",
+"emph": false
+},
+{
+"start": 31.84,
+"end": 31.96,
+"text": "A",
+"emph": false
+},
+{
+"start": 31.96,
+"end": 32.4,
+"text": "41",
+"emph": true
+},
+{
+"start": 32.4,
+"end": 32.58,
+"text": "YEAR",
+"emph": false
+},
+{
+"start": 32.58,
+"end": 32.74,
+"text": "OLD",
+"emph": false
+},
+{
+"start": 32.74,
+"end": 33.06,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 33.06,
+"end": 33.36,
+"text": "JUMPS",
+"emph": false
+},
+{
+"start": 33.36,
+"end": 33.56,
+"text": "LIKE",
+"emph": false
+},
+{
+"start": 33.56,
+"end": 33.84,
+"text": "THIS",
+"emph": false
+},
+{
+"start": 34.18,
+"end": 34.34,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 34.34,
+"end": 34.54,
+"text": "HEADER",
+"emph": true
+},
+{
+"start": 34.54,
+"end": 34.74,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 34.74,
+"end": 35.08,
+"text": "MEASURED",
+"emph": false
+},
+{
+"start": 35.08,
+"end": 35.42,
+"text": "AT",
+"emph": false
+},
+{
+"start": 35.42,
+"end": 35.6,
+"text": "OVER",
+"emph": false
+},
+{
+"start": 35.6,
+"end": 36.46,
+"text": "2.5 METERS",
+"emph": true
+},
+{
+"start": 36.46,
+"end": 36.82,
+"text": "HIGH",
+"emph": false
+},
+{
+"start": 37.16,
+"end": 37.4,
+"text": "AFTER",
+"emph": false
+},
+{
+"start": 37.4,
+"end": 37.64,
+"text": "ICE",
+"emph": true
+},
+{
+"start": 37.64,
+"end": 37.9,
+"text": "COLD",
+"emph": false
+},
+{
+"start": 37.9,
+"end": 38.36,
+"text": "RECOVERY",
+"emph": false
+},
+{
+"start": 38.7,
+"end": 39.2,
+"text": "BRRR",
+"emph": true
+},
+{
+"start": 39.72,
+"end": 39.9,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 39.9,
+"end": 40.14,
+"text": "REST",
+"emph": false
+},
+{
+"start": 40.14,
+"end": 40.38,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 40.38,
+"end": 40.66,
+"text": "REPEAT",
+"emph": true
+},
+{
+"start": 40.66,
+"end": 41.1,
+"text": "EVERY",
+"emph": false
+},
+{
+"start": 41.1,
+"end": 41.36,
+"text": "SINGLE",
+"emph": false
+},
+{
+"start": 41.36,
+"end": 41.68,
+"text": "DAY",
+"emph": false
+},
+{
+"start": 42.18,
+"end": 42.28,
+"text": "THE",
+"emph": false
+},
+{
+"start": 42.3,
+"end": 42.52,
+"text": "RESULT",
+"emph": true
+},
+{
+"start": 42.78,
+"end": 42.94,
+"text": "OVER",
+"emph": false
+},
+{
+"start": 42.94,
+"end": 44.22,
+"text": "970+ GOALS",
+"emph": true
+},
+{
+"start": 44.66,
+"end": 44.8,
+"text": "MORE",
+"emph": false
+},
+{
+"start": 44.8,
+"end": 45.02,
+"text": "GOALS",
+"emph": false
+},
+{
+"start": 45.02,
+"end": 45.24,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 45.24,
+"end": 45.38,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 45.38,
+"end": 45.72,
+"text": "COUNTRY",
+"emph": false
+},
+{
+"start": 45.72,
+"end": 45.98,
+"text": "THAN",
+"emph": false
+},
+{
+"start": 45.98,
+"end": 46.2,
+"text": "ANY",
+"emph": false
+},
+{
+"start": 46.2,
+"end": 46.44,
+"text": "MAN",
+"emph": false
+},
+{
+"start": 46.44,
+"end": 46.58,
+"text": "IN",
+"emph": false
+},
+{
+"start": 46.58,
+"end": 46.94,
+"text": "HISTORY",
+"emph": true
+},
+{
+"start": 47.36,
+"end": 48.08,
+"text": "6 WORLD CUPS",
+"emph": true
+},
+{
+"start": 48.34,
+"end": 48.36,
+"text": "A",
+"emph": false
+},
+{
+"start": 48.46,
+"end": 48.52,
+"text": "LEAGUE",
+"emph": false
+},
+{
+"start": 48.58,
+"end": 48.8,
+"text": "TITLE",
+"emph": false
+},
+{
+"start": 48.8,
+"end": 48.98,
+"text": "AT",
+"emph": false
+},
+{
+"start": 48.98,
+"end": 49.3,
+"text": "41",
+"emph": true
+},
+{
+"start": 49.76,
+"end": 50.02,
+"text": "TALENT",
+"emph": true
+},
+{
+"start": 50.02,
+"end": 50.24,
+"text": "GOT",
+"emph": false
+},
+{
+"start": 50.24,
+"end": 50.4,
+"text": "HIM",
+"emph": false
+},
+{
+"start": 50.4,
+"end": 50.76,
+"text": "STARTED",
+"emph": false
+},
+{
+"start": 51.04,
+"end": 51.24,
+"text": "HABITS",
+"emph": true
+},
+{
+"start": 51.24,
+"end": 51.5,
+"text": "KEPT",
+"emph": false
+},
+{
+"start": 51.5,
+"end": 51.68,
+"text": "HIM",
+"emph": false
+},
+{
+"start": 51.68,
+"end": 51.98,
+"text": "GOING",
+"emph": false
+},
+{
+"start": 52.32,
+"end": 52.48,
+"text": "SO",
+"emph": false
+},
+{
+"start": 52.48,
+"end": 52.66,
+"text": "NEXT",
+"emph": false
+},
+{
+"start": 52.66,
+"end": 52.9,
+"text": "TIME",
+"emph": false
+},
+{
+"start": 52.9,
+"end": 53.06,
+"text": "YOU",
+"emph": false
+},
+{
+"start": 53.06,
+"end": 53.24,
+"text": "SKIP",
+"emph": false
+},
+{
+"start": 53.24,
+"end": 53.4,
+"text": "A",
+"emph": false
+},
+{
+"start": 53.4,
+"end": 53.78,
+"text": "WORKOUT",
+"emph": true
+},
+{
+"start": 54.04,
+"end": 54.24,
+"text": "REMEMBER",
+"emph": false
+},
+{
+"start": 54.24,
+"end": 54.64,
+"text": "WHO'S",
+"emph": false
+},
+{
+"start": 54.64,
+"end": 54.82,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 54.82,
+"end": 55.18,
+"text": "TRAINING",
+"emph": true
+},
+{
+"start": 55.18,
+"end": 55.42,
+"text": "AT",
+"emph": false
+},
+{
+"start": 55.42,
+"end": 55.82,
+"text": "41",
+"emph": true
+}
+]
