@@ -3,8 +3,8 @@
 1080×1920, 30 fps, 60 s, flat cartoon characters in a 3D toon world (Remotion + three.js), cut in the same fast
 style as the milk and red & yellow videos: a new camera setup about every 1.5 s (47 setups, all moving), a gag every
 3–5 s, information on signs inside the world (the stadium's big screen, a whiteboard, a breakfast board, a fridge
-note, a training log, a measuring pole, a calendar), one-word captions, a fast narrator (Kokoro voice am_fenrir) and
-lighting changes (golden evening stadium, bright morning house, sunny training pitch, a cold blue ice room).
+note, a training log, a measuring pole, a calendar), one-word captions, a fast British narrator (Kokoro voice bm_george, speed 1.34) and
+lighting changes (golden evening stadium, bright morning house, sunny training pitch, a cold blue ice-shower room).
 
 This is a different angle from `projects/ronaldo60` (his childhood): this one is about how he is still playing at 41.
 
@@ -12,7 +12,7 @@ This is a different angle from `projects/ronaldo60` (his childhood): this one is
 and still chasing 1,000 goals. His day: he treats sleep like training (reportedly with naps), protein for breakfast
 and very little sugar, the press conference where he moved two soda bottles and held up water, no alcohol. Training:
 sprints, weights, extra shooting after everyone leaves ("first in, last out"), a header measured at over 2.5 m, an
-ice bath, then rest and repeat. The result: over 970 goals, the most international goals by any man, six World Cups,
+an ice-cold shower, then rest and repeat. The result: over 970 goals, "the GOAT of football" (with a cartoon goat), six World Cups,
 a league title at 41. Talent got him started; habits kept him going. Ending: Max on the couch skipping a workout, and
 Ronaldo's jump celebration.
 
@@ -21,7 +21,7 @@ Ronaldo's jump celebration.
 |---|---|
 | Born 5 Feb 1985, so 41 now | ✅ |
 | Over 970 career goals, chasing 1,000 | ✅ About 974–976 official goals in mid-2026 reports (footballtransfers.com, July 2026) |
-| Most international goals in men's football | ✅ Record since 2021 |
+| "The GOAT of football" | 💬 Opinion, said as a fan line (no record claimed on screen) |
 | Six World Cups | ✅ 2026 was his sixth (Portugal out to Spain in the round of 16) |
 | League title at 41 | ✅ Saudi Pro League 2025–26 with Al Nassr |
 | Moved two soda bottles at a press conference and held up water | ✅ Euro 2020 press conference (June 2021); the bottles here are a made-up brand, "FIZZ" |
@@ -29,7 +29,7 @@ Ronaldo's jump celebration.
 | Sleep treated like training, short naps | ⚠️ Widely reported (sleep coach interviews); the narration says "reportedly" |
 | Protein, very little sugar | ⚠️ Widely reported diet; kept general |
 | Header measured at over 2.5 m | ✅ 2019 header vs Sampdoria, widely reported at about 2.56 m |
-| Ice-cold recovery | ⚠️ He has shown cryotherapy / cold recovery; the 3 °C sign is a cartoon detail |
+| Ice-cold shower | ⚠️ He has shown cryotherapy / cold recovery; the shower and the 3 °C sign are cartoon details |
 | "First in, last out" | ⚠️ A common description from teammates and coaches; phrased as "teammates often say" |
 
 **Likeness and brands:** a simple cartoon caricature (red #7 shirt), no club crests, real kits, sponsors or logos.
@@ -44,3 +44,9 @@ Small print on screen: "Unofficial fan cartoon · not affiliated with the player
 | `toon/render.mjs` | Chunked, resumable renderer |
 | `make_video.py <chunk_dir>` | Joins the chunks and the mix into `out/ronaldo_still_scoring_at_41_60s.mp4` and its `.srt` |
 | `deliverables/` | Final video, captions, contact sheet |
+
+## Revision 2
+Re-voiced with bm_george (British male); line 14 is now "He later takes an ice cold shower." and line 17
+"The GOAT of football." The scene times in `toon/src/story.ts` were written for the first recording;
+`toon/src/warp.json` maps them onto the new narration (piecewise linear between matching sentence starts), and
+`audio/make_audio.py` uses the same map.

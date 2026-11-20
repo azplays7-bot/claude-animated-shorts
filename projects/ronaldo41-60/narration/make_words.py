@@ -6,7 +6,7 @@ import soundfile as sf
 from scipy.signal import resample_poly
 from faster_whisper import WhisperModel
 HERE = os.path.dirname(os.path.abspath(__file__))
-EMPH = {"RONALDO", "SLEEP", "NAPS", "PROTEIN", "SUGAR", "WATER", "DRINK", "TRAINING", "SPRINTS", "WEIGHTS", "EXTRA", "FIRST", "LAST", "HEADER", "ICE", "BRRR", "REPEAT", "RESULT", "HISTORY", "HABITS", "TALENT", "WORKOUT", "SODA"}
+EMPH = {"RONALDO", "SLEEP", "NAPS", "PROTEIN", "SUGAR", "WATER", "DRINK", "TRAINING", "SPRINTS", "WEIGHTS", "EXTRA", "FIRST", "LAST", "HEADER", "ICE", "SHOWER", "REPEAT", "RESULT", "GOAT", "HABITS", "TALENT", "WORKOUT", "SODA"}
 a, sr = sf.read(os.path.join(HERE, "narration.wav"), dtype="float32")
 a16 = resample_poly(a, 1, 3).astype("float32")
 segs, _ = WhisperModel("small.en", device="cpu", compute_type="int8").transcribe(a16, word_timestamps=True, language="en")

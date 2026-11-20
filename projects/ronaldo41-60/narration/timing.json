@@ -1,245 +1,245 @@
 {
- "voice": "am_fenrir",
- "speed": 1.2,
+ "voice": "bm_george",
+ "speed": 1.34,
  "scenes": {
   "1": [
    0.12,
-   10.832
+   10.897
   ],
   "2": [
-   11.232,
-   25.344
+   11.397,
+   25.197
   ],
   "3": [
-   25.744,
-   41.784
+   25.697,
+   41.603
   ],
   "4": [
-   42.184,
-   56.104
+   42.103,
+   54.196
   ]
  },
  "sentences": [
   {
    "scene": 1,
    "start": 0.12,
-   "end": 2.147
+   "end": 2.317
   },
   {
    "scene": 1,
-   "start": 2.347,
-   "end": 5.035
+   "start": 2.567,
+   "end": 5.17
   },
   {
    "scene": 1,
-   "start": 5.235,
-   "end": 9.416
+   "start": 5.42,
+   "end": 9.367
   },
   {
    "scene": 1,
-   "start": 9.616,
-   "end": 10.832
+   "start": 9.617,
+   "end": 10.897
   },
   {
    "scene": 2,
-   "start": 11.232,
-   "end": 14.197
+   "start": 11.397,
+   "end": 14.191
   },
   {
    "scene": 2,
-   "start": 14.397,
-   "end": 17.021
+   "start": 14.441,
+   "end": 16.98
   },
   {
    "scene": 2,
-   "start": 17.221,
-   "end": 19.483
+   "start": 17.23,
+   "end": 19.577
   },
   {
    "scene": 2,
-   "start": 19.683,
-   "end": 23.331
+   "start": 19.827,
+   "end": 23.005
   },
   {
    "scene": 2,
-   "start": 23.531,
-   "end": 25.344
+   "start": 23.255,
+   "end": 25.197
   },
   {
    "scene": 3,
-   "start": 25.744,
-   "end": 29.157
+   "start": 25.697,
+   "end": 28.875
   },
   {
    "scene": 3,
-   "start": 29.357,
-   "end": 31.341
+   "start": 29.125,
+   "end": 31.429
   },
   {
    "scene": 3,
-   "start": 31.541,
-   "end": 33.952
+   "start": 31.679,
+   "end": 33.898
   },
   {
    "scene": 3,
-   "start": 34.152,
-   "end": 36.947
+   "start": 34.148,
+   "end": 36.943
   },
   {
    "scene": 3,
-   "start": 37.147,
-   "end": 39.557
+   "start": 37.193,
+   "end": 39.155
   },
   {
    "scene": 3,
-   "start": 39.757,
-   "end": 41.784
+   "start": 39.405,
+   "end": 41.603
   },
   {
    "scene": 4,
-   "start": 42.184,
-   "end": 44.445
+   "start": 42.103,
+   "end": 44.279
   },
   {
    "scene": 4,
-   "start": 44.645,
-   "end": 47.12
+   "start": 44.529,
+   "end": 45.723
   },
   {
    "scene": 4,
-   "start": 47.32,
-   "end": 49.581
+   "start": 45.973,
+   "end": 48.235
   },
   {
    "scene": 4,
-   "start": 49.781,
-   "end": 52.149
+   "start": 48.485,
+   "end": 50.767
   },
   {
    "scene": 4,
-   "start": 52.349,
-   "end": 56.104
+   "start": 51.017,
+   "end": 54.196
   }
  ],
  "chunks": [
   {
    "scene": 1,
    "start": 0.12,
-   "end": 2.147,
+   "end": 2.317,
    "text": "Most footballers retire around thirty-five."
   },
   {
    "scene": 1,
-   "start": 2.347,
-   "end": 5.035,
+   "start": 2.567,
+   "end": 5.17,
    "text": "Players his age are on TV, talking about football."
   },
   {
    "scene": 1,
-   "start": 5.235,
-   "end": 9.416,
+   "start": 5.42,
+   "end": 9.367,
    "text": "Cristiano Ronaldo is forty-one. And he's still chasing one thousand goals."
   },
   {
    "scene": 1,
-   "start": 9.616,
-   "end": 10.832,
+   "start": 9.617,
+   "end": 10.897,
    "text": "How? Let's follow his day."
   },
   {
    "scene": 2,
-   "start": 11.232,
-   "end": 14.197,
+   "start": 11.397,
+   "end": 14.191,
    "text": "Morning. He wakes up rested, because he treats sleep like training."
   },
   {
    "scene": 2,
-   "start": 14.397,
-   "end": 17.021,
+   "start": 14.441,
+   "end": 16.98,
    "text": "Reportedly, that even includes short naps through the day."
   },
   {
    "scene": 2,
-   "start": 17.221,
-   "end": 19.483,
+   "start": 17.23,
+   "end": 19.577,
    "text": "Breakfast? Lots of protein. Very little sugar."
   },
   {
    "scene": 2,
-   "start": 19.683,
-   "end": 23.331,
+   "start": 19.827,
+   "end": 23.005,
    "text": "He once moved two soda bottles off a press table and held up water."
   },
   {
    "scene": 2,
-   "start": 23.531,
-   "end": 25.344,
+   "start": 23.255,
+   "end": 25.197,
    "text": "And alcohol? He's said he doesn't drink."
   },
   {
    "scene": 3,
-   "start": 25.744,
-   "end": 29.157,
+   "start": 25.697,
+   "end": 28.875,
    "text": "Then training. Sprints. Weights. Extra shooting after everyone leaves."
   },
   {
    "scene": 3,
-   "start": 29.357,
-   "end": 31.341,
+   "start": 29.125,
+   "end": 31.429,
    "text": "Teammates often say: first in, last out."
   },
   {
    "scene": 3,
-   "start": 31.541,
-   "end": 33.952,
+   "start": 31.679,
+   "end": 33.898,
    "text": "That's how a forty-one year old still jumps like this."
   },
   {
    "scene": 3,
-   "start": 34.152,
-   "end": 36.947,
+   "start": 34.148,
+   "end": 36.943,
    "text": "One header was measured at over two and a half meters high."
   },
   {
    "scene": 3,
-   "start": 37.147,
-   "end": 39.557,
-   "text": "After? Ice cold recovery. Brrr."
+   "start": 37.193,
+   "end": 39.155,
+   "text": "He later takes an ice cold shower."
   },
   {
    "scene": 3,
-   "start": 39.757,
-   "end": 41.784,
+   "start": 39.405,
+   "end": 41.603,
    "text": "Then rest. Then repeat. Every single day."
   },
   {
    "scene": 4,
-   "start": 42.184,
-   "end": 44.445,
+   "start": 42.103,
+   "end": 44.279,
    "text": "The result? Over nine hundred and seventy goals."
   },
   {
    "scene": 4,
-   "start": 44.645,
-   "end": 47.12,
-   "text": "More goals for his country than any man in history."
+   "start": 44.529,
+   "end": 45.723,
+   "text": "The GOAT of football."
   },
   {
    "scene": 4,
-   "start": 47.32,
-   "end": 49.581,
+   "start": 45.973,
+   "end": 48.235,
    "text": "Six World Cups. A league title at forty-one."
   },
   {
    "scene": 4,
-   "start": 49.781,
-   "end": 52.149,
+   "start": 48.485,
+   "end": 50.767,
    "text": "Talent got him started. Habits kept him going."
   },
   {
    "scene": 4,
-   "start": 52.349,
-   "end": 56.104,
+   "start": 51.017,
+   "end": 54.196,
    "text": "So next time you skip a workout, remember who's still training at forty-one."
   }
  ]

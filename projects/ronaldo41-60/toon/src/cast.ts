@@ -5,7 +5,7 @@
 // Cards, effects and blobs live on the NOINK layer so the world ink pass never outlines their quads.
 import * as THREE from "three";
 import { Pen, bodyFront, bodySide, KID, SKINS, INK, fxBurst, fxShadow, fxContact, Outfit, Expr, FrontOpts, SideOpts, townsfolk } from "./toon";
-import { FPS, SHOTS, V3, smooth, clamp01, BT, TOTAL, HOUSE, BED, TABLE_K, PRESS_T, TUB, CALENDAR, COUCH, WHITEBOARD, FRIDGE_NOTE, LOG_BOARD, POLE_M, SCREEN, BOOTH, GOAL_X, add } from "./story";
+import { FPS, SHOTS, V3, smooth, clamp01, BT, TOTAL, unwarp, warp, HOUSE, BED, TABLE_K, PRESS_T, TUB, CALENDAR, COUCH, WHITEBOARD, FRIDGE_NOTE, LOG_BOARD, POLE_M, SCREEN, BOOTH, GOAL_X, add } from "./story";
 import { crAt } from "./blocking";
 import { LIGHTS } from "./lights";
 import { NOINK } from "./ink";
@@ -356,6 +356,29 @@ const fxWine = (p: Pen) => { p.poly([[70, 30], [186, 30], [170, 140], [128, 170]
 const fxFlash = (p: Pen) => { p.dot(128, 128, 110, "rgba(255,255,255,0.55)"); p.dot(128, 128, 60, "#ffffff"); for (let k = 0; k < 8; k++) { const a = k * Math.PI / 4; p.stroke([[128 + Math.cos(a) * 60, 128 + Math.sin(a) * 60], [128 + Math.cos(a) * 124, 128 + Math.sin(a) * 124]], 10, "#ffffff"); } };
 const fxIce = (p: Pen) => { for (let k = 0; k < 7; k++) { const x = 40 + hh(k, 2) * 420, y = 40 + hh(k, 3) * 170, s = 26 + hh(k, 4) * 20; p.poly([[x - s, y - s * 0.8], [x + s, y - s], [x + s * 0.9, y + s], [x - s, y + s * 0.9]], "#e8f8ff", 6); p.stroke([[x - s * 0.5, y - s * 0.4], [x, y - s * 0.6]], 5, "#ffffff"); } };
 const fxShiver = (p: Pen) => { for (const s of [-1, 1]) for (let k = 0; k < 3; k++) p.stroke([[128 + s * (70 + k * 18), 60 + k * 10], [128 + s * (84 + k * 18), 120], [128 + s * (70 + k * 18), 180 - k * 10]], 8, "#bfe9ff"); };
+const fxShowerHead = (p: Pen) => {
+  p.stroke([[128, 0], [128, 70], [150, 110]], 14, "#8a9099");
+  p.poly([[100, 110], [210, 110], [190, 150], [120, 150]], "#b8bec6", 6);
+  for (let k = 0; k < 5; k++) p.ell(125 + k * 15, 158, 4, 4, "#5aa9e6", 0);
+};
+/** falling ice-cold water, 4 animation phases */
+const fxShower = (p: Pen, ph: number) => {
+  for (let k = 0; k < 11; k++) {
+    const x = 30 + k * 19 + hh(k, 7) * 8, len = 40 + hh(k, 8) * 40;
+    for (let y = ((ph * 32 + hh(k, 9) * 128) % 128) - 128; y < 512; y += 128) p.stroke([[x, y], [x + 2, y + len]], 5, "rgba(140,210,255,0.85)");
+  }
+  for (let k = 0; k < 6; k++) { const y = (hh(k, 10) * 512 + ph * 40) % 512; p.ell(40 + hh(k, 11) * 180, y, 7, 7, "rgba(255,255,255,0.9)", 0); }
+};
+/** a little cartoon goat (the G.O.A.T. gag) */
+const fxGoat = (p: Pen) => {
+  for (const x of [130, 170, 230, 265]) p.stroke([[x, 250], [x, 330]], 14, "#3a3a3a");
+  p.ell(200, 230, 95, 55, "#f4f1ea", 6);
+  p.ell(300, 165, 48, 40, "#f4f1ea", 6);
+  p.stroke([[285, 130], [270, 85], [250, 75]], 10, "#8a6a3c"); p.stroke([[310, 128], [305, 82], [288, 66]], 10, "#8a6a3c");
+  p.poly([[300, 200], [318, 200], [309, 240]], "#e2ddd0", 4);
+  p.ell(312, 160, 7, 9, "#1a1a1a", 0); p.ell(340, 178, 5, 4, "#1a1a1a", 0);
+  p.stroke([[110, 215], [90, 200]], 10, "#f4f1ea");
+};
 const fxBreath = (p: Pen) => { for (let k = 0; k < 4; k++) p.ell(50 + k * 50, 128 - k * 10, 40 - k * 4, 30 - k * 3, "rgba(235,248,255,0.85)", 0); };
 const fxPage = (p: Pen, n: number) => { p.poly([[8, 8], [248, 8], [248, 312], [8, 312]], "#ffffff", 6); p.g.fillStyle = "#c8102e"; p.g.fillRect(10, 10, 236, 60); txt(p, "DAY", 128, 42, 40, "#ffffff"); txt(p, String(n), 128, 190, 110, INK); };
 const fxStamp = (p: Pen, s: string) => { p.g.save(); p.g.translate(256, 100); p.g.rotate(-0.15); p.g.strokeStyle = "#e23b4e"; p.g.lineWidth = 16; p.g.strokeRect(-230, -70, 460, 140); txt(p, s, 0, 6, 110, "#e23b4e"); p.g.restore(); };
@@ -377,7 +400,7 @@ const fireworks = (out: Stage, f: number, f0: number, f1: number, cx: number, cy
 };
 const H = (x: number, y: number, z: number): V3 => add(HOUSE, [x, y, z]);
 const xyz = (p: V3) => ({ x: p[0], y: p[1], z: p[2] });
-const fT = (s: number) => Math.round(s * FPS);
+const fT = (s: number) => Math.round(warp(s) * FPS); // pre-warp seconds -> frame
 
 /** Ronaldo, posed from the blocking */
 const crCard = (cam: CamInfo, out: Stage, id: number, f: number, t: number, base: V3, who: Who, fo: FrontOpts, speed = 1.1) => {
@@ -396,6 +419,7 @@ const crCard = (cam: CamInfo, out: Stage, id: number, f: number, t: number, base
 export const stage = (id: number, t: number, cam: CamInfo): Stage => {
   const out: Stage = { places: [], fx: [] };
   const s = SHOTS[id - 1], f = t * FPS;
+  t = unwarp(t); // the times written below are pre-warp seconds (beats BT are frames of the current narration)
   LNAME = s.light;
   findSun(cam, SUN);
   const B = s.place === "house" ? HOUSE : ([0, 0, 0] as V3);
@@ -427,9 +451,9 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     case 2: { // morning: sleep, naps, breakfast, the soda bottles, no alcohol
       const m = crAt(2, f);
       const lying = m.mode === "lie";
-      const ex: Expr = lying ? "smile_closed" : t < 17.25 ? "grin" : t < 19.6 ? (t >= 18.6 ? "stern" : "laugh") : t < 23.55 ? (t >= BT.held / FPS ? "grin" : "smile") : "stern";
+      const ex: Expr = lying ? "smile_closed" : t < 17.25 ? "grin" : t < 19.6 ? (t >= 18.6 ? "stern" : "laugh") : t < 23.55 ? (t >= unwarp(BT.held / FPS) ? "grin" : "smile") : "stern";
       let pr: FrontOpts["prop"] = null;
-      if (t >= BT.held / FPS - 0.1 && t < 23.55) pr = ["raise", "water"];
+      if (t >= unwarp(BT.held / FPS) - 0.1 && t < 23.55) pr = ["raise", "water"];
       const who = t < 19.6 ? CRHOME : CR;
       crCard(cam, out, 2, f, t, B, who, { expr: ex, prop: pr, blink: lying ? 1 : undefined, wave: !lying && t >= 11.75 && t < 12.45 ? q(Math.sin(t * 6), 30) : t >= 23.55 ? q(Math.sin(t * 10), 30) : undefined, look: t >= 23.55 ? (Math.floor(t * 5) % 2 ? 1 : -1) : 0 });
       // bed: blanket, Zzz, alarm, wall clock
@@ -532,12 +556,15 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 4: { // ice bath, then rest + repeat
       const shiver = f >= BT.ice - 4 ? 0.02 * Math.sin(t * 70) : 0;
-      sitter(cam, out, CRHOME, H(TUB[0] + shiver, 0, 0)[0], H(0, 0, TUB[2] - 0.05)[2], { expr: f < BT.brrr - 6 ? "shock" : f < BT.rest ? "nervous" : "smile_closed" }, t);
+      // standing in the tub under an ice-cold shower (the tub hides his legs)
+      front(cam, out, CRHOME, H(TUB[0] + shiver, 0, 0)[0], H(0, 0, TUB[2] - 0.1)[2], { mode: "stand", expr: f < BT.ice - 4 ? "grin" : f < BT.rest ? "shock" : "smile_closed", look: 0 }, t, 0.15, 1, false);
+      out.fx.push({ key: "showerHead", cw: 256, ch: 256, draw: fxShowerHead, ...xyz(H(TUB[0], 2.25, TUB[2] - 0.2)), w: 0.75, h: 0.75 });
+      if (f >= BT.later - 2 && f < BT.rest + 4) { const ph = Math.floor(f / 2) % 4; out.fx.push({ key: "shower" + ph, cw: 256, ch: 512, draw: (p) => fxShower(p, ph), ...xyz(H(TUB[0], 1.45, TUB[2] + 0.05)), w: 0.9, h: 1.8, soft: true }); }
       out.fx.push({ key: "ice", cw: 512, ch: 256, draw: fxIce, ...xyz(H(TUB[0], 0.64, TUB[2])), w: 1.7, h: 0.85, flat: true });
-      if (f >= BT.ice - 4 && f < BT.rest) out.fx.push({ key: "shiver", cw: 256, ch: 256, draw: fxShiver, ...xyz(H(TUB[0], 1.15, TUB[2] + 0.2)), w: 0.75, h: 0.75 });
-      if (f >= BT.brrr - 6 && f < BT.rest) { const u = (t * 1.5) % 1; out.fx.push({ key: "breath", cw: 256, ch: 256, draw: fxBreath, ...xyz(H(TUB[0] + 0.25 + u * 0.3, 1.2 + u * 0.15, TUB[2] + 0.3)), w: 0.4 + u * 0.2, h: 0.4 + u * 0.2, soft: true }); }
-      riser(out, f, BT.ice, "3°C", "#2f6fd6", ...H(TUB[0] - 0.7, 1.3, TUB[2] + 0.4), 0.5, 30);
-      riser(out, f, BT.brrr - 2, "BRRR!", "#2f6fd6", ...H(TUB[0], 1.75, TUB[2] + 0.3), 0.7, 30);
+      if (f >= BT.ice - 4 && f < BT.rest) out.fx.push({ key: "shiver", cw: 256, ch: 256, draw: fxShiver, ...xyz(H(TUB[0], 1.45, TUB[2] + 0.1)), w: 0.85, h: 0.85 });
+      if (f >= BT.brrr - 6 && f < BT.rest) { const u = (t * 1.5) % 1; out.fx.push({ key: "breath", cw: 256, ch: 256, draw: fxBreath, ...xyz(H(TUB[0] + 0.25 + u * 0.3, 1.55 + u * 0.15, TUB[2] + 0.3)), w: 0.4 + u * 0.2, h: 0.4 + u * 0.2, soft: true }); }
+      riser(out, f, BT.ice, "3°C", "#2f6fd6", ...H(TUB[0] - 0.7, 1.6, TUB[2] + 0.4), 0.5, 30);
+      riser(out, f, BT.brrr + 2, "BRRR!", "#2f6fd6", ...H(TUB[0] + 0.45, 2.0, TUB[2] + 0.3), 0.7, 30);
       // the calendar: pages fly off
       if (f >= BT.rest - 4) for (let k = 0; k < 14; k++) toss(out, f, BT.rest - 4 + k * 5, 18, H(CALENDAR[0], CALENDAR[1], CALENDAR[2] + 0.05), H(CALENDAR[0] + (hh(k, 5) - 0.3) * 3, 0.1, CALENDAR[2] + 1.5 + hh(k, 6)), 0.6, "page" + (k + 1), 256, 320, (p) => fxPage(p, k + 1), 0.32);
       pop(out, f, BT.repeat - 2, TOTAL, "stampRep", 512, 200, (p) => fxStamp(p, "REPEAT"), ...H(CALENDAR[0], CALENDAR[1] - 0.15, CALENDAR[2] + 0.12), 0.9);
@@ -554,8 +581,8 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       riser(out, f, fT(42.5), "GOAL!", "#c8102e", 48.5, 3.2, -0.5, 2.0, 30);
       fireworks(out, f, fT(42.4), fT(52.2), 62, 30, 0, 40);
       fireworks(out, f, fT(46.3), fT(47.4), 40, 26, -52, 70);
-      pop(out, f, BT.country - 4, fT(46.45), "medal", 256, 256, fxMedal, 42.55, 1.35, 0.35, 0.42);
-      riser(out, f, BT.history - 4, "ALL-TIME #1", "#ffc928", 42, 2.45, 0.4, 1.0, 28);
+      pop(out, f, BT.goat - 2, BT.cups - 2, "goat", 384, 384, fxGoat, 42.5, 0.42, 0.4, 0.7);
+      riser(out, f, BT.goat - 2, "G.O.A.T.", "#ffc928", 42, 2.45, 0.4, 1.0, 28);
       for (let k = 0; k < 6; k++) pop(out, f, BT.cups + 4 + k * 4, fT(48.4), "cupball", 256, 256, (p) => fxBall(p, k), SCREEN[0] - 0.6, SCREEN[1] - 2.6, -4.5 + k * 1.8, 1.4);
       confetti(out, f, BT.league, 42, 3.2, 0.6, 4);
       riser(out, f, BT.league + 2, "CHAMPIONS", "#ffc928", 42, 2.5, 0.4, 1.1, 34);

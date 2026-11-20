@@ -1,6 +1,6 @@
 // Where Ronaldo is, per shot and time (stadium / house-relative x, z). Shared by cast.ts (the card) and world.ts.
 // Each key: [time s, x, z, facing x, facing z, moving?]; between keys the position glides (moving) or holds.
-import { FPS, clamp01 } from "./story";
+import { FPS, clamp01, unwarp } from "./story";
 
 type K = [number, number, number, number, number, boolean];
 const CRK: Record<number, K[]> = {
@@ -19,7 +19,7 @@ export type Pose = { x: number; z: number; dx: number; dz: number; mode: Mode; y
 const arc = (t: number, a: number, b: number, c: number, d: number, h: number) =>
   t < a || t > d ? 0 : t < b ? h * Math.sin((Math.PI / 2) * (t - a) / (b - a)) : t < c ? h : h * Math.cos((Math.PI / 2) * (t - c) / (d - c));
 export const crAt = (id: number, f: number): Pose => {
-  const ks = CRK[id], t = f / FPS;
+  const ks = CRK[id], t = unwarp(f / FPS); // keys are in pre-warp seconds
   if (!ks || t < ks[0][0]) return { x: 0, z: 0, dx: 0, dz: 1, mode: "stand", y: 0, visible: false };
   let i = 0; while (i + 1 < ks.length && t >= ks[i + 1][0]) i++;
   const a = ks[i], b = ks[i + 1];
@@ -30,7 +30,7 @@ export const crAt = (id: number, f: number): Pose => {
   }
   let y = 0;
   if (id === 2) mode = t < 11.75 || (t >= 14.55 && t < 17.25) ? "lie" : t >= 17.25 ? "sit" : "stand";
-  if (id === 4) mode = "sit";
+  if (id === 4) mode = "stand"; // in the tub, under the ice-cold shower
   if (id === 3 && t >= 31.55) { y = arc(t, 33.0, 33.7, 35.2, 35.75, 0.95); if (y > 0.02) mode = "jump"; }
   if (id === 7) { y = arc(t, 55.0, 55.45, 55.75, 56.1, 0.8); if (y > 0.02) mode = "jump"; }
   if (id === 5 && t >= 44.65 && t < 46.45) { y = arc(t, 44.75, 45.05, 45.15, 45.45, 0.45); if (y > 0.02) mode = "jump"; }

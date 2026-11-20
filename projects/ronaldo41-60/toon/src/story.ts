@@ -3,6 +3,7 @@
 // Pacing: a new camera setup every ~1.5 s, every setup moves, a gag every 3-5 s, information on signs in the world.
 // Look: golden evening stadium (hook, result, ending) / bright morning house / sunny training pitch / cold blue ice room.
 import WORDS from "./words.json";
+import WARP from "./warp.json";
 export const FPS = 30;
 export const TOTAL = 1800;
 export type V3 = [number, number, number];
@@ -20,6 +21,14 @@ const w = (text: string, n = 0) => {
   if (!hits[n]) throw new Error("story.ts: no word " + text + " #" + n);
   return Math.round(hits[n].start * FPS);
 };
+/** The scene times below were written for an earlier recording; warp() maps them onto the current narration
+ *  (piecewise linear between matching sentence starts), unwarp() maps current seconds back. */
+const interp = (x: number, a: number[], b: number[]) => {
+  let i = 0; while (i + 2 < a.length && x > a[i + 1]) i++;
+  return b[i] + (b[i + 1] - b[i]) * (x - a[i]) / Math.max(1e-6, a[i + 1] - a[i]);
+};
+export const warp = (s: number) => interp(s, WARP.old, WARP.new);
+export const unwarp = (s: number) => interp(s, WARP.new, WARP.old);
 /** narration beats (frames) */
 export const BT = {
   retire: w("RETIRE"), n35: w("35"), players: w("PLAYERS"), tv: w("TV"), talking: w("TALKING"), cristiano: w("CRISTIANO"), n41: w("41"),
@@ -30,8 +39,8 @@ export const BT = {
   training2: w("TRAINING", 1), sprints: w("SPRINTS"), weights: w("WEIGHTS"), extra: w("EXTRA"), shooting: w("SHOOTING"), leaves: w("LEAVES"),
   teammates: w("TEAMMATES"), first: w("FIRST"), last: w("LAST"), thats: w("THATS"), jumps: w("JUMPS"), header: w("HEADER"),
   measured: w("MEASURED"), meters: w("25METERS"), high: w("HIGH"),
-  after2: w("AFTER", 1), ice: w("ICE"), recovery: w("RECOVERY"), brrr: w("BRRR"), rest: w("REST"), repeat: w("REPEAT"), every: w("EVERY"),
-  result: w("RESULT"), g970: w("970GOALS"), more: w("MORE"), country: w("COUNTRY"), history: w("HISTORY"), cups: w("6WORLDCUPS"),
+  later: w("LATER"), ice: w("ICE"), brrr: w("SHOWER"), rest: w("REST"), repeat: w("REPEAT"), every: w("EVERY"),
+  result: w("RESULT"), g970: w("970GOALS"), goat: w("GOAT"), cups: w("6WORLDCUPS"),
   league: w("LEAGUE"), n41c: w("41", 2), talent: w("TALENT"), habits: w("HABITS"), going: w("GOING"),
   skip: w("SKIP"), workout: w("WORKOUT"), remember: w("REMEMBER"), n41d: w("41", 3),
   end: Math.round(WORDLIST[WORDLIST.length - 1].end * FPS),
@@ -60,7 +69,7 @@ export const FRIDGE_NOTE: V3 = [-1.2, 1.45, -3.0];
 export type Light = "day" | "golden";
 export type Place = "stadium" | "house";
 export type ShotDef = { id: number; a: number; b: number; light: Light; place: Place; sunAz?: number; sunEl?: number; cold?: boolean };
-const T = (s: number) => Math.round(s * FPS);
+const T = (s: number) => Math.round(warp(s) * FPS);
 export const SHOTS: ShotDef[] = [
   { id: 1, a: 0, b: T(11.0), light: "golden", place: "stadium", sunAz: 150, sunEl: 10 },   // hook: retire at 35? he's 41
   { id: 2, a: T(11.0), b: T(25.55), light: "day", place: "house", sunAz: 140, sunEl: 60 },   // morning: sleep, naps, breakfast, water
@@ -124,7 +133,7 @@ const SETUPS: Record<number, Setup[]> = {
     [35.55, [53.6, 1.6, 2.6], [47.2, 1.7, -0.1], [53.4, 1.5, 2.3], [47.2, 1.6, -0.1], 50, 46],                     // high: in the net
   ],
   4: [
-    [36.95, [12, 1.55, 1.6], [12, 1.0, -2.1], [12, 1.5, 0.9], [12, 1.0, -2.1], 50, 46],                    // ice cold recovery
+    [36.95, [12, 1.55, 1.6], [12, 1.0, -2.1], [12, 1.5, 0.9], [12, 1.0, -2.1], 50, 46],                    // ice cold shower
     [38.6, [12.1, 1.3, -0.55], [12, 1.2, -2.0], [12.0, 1.3, -0.8], [12, 1.2, -2.0], 46, 42],               // BRRR
     [39.65, [14.2, 1.8, -1.6], [14.6, 1.8, -4], [14.35, 1.8, -2.1], [14.6, 1.8, -4], 46, 42],               // rest, repeat (calendar)
     [40.7, [13.6, 2.3, 1.8], [12.8, 1.0, -2.6], [13.9, 2.5, 2.6], [12.8, 1.0, -2.6], 54, 56],                   // every single day
@@ -132,8 +141,7 @@ const SETUPS: Record<number, Setup[]> = {
   5: [
     [41.95, [55.4, 1.9, -2.3], [44, 1.0, 0.2], [55.0, 1.8, -1.9], [44, 1.0, 0.2], 50, 46, 1],                  // the result: GOAL
     [42.85, [34, 5.2, 9], [62, 15, 0], [40, 7.5, 6], [62, 15, 0], 50, 42],                                  // 970+ goals
-    [44.65, [41.2, 1.5, 4.4], [42, 1.45, 0], [41.4, 1.5, 3.7], [42, 1.45, 0], 46, 42],                      // more for his country...
-    [46.45, [0, 3.0, -12], [-14, 5, -42], [4, 3.5, -14], [-12, 5.5, -42], 56, 54],                                  // ...than any man in history
+    [44.65, [41.2, 1.5, 4.4], [42, 1.45, 0], [41.4, 1.5, 3.7], [42, 1.45, 0], 46, 42],                      // the GOAT (a goat pops up)
     [47.35, [45, 9.5, 4], [62, 15, 0], [47, 10.5, 3], [62, 15, 0], 46, 40],                                  // 6 world cups
     [48.4, [41.5, 1.75, 3.6], [42, 1.15, 0], [41.7, 1.7, 3.0], [42, 1.15, 0], 46, 42, 1],                    // a league title at 41
     [49.75, [30.4, 0.75, 3.0], [30, 0.85, 0], [30.3, 0.8, 2.5], [30, 0.85, 0], 48, 44],                      // talent (the kid)
@@ -148,7 +156,7 @@ const SETUPS: Record<number, Setup[]> = {
     [56.7, [42.6, 1.8, 4.0], [42, 1.6, 0], [30, 16, 34], [44, 6, -6], 46, 56],                                // the end: crane out
   ],
 };
-const STARTS = Object.fromEntries(Object.entries(SETUPS).map(([k, v]) => [k, v.map((s) => Math.round(s[0] * FPS))])) as Record<string, number[]>;
+const STARTS = Object.fromEntries(Object.entries(SETUPS).map(([k, v]) => [k, v.map((s) => Math.round(warp(s[0]) * FPS))])) as Record<string, number[]>;
 const lerp3 = (a: V3, b: V3, k: number): V3 => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k];
 /** setup index and progress at frame f */
 export const setupAt = (id: number, f: number) => {

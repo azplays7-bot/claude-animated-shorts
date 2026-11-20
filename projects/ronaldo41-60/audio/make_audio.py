@@ -29,6 +29,10 @@ import re as _re
 _st = open(os.path.join(HERE, "..", "toon", "src", "story.ts")).read()
 SETUPS = sorted(set(float(x) for x in _re.findall(r"^\s*\[(\d+\.\d+), \[", _st, _re.M)) - {0.0})
 F = lambda fr: fr / 30.0
+# scene times written for the earlier recording -> current narration (same map as toon/src/story.ts warp())
+_WP = json.load(open(os.path.join(HERE, "..", "toon", "src", "warp.json")))
+wp = lambda x: float(np.interp(x, _WP["old"], _WP["new"]))
+SETUPS = [wp(x) for x in SETUPS]
 
 # ============================================================== instruments
 def env(n, a, d, s=0.0, r=0.0, hold=None):
@@ -168,7 +172,7 @@ B = BEAT
 ANTHEM = [(45, (57, 60, 64)), (41, (57, 60, 65)), (48, (60, 64, 67)), (43, (59, 62, 67))]      # Am F C G
 HOME = [(48, (64, 67, 71)), (45, (64, 69, 72)), (41, (65, 69, 72)), (43, (62, 67, 71))]         # Cmaj7 Am F G
 MEL = [[76, 76, 79, 76], [77, 76, 72, 74], [76, 79, 84, 83], [79, 77, 74, 71]]
-S2, S3, S4, S5, S6, S7 = 11.0, 25.55, 36.95, 41.95, 52.15, 53.85
+S2, S3, S4, S5, S6, S7 = (wp(x) for x in (11.0, 25.55, 36.95, 41.95, 52.15, 53.85))
 def anthem(t0, t1, big=False):
     tb = t0; bar = 0
     while tb < t1 - 0.05:
@@ -321,6 +325,14 @@ def alarm(dur, gain=1.0):
     return gain * lp(x, 5000) * 0.4
 def splash(gain=1.0):
     t = tt(0.8); return gain * bp(R.standard_normal(len(t)), 400, 6000) * np.exp(-t / 0.2) * (1 - np.exp(-t / 0.01))
+def shower_hiss(dur, gain=1.0):
+    t = tt(dur); x = bp(R.standard_normal(len(t)), 1500, 9000) * (0.8 + 0.2 * np.sin(TAU * 7 * t))
+    return gain * x * fades(np.ones(len(t)), 0.08, 0.25)
+def bleat(gain=1.0):
+    """a cartoon goat: buzzy vibrato 'meh-eh-eh'"""
+    t = tt(0.7); f0 = 520 * (1 + 0.06 * np.sin(TAU * 11 * t)) * (1 - 0.15 * t)
+    ph = TAU * np.cumsum(f0) / SR; x = np.sign(np.sin(ph)) * 0.5 + np.sin(2 * ph) * 0.5
+    return gain * bp(x, 500, 3000) * env(len(t), 0.03, 0.7, 0.7, 0.15, 0.5)
 def firework(gain=1.0):
     t = tt(1.2); x = lp(R.standard_normal(len(t)), 1200) * np.exp(-t / 0.15) + 0.4 * hp(R.standard_normal(len(t)), 4000) * (R.random(len(t)) < 0.01) * np.exp(-t / 0.6)
     return gain * x * 2
@@ -345,14 +357,14 @@ for k in range(6): f_place(kickball(0.05), 7.35 + k * 0.38, 1.0, 0.2)
 f_place(chaching(0.06), W("1000GOALS") + 0.2)
 f_place(boing(0.07), W("HOW"))
 # home
-f_place(snore(0.08), 11.05); f_place(alarm(0.8, 0.05), W("MORNING") - 0.1)
+f_place(snore(0.08), wp(11.05)); f_place(alarm(0.8, 0.05), W("MORNING") - 0.1)
 f_place(chime((79, 84, 88), 1.0, 0.07), W("WAKES") + 0.05)
 f_place(ding(84, 0.05), W("SLEEP") + 0.15)
-f_place(snore(0.07), 14.7); f_place(snore(0.07), 15.9)
+f_place(snore(0.07), wp(14.7)); f_place(snore(0.07), wp(15.9))
 for k in range(3): f_place(pop(0.07, 600 + 100 * k), W("NAPS") - 0.25 + k * 0.4)
 f_place(clink(0.05), W("BREAKFAST")); f_place(ding(88, 0.05), W("PROTEIN"))
 f_place(buzzer(0.04), W("SUGAR"))
-f_place(shutter(0.06), 19.8); f_place(shutter(0.06), 20.5); f_place(shutter(0.05), 21.2)
+f_place(shutter(0.06), wp(19.8)); f_place(shutter(0.06), wp(20.5)); f_place(shutter(0.05), wp(21.2))
 for k in range(2): f_place(swish(0.4, 0.08), W("OFF") - 0.27 + k * 0.27); f_place(thud(0.06), W("OFF") + 0.15 + k * 0.27)
 f_place(chime((84, 88, 91), 1.0, 0.07), W("WATER")); f_place(shutter(0.07), W("HELD"))
 f_place(buzzer(0.05), W("DRINK"))
@@ -360,19 +372,19 @@ f_place(buzzer(0.05), W("DRINK"))
 f_place(whistle(0.6, 0.05), S3 + 0.1)
 for k in range(6): f_place(thud(0.04), W("SPRINTS") + k * 0.08)
 f_place(thud(0.08), W("WEIGHTS") + 0.15)
-for k in range(8): f_place(kickball(0.08), 27.45 + k * 0.55); f_place(netswish(0.05), 27.75 + k * 0.55)
+for k in range(8): f_place(kickball(0.08), wp(27.45) + k * 0.55); f_place(netswish(0.05), wp(27.75) + k * 0.55)
 f_place(ding(84, 0.06), W("FIRST")); f_place(ding(88, 0.06), W("LAST"))
-f_place(riser(0.8, 0.05, 55), 32.9); f_place(boing(0.08), 33.0); f_place(kickball(0.1), 33.75); f_place(netswish(0.08), 34.05)
+f_place(riser(0.8, 0.05, 55), wp(32.9)); f_place(boing(0.08), wp(33.0)); f_place(kickball(0.1), wp(33.75)); f_place(netswish(0.08), wp(34.05))
 f_place(chime((84, 91), 1.2, 0.06), W("25METERS"))
 # ice
-f_place(splash(0.1), S4 + 0.1); f_place(squeak(0.05), W("BRRR")); f_place(tictoc(4, 0.04), W("BRRR") - 0.2)
+f_place(shower_hiss(W("REST") - W("LATER") + 0.2, 0.05), W("LATER") - 0.05); f_place(squeak(0.05), W("SHOWER")); f_place(tictoc(4, 0.04), W("SHOWER") + 0.1)
 for k in range(14): f_place(page_flip(0.03), W("REST") - 0.13 + k * 0.17)
 f_place(thud(0.08), W("REPEAT"))
 # result
-f_place(kickball(0.12), 42.15); f_place(netswish(0.1), 42.45); f_place(cheer(3.0, 0.12), 42.45); f_place(whistle(0.4, 0.04), 42.6)
-for k in range(10): f_place(firework(0.05), 42.6 + k * 0.85, 1.0, -0.5 + 0.1 * k)
+f_place(kickball(0.12), wp(42.15)); f_place(netswish(0.1), wp(42.45)); f_place(cheer(3.0, 0.12), wp(42.45)); f_place(whistle(0.4, 0.04), wp(42.6))
+for k in range(10): f_place(firework(0.05), wp(42.6) + k * 0.85, 1.0, -0.5 + 0.1 * k)
 f_place(chaching(0.06), W("970GOALS") + 0.4)
-f_place(chime((76, 81, 84, 88), 1.4, 0.08), W("HISTORY"))
+f_place(chime((76, 81, 84, 88), 1.4, 0.08), W("GOAT")); f_place(bleat(0.06), W("GOAT") + 0.35)
 for k in range(6): f_place(pop(0.07, 500 + 80 * k), W("6WORLDCUPS") + 0.13 + 0.13 * k)
 f_place(cheer(1.6, 0.08), W("LEAGUE"))
 f_place(ding(84, 0.05), W("TALENT"))
@@ -380,9 +392,9 @@ for k in range(4): f_place(ding(84 + 3 * k, 0.05), W("HABITS") + 0.1 + k * 0.17)
 # couch
 f_place(crunch(0.1), S6 + 0.3); f_place(crunch(0.08), S6 + 0.9)
 # end
-f_place(boing(0.08), 55.0); f_place(cheer(3.5, 0.14), 55.9); f_place(boom(0.12, 1.6), 56.1)
-for k in range(6): f_place(firework(0.06), 54.2 + k * 0.9, 1.0, 0.5 - 0.2 * k)
-f_place(chime((69, 72, 76, 81, 84), 2.6, 0.12), 57.8)
+f_place(boing(0.08), wp(55.0)); f_place(cheer(3.5, 0.14), wp(55.9)); f_place(boom(0.12, 1.6), wp(56.1))
+for k in range(6): f_place(firework(0.06), wp(54.2) + k * 0.9, 1.0, 0.5 - 0.2 * k)
+f_place(chime((69, 72, 76, 81, 84), 2.6, 0.12), wp(57.8))
 fx += 0.10 * convolve_st(fx.mean(0), make_ir(0.9, 8, hf=1.2))
 fx[:, ns(59.3):] *= np.linspace(1, 0.0, N - ns(59.3)) ** 1.5
 

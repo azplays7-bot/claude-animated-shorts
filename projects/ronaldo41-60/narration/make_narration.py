@@ -1,4 +1,4 @@
-# AI narration + synced captions for "How is Ronaldo still scoring at 41?" (Kokoro TTS, voice am_fenrir).
+# AI narration + synced captions for "How is Ronaldo still scoring at 41?" (Kokoro TTS, voice bm_george).
 # Each sentence is spoken in one go (natural intonation) and placed on a 60 s timeline: short pauses between sentences,
 # longer ones at scene changes. Subtitle chunks inside a sentence are timed by their share of the spoken syllables,
 # then snapped to the quietest point nearby (the real pause in the audio).
@@ -11,9 +11,9 @@ import soundfile as sf
 from kokoro_onnx import Kokoro
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VOICE, SPEED = "am_fenrir", 1.2
+VOICE, SPEED, LANG = "bm_george", 1.34, "en-gb"
 SR, DUR = 48000, 60.0
-LEAD, GAP, SCENE_GAP = 0.12, 0.2, 0.4
+LEAD, GAP, SCENE_GAP = 0.12, 0.25, 0.5
 TARGET = {}   # one continuous 60 s video
 SCENE_SPEED = {}
 
@@ -29,7 +29,7 @@ def main(model, voices):
     clips = []
     for s in script:
         text = " ".join(c[0] for c in s["chunks"])
-        a, sr = k.create(text, voice=VOICE, speed=SPEED * SCENE_SPEED.get(s["scene"], 1.0), lang="en-us")
+        a, sr = k.create(text, voice=VOICE, speed=SPEED * SCENE_SPEED.get(s["scene"], 1.0), lang=LANG)
         clips.append(resample_poly(a, SR, sr).astype(np.float32))
     out = np.zeros(int(SR * DUR), np.float32)
     t, prev_scene, sentences, chunks, scenes = LEAD, None, [], [], {}

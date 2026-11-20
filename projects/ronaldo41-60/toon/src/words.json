@@ -7,973 +7,949 @@
 },
 {
 "start": 0.28,
-"end": 0.7,
+"end": 0.68,
 "text": "FOOTBALLERS",
 "emph": false
 },
 {
-"start": 0.7,
-"end": 1.04,
+"start": 0.68,
+"end": 1.0,
 "text": "RETIRE",
 "emph": false
 },
 {
-"start": 1.04,
-"end": 1.4,
+"start": 1.0,
+"end": 1.5,
 "text": "AROUND",
 "emph": false
 },
 {
-"start": 1.4,
-"end": 1.84,
+"start": 1.5,
+"end": 2.02,
 "text": "35",
 "emph": true
 },
 {
-"start": 2.38,
-"end": 2.56,
+"start": 2.76,
+"end": 2.76,
 "text": "PLAYERS",
 "emph": false
 },
 {
-"start": 2.56,
-"end": 2.78,
+"start": 2.88,
+"end": 2.96,
 "text": "HIS",
 "emph": false
 },
 {
-"start": 2.78,
-"end": 3.02,
+"start": 3.0,
+"end": 3.16,
 "text": "AGE",
 "emph": false
 },
 {
-"start": 3.02,
-"end": 3.2,
+"start": 3.16,
+"end": 3.44,
 "text": "ARE",
 "emph": false
 },
 {
-"start": 3.2,
-"end": 3.4,
+"start": 3.44,
+"end": 3.6,
 "text": "ON",
 "emph": false
 },
 {
-"start": 3.4,
-"end": 3.78,
+"start": 3.6,
+"end": 3.94,
 "text": "TV",
 "emph": false
 },
 {
-"start": 3.78,
-"end": 4.26,
+"start": 3.94,
+"end": 4.44,
 "text": "TALKING",
 "emph": false
 },
 {
-"start": 4.26,
-"end": 4.54,
+"start": 4.44,
+"end": 4.68,
 "text": "ABOUT",
 "emph": false
 },
 {
-"start": 4.54,
-"end": 4.9,
+"start": 4.68,
+"end": 5.02,
 "text": "FOOTBALL",
 "emph": false
 },
 {
-"start": 5.32,
-"end": 5.78,
+"start": 5.52,
+"end": 5.88,
 "text": "CRISTIANO",
 "emph": false
 },
 {
-"start": 5.78,
-"end": 6.16,
+"start": 5.88,
+"end": 6.2,
 "text": "RONALDO",
 "emph": true
 },
 {
-"start": 6.16,
-"end": 6.54,
+"start": 6.2,
+"end": 6.7,
 "text": "IS",
 "emph": false
 },
 {
-"start": 6.54,
-"end": 6.88,
+"start": 6.7,
+"end": 7.0,
 "text": "41",
 "emph": true
 },
 {
-"start": 7.34,
-"end": 7.42,
+"start": 7.52,
+"end": 7.6,
 "text": "AND",
 "emph": false
 },
 {
-"start": 7.46,
-"end": 7.62,
+"start": 7.64,
+"end": 7.76,
 "text": "HE'S",
 "emph": false
 },
 {
-"start": 7.62,
-"end": 7.82,
+"start": 7.76,
+"end": 7.92,
 "text": "STILL",
 "emph": false
 },
 {
-"start": 7.82,
-"end": 8.2,
+"start": 7.92,
+"end": 8.22,
 "text": "CHASING",
 "emph": false
 },
 {
-"start": 8.2,
-"end": 9.22,
+"start": 8.22,
+"end": 9.14,
 "text": "1,000 GOALS",
 "emph": true
 },
 {
-"start": 9.68,
-"end": 9.78,
+"start": 9.72,
+"end": 9.82,
 "text": "HOW",
 "emph": false
 },
 {
-"start": 9.92,
-"end": 10.06,
+"start": 10.0,
+"end": 10.14,
 "text": "LET'S",
 "emph": false
 },
 {
-"start": 10.06,
-"end": 10.2,
+"start": 10.14,
+"end": 10.28,
 "text": "FOLLOW",
 "emph": false
 },
 {
-"start": 10.2,
-"end": 10.44,
+"start": 10.28,
+"end": 10.48,
 "text": "HIS",
 "emph": false
 },
 {
-"start": 10.44,
-"end": 10.72,
+"start": 10.48,
+"end": 10.76,
 "text": "DAY",
 "emph": false
 },
 {
-"start": 11.28,
-"end": 11.44,
+"start": 11.34,
+"end": 11.62,
 "text": "MORNING",
 "emph": false
 },
 {
-"start": 11.66,
-"end": 11.74,
+"start": 11.9,
+"end": 11.92,
 "text": "HE",
 "emph": false
 },
 {
-"start": 11.78,
-"end": 11.92,
+"start": 12.02,
+"end": 12.06,
 "text": "WAKES",
 "emph": false
 },
 {
-"start": 11.92,
-"end": 12.12,
+"start": 12.14,
+"end": 12.2,
 "text": "UP",
 "emph": false
 },
 {
-"start": 12.12,
-"end": 12.46,
+"start": 12.26,
+"end": 12.54,
 "text": "RESTED",
 "emph": false
 },
 {
-"start": 12.46,
-"end": 12.78,
+"start": 12.54,
+"end": 12.96,
 "text": "BECAUSE",
 "emph": false
 },
 {
-"start": 12.78,
-"end": 12.92,
+"start": 12.96,
+"end": 13.1,
 "text": "HE",
 "emph": false
 },
 {
-"start": 12.92,
-"end": 13.16,
+"start": 13.1,
+"end": 13.28,
 "text": "TREATS",
 "emph": false
 },
 {
-"start": 13.16,
-"end": 13.44,
+"start": 13.28,
+"end": 13.52,
 "text": "SLEEP",
 "emph": true
 },
 {
-"start": 13.44,
-"end": 13.66,
+"start": 13.52,
+"end": 13.74,
 "text": "LIKE",
 "emph": false
 },
 {
-"start": 13.66,
+"start": 13.74,
 "end": 14.04,
 "text": "TRAINING",
 "emph": true
 },
 {
-"start": 14.64,
-"end": 14.96,
+"start": 14.7,
+"end": 15.02,
 "text": "REPORTEDLY",
 "emph": false
 },
 {
-"start": 15.04,
-"end": 15.1,
+"start": 15.14,
+"end": 15.3,
 "text": "THAT",
 "emph": false
 },
 {
-"start": 15.16,
-"end": 15.32,
+"start": 15.3,
+"end": 15.46,
 "text": "EVEN",
 "emph": false
 },
 {
-"start": 15.32,
-"end": 15.72,
+"start": 15.46,
+"end": 15.82,
 "text": "INCLUDES",
 "emph": false
 },
 {
-"start": 15.72,
+"start": 15.82,
 "end": 16.04,
 "text": "SHORT",
 "emph": false
 },
 {
 "start": 16.04,
-"end": 16.34,
+"end": 16.3,
 "text": "NAPS",
 "emph": true
 },
 {
-"start": 16.34,
-"end": 16.54,
+"start": 16.3,
+"end": 16.5,
 "text": "THROUGH",
 "emph": false
 },
 {
-"start": 16.54,
-"end": 16.68,
+"start": 16.5,
+"end": 16.62,
 "text": "THE",
 "emph": false
 },
 {
-"start": 16.68,
-"end": 16.88,
+"start": 16.62,
+"end": 16.82,
 "text": "DAY",
 "emph": false
 },
 {
-"start": 17.28,
-"end": 17.48,
+"start": 17.52,
+"end": 17.52,
 "text": "BREAKFAST",
 "emph": false
 },
 {
-"start": 17.7,
-"end": 17.82,
+"start": 17.78,
+"end": 17.88,
 "text": "LOTS",
 "emph": false
 },
 {
-"start": 17.82,
-"end": 17.98,
+"start": 17.9,
+"end": 18.06,
 "text": "OF",
 "emph": false
 },
 {
-"start": 17.98,
-"end": 18.32,
+"start": 18.06,
+"end": 18.4,
 "text": "PROTEIN",
 "emph": true
 },
 {
-"start": 18.54,
-"end": 18.7,
+"start": 18.76,
+"end": 18.88,
 "text": "VERY",
 "emph": false
 },
 {
-"start": 18.7,
-"end": 18.96,
+"start": 18.88,
+"end": 19.08,
 "text": "LITTLE",
 "emph": false
 },
 {
-"start": 18.96,
-"end": 19.28,
+"start": 19.08,
+"end": 19.38,
 "text": "SUGAR",
 "emph": true
 },
 {
-"start": 19.68,
-"end": 19.78,
+"start": 19.84,
+"end": 19.92,
 "text": "HE",
-"emph": false
-},
-{
-"start": 19.8,
-"end": 19.96,
-"text": "ONCE",
 "emph": false
 },
 {
 "start": 19.96,
-"end": 20.22,
+"end": 20.08,
+"text": "ONCE",
+"emph": false
+},
+{
+"start": 20.08,
+"end": 20.28,
 "text": "MOVED",
 "emph": false
 },
 {
-"start": 20.22,
-"end": 20.56,
+"start": 20.28,
+"end": 20.58,
 "text": "TWO",
 "emph": false
 },
 {
-"start": 20.56,
-"end": 20.94,
+"start": 20.58,
+"end": 20.78,
 "text": "SODA",
 "emph": true
 },
 {
-"start": 20.94,
-"end": 21.32,
+"start": 20.78,
+"end": 21.02,
 "text": "BOTTLES",
 "emph": false
 },
 {
-"start": 21.32,
-"end": 21.54,
+"start": 21.02,
+"end": 21.2,
 "text": "OFF",
 "emph": false
 },
 {
-"start": 21.54,
-"end": 21.72,
+"start": 21.2,
+"end": 21.34,
 "text": "A",
 "emph": false
 },
 {
-"start": 21.72,
-"end": 21.86,
+"start": 21.34,
+"end": 21.48,
 "text": "PRESS",
 "emph": false
 },
 {
-"start": 21.86,
-"end": 22.22,
+"start": 21.48,
+"end": 21.74,
 "text": "TABLE",
 "emph": false
 },
 {
-"start": 22.22,
-"end": 22.52,
+"start": 21.74,
+"end": 22.18,
 "text": "AND",
 "emph": false
 },
 {
-"start": 22.52,
-"end": 22.7,
+"start": 22.18,
+"end": 22.36,
 "text": "HELD",
 "emph": false
 },
 {
-"start": 22.7,
-"end": 22.88,
+"start": 22.36,
+"end": 22.52,
 "text": "UP",
 "emph": false
 },
 {
-"start": 22.88,
-"end": 23.18,
+"start": 22.52,
+"end": 22.78,
 "text": "WATER",
 "emph": true
 },
 {
-"start": 23.56,
-"end": 23.64,
+"start": 23.32,
+"end": 23.34,
 "text": "AND",
 "emph": false
 },
 {
-"start": 23.68,
-"end": 23.96,
+"start": 23.44,
+"end": 23.66,
 "text": "ALCOHOL",
 "emph": false
 },
 {
-"start": 24.24,
-"end": 24.34,
+"start": 23.96,
+"end": 24.16,
 "text": "HE'S",
 "emph": false
 },
 {
-"start": 24.36,
-"end": 24.5,
+"start": 24.16,
+"end": 24.34,
 "text": "SAID",
 "emph": false
 },
 {
-"start": 24.5,
-"end": 24.62,
+"start": 24.34,
+"end": 24.48,
 "text": "HE",
 "emph": false
 },
 {
-"start": 24.62,
-"end": 24.9,
+"start": 24.48,
+"end": 24.74,
 "text": "DOESN'T",
 "emph": false
 },
 {
-"start": 24.9,
-"end": 25.14,
+"start": 24.74,
+"end": 24.96,
 "text": "DRINK",
 "emph": true
 },
 {
-"start": 25.74,
-"end": 25.88,
+"start": 25.7,
+"end": 25.84,
 "text": "THEN",
 "emph": false
 },
 {
-"start": 25.88,
-"end": 26.26,
+"start": 25.84,
+"end": 26.16,
 "text": "TRAINING",
 "emph": true
 },
 {
-"start": 26.4,
-"end": 26.74,
+"start": 26.34,
+"end": 26.84,
 "text": "SPRINTS",
 "emph": true
 },
 {
-"start": 26.84,
-"end": 27.04,
+"start": 26.98,
+"end": 27.16,
 "text": "WEIGHTS",
 "emph": true
 },
 {
-"start": 27.04,
-"end": 27.4,
+"start": 27.54,
+"end": 27.66,
 "text": "EXTRA",
 "emph": true
 },
 {
-"start": 27.4,
-"end": 27.98,
+"start": 27.66,
+"end": 27.86,
 "text": "SHOOTING",
 "emph": false
 },
 {
-"start": 27.98,
-"end": 28.28,
+"start": 27.86,
+"end": 28.08,
 "text": "AFTER",
 "emph": false
 },
 {
-"start": 28.28,
-"end": 28.64,
+"start": 28.08,
+"end": 28.4,
 "text": "EVERYONE",
 "emph": false
 },
 {
-"start": 28.64,
-"end": 28.94,
+"start": 28.4,
+"end": 28.62,
 "text": "LEAVES",
 "emph": false
 },
 {
-"start": 29.46,
-"end": 29.5,
+"start": 28.62,
+"end": 29.2,
 "text": "TEAMMATES",
 "emph": false
 },
 {
-"start": 29.64,
-"end": 29.86,
+"start": 29.36,
+"end": 29.62,
 "text": "OFTEN",
 "emph": false
 },
 {
-"start": 29.86,
-"end": 30.2,
+"start": 29.62,
+"end": 29.98,
 "text": "SAY",
 "emph": false
 },
 {
-"start": 30.2,
-"end": 30.52,
+"start": 30.12,
+"end": 30.4,
 "text": "FIRST",
 "emph": true
 },
 {
-"start": 30.52,
-"end": 30.74,
+"start": 30.4,
+"end": 30.68,
 "text": "IN",
 "emph": false
 },
 {
-"start": 30.74,
-"end": 30.94,
+"start": 30.76,
+"end": 30.98,
 "text": "LAST",
 "emph": true
 },
 {
-"start": 30.94,
-"end": 31.24,
+"start": 30.98,
+"end": 31.28,
 "text": "OUT",
 "emph": false
 },
 {
-"start": 31.56,
-"end": 31.72,
+"start": 31.68,
+"end": 31.82,
 "text": "THAT'S",
 "emph": false
 },
 {
-"start": 31.72,
-"end": 31.84,
+"start": 31.82,
+"end": 31.92,
 "text": "HOW",
 "emph": false
 },
 {
-"start": 31.84,
-"end": 31.96,
+"start": 31.94,
+"end": 32.04,
 "text": "A",
 "emph": false
 },
 {
-"start": 31.96,
-"end": 32.4,
+"start": 32.06,
+"end": 32.32,
 "text": "41",
 "emph": true
 },
 {
-"start": 32.4,
+"start": 32.32,
 "end": 32.58,
 "text": "YEAR",
 "emph": false
 },
 {
 "start": 32.58,
-"end": 32.74,
+"end": 32.78,
 "text": "OLD",
 "emph": false
 },
 {
-"start": 32.74,
-"end": 33.06,
+"start": 32.78,
+"end": 33.08,
 "text": "STILL",
 "emph": false
 },
 {
-"start": 33.06,
-"end": 33.36,
+"start": 33.08,
+"end": 33.32,
 "text": "JUMPS",
 "emph": false
 },
 {
-"start": 33.36,
-"end": 33.56,
+"start": 33.32,
+"end": 33.5,
 "text": "LIKE",
 "emph": false
 },
 {
-"start": 33.56,
+"start": 33.5,
 "end": 33.84,
 "text": "THIS",
 "emph": false
 },
 {
 "start": 34.18,
-"end": 34.34,
+"end": 34.3,
 "text": "ONE",
 "emph": false
 },
 {
-"start": 34.34,
-"end": 34.54,
+"start": 34.3,
+"end": 34.46,
 "text": "HEADER",
 "emph": true
 },
 {
-"start": 34.54,
-"end": 34.74,
+"start": 34.46,
+"end": 34.66,
 "text": "WAS",
 "emph": false
 },
 {
-"start": 34.74,
-"end": 35.08,
+"start": 34.66,
+"end": 34.92,
 "text": "MEASURED",
 "emph": false
 },
 {
-"start": 35.08,
-"end": 35.42,
+"start": 34.92,
+"end": 35.26,
 "text": "AT",
 "emph": false
 },
 {
-"start": 35.42,
-"end": 35.6,
+"start": 35.26,
+"end": 35.4,
 "text": "OVER",
 "emph": false
 },
 {
-"start": 35.6,
-"end": 36.46,
+"start": 35.4,
+"end": 36.48,
 "text": "2.5 METERS",
 "emph": true
 },
 {
-"start": 36.46,
-"end": 36.82,
+"start": 36.48,
+"end": 36.8,
 "text": "HIGH",
 "emph": false
 },
 {
 "start": 37.16,
-"end": 37.4,
-"text": "AFTER",
+"end": 37.28,
+"text": "HE",
 "emph": false
 },
 {
-"start": 37.4,
-"end": 37.64,
+"start": 37.28,
+"end": 37.44,
+"text": "LATER",
+"emph": false
+},
+{
+"start": 37.44,
+"end": 37.72,
+"text": "TAKES",
+"emph": false
+},
+{
+"start": 37.72,
+"end": 38.06,
+"text": "AN",
+"emph": false
+},
+{
+"start": 38.06,
+"end": 38.32,
 "text": "ICE",
 "emph": true
 },
 {
-"start": 37.64,
-"end": 37.9,
+"start": 38.32,
+"end": 38.52,
 "text": "COLD",
 "emph": false
 },
 {
-"start": 37.9,
-"end": 38.36,
-"text": "RECOVERY",
-"emph": false
-},
-{
-"start": 38.7,
-"end": 39.2,
-"text": "BRRR",
+"start": 38.52,
+"end": 38.92,
+"text": "SHOWER",
 "emph": true
 },
 {
-"start": 39.72,
-"end": 39.9,
+"start": 39.4,
+"end": 39.52,
 "text": "THEN",
 "emph": false
 },
 {
-"start": 39.9,
-"end": 40.14,
+"start": 39.52,
+"end": 39.74,
 "text": "REST",
 "emph": false
 },
 {
-"start": 40.14,
-"end": 40.38,
+"start": 40.06,
+"end": 40.12,
 "text": "THEN",
 "emph": false
 },
 {
-"start": 40.38,
-"end": 40.66,
+"start": 40.18,
+"end": 40.4,
 "text": "REPEAT",
 "emph": true
 },
 {
-"start": 40.66,
-"end": 41.1,
+"start": 40.4,
+"end": 40.92,
 "text": "EVERY",
 "emph": false
 },
 {
-"start": 41.1,
-"end": 41.36,
+"start": 40.92,
+"end": 41.18,
 "text": "SINGLE",
 "emph": false
 },
 {
-"start": 41.36,
-"end": 41.68,
+"start": 41.18,
+"end": 41.46,
 "text": "DAY",
 "emph": false
 },
 {
-"start": 42.18,
-"end": 42.28,
+"start": 42.1,
+"end": 42.18,
 "text": "THE",
 "emph": false
 },
 {
-"start": 42.3,
-"end": 42.52,
+"start": 42.22,
+"end": 42.44,
 "text": "RESULT",
 "emph": true
 },
 {
-"start": 42.78,
-"end": 42.94,
+"start": 42.72,
+"end": 42.86,
 "text": "OVER",
 "emph": false
 },
 {
-"start": 42.94,
-"end": 44.22,
+"start": 42.86,
+"end": 44.02,
 "text": "970+ GOALS",
 "emph": true
 },
 {
+"start": 44.54,
+"end": 44.64,
+"text": "THE",
+"emph": false
+},
+{
 "start": 44.66,
 "end": 44.8,
-"text": "MORE",
-"emph": false
-},
-{
-"start": 44.8,
-"end": 45.02,
-"text": "GOALS",
-"emph": false
-},
-{
-"start": 45.02,
-"end": 45.24,
-"text": "FOR",
-"emph": false
-},
-{
-"start": 45.24,
-"end": 45.38,
-"text": "HIS",
-"emph": false
-},
-{
-"start": 45.38,
-"end": 45.72,
-"text": "COUNTRY",
-"emph": false
-},
-{
-"start": 45.72,
-"end": 45.98,
-"text": "THAN",
-"emph": false
-},
-{
-"start": 45.98,
-"end": 46.2,
-"text": "ANY",
-"emph": false
-},
-{
-"start": 46.2,
-"end": 46.44,
-"text": "MAN",
-"emph": false
-},
-{
-"start": 46.44,
-"end": 46.58,
-"text": "IN",
-"emph": false
-},
-{
-"start": 46.58,
-"end": 46.94,
-"text": "HISTORY",
+"text": "GOAT",
 "emph": true
 },
 {
-"start": 47.36,
-"end": 48.08,
+"start": 44.8,
+"end": 45.1,
+"text": "OF",
+"emph": false
+},
+{
+"start": 45.1,
+"end": 45.42,
+"text": "FOOTBALL",
+"emph": false
+},
+{
+"start": 46.04,
+"end": 46.68,
 "text": "6 WORLD CUPS",
 "emph": true
 },
 {
-"start": 48.34,
-"end": 48.36,
+"start": 47.06,
+"end": 47.08,
 "text": "A",
 "emph": false
 },
 {
-"start": 48.46,
-"end": 48.52,
+"start": 47.14,
+"end": 47.18,
 "text": "LEAGUE",
 "emph": false
 },
 {
-"start": 48.58,
-"end": 48.8,
+"start": 47.26,
+"end": 47.44,
 "text": "TITLE",
 "emph": false
 },
 {
-"start": 48.8,
-"end": 48.98,
+"start": 47.44,
+"end": 47.64,
 "text": "AT",
 "emph": false
 },
 {
-"start": 48.98,
-"end": 49.3,
+"start": 47.64,
+"end": 47.92,
 "text": "41",
 "emph": true
 },
 {
-"start": 49.76,
-"end": 50.02,
+"start": 48.56,
+"end": 48.66,
 "text": "TALENT",
 "emph": true
 },
 {
-"start": 50.02,
-"end": 50.24,
+"start": 48.68,
+"end": 48.9,
 "text": "GOT",
 "emph": false
 },
 {
-"start": 50.24,
-"end": 50.4,
+"start": 48.9,
+"end": 49.04,
 "text": "HIM",
 "emph": false
 },
 {
-"start": 50.4,
-"end": 50.76,
+"start": 49.04,
+"end": 49.42,
 "text": "STARTED",
 "emph": false
 },
 {
-"start": 51.04,
-"end": 51.24,
+"start": 49.82,
+"end": 49.9,
 "text": "HABITS",
 "emph": true
 },
 {
-"start": 51.24,
-"end": 51.5,
+"start": 49.94,
+"end": 50.12,
 "text": "KEPT",
 "emph": false
 },
 {
-"start": 51.5,
-"end": 51.68,
+"start": 50.12,
+"end": 50.28,
 "text": "HIM",
 "emph": false
 },
 {
-"start": 51.68,
-"end": 51.98,
+"start": 50.28,
+"end": 50.58,
 "text": "GOING",
 "emph": false
 },
 {
-"start": 52.32,
-"end": 52.48,
+"start": 51.02,
+"end": 51.12,
 "text": "SO",
 "emph": false
 },
 {
-"start": 52.48,
-"end": 52.66,
+"start": 51.14,
+"end": 51.22,
 "text": "NEXT",
 "emph": false
 },
 {
-"start": 52.66,
-"end": 52.9,
+"start": 51.26,
+"end": 51.46,
 "text": "TIME",
 "emph": false
 },
 {
-"start": 52.9,
-"end": 53.06,
+"start": 51.46,
+"end": 51.62,
 "text": "YOU",
 "emph": false
 },
 {
-"start": 53.06,
-"end": 53.24,
+"start": 51.62,
+"end": 51.78,
 "text": "SKIP",
 "emph": false
 },
 {
-"start": 53.24,
-"end": 53.4,
+"start": 51.78,
+"end": 51.92,
 "text": "A",
 "emph": false
 },
 {
-"start": 53.4,
-"end": 53.78,
+"start": 51.92,
+"end": 52.22,
 "text": "WORKOUT",
 "emph": true
 },
 {
-"start": 54.04,
-"end": 54.24,
+"start": 52.58,
+"end": 52.72,
 "text": "REMEMBER",
 "emph": false
 },
 {
-"start": 54.24,
-"end": 54.64,
+"start": 52.72,
+"end": 53.0,
 "text": "WHO'S",
 "emph": false
 },
 {
-"start": 54.64,
-"end": 54.82,
+"start": 53.0,
+"end": 53.22,
 "text": "STILL",
 "emph": false
 },
 {
-"start": 54.82,
-"end": 55.18,
+"start": 53.22,
+"end": 53.48,
 "text": "TRAINING",
 "emph": true
 },
 {
-"start": 55.18,
-"end": 55.42,
+"start": 53.48,
+"end": 53.64,
 "text": "AT",
 "emph": false
 },
 {
-"start": 55.42,
-"end": 55.82,
+"start": 53.64,
+"end": 53.92,
 "text": "41",
 "emph": true
 }

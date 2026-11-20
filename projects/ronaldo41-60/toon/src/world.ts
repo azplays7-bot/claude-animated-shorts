@@ -64,7 +64,7 @@ const SCREENS: Record<string, [string, string, string, string]> = {
   goals: ["CAREER GOALS", "970+", "NEXT STOP: 1,000?", YEL],
   train: ["TRAINING", "TODAY", "", "#ffffff"],
   goal: ["", "GOAL!", "", YEL],
-  record: ["INTERNATIONAL GOALS", "#1 EVER", "MEN'S FOOTBALL", YEL],
+  record: ["THE", "G.O.A.T.", "OF FOOTBALL", YEL],
   cups: ["WORLD CUPS PLAYED", "6", "", YEL],
   champs: ["LEAGUE CHAMPIONS", "AT 41", "", YEL],
   habits: ["HABITS", "", "", "#ffffff"],
@@ -124,7 +124,7 @@ const pressTex = () => ctex("pressWall", 1024, 512, (g) => {
     else T(g, "PRESS", x, y + 4, 50, "#ffffff");
   }
 });
-const iceSignTex = () => ctex("iceSign", 768, 256, (g) => { g.fillStyle = "#1e5a8a"; g.fillRect(0, 0, 768, 256); T(g, "RECOVERY ROOM", 384, 90, 76, "#ffffff"); T(g, "WATER: 3°C", 384, 186, 64, "#bfe9ff"); });
+const iceSignTex = () => ctex("iceSign", 768, 256, (g) => { g.fillStyle = "#1e5a8a"; g.fillRect(0, 0, 768, 256); T(g, "RECOVERY ROOM", 384, 90, 76, "#ffffff"); T(g, "ICE SHOWER: 3°C", 384, 186, 64, "#bfe9ff"); });
 const calendarTex = () => ctex("calendar", 512, 640, (g) => {
   g.fillStyle = "#ffffff"; g.fillRect(0, 0, 512, 640); g.fillStyle = RED; g.fillRect(0, 0, 512, 130); T(g, "EVERY DAY", 256, 70, 76, "#ffffff");
   g.strokeStyle = "#c9c4ba"; g.lineWidth = 3;
@@ -357,7 +357,7 @@ export class World {
     box(b, lam("tub", () => ({ color: "#f4f4f0" })), tx - 1.0, 0, tz - 0.7, tx + 1.0, 0.7, tz + 0.7);
     this.iceMat = glow("#7fd0ff", 1.0);
     const wtr = new THREE.Mesh(new THREE.PlaneGeometry(1.8, 1.2), this.iceMat); wtr.rotation.x = -Math.PI / 2; wtr.position.set(tx, 0.62, tz); R.add(wtr);
-    const is = panel(-1.2, -0.4, 1.2, 0.4, 0, glow("#ffffff", 1.1, iceSignTex()), R); is.position.set(tx, 2.4, -3.95);
+    const is = panel(-1.2, -0.4, 1.2, 0.4, 0, glow("#ffffff", 1.1, iceSignTex()), R); is.position.set(tx - 1.75, 2.4, -3.95); // left of the shower head
     const cal = panel(-0.5, -0.625, 0.5, 0.625, 0, new THREE.MeshLambertMaterial({ map: calendarTex() }), R); cal.position.set(CALENDAR[0], CALENDAR[1], CALENDAR[2]);
     box(b, lam("rack", () => ({ color: "#3a3f4a" })), 8.6, 0, -3.9, 10.2, 1.0, -3.4);
     for (let k = 0; k < 4; k++) b.add(new THREE.CylinderGeometry(0.09, 0.09, 0.32, 14).rotateZ(Math.PI / 2), lam("dbell", () => ({ color: "#16121c" })), M4(8.9 + k * 0.38, 1.08, -3.65));
@@ -409,7 +409,7 @@ export class World {
     let k = "live";
     if (id === 1) k = f < BT.n41 - 4 ? "live" : f < BT.k1000 - 4 ? "age" : "goals";
     if (id === 3) k = "train";
-    if (id === 5) k = f < BT.result + 12 ? "live" : f < BT.g970 - 2 ? "goal" : f < BT.more ? "goals" : f < BT.cups - 4 ? "record" : f < BT.league - 4 ? "cups" : f < BT.habits - 6 ? "champs" : "habits";
+    if (id === 5) k = f < BT.result + 12 ? "live" : f < BT.g970 - 2 ? "goal" : f < BT.goat - 4 ? "goals" : f < BT.cups - 4 ? "record" : f < BT.league - 4 ? "cups" : f < BT.habits - 6 ? "champs" : "habits";
     if (id === 7) k = f < BT.n41d - 2 ? "age" : "siu";
     this.screenMat.map = this.screenMaps[k];
     let sk = 1.35;
