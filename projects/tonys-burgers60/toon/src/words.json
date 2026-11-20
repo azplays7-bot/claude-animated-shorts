@@ -1,0 +1,914 @@
+[
+{
+"start": 0.0,
+"end": 0.26,
+"text": "THIS",
+"emph": false
+},
+{
+"start": 0.26,
+"end": 0.56,
+"text": "BURGER",
+"emph": true
+},
+{
+"start": 0.56,
+"end": 0.94,
+"text": "COSTS",
+"emph": false
+},
+{
+"start": 0.94,
+"end": 1.46,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 1.46,
+"end": 1.88,
+"text": "$3",
+"emph": true
+},
+{
+"start": 1.88,
+"end": 2.26,
+"text": "TO",
+"emph": false
+},
+{
+"start": 2.26,
+"end": 2.5,
+"text": "MAKE",
+"emph": false
+},
+{
+"start": 3.0,
+"end": 3.06,
+"text": "IT",
+"emph": false
+},
+{
+"start": 3.12,
+"end": 3.3,
+"text": "SELLS",
+"emph": false
+},
+{
+"start": 3.3,
+"end": 3.62,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 3.62,
+"end": 3.86,
+"text": "$10",
+"emph": true
+},
+{
+"start": 4.34,
+"end": 4.54,
+"text": "THIS",
+"emph": false
+},
+{
+"start": 4.54,
+"end": 4.86,
+"text": "SODA",
+"emph": true
+},
+{
+"start": 5.08,
+"end": 5.26,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 5.26,
+"end": 5.86,
+"text": "30\u00a2",
+"emph": true
+},
+{
+"start": 6.22,
+"end": 6.34,
+"text": "IT",
+"emph": false
+},
+{
+"start": 6.34,
+"end": 6.56,
+"text": "SELLS",
+"emph": false
+},
+{
+"start": 6.56,
+"end": 6.8,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 6.8,
+"end": 7.2,
+"text": "$3",
+"emph": true
+},
+{
+"start": 7.66,
+"end": 7.9,
+"text": "SO",
+"emph": false
+},
+{
+"start": 7.9,
+"end": 8.0,
+"text": "A",
+"emph": false
+},
+{
+"start": 8.02,
+"end": 8.26,
+"text": "RESTAURANT",
+"emph": false
+},
+{
+"start": 8.26,
+"end": 8.72,
+"text": "IS",
+"emph": false
+},
+{
+"start": 8.72,
+"end": 9.0,
+"text": "EASY",
+"emph": true
+},
+{
+"start": 9.0,
+"end": 9.26,
+"text": "MONEY",
+"emph": true
+},
+{
+"start": 9.46,
+"end": 9.7,
+"text": "RIGHT",
+"emph": false
+},
+{
+"start": 10.22,
+"end": 10.32,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 10.34,
+"end": 10.56,
+"text": "SO",
+"emph": false
+},
+{
+"start": 10.56,
+"end": 11.04,
+"text": "FAST",
+"emph": true
+},
+{
+"start": 11.72,
+"end": 11.9,
+"text": "MEET",
+"emph": false
+},
+{
+"start": 11.9,
+"end": 12.26,
+"text": "TONY",
+"emph": false
+},
+{
+"start": 12.58,
+"end": 12.66,
+"text": "HE",
+"emph": false
+},
+{
+"start": 12.7,
+"end": 12.84,
+"text": "JUST",
+"emph": false
+},
+{
+"start": 12.84,
+"end": 13.2,
+"text": "OPENED",
+"emph": false
+},
+{
+"start": 13.2,
+"end": 13.72,
+"text": "TONY'S",
+"emph": true
+},
+{
+"start": 13.72,
+"end": 14.02,
+"text": "BURGERS",
+"emph": false
+},
+{
+"start": 14.52,
+"end": 14.64,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 14.64,
+"end": 14.74,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 14.76,
+"end": 14.82,
+"text": "OF",
+"emph": false
+},
+{
+"start": 14.88,
+"end": 15.08,
+"text": "EVERY",
+"emph": false
+},
+{
+"start": 15.08,
+"end": 15.4,
+"text": "$10",
+"emph": true
+},
+{
+"start": 15.84,
+"end": 15.94,
+"text": "RENT",
+"emph": true
+},
+{
+"start": 15.96,
+"end": 16.18,
+"text": "TAKES",
+"emph": false
+},
+{
+"start": 16.18,
+"end": 16.36,
+"text": "A",
+"emph": false
+},
+{
+"start": 16.36,
+"end": 16.56,
+"text": "BITE",
+"emph": false
+},
+{
+"start": 16.86,
+"end": 17.04,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 17.04,
+"end": 17.42,
+"text": "STAFF",
+"emph": true
+},
+{
+"start": 17.8,
+"end": 17.94,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 17.94,
+"end": 18.3,
+"text": "POWER",
+"emph": true
+},
+{
+"start": 18.42,
+"end": 18.66,
+"text": "GAS",
+"emph": true
+},
+{
+"start": 18.8,
+"end": 18.9,
+"text": "AND",
+"emph": false
+},
+{
+"start": 18.92,
+"end": 19.24,
+"text": "REPAIRS",
+"emph": true
+},
+{
+"start": 19.82,
+"end": 20.02,
+"text": "TONY",
+"emph": false
+},
+{
+"start": 20.02,
+"end": 20.3,
+"text": "OFTEN",
+"emph": false
+},
+{
+"start": 20.3,
+"end": 20.62,
+"text": "KEEPS",
+"emph": false
+},
+{
+"start": 20.62,
+"end": 20.94,
+"text": "LESS",
+"emph": false
+},
+{
+"start": 20.94,
+"end": 21.42,
+"text": "THAN",
+"emph": false
+},
+{
+"start": 21.42,
+"end": 21.8,
+"text": "$1",
+"emph": true
+},
+{
+"start": 22.44,
+"end": 22.78,
+"text": "SO",
+"emph": false
+},
+{
+"start": 22.78,
+"end": 22.96,
+"text": "WHY",
+"emph": false
+},
+{
+"start": 22.96,
+"end": 23.18,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 23.18,
+"end": 23.44,
+"text": "BUY",
+"emph": false
+},
+{
+"start": 23.44,
+"end": 23.58,
+"text": "A",
+"emph": false
+},
+{
+"start": 23.58,
+"end": 23.86,
+"text": "FAMOUS",
+"emph": true
+},
+{
+"start": 23.86,
+"end": 24.24,
+"text": "NAME",
+"emph": false
+},
+{
+"start": 24.72,
+"end": 24.94,
+"text": "OPENING",
+"emph": false
+},
+{
+"start": 24.94,
+"end": 25.18,
+"text": "A",
+"emph": false
+},
+{
+"start": 25.18,
+"end": 25.36,
+"text": "BIG",
+"emph": false
+},
+{
+"start": 25.36,
+"end": 25.74,
+"text": "BURGER",
+"emph": true
+},
+{
+"start": 25.74,
+"end": 26.24,
+"text": "FRANCHISE",
+"emph": true
+},
+{
+"start": 26.24,
+"end": 26.76,
+"text": "CAN",
+"emph": false
+},
+{
+"start": 26.76,
+"end": 27.08,
+"text": "COST",
+"emph": false
+},
+{
+"start": 27.08,
+"end": 27.48,
+"text": "OVER",
+"emph": false
+},
+{
+"start": 27.48,
+"end": 28.26,
+"text": "$1 MILLION",
+"emph": true
+},
+{
+"start": 28.26,
+"end": 28.78,
+"text": "PLUS",
+"emph": false
+},
+{
+"start": 28.78,
+"end": 28.96,
+"text": "A",
+"emph": false
+},
+{
+"start": 28.96,
+"end": 29.16,
+"text": "CUT",
+"emph": true
+},
+{
+"start": 29.16,
+"end": 29.52,
+"text": "OF",
+"emph": false
+},
+{
+"start": 29.52,
+"end": 29.86,
+"text": "EVERY",
+"emph": false
+},
+{
+"start": 29.86,
+"end": 30.22,
+"text": "SINGLE",
+"emph": false
+},
+{
+"start": 30.22,
+"end": 30.6,
+"text": "SALE",
+"emph": false
+},
+{
+"start": 31.24,
+"end": 31.46,
+"text": "SO",
+"emph": false
+},
+{
+"start": 31.46,
+"end": 31.68,
+"text": "TONY",
+"emph": false
+},
+{
+"start": 31.68,
+"end": 31.98,
+"text": "KEEPS",
+"emph": false
+},
+{
+"start": 31.98,
+"end": 32.2,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 32.2,
+"end": 32.4,
+"text": "OWN",
+"emph": false
+},
+{
+"start": 32.4,
+"end": 32.74,
+"text": "NAME",
+"emph": false
+},
+{
+"start": 32.76,
+"end": 33.14,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 33.14,
+"end": 33.44,
+"text": "NOBODY",
+"emph": true
+},
+{
+"start": 33.44,
+"end": 33.7,
+"text": "KNOWS",
+"emph": false
+},
+{
+"start": 33.7,
+"end": 34.14,
+"text": "IT",
+"emph": false
+},
+{
+"start": 34.3,
+"end": 34.52,
+"text": "DOWN",
+"emph": false
+},
+{
+"start": 34.52,
+"end": 34.66,
+"text": "THE",
+"emph": false
+},
+{
+"start": 34.66,
+"end": 34.9,
+"text": "STREET",
+"emph": false
+},
+{
+"start": 35.2,
+"end": 35.3,
+"text": "THE",
+"emph": false
+},
+{
+"start": 35.32,
+"end": 35.58,
+"text": "FAMOUS",
+"emph": true
+},
+{
+"start": 35.58,
+"end": 35.9,
+"text": "CHAIN",
+"emph": false
+},
+{
+"start": 35.9,
+"end": 36.16,
+"text": "HAS",
+"emph": false
+},
+{
+"start": 36.16,
+"end": 36.3,
+"text": "A",
+"emph": false
+},
+{
+"start": 36.3,
+"end": 36.5,
+"text": "LINE",
+"emph": true
+},
+{
+"start": 36.5,
+"end": 36.68,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 36.68,
+"end": 36.82,
+"text": "THE",
+"emph": false
+},
+{
+"start": 36.82,
+"end": 37.06,
+"text": "DOOR",
+"emph": false
+},
+{
+"start": 37.7,
+"end": 37.88,
+"text": "TONY'S",
+"emph": true
+},
+{
+"start": 37.88,
+"end": 38.1,
+"text": "DINING",
+"emph": false
+},
+{
+"start": 38.1,
+"end": 38.52,
+"text": "ROOM",
+"emph": false
+},
+{
+"start": 38.76,
+"end": 39.02,
+"text": "EMPTY",
+"emph": true
+},
+{
+"start": 39.58,
+"end": 39.68,
+"text": "HE",
+"emph": false
+},
+{
+"start": 39.7,
+"end": 39.88,
+"text": "HANDS",
+"emph": false
+},
+{
+"start": 39.88,
+"end": 40.1,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 40.1,
+"end": 40.52,
+"text": "FLYERS",
+"emph": true
+},
+{
+"start": 40.88,
+"end": 41.08,
+"text": "POSTS",
+"emph": false
+},
+{
+"start": 41.08,
+"end": 41.46,
+"text": "VIDEOS",
+"emph": true
+},
+{
+"start": 41.76,
+"end": 41.92,
+"text": "GIVES",
+"emph": false
+},
+{
+"start": 41.92,
+"end": 42.22,
+"text": "FREE",
+"emph": false
+},
+{
+"start": 42.22,
+"end": 42.66,
+"text": "SAMPLES",
+"emph": true
+},
+{
+"start": 43.2,
+"end": 43.32,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 43.32,
+"end": 44.16,
+"text": "1 IN 4",
+"emph": true
+},
+{
+"start": 44.16,
+"end": 44.38,
+"text": "NEW",
+"emph": false
+},
+{
+"start": 44.38,
+"end": 44.74,
+"text": "RESTAURANTS",
+"emph": false
+},
+{
+"start": 44.74,
+"end": 45.08,
+"text": "CLOSE",
+"emph": true
+},
+{
+"start": 45.08,
+"end": 45.54,
+"text": "OR",
+"emph": false
+},
+{
+"start": 45.54,
+"end": 45.84,
+"text": "CHANGE",
+"emph": false
+},
+{
+"start": 45.84,
+"end": 46.18,
+"text": "HANDS",
+"emph": false
+},
+{
+"start": 46.18,
+"end": 46.44,
+"text": "IN",
+"emph": false
+},
+{
+"start": 46.44,
+"end": 46.6,
+"text": "THEIR",
+"emph": false
+},
+{
+"start": 46.6,
+"end": 46.84,
+"text": "FIRST",
+"emph": false
+},
+{
+"start": 46.84,
+"end": 47.2,
+"text": "YEAR",
+"emph": false
+},
+{
+"start": 47.76,
+"end": 48.02,
+"text": "MAKING",
+"emph": false
+},
+{
+"start": 48.02,
+"end": 48.3,
+"text": "FOOD",
+"emph": false
+},
+{
+"start": 48.3,
+"end": 48.5,
+"text": "IS",
+"emph": false
+},
+{
+"start": 48.5,
+"end": 48.78,
+"text": "CHEAP",
+"emph": true
+},
+{
+"start": 49.06,
+"end": 49.22,
+"text": "GETTING",
+"emph": false
+},
+{
+"start": 49.22,
+"end": 49.54,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 49.54,
+"end": 49.74,
+"text": "TO",
+"emph": false
+},
+{
+"start": 49.74,
+"end": 49.88,
+"text": "PICK",
+"emph": false
+},
+{
+"start": 49.88,
+"end": 50.06,
+"text": "YOUR",
+"emph": false
+},
+{
+"start": 50.06,
+"end": 50.46,
+"text": "FOOD",
+"emph": false
+},
+{
+"start": 50.74,
+"end": 50.94,
+"text": "THAT'S",
+"emph": false
+},
+{
+"start": 50.94,
+"end": 51.06,
+"text": "THE",
+"emph": false
+},
+{
+"start": 51.06,
+"end": 51.28,
+"text": "HARD",
+"emph": true
+},
+{
+"start": 51.28,
+"end": 51.56,
+"text": "PART",
+"emph": false
+},
+{
+"start": 52.02,
+"end": 52.24,
+"text": "TONY",
+"emph": false
+},
+{
+"start": 52.24,
+"end": 52.5,
+"text": "WINS",
+"emph": false
+},
+{
+"start": 52.5,
+"end": 52.78,
+"text": "THEM",
+"emph": false
+},
+{
+"start": 52.78,
+"end": 53.22,
+"text": "OVER",
+"emph": false
+},
+{
+"start": 53.22,
+"end": 53.46,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 53.46,
+"end": 53.7,
+"text": "HAPPY",
+"emph": true
+},
+{
+"start": 53.7,
+"end": 54.12,
+"text": "CUSTOMER",
+"emph": false
+},
+{
+"start": 54.12,
+"end": 54.46,
+"text": "AT",
+"emph": false
+},
+{
+"start": 54.46,
+"end": 54.62,
+"text": "A",
+"emph": false
+},
+{
+"start": 54.62,
+"end": 54.88,
+"text": "TIME",
+"emph": false
+}
+]

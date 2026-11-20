@@ -1,0 +1,228 @@
+{
+ "voice": "bm_george",
+ "speed": 1.28,
+ "scenes": {
+  "1": [
+   0.12,
+   11.253
+  ],
+  "2": [
+   11.753,
+   22.131
+  ],
+  "3": [
+   22.631,
+   30.789
+  ],
+  "4": [
+   31.289,
+   47.287
+  ],
+  "5": [
+   47.787,
+   55.034
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.68
+  },
+  {
+   "scene": 1,
+   "start": 2.93,
+   "end": 4.146
+  },
+  {
+   "scene": 1,
+   "start": 4.396,
+   "end": 7.532
+  },
+  {
+   "scene": 1,
+   "start": 7.782,
+   "end": 9.915
+  },
+  {
+   "scene": 1,
+   "start": 10.165,
+   "end": 11.253
+  },
+  {
+   "scene": 2,
+   "start": 11.753,
+   "end": 14.292
+  },
+  {
+   "scene": 2,
+   "start": 14.542,
+   "end": 19.513
+  },
+  {
+   "scene": 2,
+   "start": 19.763,
+   "end": 22.131
+  },
+  {
+   "scene": 3,
+   "start": 22.631,
+   "end": 24.423
+  },
+  {
+   "scene": 3,
+   "start": 24.673,
+   "end": 28.385
+  },
+  {
+   "scene": 3,
+   "start": 28.635,
+   "end": 30.789
+  },
+  {
+   "scene": 4,
+   "start": 31.289,
+   "end": 34.084
+  },
+  {
+   "scene": 4,
+   "start": 34.334,
+   "end": 37.214
+  },
+  {
+   "scene": 4,
+   "start": 37.464,
+   "end": 39.32
+  },
+  {
+   "scene": 4,
+   "start": 39.57,
+   "end": 42.877
+  },
+  {
+   "scene": 4,
+   "start": 43.127,
+   "end": 47.287
+  },
+  {
+   "scene": 5,
+   "start": 47.787,
+   "end": 51.712
+  },
+  {
+   "scene": 5,
+   "start": 51.962,
+   "end": 55.034
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.68,
+   "text": "This burger costs about three dollars to make."
+  },
+  {
+   "scene": 1,
+   "start": 2.93,
+   "end": 4.146,
+   "text": "It sells for ten."
+  },
+  {
+   "scene": 1,
+   "start": 4.396,
+   "end": 7.532,
+   "text": "This soda? About thirty cents. It sells for three dollars."
+  },
+  {
+   "scene": 1,
+   "start": 7.782,
+   "end": 9.915,
+   "text": "So a restaurant is easy money, right?"
+  },
+  {
+   "scene": 1,
+   "start": 10.165,
+   "end": 11.253,
+   "text": "Not so fast."
+  },
+  {
+   "scene": 2,
+   "start": 11.753,
+   "end": 14.292,
+   "text": "Meet Tony. He just opened Tony's Burgers."
+  },
+  {
+   "scene": 2,
+   "start": 14.542,
+   "end": 19.513,
+   "text": "But out of every ten dollars, rent takes a bite. Then staff. Then power, gas and repairs."
+  },
+  {
+   "scene": 2,
+   "start": 19.763,
+   "end": 22.131,
+   "text": "Tony often keeps less than one dollar."
+  },
+  {
+   "scene": 3,
+   "start": 22.631,
+   "end": 24.423,
+   "text": "So why not buy a famous name?"
+  },
+  {
+   "scene": 3,
+   "start": 24.673,
+   "end": 28.385,
+   "text": "Opening a big burger franchise can cost over a million dollars."
+  },
+  {
+   "scene": 3,
+   "start": 28.635,
+   "end": 30.789,
+   "text": "Plus a cut of every single sale."
+  },
+  {
+   "scene": 4,
+   "start": 31.289,
+   "end": 34.084,
+   "text": "So Tony keeps his own name. But nobody knows it."
+  },
+  {
+   "scene": 4,
+   "start": 34.334,
+   "end": 37.214,
+   "text": "Down the street, the famous chain has a line out the door."
+  },
+  {
+   "scene": 4,
+   "start": 37.464,
+   "end": 39.32,
+   "text": "Tony's dining room? Empty."
+  },
+  {
+   "scene": 4,
+   "start": 39.57,
+   "end": 42.877,
+   "text": "He hands out flyers. Posts videos. Gives free samples."
+  },
+  {
+   "scene": 4,
+   "start": 43.127,
+   "end": 47.287,
+   "text": "About one in four new restaurants close or change hands in their first year."
+  },
+  {
+   "scene": 5,
+   "start": 47.787,
+   "end": 51.712,
+   "text": "Making food is cheap. Getting people to pick your food? That's the hard part."
+  },
+  {
+   "scene": 5,
+   "start": 51.962,
+   "end": 55.034,
+   "text": "Tony wins them over one happy customer at a time."
+  }
+ ]
+}
