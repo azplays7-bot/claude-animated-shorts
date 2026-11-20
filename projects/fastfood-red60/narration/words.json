@@ -1,0 +1,1100 @@
+[
+{
+"start": 0.0,
+"end": 0.32,
+"text": "ALMOST",
+"emph": false
+},
+{
+"start": 0.32,
+"end": 0.62,
+"text": "EVERY",
+"emph": false
+},
+{
+"start": 0.62,
+"end": 0.86,
+"text": "FAST",
+"emph": false
+},
+{
+"start": 0.86,
+"end": 1.12,
+"text": "FOOD",
+"emph": false
+},
+{
+"start": 1.12,
+"end": 1.44,
+"text": "SIGN",
+"emph": true
+},
+{
+"start": 1.44,
+"end": 1.66,
+"text": "IS",
+"emph": false
+},
+{
+"start": 1.66,
+"end": 1.9,
+"text": "RED",
+"emph": true
+},
+{
+"start": 1.9,
+"end": 2.1,
+"text": "AND",
+"emph": false
+},
+{
+"start": 2.1,
+"end": 2.4,
+"text": "YELLOW",
+"emph": true
+},
+{
+"start": 2.82,
+"end": 2.96,
+"text": "THAT'S",
+"emph": false
+},
+{
+"start": 2.96,
+"end": 3.08,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 3.08,
+"end": 3.2,
+"text": "AN",
+"emph": false
+},
+{
+"start": 3.2,
+"end": 3.58,
+"text": "ACCIDENT",
+"emph": true
+},
+{
+"start": 4.28,
+"end": 4.44,
+"text": "WATCH",
+"emph": false
+},
+{
+"start": 4.44,
+"end": 4.72,
+"text": "MAX",
+"emph": false
+},
+{
+"start": 4.72,
+"end": 4.88,
+"text": "IS",
+"emph": false
+},
+{
+"start": 4.88,
+"end": 5.1,
+"text": "WALKING",
+"emph": false
+},
+{
+"start": 5.1,
+"end": 5.44,
+"text": "HOME",
+"emph": false
+},
+{
+"start": 5.56,
+"end": 5.74,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 5.74,
+"end": 6.08,
+"text": "HUNGRY",
+"emph": true
+},
+{
+"start": 6.08,
+"end": 6.26,
+"text": "AT",
+"emph": false
+},
+{
+"start": 6.26,
+"end": 6.58,
+"text": "ALL",
+"emph": false
+},
+{
+"start": 6.98,
+"end": 7.04,
+"text": "GRAY",
+"emph": false
+},
+{
+"start": 7.1,
+"end": 7.32,
+"text": "STREET",
+"emph": false
+},
+{
+"start": 7.6,
+"end": 7.64,
+"text": "GRAY",
+"emph": false
+},
+{
+"start": 7.72,
+"end": 8.04,
+"text": "BUILDINGS",
+"emph": false
+},
+{
+"start": 8.38,
+"end": 8.52,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 8.52,
+"end": 8.88,
+"text": "BAM!",
+"emph": true
+},
+{
+"start": 9.0,
+"end": 9.08,
+"text": "A",
+"emph": false
+},
+{
+"start": 9.12,
+"end": 9.38,
+"text": "GIANT",
+"emph": false
+},
+{
+"start": 9.38,
+"end": 9.66,
+"text": "RED",
+"emph": true
+},
+{
+"start": 9.66,
+"end": 9.84,
+"text": "AND",
+"emph": false
+},
+{
+"start": 9.84,
+"end": 10.06,
+"text": "YELLOW",
+"emph": true
+},
+{
+"start": 10.06,
+"end": 10.5,
+"text": "SIGN",
+"emph": true
+},
+{
+"start": 10.86,
+"end": 10.98,
+"text": "RED",
+"emph": true
+},
+{
+"start": 10.98,
+"end": 11.32,
+"text": "GRABS",
+"emph": false
+},
+{
+"start": 11.32,
+"end": 11.46,
+"text": "YOUR",
+"emph": false
+},
+{
+"start": 11.46,
+"end": 11.66,
+"text": "EYE",
+"emph": true
+},
+{
+"start": 11.66,
+"end": 11.92,
+"text": "FASTER",
+"emph": true
+},
+{
+"start": 11.92,
+"end": 12.22,
+"text": "THAN",
+"emph": false
+},
+{
+"start": 12.22,
+"end": 12.48,
+"text": "ALMOST",
+"emph": false
+},
+{
+"start": 12.48,
+"end": 12.72,
+"text": "ANY",
+"emph": false
+},
+{
+"start": 12.72,
+"end": 12.96,
+"text": "COLOR",
+"emph": false
+},
+{
+"start": 13.4,
+"end": 13.52,
+"text": "YELLOW",
+"emph": true
+},
+{
+"start": 13.52,
+"end": 13.76,
+"text": "IS",
+"emph": false
+},
+{
+"start": 13.76,
+"end": 13.92,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 13.92,
+"end": 14.0,
+"text": "OF",
+"emph": false
+},
+{
+"start": 14.04,
+"end": 14.12,
+"text": "THE",
+"emph": false
+},
+{
+"start": 14.16,
+"end": 14.48,
+"text": "EASIEST",
+"emph": false
+},
+{
+"start": 14.48,
+"end": 14.82,
+"text": "COLORS",
+"emph": false
+},
+{
+"start": 14.82,
+"end": 15.06,
+"text": "TO",
+"emph": false
+},
+{
+"start": 15.06,
+"end": 15.32,
+"text": "SPOT",
+"emph": false
+},
+{
+"start": 15.32,
+"end": 15.52,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 15.52,
+"end": 15.78,
+"text": "FAR",
+"emph": true
+},
+{
+"start": 15.78,
+"end": 16.1,
+"text": "AWAY",
+"emph": false
+},
+{
+"start": 16.52,
+"end": 16.68,
+"text": "TOGETHER",
+"emph": false
+},
+{
+"start": 16.68,
+"end": 16.92,
+"text": "THEY",
+"emph": false
+},
+{
+"start": 16.92,
+"end": 17.2,
+"text": "SCREAM:",
+"emph": false
+},
+{
+"start": 17.42,
+"end": 17.56,
+"text": "STOP",
+"emph": true
+},
+{
+"start": 17.56,
+"end": 17.8,
+"text": "HERE",
+"emph": false
+},
+{
+"start": 17.8,
+"end": 17.98,
+"text": "RIGHT",
+"emph": false
+},
+{
+"start": 17.98,
+"end": 18.28,
+"text": "NOW",
+"emph": true
+},
+{
+"start": 18.64,
+"end": 18.7,
+"text": "AND",
+"emph": false
+},
+{
+"start": 18.76,
+"end": 18.86,
+"text": "RED",
+"emph": true
+},
+{
+"start": 18.88,
+"end": 19.04,
+"text": "IS",
+"emph": false
+},
+{
+"start": 19.04,
+"end": 19.32,
+"text": "OFTEN",
+"emph": false
+},
+{
+"start": 19.32,
+"end": 19.56,
+"text": "LINKED",
+"emph": false
+},
+{
+"start": 19.56,
+"end": 19.76,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 19.76,
+"end": 20.14,
+"text": "ENERGY",
+"emph": false
+},
+{
+"start": 20.14,
+"end": 20.34,
+"text": "AND",
+"emph": false
+},
+{
+"start": 20.34,
+"end": 20.72,
+"text": "APPETITE",
+"emph": true
+},
+{
+"start": 21.36,
+"end": 21.36,
+"text": "SUDDENLY",
+"emph": false
+},
+{
+"start": 21.48,
+"end": 21.64,
+"text": "MAX",
+"emph": false
+},
+{
+"start": 21.64,
+"end": 21.82,
+"text": "IS",
+"emph": false
+},
+{
+"start": 21.82,
+"end": 22.18,
+"text": "STARVING",
+"emph": true
+},
+{
+"start": 22.64,
+"end": 22.76,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 22.76,
+"end": 22.92,
+"text": "FEET",
+"emph": false
+},
+{
+"start": 22.92,
+"end": 23.14,
+"text": "JUST",
+"emph": false
+},
+{
+"start": 23.14,
+"end": 23.4,
+"text": "TURN",
+"emph": false
+},
+{
+"start": 24.04,
+"end": 24.4,
+"text": "INSIDE?",
+"emph": false
+},
+{
+"start": 24.62,
+"end": 24.7,
+"text": "BRIGHT",
+"emph": true
+},
+{
+"start": 24.74,
+"end": 24.96,
+"text": "LIGHTS",
+"emph": false
+},
+{
+"start": 25.1,
+"end": 25.26,
+"text": "BRIGHT",
+"emph": true
+},
+{
+"start": 25.26,
+"end": 25.6,
+"text": "COLORS",
+"emph": false
+},
+{
+"start": 25.72,
+"end": 25.94,
+"text": "UPBEAT",
+"emph": false
+},
+{
+"start": 25.94,
+"end": 26.36,
+"text": "MUSIC",
+"emph": true
+},
+{
+"start": 26.7,
+"end": 26.82,
+"text": "THE",
+"emph": false
+},
+{
+"start": 26.82,
+"end": 26.96,
+"text": "WHOLE",
+"emph": false
+},
+{
+"start": 26.96,
+"end": 27.16,
+"text": "ROOM",
+"emph": false
+},
+{
+"start": 27.16,
+"end": 27.44,
+"text": "SAYS:",
+"emph": false
+},
+{
+"start": 27.68,
+"end": 27.78,
+"text": "HURRY",
+"emph": true
+},
+{
+"start": 27.8,
+"end": 28.12,
+"text": "UP",
+"emph": false
+},
+{
+"start": 28.12,
+"end": 28.6,
+"text": "SOME",
+"emph": false
+},
+{
+"start": 28.6,
+"end": 28.9,
+"text": "STUDIES",
+"emph": false
+},
+{
+"start": 28.9,
+"end": 29.2,
+"text": "FOUND",
+"emph": false
+},
+{
+"start": 29.2,
+"end": 29.56,
+"text": "FASTER",
+"emph": true
+},
+{
+"start": 29.56,
+"end": 29.92,
+"text": "MUSIC",
+"emph": true
+},
+{
+"start": 29.92,
+"end": 30.16,
+"text": "CAN",
+"emph": false
+},
+{
+"start": 30.16,
+"end": 30.34,
+"text": "MAKE",
+"emph": false
+},
+{
+"start": 30.34,
+"end": 30.68,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 30.68,
+"end": 30.9,
+"text": "EAT",
+"emph": false
+},
+{
+"start": 30.9,
+"end": 31.38,
+"text": "FASTER",
+"emph": true
+},
+{
+"start": 31.86,
+"end": 31.92,
+"text": "CHOMP",
+"emph": true
+},
+{
+"start": 31.98,
+"end": 32.22,
+"text": "CHOMP",
+"emph": true
+},
+{
+"start": 32.22,
+"end": 32.64,
+"text": "CHOMP",
+"emph": true
+},
+{
+"start": 32.84,
+"end": 32.94,
+"text": "BURGER",
+"emph": false
+},
+{
+"start": 32.96,
+"end": 33.24,
+"text": "GONE",
+"emph": false
+},
+{
+"start": 33.24,
+"end": 33.36,
+"text": "IN",
+"emph": false
+},
+{
+"start": 33.36,
+"end": 34.0,
+"text": "90 SECONDS",
+"emph": true
+},
+{
+"start": 34.4,
+"end": 34.48,
+"text": "AND",
+"emph": false
+},
+{
+"start": 34.52,
+"end": 34.58,
+"text": "THE",
+"emph": false
+},
+{
+"start": 34.64,
+"end": 34.92,
+"text": "SEATS?",
+"emph": true
+},
+{
+"start": 34.92,
+"end": 35.12,
+"text": "HARD",
+"emph": false
+},
+{
+"start": 35.12,
+"end": 35.56,
+"text": "PLASTIC",
+"emph": true
+},
+{
+"start": 36.06,
+"end": 36.2,
+"text": "COMFY",
+"emph": false
+},
+{
+"start": 36.2,
+"end": 36.36,
+"text": "ENOUGH",
+"emph": false
+},
+{
+"start": 36.36,
+"end": 36.56,
+"text": "TO",
+"emph": false
+},
+{
+"start": 36.56,
+"end": 36.76,
+"text": "EAT",
+"emph": false
+},
+{
+"start": 36.94,
+"end": 37.06,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 37.06,
+"end": 37.38,
+"text": "COMFY",
+"emph": false
+},
+{
+"start": 37.38,
+"end": 37.54,
+"text": "ENOUGH",
+"emph": false
+},
+{
+"start": 37.54,
+"end": 37.74,
+"text": "TO",
+"emph": false
+},
+{
+"start": 37.74,
+"end": 37.98,
+"text": "STAY",
+"emph": true
+},
+{
+"start": 38.32,
+"end": 38.5,
+"text": "BECAUSE",
+"emph": false
+},
+{
+"start": 38.5,
+"end": 38.66,
+"text": "A",
+"emph": false
+},
+{
+"start": 38.66,
+"end": 38.92,
+"text": "TABLE",
+"emph": false
+},
+{
+"start": 38.92,
+"end": 39.12,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 39.12,
+"end": 39.52,
+"text": "EMPTIES",
+"emph": false
+},
+{
+"start": 39.52,
+"end": 39.8,
+"text": "FAST",
+"emph": false
+},
+{
+"start": 39.8,
+"end": 40.08,
+"text": "IS",
+"emph": false
+},
+{
+"start": 40.08,
+"end": 40.32,
+"text": "READY",
+"emph": false
+},
+{
+"start": 40.32,
+"end": 40.54,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 40.54,
+"end": 40.64,
+"text": "THE",
+"emph": false
+},
+{
+"start": 40.66,
+"end": 40.84,
+"text": "NEXT",
+"emph": true
+},
+{
+"start": 40.84,
+"end": 41.32,
+"text": "CUSTOMER",
+"emph": false
+},
+{
+"start": 41.7,
+"end": 41.86,
+"text": "NEXT",
+"emph": true
+},
+{
+"start": 41.86,
+"end": 42.3,
+"text": "CUSTOMER",
+"emph": false
+},
+{
+"start": 42.48,
+"end": 42.62,
+"text": "NEXT",
+"emph": true
+},
+{
+"start": 42.62,
+"end": 42.9,
+"text": "TRAY",
+"emph": false
+},
+{
+"start": 43.06,
+"end": 43.22,
+"text": "NEXT",
+"emph": true
+},
+{
+"start": 43.22,
+"end": 43.42,
+"text": "ORDER",
+"emph": false
+},
+{
+"start": 43.42,
+"end": 43.7,
+"text": "ALL",
+"emph": false
+},
+{
+"start": 43.7,
+"end": 43.88,
+"text": "DAY",
+"emph": false
+},
+{
+"start": 43.88,
+"end": 44.22,
+"text": "LONG",
+"emph": false
+},
+{
+"start": 44.78,
+"end": 44.94,
+"text": "MAX",
+"emph": false
+},
+{
+"start": 44.94,
+"end": 45.22,
+"text": "WALKED",
+"emph": false
+},
+{
+"start": 45.22,
+"end": 45.42,
+"text": "IN",
+"emph": false
+},
+{
+"start": 45.42,
+"end": 45.58,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 45.58,
+"end": 45.8,
+"text": "NOTHING",
+"emph": true
+},
+{
+"start": 46.14,
+"end": 46.26,
+"text": "HE",
+"emph": false
+},
+{
+"start": 46.26,
+"end": 46.44,
+"text": "WALKED",
+"emph": false
+},
+{
+"start": 46.44,
+"end": 46.64,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 46.64,
+"end": 46.76,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 46.76,
+"end": 46.88,
+"text": "A",
+"emph": false
+},
+{
+"start": 46.88,
+"end": 47.12,
+"text": "COMBO",
+"emph": true
+},
+{
+"start": 47.12,
+"end": 47.42,
+"text": "AND",
+"emph": false
+},
+{
+"start": 47.42,
+"end": 47.52,
+"text": "A",
+"emph": false
+},
+{
+"start": 47.54,
+"end": 47.98,
+"text": "MILKSHAKE",
+"emph": true
+},
+{
+"start": 48.32,
+"end": 48.44,
+"text": "IT'S",
+"emph": false
+},
+{
+"start": 48.44,
+"end": 48.6,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 48.6,
+"end": 49.0,
+"text": "MAGIC",
+"emph": false
+},
+{
+"start": 49.12,
+"end": 49.3,
+"text": "IT'S",
+"emph": false
+},
+{
+"start": 49.3,
+"end": 49.66,
+"text": "DESIGN",
+"emph": true
+},
+{
+"start": 50.02,
+"end": 50.14,
+"text": "SO",
+"emph": false
+},
+{
+"start": 50.14,
+"end": 50.32,
+"text": "NEXT",
+"emph": true
+},
+{
+"start": 50.32,
+"end": 50.62,
+"text": "TIME",
+"emph": false
+},
+{
+"start": 50.62,
+"end": 50.84,
+"text": "A",
+"emph": false
+},
+{
+"start": 50.84,
+"end": 51.04,
+"text": "RED",
+"emph": true
+},
+{
+"start": 51.04,
+"end": 51.18,
+"text": "AND",
+"emph": false
+},
+{
+"start": 51.18,
+"end": 51.4,
+"text": "YELLOW",
+"emph": true
+},
+{
+"start": 51.4,
+"end": 51.76,
+"text": "SIGN",
+"emph": true
+},
+{
+"start": 51.76,
+"end": 51.96,
+"text": "MAKES",
+"emph": false
+},
+{
+"start": 51.96,
+"end": 52.14,
+"text": "YOU",
+"emph": false
+},
+{
+"start": 52.14,
+"end": 52.48,
+"text": "HUNGRY",
+"emph": true
+},
+{
+"start": 52.7,
+"end": 52.9,
+"text": "ASK",
+"emph": false
+},
+{
+"start": 52.9,
+"end": 53.26,
+"text": "YOURSELF:",
+"emph": false
+},
+{
+"start": 53.7,
+"end": 53.76,
+"text": "AM",
+"emph": false
+},
+{
+"start": 53.82,
+"end": 53.92,
+"text": "I",
+"emph": false
+},
+{
+"start": 53.94,
+"end": 54.16,
+"text": "HUNGRY?",
+"emph": true
+},
+{
+"start": 54.16,
+"end": 54.44,
+"text": "OR",
+"emph": false
+},
+{
+"start": 54.44,
+"end": 54.56,
+"text": "IS",
+"emph": false
+},
+{
+"start": 54.56,
+"end": 54.7,
+"text": "THE",
+"emph": false
+},
+{
+"start": 54.7,
+"end": 54.9,
+"text": "SIGN?",
+"emph": true
+}
+]
