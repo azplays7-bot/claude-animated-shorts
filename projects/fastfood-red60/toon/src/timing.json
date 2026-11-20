@@ -1,0 +1,268 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.2,
+ "scenes": {
+  "1": [
+   0.12,
+   3.797
+  ],
+  "2": [
+   4.197,
+   23.603
+  ],
+  "3": [
+   24.003,
+   44.325
+  ],
+  "4": [
+   44.725,
+   55.032
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.552
+  },
+  {
+   "scene": 1,
+   "start": 2.752,
+   "end": 3.797
+  },
+  {
+   "scene": 2,
+   "start": 4.197,
+   "end": 6.608
+  },
+  {
+   "scene": 2,
+   "start": 6.808,
+   "end": 10.627
+  },
+  {
+   "scene": 2,
+   "start": 10.827,
+   "end": 13.152
+  },
+  {
+   "scene": 2,
+   "start": 13.352,
+   "end": 16.253
+  },
+  {
+   "scene": 2,
+   "start": 16.453,
+   "end": 18.395
+  },
+  {
+   "scene": 2,
+   "start": 18.595,
+   "end": 20.856
+  },
+  {
+   "scene": 2,
+   "start": 21.056,
+   "end": 22.421
+  },
+  {
+   "scene": 2,
+   "start": 22.621,
+   "end": 23.603
+  },
+  {
+   "scene": 3,
+   "start": 24.003,
+   "end": 26.52
+  },
+  {
+   "scene": 3,
+   "start": 26.72,
+   "end": 28.213
+  },
+  {
+   "scene": 3,
+   "start": 28.413,
+   "end": 31.507
+  },
+  {
+   "scene": 3,
+   "start": 31.707,
+   "end": 34.181
+  },
+  {
+   "scene": 3,
+   "start": 34.381,
+   "end": 35.747
+  },
+  {
+   "scene": 3,
+   "start": 35.947,
+   "end": 38.144
+  },
+  {
+   "scene": 3,
+   "start": 38.344,
+   "end": 41.459
+  },
+  {
+   "scene": 3,
+   "start": 41.659,
+   "end": 44.325
+  },
+  {
+   "scene": 4,
+   "start": 44.725,
+   "end": 48.117
+  },
+  {
+   "scene": 4,
+   "start": 48.317,
+   "end": 49.811
+  },
+  {
+   "scene": 4,
+   "start": 50.011,
+   "end": 53.467
+  },
+  {
+   "scene": 4,
+   "start": 53.667,
+   "end": 55.032
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.552,
+   "text": "Almost every fast food sign is red and yellow."
+  },
+  {
+   "scene": 1,
+   "start": 2.752,
+   "end": 3.797,
+   "text": "That's not an accident."
+  },
+  {
+   "scene": 2,
+   "start": 4.197,
+   "end": 6.608,
+   "text": "Watch. Max is walking home. Not hungry. At all."
+  },
+  {
+   "scene": 2,
+   "start": 6.808,
+   "end": 10.627,
+   "text": "Gray street. Gray buildings. Then, bam! A giant red and yellow sign."
+  },
+  {
+   "scene": 2,
+   "start": 10.827,
+   "end": 13.152,
+   "text": "Red grabs your eye faster than almost any color."
+  },
+  {
+   "scene": 2,
+   "start": 13.352,
+   "end": 16.253,
+   "text": "Yellow is one of the easiest colors to spot from far away."
+  },
+  {
+   "scene": 2,
+   "start": 16.453,
+   "end": 18.395,
+   "text": "Together, they scream: stop here. Right now."
+  },
+  {
+   "scene": 2,
+   "start": 18.595,
+   "end": 20.856,
+   "text": "And red is often linked with energy and appetite."
+  },
+  {
+   "scene": 2,
+   "start": 21.056,
+   "end": 22.421,
+   "text": "Suddenly, Max is starving."
+  },
+  {
+   "scene": 2,
+   "start": 22.621,
+   "end": 23.603,
+   "text": "His feet just turn."
+  },
+  {
+   "scene": 3,
+   "start": 24.003,
+   "end": 26.52,
+   "text": "Inside? Bright lights, bright colors, upbeat music."
+  },
+  {
+   "scene": 3,
+   "start": 26.72,
+   "end": 28.213,
+   "text": "The whole room says: hurry up."
+  },
+  {
+   "scene": 3,
+   "start": 28.413,
+   "end": 31.507,
+   "text": "Some studies found faster music can make people eat faster."
+  },
+  {
+   "scene": 3,
+   "start": 31.707,
+   "end": 34.181,
+   "text": "Chomp, chomp, chomp. Burger gone in ninety seconds."
+  },
+  {
+   "scene": 3,
+   "start": 34.381,
+   "end": 35.747,
+   "text": "And the seats? Hard plastic."
+  },
+  {
+   "scene": 3,
+   "start": 35.947,
+   "end": 38.144,
+   "text": "Comfy enough to eat. Not comfy enough to stay."
+  },
+  {
+   "scene": 3,
+   "start": 38.344,
+   "end": 41.459,
+   "text": "Because a table that empties fast is ready for the next customer."
+  },
+  {
+   "scene": 3,
+   "start": 41.659,
+   "end": 44.325,
+   "text": "Next customer. Next tray. Next order. All day long."
+  },
+  {
+   "scene": 4,
+   "start": 44.725,
+   "end": 48.117,
+   "text": "Max walked in for nothing. He walked out with a combo and a milkshake."
+  },
+  {
+   "scene": 4,
+   "start": 48.317,
+   "end": 49.811,
+   "text": "It's not magic. It's design."
+  },
+  {
+   "scene": 4,
+   "start": 50.011,
+   "end": 53.467,
+   "text": "So next time a red and yellow sign makes you hungry, ask yourself:"
+  },
+  {
+   "scene": 4,
+   "start": 53.667,
+   "end": 55.032,
+   "text": "Am I hungry? Or is the sign?"
+  }
+ ]
+}
