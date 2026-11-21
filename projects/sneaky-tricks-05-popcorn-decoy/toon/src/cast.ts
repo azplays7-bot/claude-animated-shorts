@@ -586,7 +586,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     case 6: { // golden hour: the end of part five; three sizes: which one do they want me to buy?
       front(cam, out, TN, TX, TZ, { mode: "stand", expr: "grin", look: 1 }, t);
       front(cam, out, MX, TX + 1.1, TZ + 0.3, { mode: "stand", expr: f < BT.ask ? "smile" : f < BT.end ? "dazed" : "laugh", look: -1 }, t);
-      if (t < 52.3) pop(out, f, BT.endw - 4, F(52.3), "end5", 512, 160, (p) => fxLabel(p, "PART 5: THE END", "#d8262e"), TX + 0.6, 2.45, TZ + 0.35, 0.95, -0.04);
+      if (t < 52.3) pop(out, f, BT.endw - 4, F(52.3), "end5", 512, 160, (p) => fxLabel(p, "PART 5: THE END", "#d8262e"), TX + 0.6, 2.12, TZ + 0.35, 0.72, -0.04);
       if (t >= 52.3) {
         pop(out, f, BT.three - 4, TOTAL, "cups6", 512, 420, (p) => fxCups(p, 3, -1), TX + 1.1, 2.15, TZ + 0.45, 0.55);
         pop(out, f, BT.ask - 2, TOTAL, "q6", 300, 300, fxQuestion, TX + 1.5, 1.85, TZ + 0.5, 0.22);
