@@ -5,6 +5,7 @@
 // study board, the whispering 9), the same room in sepia (1880: the register legend), golden hour at the fancy
 // MAISON D'OR next door (round prices, the $ sign flies off: part two), back to Tony's door for the question.
 import WORDS from "./words.json";
+import WARP from "./warp.json";
 export const FPS = 30;
 export const TOTAL = 1800;
 export type V3 = [number, number, number];
@@ -22,6 +23,13 @@ const w = (text: string, n = 0) => {
   if (!hits[n]) throw new Error("story.ts: no word " + text + " #" + n);
   return Math.round(hits[n].start * FPS);
 };
+/** Scene times below were written for an earlier recording; warp() maps them onto the current narration. */
+const interp = (x: number, a: number[], b: number[]) => {
+  let i = 0; while (i + 2 < a.length && x > a[i + 1]) i++;
+  return b[i] + (b[i + 1] - b[i]) * (x - a[i]) / Math.max(1e-6, a[i + 1] - a[i]);
+};
+export const warp = (s: number) => interp(s, WARP.old, WARP.new);
+export const unwarp = (s: number) => interp(s, WARP.new, WARP.old);
 /** narration beats (frames) */
 export const BT = {
   isnt: w("ISNT"), five: w("$5"), brain: w("BRAIN"), four: w("$4"), read: w("READ"), left: w("LEFT"), right: w("RIGHT"), first: w("FIRST"), wins: w("WINS"),
@@ -65,7 +73,7 @@ export const STAND: V3 = [24.6, 0, 10.2];
 export type Light = "day" | "golden";
 export type Place = "street" | "store";
 export type ShotDef = { id: number; a: number; b: number; light: Light; place: Place; sunAz?: number; sunEl?: number; gray?: boolean; sepia?: boolean };
-const T = (s: number) => Math.round(s * FPS);
+const T = (s: number) => Math.round(warp(s) * FPS);
 export const SHOTS: ShotDef[] = [
   { id: 1, a: 0, b: T(7.4), light: "day", place: "store", sunAz: 140, sunEl: 78 },                 // hook: $5.00 -> $4.99, the brain reads 4
   { id: 2, a: T(7.4), b: T(14.5), light: "day", place: "store", sunAz: 140, sunEl: 78 },           // the brain scale: 1 cent = a whole dollar
@@ -126,7 +134,7 @@ const SETUPS: Record<number, Setup[]> = {
     [55.0, [TX + 0.6, 1.8, 13.4], [TX + 0.6, 1.6, 10.8], [TX + 1.4, 5.0, 22.0], [TX, 2.8, 9.5], 46, 50],          // follow for part 2
   ],
 };
-const STARTS = Object.fromEntries(Object.entries(SETUPS).map(([k, v]) => [k, v.map((s) => Math.round(s[0] * FPS))])) as Record<string, number[]>;
+const STARTS = Object.fromEntries(Object.entries(SETUPS).map(([k, v]) => [k, v.map((s) => Math.round(warp(s[0]) * FPS))])) as Record<string, number[]>;
 const lerp3 = (a: V3, b: V3, k: number): V3 => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k];
 /** setup index and progress at frame f */
 export const setupAt = (id: number, f: number) => {

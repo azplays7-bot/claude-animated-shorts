@@ -168,7 +168,11 @@ def tuba(m, dur, gain=1.0):
 B = BEAT
 HOME = [(48, (64, 67, 71)), (45, (64, 69, 72)), (41, (65, 69, 72)), (43, (62, 67, 71))]         # Cmaj7 Am F G
 MINOR = [(45, (57, 60, 64)), (41, (57, 60, 65)), (48, (60, 64, 67)), (43, (59, 62, 67))]        # Am F C G
-S = [0.0, 7.4, 14.5, 27.4, 41.2, 60.0]   # shot starts (story.ts SHOTS)
+# scene times written for the first recording -> current narration (same map as toon/src/story.ts warp())
+_WP = json.load(open(os.path.join(HERE, "..", "toon", "src", "warp.json")))
+wp = lambda x: float(np.interp(x, _WP["old"], _WP["new"]))
+SETUPS = [wp(x) for x in SETUPS]
+S = [wp(x) for x in (0.0, 7.4, 14.5, 27.4, 41.2, 60.0)]   # shot starts (story.ts SHOTS)
 def groove(t0, t1, prog=HOME, sixteenths=False, kick_g=0.1, pad_g=0.045, pl_g=0.03):
     tb = t0; bar = 0
     while tb < t1 - 0.05:
@@ -343,7 +347,7 @@ f_place(thud(0.07), W("$4", 1)); f_place(thud(0.07), W("$5", 2)); f_place(coin(0
 # the catalog test
 f_place(paper(0.08), W("CATALOG")); 
 for k, wd in enumerate([("$34", 0), ("$39", 0), ("$44", 0)]): f_place(beep(900 + 200 * k, 0.08, 0.04), W(*wd))
-for k in range(3): f_place(whirr(0.6, 0.03), 20.9 + k * 0.1)
+for k in range(3): f_place(whirr(0.6, 0.03), wp(20.9) + k * 0.1)
 f_place(chaching(0.08), W("BEST")); f_place(cheer(1.4, 0.05), W("BEST") + 0.1)
 f_place(boing(0.07), W("EVEN")); f_place(pop(0.06, 900), W("9")); f_place(crinkle(0.3, 0.03), W("WHISPER"))
 # 1880
@@ -351,7 +355,7 @@ f_place(bell(0.06), S[3] + 0.2)
 for k in range(3): f_place(pop(0.05, 500 + 120 * k), W("NOBODY") - 0.1 + k * 0.17)
 f_place(paper(0.06), W("POPULAR")); f_place(bell(0.08), W("OPEN")); f_place(coin(0.08), W("CHANGE") + 0.3)
 f_place(whistle(0.5, 0.03), W("POCKET") - 0.3); f_place(buzzer(0.05), W("CASH"))
-f_place(swish(0.6, 0.08), 37.3); f_place(thud(0.06), 37.75)
+f_place(swish(0.6, 0.08), wp(37.3)); f_place(thud(0.06), wp(37.75))
 # MAISON D'OR
 f_place(clink(0.05), S[4] + 0.3); f_place(clink(0.04), S[4] + 0.6)
 f_place(boing(0.06), W("NINES") - 0.3); f_place(swish(0.5, 0.06), W("NINES"))
@@ -360,7 +364,7 @@ for k in range(3): f_place(swish(0.4, 0.05), W("DROP") + k * 0.13)
 f_place(chime((76, 81, 84), 1.0, 0.06), W("PART"))
 # the question, the end
 f_place(pop(0.06, 800), W("9", 1)); f_place(boing(0.05), W("ASK")); f_place(ding(84, 0.05), W("DEAL", 1))
-f_place(cheer(2.5, 0.06), 55.0); f_place(chime((72, 76, 79, 84, 88), 2.4, 0.11), 57.4)
+f_place(cheer(2.5, 0.06), wp(55.0)); f_place(chime((72, 76, 79, 84, 88), 2.4, 0.11), 57.4)
 fx += 0.10 * convolve_st(fx.mean(0), make_ir(0.9, 8, hf=1.2))
 fx[:, ns(59.3):] *= np.linspace(1, 0.0, N - ns(59.3)) ** 1.5
 

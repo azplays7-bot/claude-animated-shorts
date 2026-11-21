@@ -1,901 +1,901 @@
 [
 {
 "start": 0.0,
-"end": 0.8,
+"end": 0.86,
 "text": "$4.99",
 "emph": true
 },
 {
-"start": 0.8,
-"end": 1.34,
+"start": 0.86,
+"end": 1.3,
 "text": "ISN'T",
 "emph": false
 },
 {
-"start": 1.34,
-"end": 1.96,
+"start": 1.3,
+"end": 1.82,
 "text": "$5",
 "emph": true
 },
 {
-"start": 2.24,
-"end": 2.44,
+"start": 2.04,
+"end": 2.38,
 "text": "BUT",
 "emph": false
 },
 {
-"start": 2.44,
-"end": 2.58,
+"start": 2.38,
+"end": 2.6,
 "text": "YOUR",
 "emph": false
 },
 {
-"start": 2.58,
-"end": 2.84,
+"start": 2.6,
+"end": 2.88,
 "text": "BRAIN",
 "emph": true
 },
 {
-"start": 2.84,
-"end": 3.1,
+"start": 2.88,
+"end": 3.14,
 "text": "THINKS",
 "emph": false
 },
 {
-"start": 3.1,
-"end": 3.38,
+"start": 3.14,
+"end": 3.42,
 "text": "IT'S",
 "emph": false
 },
 {
-"start": 3.38,
-"end": 3.64,
+"start": 3.42,
+"end": 3.68,
 "text": "$4",
 "emph": true
 },
 {
-"start": 3.96,
-"end": 4.12,
+"start": 4.02,
+"end": 4.18,
 "text": "WE",
 "emph": false
 },
 {
-"start": 4.12,
-"end": 4.36,
+"start": 4.18,
+"end": 4.42,
 "text": "READ",
 "emph": false
 },
 {
-"start": 4.36,
-"end": 4.74,
+"start": 4.42,
+"end": 4.82,
 "text": "PRICES",
 "emph": false
 },
 {
-"start": 4.74,
-"end": 5.02,
+"start": 4.82,
+"end": 5.12,
 "text": "LEFT",
 "emph": true
 },
 {
-"start": 5.02,
-"end": 5.24,
+"start": 5.12,
+"end": 5.28,
 "text": "TO",
 "emph": false
 },
 {
-"start": 5.24,
-"end": 5.46,
+"start": 5.28,
+"end": 5.52,
 "text": "RIGHT",
 "emph": true
 },
 {
-"start": 5.46,
-"end": 5.88,
+"start": 5.52,
+"end": 5.82,
 "text": "AND",
 "emph": false
 },
 {
-"start": 5.88,
-"end": 6.0,
+"start": 5.82,
+"end": 5.94,
 "text": "THE",
 "emph": false
 },
 {
-"start": 6.0,
-"end": 6.3,
+"start": 5.94,
+"end": 6.2,
 "text": "FIRST",
 "emph": true
 },
 {
-"start": 6.3,
-"end": 6.58,
+"start": 6.2,
+"end": 6.46,
 "text": "DIGIT",
 "emph": true
 },
 {
-"start": 6.58,
-"end": 6.94,
+"start": 6.46,
+"end": 6.8,
 "text": "WINS",
 "emph": true
 },
 {
-"start": 7.64,
-"end": 7.84,
+"start": 7.52,
+"end": 7.72,
 "text": "SO",
 "emph": false
 },
 {
-"start": 7.84,
-"end": 8.58,
+"start": 7.72,
+"end": 8.48,
 "text": "$4.99",
 "emph": true
 },
 {
-"start": 8.58,
-"end": 8.94,
+"start": 8.48,
+"end": 8.84,
 "text": "FEELS",
 "emph": false
 },
 {
-"start": 8.94,
-"end": 9.26,
+"start": 8.84,
+"end": 9.12,
 "text": "LIKE",
 "emph": false
 },
 {
-"start": 9.26,
-"end": 9.6,
+"start": 9.12,
+"end": 9.52,
 "text": "$4",
 "emph": true
 },
 {
-"start": 9.88,
-"end": 10.14,
+"start": 9.74,
+"end": 10.02,
 "text": "$5",
 "emph": true
 },
 {
-"start": 10.14,
-"end": 10.44,
+"start": 10.02,
+"end": 10.28,
 "text": "FEELS",
 "emph": false
 },
 {
-"start": 10.44,
-"end": 10.74,
+"start": 10.28,
+"end": 10.56,
 "text": "LIKE",
 "emph": false
 },
 {
-"start": 10.74,
-"end": 11.18,
+"start": 10.56,
+"end": 11.08,
 "text": "$5",
 "emph": true
 },
 {
-"start": 11.48,
-"end": 11.96,
+"start": 11.36,
+"end": 11.82,
 "text": "1\u00a2",
 "emph": true
 },
 {
-"start": 11.96,
-"end": 12.36,
+"start": 11.82,
+"end": 12.14,
 "text": "CHEAPER",
 "emph": true
 },
 {
-"start": 12.62,
-"end": 12.74,
+"start": 12.14,
+"end": 12.44,
 "text": "BUT",
 "emph": false
 },
 {
-"start": 12.74,
-"end": 12.86,
+"start": 12.44,
+"end": 12.58,
 "text": "IN",
 "emph": false
 },
 {
-"start": 12.86,
-"end": 13.04,
+"start": 12.58,
+"end": 12.7,
 "text": "YOUR",
 "emph": false
 },
 {
-"start": 13.04,
-"end": 13.3,
+"start": 12.7,
+"end": 12.94,
 "text": "HEAD",
 "emph": false
 },
 {
-"start": 13.3,
-"end": 13.58,
+"start": 12.94,
+"end": 13.14,
 "text": "A",
 "emph": false
 },
 {
-"start": 13.58,
-"end": 13.82,
+"start": 13.14,
+"end": 13.38,
 "text": "WHOLE",
 "emph": true
 },
 {
-"start": 13.82,
-"end": 14.1,
+"start": 13.38,
+"end": 13.76,
 "text": "DOLLAR",
 "emph": true
 },
 {
-"start": 14.78,
-"end": 14.9,
+"start": 14.38,
+"end": 14.52,
 "text": "IN",
 "emph": false
 },
 {
-"start": 14.9,
-"end": 15.12,
+"start": 14.52,
+"end": 14.78,
 "text": "ONE",
 "emph": false
 },
 {
-"start": 15.12,
-"end": 15.48,
+"start": 14.78,
+"end": 15.18,
 "text": "FAMOUS",
 "emph": false
 },
 {
-"start": 15.48,
-"end": 15.84,
+"start": 15.18,
+"end": 15.6,
 "text": "CATALOG",
 "emph": true
 },
 {
-"start": 15.84,
-"end": 16.34,
+"start": 15.6,
+"end": 16.1,
 "text": "TEST",
 "emph": false
 },
 {
-"start": 16.74,
-"end": 16.8,
+"start": 16.34,
+"end": 16.46,
 "text": "THE",
 "emph": false
 },
 {
-"start": 16.86,
-"end": 17.04,
+"start": 16.46,
+"end": 16.74,
 "text": "SAME",
 "emph": false
 },
 {
-"start": 17.04,
-"end": 17.3,
+"start": 16.74,
+"end": 17.0,
 "text": "DRESS",
 "emph": true
 },
 {
-"start": 17.3,
-"end": 17.48,
+"start": 17.0,
+"end": 17.22,
 "text": "WAS",
 "emph": false
 },
 {
-"start": 17.48,
-"end": 17.7,
+"start": 17.22,
+"end": 17.44,
 "text": "SOLD",
 "emph": false
 },
 {
-"start": 17.7,
-"end": 17.9,
+"start": 17.44,
+"end": 17.7,
 "text": "FOR",
 "emph": false
 },
 {
-"start": 17.9,
-"end": 18.46,
+"start": 17.7,
+"end": 18.34,
 "text": "$34",
 "emph": true
 },
 {
-"start": 18.68,
-"end": 19.12,
+"start": 18.52,
+"end": 19.08,
 "text": "$39",
 "emph": true
 },
 {
-"start": 19.48,
-"end": 19.56,
+"start": 19.26,
+"end": 19.34,
 "text": "AND",
 "emph": false
 },
 {
-"start": 19.6,
-"end": 20.04,
+"start": 19.38,
+"end": 19.88,
 "text": "$44",
 "emph": true
 },
 {
 "start": 20.66,
-"end": 20.88,
+"end": 20.92,
 "text": "THE",
 "emph": false
 },
 {
-"start": 20.88,
-"end": 21.46,
+"start": 20.92,
+"end": 21.58,
 "text": "$39",
 "emph": true
 },
 {
-"start": 21.46,
-"end": 21.96,
+"start": 21.58,
+"end": 22.12,
 "text": "DRESS",
 "emph": true
 },
 {
-"start": 21.96,
-"end": 22.44,
+"start": 22.12,
+"end": 22.46,
 "text": "SOLD",
 "emph": false
 },
 {
-"start": 22.44,
-"end": 22.84,
+"start": 22.46,
+"end": 22.82,
 "text": "BEST",
 "emph": true
 },
 {
-"start": 23.26,
-"end": 23.46,
+"start": 23.2,
+"end": 23.4,
 "text": "EVEN",
 "emph": false
 },
 {
-"start": 23.46,
-"end": 23.7,
+"start": 23.4,
+"end": 23.62,
 "text": "BETTER",
 "emph": false
 },
 {
-"start": 23.7,
-"end": 23.92,
+"start": 23.62,
+"end": 23.82,
 "text": "THAN",
 "emph": false
 },
 {
-"start": 23.92,
-"end": 24.04,
+"start": 23.82,
+"end": 23.92,
 "text": "THE",
 "emph": false
 },
 {
-"start": 24.04,
-"end": 24.28,
+"start": 23.94,
+"end": 24.18,
 "text": "CHEAPER",
 "emph": true
 },
 {
-"start": 24.28,
-"end": 24.58,
+"start": 24.18,
+"end": 24.5,
 "text": "ONE",
 "emph": false
 },
 {
-"start": 25.0,
-"end": 25.2,
+"start": 24.9,
+"end": 25.1,
 "text": "WHY",
 "emph": false
 },
 {
-"start": 25.2,
-"end": 25.36,
+"start": 25.1,
+"end": 25.24,
 "text": "A",
 "emph": false
 },
 {
-"start": 25.36,
-"end": 25.52,
+"start": 25.24,
+"end": 25.38,
 "text": "9",
 "emph": true
 },
 {
-"start": 25.52,
-"end": 25.64,
+"start": 25.38,
+"end": 25.5,
 "text": "AT",
 "emph": false
 },
 {
-"start": 25.64,
-"end": 25.76,
+"start": 25.5,
+"end": 25.62,
 "text": "THE",
 "emph": false
 },
 {
-"start": 25.76,
-"end": 26.0,
+"start": 25.62,
+"end": 25.72,
 "text": "END",
 "emph": false
 },
 {
-"start": 26.0,
-"end": 26.18,
+"start": 25.74,
+"end": 25.86,
 "text": "CAN",
 "emph": false
 },
 {
-"start": 26.18,
-"end": 26.54,
+"start": 25.86,
+"end": 26.18,
 "text": "WHISPER",
 "emph": false
 },
 {
-"start": 26.54,
-"end": 27.04,
+"start": 26.28,
+"end": 26.48,
 "text": "DEAL",
 "emph": true
 },
 {
-"start": 27.72,
-"end": 27.9,
+"start": 27.04,
+"end": 27.32,
 "text": "SO",
 "emph": false
 },
 {
-"start": 27.9,
-"end": 28.06,
+"start": 27.32,
+"end": 27.5,
 "text": "WHERE",
 "emph": false
 },
 {
-"start": 28.06,
-"end": 28.24,
+"start": 27.5,
+"end": 27.64,
 "text": "DID",
 "emph": false
 },
 {
-"start": 28.24,
-"end": 28.66,
+"start": 27.64,
+"end": 28.02,
 "text": "99",
 "emph": true
 },
 {
-"start": 28.66,
-"end": 29.12,
+"start": 28.02,
+"end": 28.52,
 "text": "START",
 "emph": false
 },
 {
-"start": 29.56,
-"end": 29.78,
+"start": 29.12,
+"end": 29.12,
 "text": "NOBODY",
 "emph": true
 },
 {
-"start": 29.78,
-"end": 30.06,
+"start": 29.24,
+"end": 29.38,
 "text": "KNOWS",
 "emph": false
 },
 {
-"start": 30.06,
-"end": 30.32,
+"start": 29.38,
+"end": 29.64,
 "text": "FOR",
 "emph": false
 },
 {
-"start": 30.32,
-"end": 30.58,
+"start": 29.64,
+"end": 29.92,
 "text": "SURE",
 "emph": false
 },
 {
-"start": 31.0,
-"end": 31.2,
+"start": 30.36,
+"end": 30.56,
 "text": "ONE",
 "emph": false
 },
 {
-"start": 31.2,
-"end": 31.56,
+"start": 30.56,
+"end": 30.9,
 "text": "POPULAR",
 "emph": false
 },
 {
-"start": 31.56,
-"end": 32.06,
+"start": 30.9,
+"end": 31.4,
 "text": "STORY",
 "emph": true
 },
 {
-"start": 32.44,
-"end": 32.6,
+"start": 31.72,
+"end": 31.9,
 "text": "OWNERS",
 "emph": false
 },
 {
-"start": 32.6,
-"end": 33.04,
+"start": 31.9,
+"end": 32.3,
 "text": "WANTED",
 "emph": false
 },
 {
-"start": 33.04,
-"end": 33.46,
+"start": 32.3,
+"end": 32.8,
 "text": "CASHIERS",
 "emph": false
 },
 {
-"start": 33.46,
-"end": 33.66,
+"start": 32.8,
+"end": 33.04,
 "text": "TO",
 "emph": false
 },
 {
-"start": 33.66,
-"end": 33.9,
+"start": 33.04,
+"end": 33.3,
 "text": "OPEN",
 "emph": false
 },
 {
-"start": 33.9,
-"end": 34.04,
+"start": 33.3,
+"end": 33.46,
 "text": "THE",
 "emph": false
 },
 {
-"start": 34.04,
-"end": 34.36,
+"start": 33.46,
+"end": 33.8,
 "text": "REGISTER",
 "emph": true
 },
 {
-"start": 34.36,
-"end": 34.64,
+"start": 33.8,
+"end": 34.04,
 "text": "AND",
 "emph": false
 },
 {
-"start": 34.64,
-"end": 34.82,
+"start": 34.04,
+"end": 34.22,
 "text": "MAKE",
 "emph": false
 },
 {
-"start": 34.82,
-"end": 35.18,
+"start": 34.22,
+"end": 34.6,
 "text": "CHANGE",
 "emph": true
 },
 {
-"start": 35.18,
-"end": 35.7,
+"start": 34.6,
+"end": 34.96,
 "text": "SO",
 "emph": false
 },
 {
-"start": 35.7,
-"end": 35.84,
+"start": 34.96,
+"end": 35.12,
 "text": "THEY",
 "emph": false
 },
 {
-"start": 35.84,
-"end": 36.1,
+"start": 35.12,
+"end": 35.38,
 "text": "COULDN'T",
 "emph": false
 },
 {
-"start": 36.1,
-"end": 36.32,
+"start": 35.38,
+"end": 35.6,
 "text": "POCKET",
 "emph": true
 },
 {
-"start": 36.32,
-"end": 36.5,
+"start": 35.6,
+"end": 35.78,
 "text": "THE",
 "emph": false
 },
 {
-"start": 36.5,
-"end": 36.78,
+"start": 35.78,
+"end": 36.1,
 "text": "CASH",
 "emph": true
 },
 {
-"start": 37.34,
-"end": 38.0,
+"start": 36.6,
+"end": 37.34,
 "text": "99\u00a2",
 "emph": true
 },
 {
-"start": 38.0,
-"end": 38.38,
+"start": 37.34,
+"end": 37.72,
 "text": "PRICES",
 "emph": false
 },
 {
-"start": 38.38,
-"end": 38.86,
+"start": 37.72,
+"end": 38.08,
 "text": "WERE",
 "emph": false
 },
 {
-"start": 38.86,
-"end": 39.02,
+"start": 38.08,
+"end": 38.28,
 "text": "IN",
 "emph": false
 },
 {
-"start": 39.02,
-"end": 39.34,
+"start": 38.28,
+"end": 38.64,
 "text": "NEWSPAPER",
 "emph": false
 },
 {
-"start": 39.34,
-"end": 39.78,
+"start": 38.64,
+"end": 39.1,
 "text": "ADS",
 "emph": false
 },
 {
-"start": 39.78,
-"end": 40.18,
+"start": 39.1,
+"end": 39.38,
 "text": "BY",
 "emph": false
 },
 {
-"start": 40.18,
-"end": 40.6,
+"start": 39.38,
+"end": 39.86,
 "text": "1880",
 "emph": true
 },
 {
-"start": 41.6,
-"end": 41.72,
+"start": 40.8,
+"end": 40.92,
 "text": "SOME",
 "emph": false
 },
 {
-"start": 41.72,
-"end": 42.08,
+"start": 40.92,
+"end": 41.36,
 "text": "FANCY",
 "emph": true
 },
 {
-"start": 42.08,
-"end": 42.42,
+"start": 41.36,
+"end": 41.8,
 "text": "PLACES",
 "emph": false
 },
 {
-"start": 42.42,
-"end": 42.64,
+"start": 41.8,
+"end": 42.02,
 "text": "DO",
 "emph": false
 },
 {
-"start": 42.64,
-"end": 42.78,
+"start": 42.02,
+"end": 42.18,
 "text": "THE",
 "emph": false
 },
 {
-"start": 42.78,
-"end": 43.06,
+"start": 42.18,
+"end": 42.54,
 "text": "OPPOSITE",
 "emph": false
 },
 {
-"start": 43.72,
-"end": 43.72,
+"start": 43.1,
+"end": 43.14,
 "text": "ROUND",
 "emph": true
 },
 {
-"start": 43.84,
-"end": 44.16,
+"start": 43.22,
+"end": 43.62,
 "text": "PRICES",
 "emph": false
 },
 {
-"start": 44.62,
-"end": 44.74,
+"start": 44.02,
+"end": 44.14,
 "text": "NO",
 "emph": false
 },
 {
-"start": 44.74,
-"end": 45.12,
+"start": 44.14,
+"end": 44.52,
 "text": "NINES",
 "emph": false
 },
 {
-"start": 45.5,
-"end": 45.58,
+"start": 44.76,
+"end": 44.92,
 "text": "NOTHING",
 "emph": false
 },
 {
-"start": 45.62,
-"end": 45.86,
+"start": 44.92,
+"end": 45.22,
 "text": "THAT",
 "emph": false
 },
 {
-"start": 45.86,
-"end": 46.12,
+"start": 45.22,
+"end": 45.46,
 "text": "SAYS",
 "emph": false
 },
 {
-"start": 46.12,
-"end": 46.44,
+"start": 45.46,
+"end": 45.78,
 "text": "BARGAIN",
 "emph": true
 },
 {
-"start": 47.0,
-"end": 47.14,
+"start": 46.32,
+"end": 46.48,
 "text": "SOME",
 "emph": false
 },
 {
-"start": 47.14,
-"end": 47.46,
+"start": 46.48,
+"end": 46.8,
 "text": "EVEN",
 "emph": false
 },
 {
-"start": 47.46,
-"end": 47.72,
+"start": 46.8,
+"end": 47.06,
 "text": "DROP",
 "emph": false
 },
 {
-"start": 47.72,
-"end": 47.92,
+"start": 47.06,
+"end": 47.24,
 "text": "THE",
 "emph": false
 },
 {
-"start": 47.92,
-"end": 48.08,
+"start": 47.24,
+"end": 47.44,
 "text": "DOLLAR",
 "emph": true
 },
 {
-"start": 48.08,
-"end": 48.42,
+"start": 47.44,
+"end": 47.82,
 "text": "SIGN",
 "emph": true
 },
 {
-"start": 48.42,
-"end": 48.86,
+"start": 47.82,
+"end": 48.24,
 "text": "COMPLETELY",
 "emph": false
 },
 {
-"start": 49.32,
-"end": 49.54,
+"start": 48.7,
+"end": 48.98,
 "text": "THAT'S",
 "emph": false
 },
 {
-"start": 49.54,
-"end": 49.72,
+"start": 48.98,
+"end": 49.12,
 "text": "PART",
 "emph": true
 },
 {
-"start": 49.72,
-"end": 50.06,
+"start": 49.12,
+"end": 49.48,
 "text": "TWO",
 "emph": false
 },
 {
-"start": 50.48,
-"end": 50.62,
+"start": 49.84,
+"end": 50.04,
 "text": "SO",
 "emph": false
 },
 {
-"start": 50.62,
-"end": 50.76,
+"start": 50.04,
+"end": 50.22,
 "text": "NEXT",
 "emph": false
 },
 {
-"start": 50.76,
-"end": 51.04,
+"start": 50.22,
+"end": 50.48,
 "text": "TIME",
 "emph": false
 },
 {
-"start": 51.04,
-"end": 51.16,
+"start": 50.48,
+"end": 50.66,
 "text": "YOU",
 "emph": false
 },
 {
-"start": 51.16,
-"end": 51.32,
+"start": 50.66,
+"end": 50.82,
 "text": "SEE",
 "emph": false
 },
 {
-"start": 51.32,
-"end": 51.44,
+"start": 50.82,
+"end": 50.96,
 "text": "A",
 "emph": false
 },
 {
-"start": 51.44,
-"end": 51.64,
+"start": 50.96,
+"end": 51.2,
 "text": "9",
 "emph": true
 },
 {
-"start": 51.8,
-"end": 51.98,
+"start": 51.36,
+"end": 51.56,
 "text": "ASK",
 "emph": false
 },
 {
-"start": 51.98,
-"end": 52.3,
+"start": 51.56,
+"end": 51.92,
 "text": "YOURSELF",
 "emph": false
 },
 {
-"start": 52.66,
-"end": 52.82,
+"start": 52.26,
+"end": 52.34,
 "text": "IS",
 "emph": false
 },
 {
-"start": 52.82,
-"end": 52.92,
+"start": 52.38,
+"end": 52.44,
 "text": "IT",
 "emph": false
 },
 {
-"start": 52.94,
-"end": 53.02,
+"start": 52.5,
+"end": 52.58,
 "text": "A",
 "emph": false
 },
 {
-"start": 53.06,
-"end": 53.26,
+"start": 52.62,
+"end": 52.82,
 "text": "DEAL",
 "emph": true
 },
 {
-"start": 53.26,
-"end": 53.6,
+"start": 52.82,
+"end": 53.12,
 "text": "OR",
 "emph": false
 },
 {
-"start": 53.6,
-"end": 53.82,
+"start": 53.12,
+"end": 53.34,
 "text": "JUST",
 "emph": false
 },
 {
-"start": 53.82,
-"end": 53.98,
+"start": 53.34,
+"end": 53.52,
 "text": "A",
 "emph": false
 },
 {
-"start": 53.98,
-"end": 54.24,
+"start": 53.52,
+"end": 53.78,
 "text": "9",
 "emph": true
 }

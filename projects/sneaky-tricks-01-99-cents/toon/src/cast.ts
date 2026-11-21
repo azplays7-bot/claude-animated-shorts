@@ -5,7 +5,7 @@
 // Cards, effects and blobs live on the NOINK layer so the world ink pass never outlines their quads.
 import * as THREE from "three";
 import { Pen, bodyFront, bodySide, KID, SKINS, INK, fxBurst, fxShadow, fxContact, Outfit, Expr, FrontOpts, SideOpts, townsfolk } from "./toon";
-import { FPS, SHOTS, V3, smooth, clamp01, BT, TOTAL, STORE, POLE, SIGN_Y, WALK_Z, DOOR_X, add, STAND, TONY_DOOR, CAFE_X0, CAFE_X1 } from "./story";
+import { FPS, SHOTS, V3, smooth, clamp01, BT, TOTAL, STORE, POLE, SIGN_Y, WALK_Z, DOOR_X, add, STAND, warp, unwarp, TONY_DOOR, CAFE_X0, CAFE_X1 } from "./story";
 import { LIGHTS } from "./lights";
 import { NOINK } from "./ink";
 import { cardShade, blobMaterial, CARD_K } from "./cardshade";
@@ -547,6 +547,7 @@ const fxBigTag = (p: Pen, s: string) => { fxTag(p, "SALE", s, "#d8262e"); };
 export const stage = (id: number, t: number, cam: CamInfo): Stage => {
   const out: Stage = { places: [], fx: [] };
   const s = SHOTS[id - 1], f = t * FPS;
+  t = unwarp(t); // literal times below are pre-warp seconds; beats (BT) are current frames
   LNAME = s.light;
   findSun(cam, SUN);
   const counter = S(-4.9, 0, -4.45), mx = S(-2.4, 0, -2.6);
@@ -556,12 +557,12 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       burst(out, f, BT.five - 2, ...S(-4.6, 2.85, -3.9), 1.2);
       riser(out, f, BT.five, "-1¢", "#d8262e", ...S(-4.1, 3.4, -3.8), 0.6, 30);
       front(cam, out, MX, mx[0], mx[2], { mode: "stand", expr: f < BT.brain ? "smile" : "grin", look: -1 }, t);
-      pop(out, f, BT.brain - 4, Math.round(3.95 * FPS), "th4", 512, 512, (p) => fxThought(p, "$4"), ...S(-2.05, 2.45, -2.45), 0.55);
+      pop(out, f, BT.brain - 4, Math.round(warp(3.95) * FPS), "th4", 512, 512, (p) => fxThought(p, "$4"), ...S(-2.05, 2.45, -2.45), 0.55);
       if (t >= 3.95) {
         const u = smooth((f - BT.first) / 10);
         out.fx.push({ key: "dig" + q(u, 20), cw: 1024, ch: 512, draw: (p) => fxDigits(p, u), ...xyz(S(-2.4, 2.25, -3.2)), w: 0.95, h: 0.475 });
         const look = f < BT.left ? -1 : f < BT.right ? -1 + 2 * clamp01((f - BT.left) / (BT.right - BT.left + 6)) : -1;
-        pop(out, f, BT.read - 2, Math.round(7.3 * FPS), "eye" + q(look, 4), 256, 256, (p) => fxEye(p, look), ...S(-2.4, 2.72, -3.15), 0.28);
+        pop(out, f, BT.read - 2, Math.round(warp(7.3) * FPS), "eye" + q(look, 4), 256, 256, (p) => fxEye(p, look), ...S(-2.4, 2.72, -3.15), 0.28);
         riser(out, f, BT.wins - 2, "FIRST DIGIT WINS", "#d8262e", ...S(-2.4, 1.6, -3.1), 0.7, 34);
       }
       break;
@@ -588,7 +589,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       front(cam, out, MX, ...mxs, { mode: "stand", expr: mexpr, look: -1 }, t);
       const hi = f < BT.d34 ? -1 : f < BT.d39 ? 0 : f < BT.d44 ? 1 : f < BT.d39b ? 2 : 1;
       const bars = t < 20.65 ? 0 : smooth((t - 20.85) / 1.2), crown = f >= BT.best - 2;
-      if (t < 23.25) pop(out, f, BT.catalog - 4, Math.round(23.25 * FPS), "cat" + hi + q(bars, 20) + crown, 768, 896, (p) => fxCatalog(p, hi, bars, crown), TONY_DOOR - 1, 2.6, 10.3, 1.4);
+      if (t < 23.25) pop(out, f, BT.catalog - 4, Math.round(warp(23.25) * FPS), "cat" + hi + q(bars, 20) + crown, 768, 896, (p) => fxCatalog(p, hi, bars, crown), TONY_DOOR - 1, 2.6, 10.3, 1.4);
       burst(out, f, BT.best - 2, TONY_DOOR - 1, 2.65, 10.5, 1.0);
       riser(out, f, BT.best, "BEST SELLER!", "#2f8a4a", TONY_DOOR - 1, 3.55, 10.4, 0.9, 34);
       if (t >= 23.25) {
@@ -606,16 +607,16 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       front(cam, out, TN, ow[0], ow[2], { mode: "stand", expr: sneaky && f >= BT.pocket ? "stern" : "smile", look: -1, wave: sneaky && f >= BT.cash ? 0.9 : undefined }, t);
       if (t >= 31.0) front(cam, out, LD, ld[0], ld[2], { mode: "stand", expr: f >= BT.change ? "laugh" : "smile", look: 1, prop: f < BT.open ? ["raise", "cash"] : null }, t);
       riser(out, f, BT.start - 4, "WHERE DID .99 START?", "#8a6a3a", ...S(-2.5, 2.6, -2.5), 1.4, 46);
-      if (t >= 29.55 && t < 30.95) for (let k = 0; k < 3; k++) pop(out, f, BT.nobody - 4 + k * 5, Math.round(30.95 * FPS), "qm", 300, 300, fxQuestion, ...S(-4.9 + k * 0.6, 2.3 + (k % 2) * 0.25, -3.6), 0.3);
+      if (t >= 29.55 && t < 30.95) for (let k = 0; k < 3; k++) pop(out, f, BT.nobody - 4 + k * 5, Math.round(warp(30.95) * FPS), "qm", 300, 300, fxQuestion, ...S(-4.9 + k * 0.6, 2.3 + (k % 2) * 0.25, -3.6), 0.3);
       riser(out, f, BT.popular - 2, "A POPULAR LEGEND", "#8a6a3a", ...S(-4.3, 2.35, -3.4), 0.8, 46);
-      pop(out, f, BT.owners - 2, Math.round(35.1 * FPS), "tag99", 512, 256, (p) => fxTag(p, "PRICE", "99¢", "#8a6a3a"), ...S(-3.95, 1.5, -3.55), 0.28, 0.1);
+      pop(out, f, BT.owners - 2, Math.round(warp(35.1) * FPS), "tag99", 512, 256, (p) => fxTag(p, "PRICE", "99¢", "#8a6a3a"), ...S(-3.95, 1.5, -3.55), 0.28, 0.1);
       if (f >= BT.open - 2 && t < 35.15) { const u = clamp01((f - BT.open + 2) / 8); out.fx.push({ key: "drawer", cw: 512, ch: 256, draw: fxDrawer, ...xyz(S(-4.5, 1.12, -3.75 + 0.3 * u)), w: 0.5, h: 0.25 }); }
       toss(out, f, BT.change, 14, S(-4.5, 1.2, -3.5), S(-4.35, 1.35, -2.75), 0.3, "coin1", 256, 256, fxCoin, 0.12);
       riser(out, f, BT.change + 2, "1¢ CHANGE", "#8a6a3a", ...S(-4.1, 1.9, -3.0), 0.5, 30);
-      pop(out, f, BT.cash - 2, Math.round(37.2 * FPS), "bangOwner", 300, 300, fxBang, ...S(-3.1, 2.25, -4.4), 0.3);
-      pop(out, f, BT.cash + 6, Math.round(37.2 * FPS), "noPocket", 512, 160, (p) => fxLabel(p, "NO POCKETING!", "#c0242e"), ...S(-3.9, 2.35, -4.2), 0.7, -0.05);
+      pop(out, f, BT.cash - 2, Math.round(warp(37.2) * FPS), "bangOwner", 300, 300, fxBang, ...S(-3.1, 2.25, -4.4), 0.3);
+      pop(out, f, BT.cash + 6, Math.round(warp(37.2) * FPS), "noPocket", 512, 160, (p) => fxLabel(p, "NO POCKETING!", "#c0242e"), ...S(-3.9, 2.35, -4.2), 0.7, -0.05);
       if (t >= 37.25) {
-        const u = clamp01((f - Math.round(37.25 * FPS)) / 14);
+        const u = clamp01((f - Math.round(warp(37.25) * FPS)) / 14);
         out.fx.push({ key: "news", cw: 768, ch: 1016, draw: fxNews, ...xyz(S(-1.5, 2.0, -2.0)), w: 1.0 * (0.2 + 0.8 * u), h: 1.32 * (0.2 + 0.8 * u), rot: (1 - u) * 9 });
         riser(out, f, BT.y1880 - 2, "BY 1880", "#8a6a3a", ...S(-1.5, 2.55, -1.95), 0.5, 34);
       }
@@ -633,7 +634,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       riser(out, f, BT.nines + 2, "NO 9s!", "#141318", STAND[0] - 0.1, 1.75, STAND[2] + 0.25, 0.5, 30);
       riser(out, f, BT.bargain - 2, "BARGAIN? NEVER.", "#141318", wt[0], 2.4, wt[1] + 0.3, 0.75, 40);
       for (let k = 0; k < 3; k++) toss(out, f, BT.drop + k * 4, 20, [STAND[0] + 0.24, 1.3 - k * 0.17, STAND[2] + 0.05], [STAND[0] + 0.6 + k * 0.5, 3.0, STAND[2] - 0.6], 0.5, "dollar", 256, 256, fxDollar, 0.18);
-      pop(out, f, BT.part - 4, Math.round(50.4 * FPS), "part2", 512, 160, (p) => fxLabel(p, "PART 2: COMING UP", "#b8943a"), STAND[0], 2.05, STAND[2] + 0.3, 0.75, -0.06);
+      pop(out, f, BT.part - 4, Math.round(warp(50.4) * FPS), "part2", 512, 160, (p) => fxLabel(p, "PART 2: COMING UP", "#b8943a"), STAND[0], 2.05, STAND[2] + 0.3, 0.75, -0.06);
       // Tony's door: the $9.99 sign; Max wonders
       front(cam, out, TN, TX, TZ, { mode: "stand", expr: "grin", look: 1 }, t);
       front(cam, out, MX, TX + 1.1, TZ + 0.3, { mode: "stand", expr: f < BT.ask ? "smile" : f < BT.end + 10 ? "dazed" : "laugh", look: -1 }, t);

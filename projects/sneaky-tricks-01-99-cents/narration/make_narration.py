@@ -1,4 +1,4 @@
-# AI narration + synced captions for "Sneaky Business Tricks #1: why prices end in .99" (Kokoro TTS, voice bm_george).
+# AI narration + synced captions for "Sneaky Business Tricks #1: why prices end in .99" (Kokoro TTS, voice am_fenrir).
 # Each sentence is spoken in one go (natural intonation) and placed on a 60 s timeline: short pauses between sentences,
 # longer ones at scene changes. Subtitle chunks inside a sentence are timed by their share of the spoken syllables,
 # then snapped to the quietest point nearby (the real pause in the audio).
@@ -11,7 +11,7 @@ import soundfile as sf
 from kokoro_onnx import Kokoro
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VOICE, SPEED, LANG = "bm_george", 1.28, "en-gb"
+VOICE, SPEED, LANG = "am_fenrir", 1.15, "en-us"
 SR, DUR = 48000, 60.0
 LEAD, GAP, SCENE_GAP = 0.12, 0.25, 0.5
 TARGET = {}   # one continuous 60 s video

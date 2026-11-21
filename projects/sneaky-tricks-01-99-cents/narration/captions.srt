@@ -1,52 +1,52 @@
 1
-00:00:00,120 --> 00:00:03,768
+00:00:00,120 --> 00:00:03,832
 Four ninety-nine isn't five dollars. But your brain thinks it's four.
 
 2
-00:00:04,018 --> 00:00:07,197
+00:00:04,082 --> 00:00:07,069
 We read prices left to right, and the first digit wins.
 
 3
-00:00:07,697 --> 00:00:11,302
+00:00:07,569 --> 00:00:11,174
 So four ninety-nine feels like four. Five feels like five.
 
 4
-00:00:11,552 --> 00:00:14,283
+00:00:11,424 --> 00:00:13,899
 One cent cheaper. But in your head? A whole dollar.
 
 5
-00:00:14,783 --> 00:00:20,543
+00:00:14,399 --> 00:00:20,564
 In one famous catalog test, the same dress was sold for thirty-four, thirty-nine and forty-four dollars.
 
 6
-00:00:20,793 --> 00:00:24,761
+00:00:20,814 --> 00:00:24,675
 The thirty-nine dollar dress sold best. Even better than the cheaper one!
 
 7
-00:00:25,011 --> 00:00:27,272
+00:00:24,925 --> 00:00:26,739
 Why? A nine at the end can whisper: deal.
 
 8
-00:00:27,772 --> 00:00:30,737
+00:00:27,239 --> 00:00:30,055
 So where did ninety-nine start? Nobody knows for sure.
 
 9
-00:00:30,987 --> 00:00:36,961
+00:00:30,305 --> 00:00:36,257
 One popular story: owners wanted cashiers to open the register and make change, so they couldn't pocket the cash.
 
 10
-00:00:37,211 --> 00:00:41,051
+00:00:36,507 --> 00:00:40,219
 Ninety-nine cent prices were in newspaper ads by eighteen-eighty.
 
 11
-00:00:41,551 --> 00:00:46,713
+00:00:40,719 --> 00:00:46,052
 Some fancy places do the opposite. Round prices. No nines. Nothing that says bargain.
 
 12
-00:00:46,963 --> 00:00:50,227
+00:00:46,302 --> 00:00:49,651
 Some even drop the dollar sign completely. That's part two.
 
 13
-00:00:50,477 --> 00:00:54,445
+00:00:49,901 --> 00:00:53,976
 So next time you see a nine, ask yourself: is it a deal, or just a nine?
 

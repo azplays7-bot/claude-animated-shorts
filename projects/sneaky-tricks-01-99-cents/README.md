@@ -1,7 +1,7 @@
 # Sneaky Business Tricks #1: why prices end in .99 (60 s vertical cartoon)
 
 Part 1 of the "Sneaky Business Tricks" series. Same engine and fast style as the other shorts (camera change about
-every 1.5 s, gags every 3-5 s, information on signs in the world, one-word captions, British narrator bm_george),
+every 1.5 s, gags every 3-5 s, information on signs in the world, one-word captions, American narrator am_fenrir, speed 1.15),
 set in Tony's world: Tony (recurring host) flips his burger from $5.00 to $4.99.
 
 **Story.** $4.99 isn't $5, but your brain reads the first digit (the left-digit effect): $4.99 feels like $4. One cent
