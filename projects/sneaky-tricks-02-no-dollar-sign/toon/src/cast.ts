@@ -551,7 +551,6 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
   const wt: [number, number] = [21.2, 10.45], mz: [number, number] = [25.55, 11.0];
   switch (id) {
     case 1: { // MAISON D'OR: Steak 48. Not $48. Not a typo: a trick.
-      passers(cam, out, t);
       front(cam, out, SM, ...wt, { mode: "stand", expr: f < BT.typo ? "smile" : "grin", look: 1, blink: f >= BT.trick ? 1 : undefined }, t);
       front(cam, out, MX, ...mz, { mode: "stand", expr: f < BT.not ? "smile" : f < BT.typo ? "shock" : "dazed", look: -1 }, t);
       const hi = f >= BT.steak - 2;
