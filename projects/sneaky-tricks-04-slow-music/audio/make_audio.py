@@ -1,7 +1,7 @@
-# Original score + sound effects for "Sneaky Business Tricks #4: why stores play slow music", all synthesized here,
-# timed to the narration word timings (narration/words.json) and the camera setups (toon/src/story.ts), mixed with
-# narration.wav: slow fancy jazz chords at MAISON D'OR, a quiz beat for the three-menu test, the sly groove, a tense
-# drone + heartbeat + alarm for the pain of paying, the groove back for relief, jazz at golden hour and a button ending.
+# Original score + sound effects for "Sneaky Business Tricks #4: why stores play slow music", all synthesized here, timed
+# to the narration word timings (narration/words.json) and the camera setups (toon/src/story.ts), mixed with
+# narration.wav: slow calm jazz from Tony's speaker, a slow groove for the study board then a fast dash, jazz at the
+# tables, an accordion-style waltz then an oompah band at the wine shelf, slow jazz for Tony and a button ending.
 # -14 LUFS integrated, true peak <= -1 dBTP, exactly 60.000 s.   python make_audio.py
 import json, os, sys
 import numpy as np
@@ -168,7 +168,7 @@ def tuba(m, dur, gain=1.0):
 B = BEAT
 HOME = [(48, (64, 67, 71)), (45, (64, 69, 72)), (41, (65, 69, 72)), (43, (62, 67, 71))]         # Cmaj7 Am F G
 MINOR = [(45, (57, 60, 64)), (41, (57, 60, 65)), (48, (60, 64, 67)), (43, (59, 62, 67))]        # Am F C G
-S = [0.0, 7.6, 31.8, 37.75, 41.35, 47.5, 60.0]   # shot starts (story.ts SHOTS)
+S = [0.0, 6.3, 20.1, 27.6, 39.45, 47.0, 60.0]   # shot starts (story.ts SHOTS)
 def groove(t0, t1, prog=HOME, sixteenths=False, kick_g=0.1, pad_g=0.045, pl_g=0.03):
     tb = t0; bar = 0
     while tb < t1 - 0.05:
@@ -191,18 +191,25 @@ def jazz(t0, t1, g=0.05):
         m_place(softpad(ch, d, 1400), a, g); m_place(bass(ch[0] - 24, min(1.6, d), 300), a, 0.08)
         for h in range(4):
             if h * 0.5 + 0.25 < d: m_place(hat(0.012), a + h * 0.5 + 0.25, 1.0, 0.3)
-jazz(0.0, S[1])
-groove(S[1], W("JUST", 1), MINOR, sixteenths=True, kick_g=0.11)              # the three-menu test: a quiz beat
-for k, m in enumerate((72, 76, 79, 84)): m_place(chime((m,), 0.5, 0.05), W("JUST", 1) + k * 0.12)
-groove(W("JUST", 1), S[2], HOME, kick_g=0.09, pl_g=0.025)
-# the pain of paying: a low tense drone and a heartbeat
-m_place(softpad((45, 52, 57, 58), S[3] - S[2], 700), S[2], 0.07)
-tb = S[2]
-while tb < S[3] - 0.3:
-    m_place(kick(0.08), tb); m_place(kick(0.05), tb + 0.22); tb += 0.8 if tb < W("ALARM") else 0.5
-groove(S[3], S[5], HOME, kick_g=0.09)
-m_place(brass((60, 64, 67), 0.6, 0.04), S[4] + 0.05)
-jazz(S[5], W("UNTIL"), 0.05)
+jazz(0.0, S[1], 0.06)
+groove(S[1], W("FAST", 2), HOME, kick_g=0.08, pl_g=0.02)
+groove(W("FAST", 2), S[2], MINOR, sixteenths=True, kick_g=0.12, pl_g=0.035)   # fast music: busy sixteenths
+jazz(S[2], S[3], 0.06)
+# French music: an accordion-like waltz (detuned reedy chords, 3/4)
+def reed(notes, dur, g=1.0):
+    x = sum(saw(nf(m), dur, d) for m in notes for d in (-0.006, 0.006)) / (2 * len(notes))
+    return g * bp(x, 300, 3500) * env(len(x), 0.03, 0.3, 0.8) * fades(np.ones(len(x)), 0.01, 0.05)
+tb = S[3]; bar = 0; VAL = [(48, (64, 67, 72)), (43, (62, 67, 71)), (45, (64, 69, 72)), (43, (62, 65, 71))]
+while tb < W("GERMAN", 1) - 0.2:
+    r_, ch = VAL[bar % 4]
+    m_place(bass(r_ - 12, 0.35, 400), tb, 0.08); m_place(reed(ch, 0.3, 0.05), tb + 0.45); m_place(reed(ch, 0.3, 0.05), tb + 0.9)
+    m_place(reed((ch[2] + 12,), 1.2, 0.03), tb, 1.0, 0.2); tb += 1.35; bar += 1
+# German music: an oompah band (tuba + brass offbeats, 2/4)
+tb = W("GERMAN", 1) - 0.2; k = 0
+while tb < S[4] - 0.2:
+    ch = [(48, (64, 67, 72)), (43, (62, 67, 71))][(k // 4) % 2]
+    m_place(tuba(ch[0] - 12, 0.25, 0.08), tb); m_place(brass(ch[1], 0.2, 0.04), tb + 0.3); tb += 0.6; k += 1
+jazz(S[4], W("UNTIL"), 0.06)
 m_place(brass((64, 67, 72), 0.9, 0.05), W("PART"))
 groove(W("UNTIL"), 57.4, HOME, kick_g=0.1)
 m_place(softpad((48, 55, 60, 64, 67, 72), 60 - 57.4, 2600), 57.4, 0.16); m_place(brass((60, 64, 67, 72), 1.4, 0.06), 57.4)
@@ -336,33 +343,25 @@ def rip(gain=1.0):
     t = tt(0.5); return gain * hp(R.standard_normal(len(t)), 1500) * (R.random(len(t)) < 0.35) * np.exp(-t / 0.2) * 2
 def gulp(gain=1.0):
     t = tt(0.3); f = 300 - 500 * t; return gain * np.sin(TAU * np.cumsum(f) / SR) * np.exp(-t / 0.08)
-f_place(crowd(S[1], 0.03), 0.0); f_place(store_air(S[5] - S[1], 0.03), S[1]); f_place(crowd(60 - S[5], 0.03), S[5])
+f_place(store_air(S[1], 0.03), 0.0); f_place(crowd(S[2] - S[1], 0.03), S[1]); f_place(store_air(S[3] - S[2], 0.03), S[2]); f_place(crowd(S[4] - S[3], 0.03), S[3]); f_place(store_air(S[5] - S[4], 0.03), S[4]); f_place(crowd(60 - S[5], 0.03), S[5])
 for c in SETUPS: f_place(whoosh(0.32, 0.10), c - 0.16)
-# MAISON D'OR: Steak 48
-f_place(clink(0.05), 0.4); f_place(clink(0.04), 0.75)
-f_place(pop(0.06, 700), W("SKIP")); f_place(ding(88, 0.06), W("48")); f_place(boing(0.07), W("NOT"))
-f_place(scratch(0.05), W("$48")); f_place(pop(0.05, 900), W("TYPO")); f_place(chime((79, 84), 0.6, 0.05), W("TRICK"))
-# the three-menu test
-f_place(paper(0.07), W("CORNELL")); f_place(sizzle(1.6, 0.025), W("COOKING") - 0.3); f_place(knock(0.04), W("COOKING"))
-for k, wd in enumerate([("ONE", 0), ("ONE", 1), ("ONE", 2)]): f_place(beep(900 + 200 * k, 0.08, 0.04), W(*wd))
-for k in range(3): f_place(pop(0.05, 500 + 120 * k), W("WHICH") + k * 0.17)
-for k in range(3): f_place(whirr(0.6, 0.03), W("JUST", 1) + 0.1 + k * 0.1)
-f_place(chaching(0.08), W("$5")); f_place(cheer(1.4, 0.05), W("$5") + 0.1)
-f_place(buzzer(0.05), W("HELP"))
-f_place(paper(0.06), W("SMALL")); f_place(pop(0.05, 600), W("200")); f_place(scratch(0.04), W("DESIGNERS")); f_place(ding(84, 0.05), W("SWEAR"))
-# the pain of paying
-f_place(boom(0.05, 1.2), W("PAIN")); f_place(alarm(W("NO") - W("ALARM") - 0.15, 0.05), W("ALARM"))
-# relief: no sign, no alarm
-f_place(swish(0.6, 0.07), S[3] + 0.05); f_place(chime((72, 79, 84), 0.9, 0.06), W("NO")); f_place(slurp(0.05), W("JUICY")); f_place(sizzle(1.2, 0.03), W("STEAK", 1))
-# Tony tries it
-f_place(swish(0.5, 0.07), W("TRIED"))
-for k in range(3): f_place(pop(0.05, 600 + 150 * k), W("TRIED") + 0.05 + k * 0.1)
-f_place(ding(88, 0.06), W("5")); f_place(pop(0.05, 800), W("WILL")); f_place(boing(0.06), W("NOBODY")); f_place(cricket(0.04), W("SURE") + 0.2)
-# golden hour: candy, the menu, your money
-for k in range(3): f_place(crinkle(0.3, 0.04), W("CANDY") + k * 0.2)
-f_place(chime((76, 81, 84), 1.0, 0.06), W("PART")); f_place(clink(0.04), W("MENU", 1))
-f_place(coin(0.07), W("STILL")); f_place(chaching(0.06), W("MONEY"))
-f_place(cheer(2.5, 0.06), 56.0); f_place(chime((72, 76, 79, 84, 88), 2.4, 0.11), 57.4)
+f_place(ding(84, 0.05), W("SLOW")); f_place(pop(0.05, 600), W("NICE"))
+for k in range(4): f_place(thud(0.03), W("WALK") - 0.4 + k * 0.55)
+f_place(paper(0.07), W("FAMOUS")); f_place(chime((79,), 0.5, 0.04), W("9WEEKS"))
+for k in range(5): f_place(thud(0.03), W("SLOWER") - 1.2 + k * 0.6)
+for k in range(3): f_place(whirr(0.6, 0.03), W("SALES") + k * 0.1)
+f_place(chaching(0.08), W("38")); f_place(cheer(1.4, 0.05), W("38") + 0.1)
+for k in range(10): f_place(thud(0.03), W("FAST", 2) + k * 0.2)
+f_place(swish(0.6, 0.07), W("ALONG"))
+f_place(clink(0.05), W("RESTAURANTS")); f_place(tictoc(4, 0.04), W("10MIN")); f_place(clink(0.06, 3000), W("DRINKS")); f_place(clink(0.05, 2800), W("DRINKS") + 0.15)
+f_place(boing(0.06), W("WEIRDER")); f_place(clink(0.05, 2400), W("OUTSOLD")); f_place(chaching(0.06), W("OUTSOLD") + 0.1)
+f_place(clink(0.05, 2400), W("SOLD")); f_place(chaching(0.06), W("SOLD") + 0.1); f_place(pop(0.05, 600), W("MATTERED"))
+f_place(ding(84, 0.05), W("JAZZ")); f_place(knock(0.05), W("CAREFUL")); f_place(pop(0.05, 800), W("SONG")); f_place(paper(0.05), W("VARY"))
+for k in range(3): f_place(pop(0.05, 600 + 150 * k), W("POPCORN") + k * 0.12)
+f_place(chime((76, 81, 84), 1.0, 0.06), W("PART"))
+for k in range(4): f_place(squeak(0.02), W("UNTIL") + 0.3 + k * 0.5)
+f_place(ding(88, 0.05), W("CART"))
+f_place(cheer(2.5, 0.06), 55.0); f_place(chime((72, 76, 79, 84, 88), 2.4, 0.11), 57.4)
 fx += 0.10 * convolve_st(fx.mean(0), make_ir(0.9, 8, hf=1.2))
 fx[:, ns(59.3):] *= np.linspace(1, 0.0, N - ns(59.3)) ** 1.5
 
