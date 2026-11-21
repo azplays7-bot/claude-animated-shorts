@@ -1,0 +1,173 @@
+{
+ "voice": "bm_george",
+ "speed": 1.28,
+ "scenes": {
+  "1": [
+   0.12,
+   7.197
+  ],
+  "2": [
+   7.697,
+   14.283
+  ],
+  "3": [
+   14.783,
+   27.272
+  ],
+  "4": [
+   27.772,
+   41.051
+  ],
+  "5": [
+   41.551,
+   54.445
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 3.768
+  },
+  {
+   "scene": 1,
+   "start": 4.018,
+   "end": 7.197
+  },
+  {
+   "scene": 2,
+   "start": 7.697,
+   "end": 11.302
+  },
+  {
+   "scene": 2,
+   "start": 11.552,
+   "end": 14.283
+  },
+  {
+   "scene": 3,
+   "start": 14.783,
+   "end": 20.543
+  },
+  {
+   "scene": 3,
+   "start": 20.793,
+   "end": 24.761
+  },
+  {
+   "scene": 3,
+   "start": 25.011,
+   "end": 27.272
+  },
+  {
+   "scene": 4,
+   "start": 27.772,
+   "end": 30.737
+  },
+  {
+   "scene": 4,
+   "start": 30.987,
+   "end": 36.961
+  },
+  {
+   "scene": 4,
+   "start": 37.211,
+   "end": 41.051
+  },
+  {
+   "scene": 5,
+   "start": 41.551,
+   "end": 46.713
+  },
+  {
+   "scene": 5,
+   "start": 46.963,
+   "end": 50.227
+  },
+  {
+   "scene": 5,
+   "start": 50.477,
+   "end": 54.445
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 3.768,
+   "text": "Four ninety-nine isn't five dollars. But your brain thinks it's four."
+  },
+  {
+   "scene": 1,
+   "start": 4.018,
+   "end": 7.197,
+   "text": "We read prices left to right, and the first digit wins."
+  },
+  {
+   "scene": 2,
+   "start": 7.697,
+   "end": 11.302,
+   "text": "So four ninety-nine feels like four. Five feels like five."
+  },
+  {
+   "scene": 2,
+   "start": 11.552,
+   "end": 14.283,
+   "text": "One cent cheaper. But in your head? A whole dollar."
+  },
+  {
+   "scene": 3,
+   "start": 14.783,
+   "end": 20.543,
+   "text": "In one famous catalog test, the same dress was sold for thirty-four, thirty-nine and forty-four dollars."
+  },
+  {
+   "scene": 3,
+   "start": 20.793,
+   "end": 24.761,
+   "text": "The thirty-nine dollar dress sold best. Even better than the cheaper one!"
+  },
+  {
+   "scene": 3,
+   "start": 25.011,
+   "end": 27.272,
+   "text": "Why? A nine at the end can whisper: deal."
+  },
+  {
+   "scene": 4,
+   "start": 27.772,
+   "end": 30.737,
+   "text": "So where did ninety-nine start? Nobody knows for sure."
+  },
+  {
+   "scene": 4,
+   "start": 30.987,
+   "end": 36.961,
+   "text": "One popular story: owners wanted cashiers to open the register and make change, so they couldn't pocket the cash."
+  },
+  {
+   "scene": 4,
+   "start": 37.211,
+   "end": 41.051,
+   "text": "Ninety-nine cent prices were in newspaper ads by eighteen-eighty."
+  },
+  {
+   "scene": 5,
+   "start": 41.551,
+   "end": 46.713,
+   "text": "Some fancy places do the opposite. Round prices. No nines. Nothing that says bargain."
+  },
+  {
+   "scene": 5,
+   "start": 46.963,
+   "end": 50.227,
+   "text": "Some even drop the dollar sign completely. That's part two."
+  },
+  {
+   "scene": 5,
+   "start": 50.477,
+   "end": 54.445,
+   "text": "So next time you see a nine, ask yourself: is it a deal, or just a nine?"
+  }
+ ]
+}
