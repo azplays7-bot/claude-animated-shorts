@@ -1,0 +1,188 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   7.154
+  ],
+  "2": [
+   7.654,
+   19.781
+  ],
+  "3": [
+   20.281,
+   31.575
+  ],
+  "4": [
+   32.075,
+   41.029
+  ],
+  "5": [
+   41.529,
+   47.283
+  ],
+  "6": [
+   47.783,
+   55.841
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 5.347
+  },
+  {
+   "scene": 1,
+   "start": 5.597,
+   "end": 7.154
+  },
+  {
+   "scene": 2,
+   "start": 7.654,
+   "end": 12.241
+  },
+  {
+   "scene": 2,
+   "start": 12.491,
+   "end": 17.803
+  },
+  {
+   "scene": 2,
+   "start": 18.053,
+   "end": 19.781
+  },
+  {
+   "scene": 3,
+   "start": 20.281,
+   "end": 23.289
+  },
+  {
+   "scene": 3,
+   "start": 23.539,
+   "end": 25.949
+  },
+  {
+   "scene": 3,
+   "start": 26.199,
+   "end": 31.575
+  },
+  {
+   "scene": 4,
+   "start": 32.075,
+   "end": 37.622
+  },
+  {
+   "scene": 4,
+   "start": 37.872,
+   "end": 41.029
+  },
+  {
+   "scene": 5,
+   "start": 41.529,
+   "end": 43.748
+  },
+  {
+   "scene": 5,
+   "start": 43.998,
+   "end": 47.283
+  },
+  {
+   "scene": 6,
+   "start": 47.783,
+   "end": 51.41
+  },
+  {
+   "scene": 6,
+   "start": 51.66,
+   "end": 55.841
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 5.347,
+   "text": "Ever notice fancy menus skip the dollar sign? Steak: forty-eight. Not forty-eight dollars."
+  },
+  {
+   "scene": 1,
+   "start": 5.597,
+   "end": 7.154,
+   "text": "That's not a typo. It's a trick."
+  },
+  {
+   "scene": 2,
+   "start": 7.654,
+   "end": 12.241,
+   "text": "Researchers from Cornell tested three menus at a restaurant run by a cooking school."
+  },
+  {
+   "scene": 2,
+   "start": 12.491,
+   "end": 17.803,
+   "text": "One showed prices with a dollar sign. One spelled them out in words. One showed just the number."
+  },
+  {
+   "scene": 2,
+   "start": 18.053,
+   "end": 19.781,
+   "text": "Which one made people spend the most?"
+  },
+  {
+   "scene": 3,
+   "start": 20.281,
+   "end": 23.289,
+   "text": "Just the number! Those diners spent about five dollars more."
+  },
+  {
+   "scene": 3,
+   "start": 23.539,
+   "end": 25.949,
+   "text": "And spelling it out in words? It didn't help at all."
+  },
+  {
+   "scene": 3,
+   "start": 26.199,
+   "end": 31.575,
+   "text": "It was a small study, about two hundred diners. But lots of menu designers now swear by it."
+  },
+  {
+   "scene": 4,
+   "start": 32.075,
+   "end": 37.622,
+   "text": "The researchers think the dollar sign reminds you of the pain of paying. Like a tiny alarm in your head."
+  },
+  {
+   "scene": 4,
+   "start": 37.872,
+   "end": 41.029,
+   "text": "No sign, no alarm. Just a number next to a juicy steak."
+  },
+  {
+   "scene": 5,
+   "start": 41.529,
+   "end": 43.748,
+   "text": "So Tony tried it. Classic burger: five."
+  },
+  {
+   "scene": 5,
+   "start": 43.998,
+   "end": 47.283,
+   "text": "Will it work for him? It's one study, so nobody knows for sure."
+  },
+  {
+   "scene": 6,
+   "start": 47.783,
+   "end": 51.41,
+   "text": "Next time: why the candy is always at the checkout. That's part three."
+  },
+  {
+   "scene": 6,
+   "start": 51.66,
+   "end": 55.841,
+   "text": "Until then, if a menu hides the dollar sign, remember: it's still your money."
+  }
+ ]
+}
