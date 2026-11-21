@@ -558,7 +558,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       out.fx.push({ key: "fancy" + hi, cw: 512, ch: 720, draw: (p) => fxFancyMenu(p, false, hi), x: STAND[0], y: 1.05, z: STAND[2], w: 0.75, h: 1.05 });
       riser(out, f, BT.skip - 2, "NO $ SIGN?", "#b8943a", STAND[0], 1.85, STAND[2] + 0.2, 0.6, 30);
       burst(out, f, BT.n48 - 2, STAND[0] + 0.25, 1.25, STAND[2] + 0.1, 0.6);
-      pop(out, f, BT.d48 - 2, F(5.5), "not48", 512, 160, (p) => fxLabel(p, "NOT $48?", "#d8262e"), mz[0] - 0.1, 2.25, mz[1] + 0.2, 0.6, -0.05);
+      pop(out, f, BT.d48 - 2, F(5.5), "not48", 512, 160, (p) => fxLabel(p, "NOT $48?", "#d8262e"), mz[0] - 0.1, 2.02, mz[1] + 0.2, 0.6, -0.05);
       pop(out, f, BT.typo - 2, F(6.7), "typo", 300, 300, fxQuestion, wt[0] + 0.45, 2.1, wt[1] + 0.2, 0.28);
       riser(out, f, BT.trick - 2, "IT'S A TRICK", "#141318", wt[0] + 0.1, 2.3, wt[1] + 0.3, 0.7, 30);
       break;
@@ -587,23 +587,23 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 3: { // the pain of paying: an alarm in your head
       front(cam, out, MX, mx[0], mx[2], { mode: "stand", expr: f < BT.pain ? "smile" : f < BT.alarm ? "pained" : "shock", look: 0 }, t);
-      out.fx.push({ key: "card1", cw: 512, ch: 310, draw: (p) => fxCard(p, true), ...xyz(S(-2.12, 1.32, -2.3)), w: 0.42, h: 0.255 });
-      if (f >= BT.pain - 2) { const u = clamp01((f - BT.pain + 2) / 6); out.fx.push({ key: "bigD", cw: 256, ch: 256, draw: (p) => fxDollar(p, "#d8262e"), ...xyz(S(-1.92, 1.52, -2.25)), w: 0.2 * u, h: 0.2 * u, rot: 0.15 * Math.sin(t * 9) }); }
-      riser(out, f, BT.pain - 2, "PAIN OF PAYING", "#d8262e", ...S(-2.4, 2.1, -2.4), 0.6, 40);
+      out.fx.push({ key: "card1", cw: 512, ch: 310, draw: (p) => fxCard(p, true), ...xyz(S(-2.35, 1.0, -2.3)), w: 0.5, h: 0.303 });
+      if (f >= BT.pain - 2) { const u = clamp01((f - BT.pain + 2) / 6); out.fx.push({ key: "bigD", cw: 256, ch: 256, draw: (p) => fxDollar(p, "#d8262e"), ...xyz(S(-2.0, 1.25, -2.25)), w: 0.2 * u, h: 0.2 * u, rot: 0.15 * Math.sin(t * 9) }); }
+      riser(out, f, BT.pain - 2, "PAIN OF PAYING", "#d8262e", ...S(-2.4, 2.4, -2.4), 0.9, 40);
       if (f >= BT.alarm - 4) {
         const ring = t * 40;
-        out.fx.push({ key: "bell" + Math.round(Math.sin(ring) * 6), cw: 512, ch: 512, draw: (p) => fxBell(p, ring), ...xyz(S(-2.4, 2.28, -2.5)), w: 0.42, h: 0.42 });
+        out.fx.push({ key: "bell" + Math.round(Math.sin(ring) * 6), cw: 512, ch: 512, draw: (p) => fxBell(p, ring), ...xyz(S(-2.4, 2.5, -2.5)), w: 0.42, h: 0.42 });
         const u = (t * 2.5) % 1;
-        out.fx.push({ key: "rings" + q(u, 12), cw: 512, ch: 512, draw: (p) => fxRings(p, u), ...xyz(S(-2.4, 2.28, -2.55)), w: 0.9, h: 0.9 });
+        out.fx.push({ key: "rings" + q(u, 12), cw: 512, ch: 512, draw: (p) => fxRings(p, u), ...xyz(S(-2.4, 2.5, -2.55)), w: 0.9, h: 0.9 });
       }
       break;
     }
     case 4: { // no sign, no alarm: a juicy steak
       front(cam, out, MX, mx[0], mx[2], { mode: "stand", expr: f < BT.juicy - 4 ? "relief" : "lick", look: 0 }, t);
-      out.fx.push({ key: "card0", cw: 512, ch: 310, draw: (p) => fxCard(p, false), ...xyz(S(-2.12, 1.32, -2.3)), w: 0.42, h: 0.255 });
-      toss(out, f, F(37.8), 18, S(-1.95, 1.4, -2.25), S(-0.6, 2.6, -2.6), 0.5, "dRed", 256, 256, (p) => fxDollar(p, "#d8262e"), 0.2);
-      riser(out, f, BT.no - 2, "NO SIGN = NO ALARM", "#2f8a4a", ...S(-2.4, 2.25, -2.4), 0.75, 40);
-      pop(out, f, BT.juicy - 6, TOTAL, "steak", 512, 420, fxSteak, ...S(-2.0, 1.55, -2.2), 0.42);
+      if (f < BT.juicy - 6) out.fx.push({ key: "card0", cw: 512, ch: 310, draw: (p) => fxCard(p, false), ...xyz(S(-2.35, 1.0, -2.3)), w: 0.5, h: 0.303 });
+      toss(out, f, F(37.8), 18, S(-2.15, 1.05, -2.25), S(-0.6, 2.6, -2.6), 0.5, "dRed", 256, 256, (p) => fxDollar(p, "#d8262e"), 0.2);
+      riser(out, f, BT.no - 2, "NO SIGN = NO ALARM", "#2f8a4a", ...S(-2.4, 2.4, -2.4), 0.9, 40);
+      pop(out, f, BT.juicy - 6, TOTAL, "steak", 512, 420, fxSteak, ...S(-2.35, 1.02, -2.2), 0.5);
       pop(out, f, BT.steak2, TOTAL, "drool", 128, 180, fxDrool, ...S(-2.33, 1.55, -2.45), 0.06);
       break;
     }
@@ -619,7 +619,6 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     }
     case 6: { // golden hour: part three (candy at the checkout); a hidden $ is still your money
-      passers(cam, out, t);
       front(cam, out, TN, TX, TZ, { mode: "stand", expr: "grin", look: 1 }, t);
       const hasCandy = f >= BT.candy - 4 && f < BT.until;
       front(cam, out, MX, TX + 1.1, TZ + 0.3, { mode: "stand", expr: f < BT.candy ? "smile" : f < BT.still ? "grin" : "laugh", look: -1, prop: hasCandy ? ["raise", "candy"] : f >= BT.still - 4 ? ["raise", "cash"] : null }, t);
