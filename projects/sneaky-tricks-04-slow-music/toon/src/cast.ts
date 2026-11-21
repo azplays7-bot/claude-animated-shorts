@@ -537,7 +537,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       if (t < 11.6 || (t >= 14.9 && t < 17.1)) pop(out, f, BT.famous - 4, TOTAL, "study" + q(u, 20), 768, 896, (p) => fxStudy(p, u), TONY_DOOR - 1, 2.6, 10.3, 1.4);
       riser(out, f, BT.weeks - 2, "9 WEEKS", "#22252e", TONY_DOOR - 1, 3.5, 10.4, 0.6, 34);
       burst(out, f, BT.p38 - 2, TONY_DOOR - 1.4, 2.55, 10.5, 1.0);
-      if (t >= 11.6 && t < 14.9) { const x = TONY_DOOR - 4.0 + (t - 11.6) * 0.55; walker(cam, out, MX, x, 11.8, 1, 0, q((t * 0.55) % 1, 60), "smile_closed", t, 0, 1, ["raise", "milk"]); pop(out, f, BT.slower - 4, F(14.9), "turt2", 256, 256, fxTurtle, x + 0.55, 0.3, 12.0, 0.4); notes(3, 11.6, x, 2.2, 11.9, 0.7); }
+      if (t >= 11.6 && t < 14.9) { const x = TONY_DOOR - 2.4 + (t - 11.6) * 0.45; walker(cam, out, MX, x, 11.8, 1, 0, q((t * 0.55) % 1, 60), "smile_closed", t, 0, 1, ["raise", "milk"]); pop(out, f, BT.slower - 4, F(14.9), "turt2", 256, 256, fxTurtle, x + 0.55, 0.3, 12.0, 0.4); notes(3, 11.6, x, 2.2, 11.9, 0.7); }
       if (t >= 17.1) {
         for (let k = 0; k < 3; k++) { const x = TONY_DOOR - 6 + ((t - 17.1) * 4.5 + k * 1.6) % 9; walker(cam, out, W(60 + k, MODERN[k + 2], "fast" + k), x, 11.6 + k * 0.35, 1, 0, q((t * 2.6 + k * 0.3) % 1, 60), "shock", t); pop(out, f, F(17.1), TOTAL, "spd" + k, 256, 256, fxSpeed, x - 0.5, 1.0, 11.6 + k * 0.35, 0.4); }
         pop(out, f, BT.fast3 - 2, TOTAL, "rab", 256, 256, fxRabbit, TONY_DOOR + 0.6, 2.2, 11.4, 0.5);
@@ -575,7 +575,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       front(cam, out, TN, counter[0], counter[2], { mode: "stand", expr: f < BT.careful ? "smile_closed" : "nervous", look: 1 }, t);
       front(cam, out, MX, mx[0], mx[2], { mode: "stand", expr: f < BT.depends ? "smile" : "dazed", look: -1 }, t);
       riser(out, f, BT.jazz - 2, "SLOW JAZZ", "#3fa0d8", ...S(-4.9, 2.25, -4.2), 0.5, 30);
-      if (t >= 41.4 && t < 43.8) pop(out, f, BT.depends - 4, F(43.8), "dep", 512, 160, (p) => fxLabel(p, "IT DEPENDS ON THE SONG", "#d8262e"), ...S(SP[0] + 0.6, SP[1] - 0.6, SP[2] + 0.5), 1.0, -0.05);
+      if (t >= 41.4 && t < 43.8) pop(out, f, BT.depends - 4, F(43.8), "dep", 512, 160, (p) => fxLabel(p, "IT DEPENDS ON THE SONG", "#d8262e"), ...S(SP[0] + 0.9, SP[1] - 0.35, SP[2] + 0.6), 0.9, -0.05);
       if (t >= 43.8) pop(out, f, BT.song - 2, TOTAL, "qS", 300, 300, fxQuestion, ...S(-2.1, 2.2, -2.45), 0.26);
       riser(out, f, BT.store3 - 2, "1 STORE · RESULTS VARY", "#6a707a", ...S(-2.5, 2.7, -2.5), 1.3, 46);
       break;
