@@ -1,0 +1,199 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   6.877
+  ],
+  "2": [
+   7.377,
+   13.707
+  ],
+  "3": [
+   14.207,
+   33.681
+  ],
+  "4": [
+   34.181,
+   41.151
+  ],
+  "5": [
+   41.651,
+   48.088
+  ],
+  "6": [
+   48.588,
+   56.326
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.259
+  },
+  {
+   "scene": 1,
+   "start": 4.509,
+   "end": 6.877
+  },
+  {
+   "scene": 2,
+   "start": 7.377,
+   "end": 10.683
+  },
+  {
+   "scene": 2,
+   "start": 10.933,
+   "end": 13.707
+  },
+  {
+   "scene": 3,
+   "start": 14.207,
+   "end": 19.753
+  },
+  {
+   "scene": 3,
+   "start": 20.003,
+   "end": 23.737
+  },
+  {
+   "scene": 3,
+   "start": 23.987,
+   "end": 25.459
+  },
+  {
+   "scene": 3,
+   "start": 25.709,
+   "end": 30.189
+  },
+  {
+   "scene": 3,
+   "start": 30.439,
+   "end": 33.681
+  },
+  {
+   "scene": 4,
+   "start": 34.181,
+   "end": 38.512
+  },
+  {
+   "scene": 4,
+   "start": 38.762,
+   "end": 41.151
+  },
+  {
+   "scene": 5,
+   "start": 41.651,
+   "end": 46.259
+  },
+  {
+   "scene": 5,
+   "start": 46.509,
+   "end": 48.088
+  },
+  {
+   "scene": 6,
+   "start": 48.588,
+   "end": 52.129
+  },
+  {
+   "scene": 6,
+   "start": 52.379,
+   "end": 56.326
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.259,
+   "text": "Small popcorn, five dollars. Large, nine. Most people pick the small."
+  },
+  {
+   "scene": 1,
+   "start": 4.509,
+   "end": 6.877,
+   "text": "Then the theater adds a medium, for eight dollars."
+  },
+  {
+   "scene": 2,
+   "start": 7.377,
+   "end": 10.683,
+   "text": "Suddenly the large looks like a steal. Only one dollar more!"
+  },
+  {
+   "scene": 2,
+   "start": 10.933,
+   "end": 13.707,
+   "text": "That medium isn't really there to be bought. It's a decoy."
+  },
+  {
+   "scene": 3,
+   "start": 14.207,
+   "end": 19.753,
+   "text": "In a famous classroom test, students picked a magazine deal: web only, or print plus web for more."
+  },
+  {
+   "scene": 3,
+   "start": 20.003,
+   "end": 23.737,
+   "text": "Web only: about sixty dollars. Print plus web: one twenty-five."
+  },
+  {
+   "scene": 3,
+   "start": 23.987,
+   "end": 25.459,
+   "text": "Most picked the cheaper web deal."
+  },
+  {
+   "scene": 3,
+   "start": 25.709,
+   "end": 30.189,
+   "text": "Then a silly print-only option was added, at the same price as print plus web."
+  },
+  {
+   "scene": 3,
+   "start": 30.439,
+   "end": 33.681,
+   "text": "Nobody chose it. But now most students picked print plus web."
+  },
+  {
+   "scene": 4,
+   "start": 34.181,
+   "end": 38.512,
+   "text": "It was a small classroom test, and later studies found decoys don't always work."
+  },
+  {
+   "scene": 4,
+   "start": 38.762,
+   "end": 41.151,
+   "text": "These popcorn prices are just an example."
+  },
+  {
+   "scene": 5,
+   "start": 41.651,
+   "end": 46.259,
+   "text": "So Tony added a medium soda. Small, two. Medium, three fifty. Large, four."
+  },
+  {
+   "scene": 5,
+   "start": 46.509,
+   "end": 48.088,
+   "text": "Guess which one everybody ordered?"
+  },
+  {
+   "scene": 6,
+   "start": 48.588,
+   "end": 52.129,
+   "text": "That's the end of part five. Follow for more sneaky business tricks."
+  },
+  {
+   "scene": 6,
+   "start": 52.379,
+   "end": 56.326,
+   "text": "And next time you see three sizes, ask: which one do they want me to buy?"
+  }
+ ]
+}

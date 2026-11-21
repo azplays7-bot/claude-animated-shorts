@@ -1,0 +1,1022 @@
+[
+{
+"start": 0.0,
+"end": 0.28,
+"text": "EVER",
+"emph": false
+},
+{
+"start": 0.28,
+"end": 0.6,
+"text": "NOTICE",
+"emph": false
+},
+{
+"start": 0.6,
+"end": 0.86,
+"text": "THE",
+"emph": false
+},
+{
+"start": 0.86,
+"end": 1.16,
+"text": "CANDY",
+"emph": true
+},
+{
+"start": 1.16,
+"end": 1.4,
+"text": "IS",
+"emph": false
+},
+{
+"start": 1.4,
+"end": 1.7,
+"text": "ALWAYS",
+"emph": false
+},
+{
+"start": 1.7,
+"end": 2.02,
+"text": "RIGHT",
+"emph": false
+},
+{
+"start": 2.02,
+"end": 2.28,
+"text": "NEXT",
+"emph": false
+},
+{
+"start": 2.28,
+"end": 2.48,
+"text": "TO",
+"emph": false
+},
+{
+"start": 2.48,
+"end": 2.56,
+"text": "THE",
+"emph": false
+},
+{
+"start": 2.6,
+"end": 3.02,
+"text": "REGISTER",
+"emph": true
+},
+{
+"start": 3.38,
+"end": 3.54,
+"text": "THAT'S",
+"emph": false
+},
+{
+"start": 3.54,
+"end": 3.72,
+"text": "NO",
+"emph": false
+},
+{
+"start": 3.72,
+"end": 4.2,
+"text": "ACCIDENT",
+"emph": true
+},
+{
+"start": 4.74,
+"end": 4.82,
+"text": "FOOD",
+"emph": false
+},
+{
+"start": 4.86,
+"end": 5.16,
+"text": "COMPANIES",
+"emph": false
+},
+{
+"start": 5.16,
+"end": 5.48,
+"text": "TREAT",
+"emph": false
+},
+{
+"start": 5.48,
+"end": 5.64,
+"text": "THE",
+"emph": false
+},
+{
+"start": 5.64,
+"end": 5.92,
+"text": "CHECKOUT",
+"emph": false
+},
+{
+"start": 5.92,
+"end": 6.26,
+"text": "LIKE",
+"emph": false
+},
+{
+"start": 6.26,
+"end": 6.64,
+"text": "PRIME",
+"emph": true
+},
+{
+"start": 6.64,
+"end": 6.96,
+"text": "REAL",
+"emph": false
+},
+{
+"start": 6.96,
+"end": 7.4,
+"text": "ESTATE",
+"emph": false
+},
+{
+"start": 8.14,
+"end": 8.46,
+"text": "EVERYONE",
+"emph": true
+},
+{
+"start": 8.46,
+"end": 8.76,
+"text": "HAS",
+"emph": false
+},
+{
+"start": 8.76,
+"end": 8.94,
+"text": "TO",
+"emph": false
+},
+{
+"start": 8.94,
+"end": 9.16,
+"text": "PASS",
+"emph": false
+},
+{
+"start": 9.16,
+"end": 9.36,
+"text": "THE",
+"emph": false
+},
+{
+"start": 9.36,
+"end": 9.66,
+"text": "CHECKOUT",
+"emph": false
+},
+{
+"start": 9.66,
+"end": 9.86,
+"text": "TO",
+"emph": false
+},
+{
+"start": 9.86,
+"end": 10.12,
+"text": "PAY",
+"emph": false
+},
+{
+"start": 10.44,
+"end": 10.56,
+"text": "AND",
+"emph": false
+},
+{
+"start": 10.56,
+"end": 10.78,
+"text": "MOST",
+"emph": false
+},
+{
+"start": 10.78,
+"end": 10.94,
+"text": "OF",
+"emph": false
+},
+{
+"start": 10.94,
+"end": 11.08,
+"text": "US",
+"emph": false
+},
+{
+"start": 11.08,
+"end": 11.32,
+"text": "WAIT",
+"emph": false
+},
+{
+"start": 11.32,
+"end": 11.48,
+"text": "IN",
+"emph": false
+},
+{
+"start": 11.48,
+"end": 11.74,
+"text": "LINE",
+"emph": true
+},
+{
+"start": 11.74,
+"end": 12.0,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 12.0,
+"end": 12.26,
+"text": "NOTHING",
+"emph": false
+},
+{
+"start": 12.26,
+"end": 12.54,
+"text": "TO",
+"emph": false
+},
+{
+"start": 12.54,
+"end": 12.8,
+"text": "DO",
+"emph": false
+},
+{
+"start": 13.14,
+"end": 13.3,
+"text": "SO",
+"emph": false
+},
+{
+"start": 13.3,
+"end": 13.44,
+"text": "YOU",
+"emph": true
+},
+{
+"start": 13.44,
+"end": 13.7,
+"text": "STAND",
+"emph": false
+},
+{
+"start": 13.7,
+"end": 13.94,
+"text": "THERE",
+"emph": false
+},
+{
+"start": 13.94,
+"end": 14.3,
+"text": "BORED",
+"emph": true
+},
+{
+"start": 14.3,
+"end": 14.76,
+"text": "STARING",
+"emph": false
+},
+{
+"start": 14.76,
+"end": 14.94,
+"text": "AT",
+"emph": false
+},
+{
+"start": 14.94,
+"end": 15.34,
+"text": "CHOCOLATE",
+"emph": true
+},
+{
+"start": 15.34,
+"end": 15.54,
+"text": "AT",
+"emph": false
+},
+{
+"start": 15.54,
+"end": 15.8,
+"text": "EYE",
+"emph": true
+},
+{
+"start": 15.8,
+"end": 16.06,
+"text": "LEVEL",
+"emph": false
+},
+{
+"start": 16.36,
+"end": 16.46,
+"text": "AND",
+"emph": false
+},
+{
+"start": 16.48,
+"end": 16.56,
+"text": "AT",
+"emph": false
+},
+{
+"start": 16.6,
+"end": 16.74,
+"text": "YOUR",
+"emph": false
+},
+{
+"start": 16.74,
+"end": 16.98,
+"text": "KID'S",
+"emph": true
+},
+{
+"start": 17.12,
+"end": 17.3,
+"text": "EYE",
+"emph": true
+},
+{
+"start": 17.3,
+"end": 17.58,
+"text": "LEVEL",
+"emph": false
+},
+{
+"start": 17.58,
+"end": 17.9,
+"text": "TOO",
+"emph": false
+},
+{
+"start": 18.56,
+"end": 18.7,
+"text": "WHEN",
+"emph": false
+},
+{
+"start": 18.7,
+"end": 18.96,
+"text": "SOME",
+"emph": false
+},
+{
+"start": 18.96,
+"end": 19.22,
+"text": "BRITISH",
+"emph": true
+},
+{
+"start": 19.22,
+"end": 19.82,
+"text": "SUPERMARKETS",
+"emph": false
+},
+{
+"start": 19.82,
+"end": 20.18,
+"text": "TOOK",
+"emph": false
+},
+{
+"start": 20.18,
+"end": 20.36,
+"text": "THE",
+"emph": false
+},
+{
+"start": 20.36,
+"end": 20.66,
+"text": "CANDY",
+"emph": true
+},
+{
+"start": 20.66,
+"end": 20.92,
+"text": "AWAY",
+"emph": false
+},
+{
+"start": 20.92,
+"end": 21.12,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 21.12,
+"end": 21.28,
+"text": "THE",
+"emph": false
+},
+{
+"start": 21.28,
+"end": 21.7,
+"text": "CHECKOUT",
+"emph": false
+},
+{
+"start": 22.34,
+"end": 22.34,
+"text": "SHOPPERS",
+"emph": false
+},
+{
+"start": 22.46,
+"end": 22.68,
+"text": "BOUGHT",
+"emph": false
+},
+{
+"start": 22.68,
+"end": 22.92,
+"text": "LESS",
+"emph": true
+},
+{
+"start": 22.92,
+"end": 23.06,
+"text": "OF",
+"emph": false
+},
+{
+"start": 23.06,
+"end": 23.26,
+"text": "IT",
+"emph": false
+},
+{
+"start": 23.56,
+"end": 23.72,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 23.72,
+"end": 24.56,
+"text": "17%",
+"emph": true
+},
+{
+"start": 24.56,
+"end": 24.94,
+"text": "FEWER",
+"emph": true
+},
+{
+"start": 24.94,
+"end": 25.22,
+"text": "GRAB-AND-GO",
+"emph": false
+},
+{
+"start": 25.58,
+"end": 25.92,
+"text": "SWEETS",
+"emph": false
+},
+{
+"start": 25.92,
+"end": 26.2,
+"text": "AND",
+"emph": false
+},
+{
+"start": 26.2,
+"end": 26.48,
+"text": "CHIPS",
+"emph": false
+},
+{
+"start": 26.48,
+"end": 26.8,
+"text": "A",
+"emph": false
+},
+{
+"start": 26.8,
+"end": 26.96,
+"text": "YEAR",
+"emph": false
+},
+{
+"start": 26.96,
+"end": 27.32,
+"text": "LATER",
+"emph": false
+},
+{
+"start": 27.66,
+"end": 27.84,
+"text": "AND",
+"emph": false
+},
+{
+"start": 27.84,
+"end": 28.04,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 28.04,
+"end": 28.32,
+"text": "STUDY",
+"emph": false
+},
+{
+"start": 28.32,
+"end": 28.5,
+"text": "OF",
+"emph": false
+},
+{
+"start": 28.5,
+"end": 28.92,
+"text": "CHECKOUTS",
+"emph": false
+},
+{
+"start": 28.92,
+"end": 29.22,
+"text": "FOUND",
+"emph": false
+},
+{
+"start": 29.22,
+"end": 29.56,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 29.56,
+"end": 30.28,
+"text": "70%",
+"emph": true
+},
+{
+"start": 30.28,
+"end": 30.54,
+"text": "OF",
+"emph": false
+},
+{
+"start": 30.54,
+"end": 30.64,
+"text": "THE",
+"emph": false
+},
+{
+"start": 30.66,
+"end": 30.96,
+"text": "FOOD",
+"emph": false
+},
+{
+"start": 30.96,
+"end": 31.2,
+"text": "AND",
+"emph": false
+},
+{
+"start": 31.2,
+"end": 31.44,
+"text": "DRINKS",
+"emph": false
+},
+{
+"start": 31.44,
+"end": 31.82,
+"text": "WITHIN",
+"emph": false
+},
+{
+"start": 31.82,
+"end": 32.12,
+"text": "REACH",
+"emph": false
+},
+{
+"start": 32.12,
+"end": 32.48,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 32.48,
+"end": 33.0,
+"text": "UNHEALTHY",
+"emph": true
+},
+{
+"start": 33.78,
+"end": 34.0,
+"text": "HERE'S",
+"emph": false
+},
+{
+"start": 34.0,
+"end": 34.18,
+"text": "A",
+"emph": false
+},
+{
+"start": 34.18,
+"end": 34.36,
+"text": "TWIST",
+"emph": true
+},
+{
+"start": 34.66,
+"end": 34.82,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 34.82,
+"end": 35.22,
+"text": "INDUSTRY",
+"emph": false
+},
+{
+"start": 35.22,
+"end": 35.6,
+"text": "SURVEY",
+"emph": false
+},
+{
+"start": 35.6,
+"end": 35.98,
+"text": "FOUND",
+"emph": false
+},
+{
+"start": 35.98,
+"end": 36.38,
+"text": "FEWER",
+"emph": true
+},
+{
+"start": 36.38,
+"end": 36.78,
+"text": "IMPULSE",
+"emph": false
+},
+{
+"start": 36.78,
+"end": 37.1,
+"text": "BUYS",
+"emph": false
+},
+{
+"start": 37.1,
+"end": 37.4,
+"text": "AT",
+"emph": false
+},
+{
+"start": 37.4,
+"end": 37.6,
+"text": "SELF-CHECKOUT",
+"emph": true
+},
+{
+"start": 38.48,
+"end": 38.66,
+"text": "MAYBE",
+"emph": false
+},
+{
+"start": 38.66,
+"end": 38.98,
+"text": "BECAUSE",
+"emph": false
+},
+{
+"start": 38.98,
+"end": 39.18,
+"text": "YOU'RE",
+"emph": false
+},
+{
+"start": 39.18,
+"end": 39.36,
+"text": "BUSY",
+"emph": false
+},
+{
+"start": 39.36,
+"end": 39.78,
+"text": "SCANNING",
+"emph": true
+},
+{
+"start": 40.02,
+"end": 40.2,
+"text": "NOT",
+"emph": false
+},
+{
+"start": 40.2,
+"end": 40.56,
+"text": "STARING",
+"emph": false
+},
+{
+"start": 40.56,
+"end": 40.72,
+"text": "AT",
+"emph": false
+},
+{
+"start": 40.72,
+"end": 41.04,
+"text": "CHOCOLATE",
+"emph": true
+},
+{
+"start": 41.72,
+"end": 41.96,
+"text": "SO",
+"emph": false
+},
+{
+"start": 41.96,
+"end": 42.24,
+"text": "TONY",
+"emph": false
+},
+{
+"start": 42.24,
+"end": 42.54,
+"text": "TRIED",
+"emph": false
+},
+{
+"start": 42.54,
+"end": 42.68,
+"text": "A",
+"emph": false
+},
+{
+"start": 42.68,
+"end": 42.88,
+"text": "FRUIT",
+"emph": true
+},
+{
+"start": 42.88,
+"end": 43.16,
+"text": "BOWL",
+"emph": false
+},
+{
+"start": 43.16,
+"end": 43.4,
+"text": "BY",
+"emph": false
+},
+{
+"start": 43.4,
+"end": 43.58,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 43.58,
+"end": 44.02,
+"text": "REGISTER",
+"emph": true
+},
+{
+"start": 44.42,
+"end": 44.66,
+"text": "NOBODY",
+"emph": true
+},
+{
+"start": 44.66,
+"end": 44.98,
+"text": "TOUCHED",
+"emph": false
+},
+{
+"start": 44.98,
+"end": 45.3,
+"text": "IT",
+"emph": false
+},
+{
+"start": 45.58,
+"end": 45.68,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 45.7,
+"end": 45.8,
+"text": "HE",
+"emph": false
+},
+{
+"start": 45.82,
+"end": 46.0,
+"text": "TRIED",
+"emph": false
+},
+{
+"start": 46.0,
+"end": 46.16,
+"text": "A",
+"emph": false
+},
+{
+"start": 46.16,
+"end": 46.34,
+"text": "COOKIE",
+"emph": true
+},
+{
+"start": 46.34,
+"end": 46.7,
+"text": "JAR",
+"emph": false
+},
+{
+"start": 46.86,
+"end": 47.02,
+"text": "GONE",
+"emph": true
+},
+{
+"start": 47.02,
+"end": 47.26,
+"text": "BY",
+"emph": false
+},
+{
+"start": 47.26,
+"end": 47.5,
+"text": "LUNCH",
+"emph": false
+},
+{
+"start": 48.28,
+"end": 48.46,
+"text": "NEXT",
+"emph": false
+},
+{
+"start": 48.46,
+"end": 48.74,
+"text": "TIME",
+"emph": false
+},
+{
+"start": 48.74,
+"end": 49.0,
+"text": "WHY",
+"emph": false
+},
+{
+"start": 49.0,
+"end": 49.32,
+"text": "STORES",
+"emph": false
+},
+{
+"start": 49.32,
+"end": 49.62,
+"text": "PLAY",
+"emph": false
+},
+{
+"start": 49.62,
+"end": 49.88,
+"text": "SLOW",
+"emph": false
+},
+{
+"start": 49.88,
+"end": 50.28,
+"text": "MUSIC",
+"emph": true
+},
+{
+"start": 50.58,
+"end": 50.82,
+"text": "THAT'S",
+"emph": false
+},
+{
+"start": 50.82,
+"end": 50.96,
+"text": "PART",
+"emph": true
+},
+{
+"start": 50.96,
+"end": 51.34,
+"text": "FOUR",
+"emph": false
+},
+{
+"start": 51.82,
+"end": 52.04,
+"text": "UNTIL",
+"emph": false
+},
+{
+"start": 52.04,
+"end": 52.32,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 52.36,
+"end": 52.52,
+"text": "WHEN",
+"emph": false
+},
+{
+"start": 52.52,
+"end": 52.66,
+"text": "YOU'RE",
+"emph": false
+},
+{
+"start": 52.66,
+"end": 52.88,
+"text": "STUCK",
+"emph": false
+},
+{
+"start": 52.88,
+"end": 53.08,
+"text": "IN",
+"emph": false
+},
+{
+"start": 53.08,
+"end": 53.34,
+"text": "LINE",
+"emph": true
+},
+{
+"start": 53.56,
+"end": 53.82,
+"text": "REMEMBER",
+"emph": false
+},
+{
+"start": 54.22,
+"end": 54.38,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 54.38,
+"end": 54.7,
+"text": "CANDY",
+"emph": true
+},
+{
+"start": 54.7,
+"end": 54.9,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 54.9,
+"end": 55.06,
+"text": "PUT",
+"emph": false
+},
+{
+"start": 55.06,
+"end": 55.26,
+"text": "THERE",
+"emph": false
+},
+{
+"start": 55.26,
+"end": 55.42,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 55.42,
+"end": 55.68,
+"text": "YOU",
+"emph": true
+}
+]

@@ -1,0 +1,166 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   6.066
+  ],
+  "2": [
+   6.566,
+   19.887
+  ],
+  "3": [
+   20.387,
+   27.385
+  ],
+  "4": [
+   27.885,
+   39.185
+  ],
+  "5": [
+   39.685,
+   46.741
+  ],
+  "6": [
+   47.241,
+   54.232
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.003
+  },
+  {
+   "scene": 1,
+   "start": 4.253,
+   "end": 6.066
+  },
+  {
+   "scene": 2,
+   "start": 6.566,
+   "end": 11.451
+  },
+  {
+   "scene": 2,
+   "start": 11.701,
+   "end": 16.949
+  },
+  {
+   "scene": 2,
+   "start": 17.199,
+   "end": 19.887
+  },
+  {
+   "scene": 3,
+   "start": 20.387,
+   "end": 27.385
+  },
+  {
+   "scene": 4,
+   "start": 27.885,
+   "end": 33.346
+  },
+  {
+   "scene": 4,
+   "start": 33.596,
+   "end": 39.185
+  },
+  {
+   "scene": 5,
+   "start": 39.685,
+   "end": 44.357
+  },
+  {
+   "scene": 5,
+   "start": 44.607,
+   "end": 46.741
+  },
+  {
+   "scene": 6,
+   "start": 47.241,
+   "end": 50.803
+  },
+  {
+   "scene": 6,
+   "start": 51.053,
+   "end": 54.232
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.003,
+   "text": "Ever notice stores play slow, calm music? It's not just to be nice."
+  },
+  {
+   "scene": 1,
+   "start": 4.253,
+   "end": 6.066,
+   "text": "Music can change how fast you walk."
+  },
+  {
+   "scene": 2,
+   "start": 6.566,
+   "end": 11.451,
+   "text": "In a famous study, one supermarket switched between slow and fast music for nine weeks."
+  },
+  {
+   "scene": 2,
+   "start": 11.701,
+   "end": 16.949,
+   "text": "With slow music, shoppers walked slower. And in that store, sales went up about thirty-eight percent."
+  },
+  {
+   "scene": 2,
+   "start": 17.199,
+   "end": 19.887,
+   "text": "Fast music did the opposite. It moved people along."
+  },
+  {
+   "scene": 3,
+   "start": 20.387,
+   "end": 27.385,
+   "text": "Restaurants too. In another study, slow music kept diners at their tables about ten minutes longer. And they bought more drinks."
+  },
+  {
+   "scene": 4,
+   "start": 27.885,
+   "end": 33.346,
+   "text": "It gets weirder. One store played French accordion music, and French wine outsold German wine."
+  },
+  {
+   "scene": 4,
+   "start": 33.596,
+   "end": 39.185,
+   "text": "Then it played German music, and German wine sold more. Most shoppers didn't think the music mattered."
+  },
+  {
+   "scene": 5,
+   "start": 39.685,
+   "end": 44.357,
+   "text": "So Tony tried slow jazz. But careful: later studies found it depends on the song."
+  },
+  {
+   "scene": 5,
+   "start": 44.607,
+   "end": 46.741,
+   "text": "And it was one store, so results can vary."
+  },
+  {
+   "scene": 6,
+   "start": 47.241,
+   "end": 50.803,
+   "text": "Next time: why the medium popcorn is a trap. That's part five."
+  },
+  {
+   "scene": 6,
+   "start": 51.053,
+   "end": 54.232,
+   "text": "Until then, if the music is slow, check your pace, and your cart."
+  }
+ ]
+}

@@ -1,0 +1,177 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   7.623
+  ],
+  "2": [
+   8.123,
+   18.08
+  ],
+  "3": [
+   18.58,
+   33.267
+  ],
+  "4": [
+   33.767,
+   41.313
+  ],
+  "5": [
+   41.813,
+   47.737
+  ],
+  "6": [
+   48.237,
+   55.741
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.408
+  },
+  {
+   "scene": 1,
+   "start": 4.658,
+   "end": 7.623
+  },
+  {
+   "scene": 2,
+   "start": 8.123,
+   "end": 12.923
+  },
+  {
+   "scene": 2,
+   "start": 13.173,
+   "end": 18.08
+  },
+  {
+   "scene": 3,
+   "start": 18.58,
+   "end": 23.295
+  },
+  {
+   "scene": 3,
+   "start": 23.545,
+   "end": 27.47
+  },
+  {
+   "scene": 3,
+   "start": 27.72,
+   "end": 33.267
+  },
+  {
+   "scene": 4,
+   "start": 33.767,
+   "end": 38.204
+  },
+  {
+   "scene": 4,
+   "start": 38.454,
+   "end": 41.313
+  },
+  {
+   "scene": 5,
+   "start": 41.813,
+   "end": 45.333
+  },
+  {
+   "scene": 5,
+   "start": 45.583,
+   "end": 47.737
+  },
+  {
+   "scene": 6,
+   "start": 48.237,
+   "end": 51.501
+  },
+  {
+   "scene": 6,
+   "start": 51.751,
+   "end": 55.741
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.408,
+   "text": "Ever notice the candy is always right next to the register? That's no accident."
+  },
+  {
+   "scene": 1,
+   "start": 4.658,
+   "end": 7.623,
+   "text": "Food companies treat the checkout like prime real estate."
+  },
+  {
+   "scene": 2,
+   "start": 8.123,
+   "end": 12.923,
+   "text": "Everyone has to pass the checkout to pay. And most of us wait in line, with nothing to do."
+  },
+  {
+   "scene": 2,
+   "start": 13.173,
+   "end": 18.08,
+   "text": "So you stand there, bored, staring at chocolate at eye level. And at your kid's eye level too."
+  },
+  {
+   "scene": 3,
+   "start": 18.58,
+   "end": 23.295,
+   "text": "When some British supermarkets took the candy away from the checkout, shoppers bought less of it."
+  },
+  {
+   "scene": 3,
+   "start": 23.545,
+   "end": 27.47,
+   "text": "About seventeen percent fewer grab-and-go sweets and chips, a year later."
+  },
+  {
+   "scene": 3,
+   "start": 27.72,
+   "end": 33.267,
+   "text": "And one study of checkouts found about seventy percent of the food and drinks within reach was unhealthy."
+  },
+  {
+   "scene": 4,
+   "start": 33.767,
+   "end": 38.204,
+   "text": "Here's a twist: one industry survey found fewer impulse buys at self-checkout."
+  },
+  {
+   "scene": 4,
+   "start": 38.454,
+   "end": 41.313,
+   "text": "Maybe because you're busy scanning, not staring at chocolate."
+  },
+  {
+   "scene": 5,
+   "start": 41.813,
+   "end": 45.333,
+   "text": "So Tony tried a fruit bowl by his register. Nobody touched it."
+  },
+  {
+   "scene": 5,
+   "start": 45.583,
+   "end": 47.737,
+   "text": "Then he tried a cookie jar. Gone by lunch."
+  },
+  {
+   "scene": 6,
+   "start": 48.237,
+   "end": 51.501,
+   "text": "Next time: why stores play slow music. That's part four."
+  },
+  {
+   "scene": 6,
+   "start": 51.751,
+   "end": 55.741,
+   "text": "Until then, when you're stuck in line, remember: that candy was put there for you."
+  }
+ ]
+}
