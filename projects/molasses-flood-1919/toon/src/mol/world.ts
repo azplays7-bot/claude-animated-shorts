@@ -109,10 +109,9 @@ const scoreTex = (msg: string) => canvas(1024, 512, (g) => {
 const plaqueTex = () => canvas(768, 512, (g) => {
   const gr = g.createLinearGradient(0, 0, 768, 512); gr.addColorStop(0, "#5a4a2a"); gr.addColorStop(1, "#3a2e18"); g.fillStyle = gr; g.fillRect(0, 0, 768, 512);
   g.strokeStyle = "#c9a55a"; g.lineWidth = 12; g.strokeRect(14, 14, 740, 484);
-  text(g, "THE GREAT MOLASSES FLOOD", 384, 90, 56, "#e8cf8a");
-  text(g, "JANUARY 15, 1919", 384, 160, 40, "#e8cf8a", INTER);
-  for (let k = 0; k < 7; k++) { g.fillStyle = "rgba(232,207,138,0.5)"; g.fillRect(70, 220 + k * 34, 628 - (k % 3) * 70, 10); }
-  text(g, "21 LIVES LOST", 384, 465, 40, "#e8cf8a");
+  text(g, "THE GREAT", 384, 100, 86, "#f2d88e"); text(g, "MOLASSES FLOOD", 384, 200, 86, "#f2d88e");
+  text(g, "JANUARY 15, 1919", 384, 300, 56, "#f2d88e", INTER);
+  text(g, "21 LIVES LOST", 384, 420, 64, "#f2d88e");
 });
 const thermoTex = (deg: number) => canvas(256, 768, (g) => {
   g.fillStyle = "#f2ead6"; rr(g, 0, 0, 256, 768, 40); g.fill(); g.strokeStyle = "#7a1515"; g.lineWidth = 10; rr(g, 6, 6, 244, 756, 36); g.stroke();
@@ -140,7 +139,7 @@ export class North {
   thermo: THREE.MeshStandardMaterial; thermoCache = new Map<number, THREE.Texture>();
   sun: THREE.DirectionalLight; hemi: THREE.HemisphereLight; sky: THREE.Mesh; skyMat: THREE.ShaderMaterial;
   lot: THREE.Group; park: THREE.Group; score: THREE.MeshStandardMaterial; smells: THREE.Sprite[] = [];
-  streetLamps: THREE.MeshStandardMaterial; lampLights: THREE.PointLight[] = []; windows: THREE.MeshStandardMaterial[] = [];
+  streetLamps: THREE.MeshStandardMaterial; dateBoard!: THREE.MeshStandardMaterial; dateTex!: THREE.Texture; summerTex?: THREE.Texture; lampLights: THREE.PointLight[] = []; windows: THREE.MeshStandardMaterial[] = [];
   constructor() {
     const R = this.root;
     this.skyMat = new THREE.ShaderMaterial({ side: THREE.BackSide, depthWrite: false, uniforms: { top: { value: new THREE.Color("#5c9ae0") }, mid: { value: new THREE.Color("#b8d6f2") }, bot: { value: new THREE.Color("#eef4fa") } },
@@ -166,7 +165,7 @@ export class North {
     this.buildCity(R); this.buildTank(R); this.buildEl(R); this.buildShed(R); this.buildPump(R); this.buildTruck(R); this.buildPark(R);
     // the wave: a height field over the lot + street
     this.waveGeo = new THREE.PlaneGeometry(92, 64, 200, 140); this.waveGeo.rotateX(-Math.PI / 2); this.waveGeo.translate(0, 0, -11);
-    this.waveMat = new THREE.MeshPhysicalMaterial({ color: "#3a1a07", roughness: 0.1, clearcoat: 1, clearcoatRoughness: 0.04, sheen: 0.3, sheenColor: new THREE.Color("#a0522d"), emissive: "#1a0800", emissiveIntensity: 0.4 });
+    this.waveMat = new THREE.MeshPhysicalMaterial({ color: "#3a1a07", roughness: 0.22, clearcoat: 0.8, clearcoatRoughness: 0.18, sheen: 0.3, sheenColor: new THREE.Color("#a0522d"), emissive: "#1a0800", emissiveIntensity: 0.4 });
     this.wave = new THREE.Mesh(this.waveGeo, this.waveMat); this.wave.receiveShadow = true; this.wave.castShadow = true; R.add(this.wave);
     this.drops = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(0.22, 1), this.waveMat, 420); this.drops.castShadow = true; R.add(this.drops);
     // lights
@@ -226,7 +225,8 @@ export class North {
     for (const sx of [-1, 1]) put(ns_, cyl(0.04, 0.04, 1.1, 8), M("#1d1d1f", 0.5, 0.5), sx * 1.05, 1.65, 0.4);
     for (let k = 0; k < 5; k++) put(ns_, rbox(0.34, 0.03, 0.45, 0.005), M("#efe6cf", 0.8), -0.75 + k * 0.38, 1.12 + (k % 2) * 0.03, 0.1, { ry: (k - 2) * 0.05 });
     const db = canvas(768, 512, (g) => { g.fillStyle = "#1c1814"; g.fillRect(0, 0, 768, 512); g.strokeStyle = "#e8cf8a"; g.lineWidth = 10; g.strokeRect(14, 14, 740, 484); text(g, "WEDNESDAY", 384, 110, 84, "#f1e6cf"); text(g, "JAN. 15, 1919", 384, 250, 110, "#ffd88a"); text(g, "WEATHER: MILD, NEAR 40°", 384, 400, 52, "#f1e6cf", INTER); });
-    put(ns_, rbox(1.6, 1.05, 0.06, 0.02), M("#ffffff", 0.5, 0, { map: db }), 0, 2.85, 0.35);
+    this.dateBoard = M("#ffffff", 0.5, 0, { map: db }); this.dateTex = db;
+    put(ns_, rbox(1.6, 1.05, 0.06, 0.02), this.dateBoard, 0, 2.85, 0.35);
     // gas lamps
     this.streetLamps = glow(canvas(8, 8, (g) => { g.fillStyle = "#ffe2a0"; g.fillRect(0, 0, 8, 8); }), 0.2);
     for (const [x, z] of [[-30, 13.2], [-14, 13.2], [14, 13.2], [30, 13.2], [-22, -1.4], [22, -1.4]] as const) {
@@ -347,8 +347,8 @@ export class North {
     for (const sx of [-1, 1]) put(this.truck, new THREE.PlaneGeometry(1.2, 0.3), M("#ffffff", 0.5, 0, { map: sideT }), sx * 0.96, 1.6, 0.3, { ry: sx * Math.PI / 2, cast: false });
     // the dashboard speedometer (seen from the driver's seat)
     this.gaugeMat = new THREE.MeshStandardMaterial({ map: this.gauge(0), roughness: 0.3, emissive: "#ffffff", emissiveMap: this.gauge(0), emissiveIntensity: 0.25 });
-    put(this.truck, cyl(0.2, 0.2, 0.06, 32), M("#c9a55a", 0.3, 1), 0.35, 1.75, 0.95, { rx: Math.PI / 2 - 0.35 });
-    put(this.truck, new THREE.CircleGeometry(0.18, 40), this.gaugeMat, 0.35, 1.762, 0.92, { rx: -0.35 + Math.PI, ry: 0, rz: Math.PI, cast: false });
+    put(this.truck, new THREE.TorusGeometry(0.19, 0.02, 10, 40), M("#c9a55a", 0.3, 1), 0.35, 1.95, 0.912);
+    put(this.truck, new THREE.CircleGeometry(0.18, 40), this.gaugeMat, 0.35, 1.95, 0.915, { ry: Math.PI, cast: false });
     put(this.truck, rbox(1.7, 0.35, 0.15, 0.03), M("#3a2616", 0.6), 0, 1.6, 0.98);
     put(this.truck, new THREE.TorusGeometry(0.22, 0.025, 8, 24), M("#1a1a1a", 0.5), -0.35, 1.75, 0.7, { rx: 1.0 });
   }
@@ -391,9 +391,9 @@ export class North {
       const t = grp(P, x, 0, z); put(t, cyl(0.25, 0.35, 4, 10), M("#6b4a2a", 0.85), 0, 2, 0);
       for (let k = 0; k < 9; k++) put(t, new THREE.IcosahedronGeometry(1.5, 1), MP(k % 3 ? "#3f8f3a" : "#2f7a32", 0.7, { clearcoat: 0 }), (r() - 0.5) * 2.4, 4.6 + r() * 2, (r() - 0.5) * 2.4);
     }
-    const pq = grp(P, -6, 0, -3.6);
+    const pq = grp(P, -6, 0.12, -1.6);
     put(pq, rbox(1.0, 1.0, 0.6, 0.08), M("#8e877b", 0.85), 0, 0.5, 0);
-    put(pq, rbox(0.9, 0.62, 0.05, 0.01), M("#ffffff", 0.35, 0.6, { map: plaqueTex() }), 0, 0.72, 0.31, { rx: -0.35 });
+    put(pq, rbox(0.9, 0.62, 0.05, 0.01), M("#ffffff", 0.45, 0.15, { map: plaqueTex() }), 0, 0.55, 0.315);
     for (const x of [-10, 2]) { const b = grp(P, x, 0, -4.2); for (let k = 0; k < 3; k++) put(b, rbox(1.8, 0.05, 0.14, 0.01), M("#6b4a2a", 0.6), 0, 0.45, -0.18 + k * 0.17); for (const sx of [-1, 1]) put(b, rbox(0.06, 0.45, 0.45, 0.01), M("#222", 0.4, 0.8), sx * 0.8, 0.22, 0); }
   }
   /** per frame: the flood. ft < 0 = before the burst; mode "settled" = the night layer */
@@ -434,7 +434,7 @@ export class North {
       pos.setY(i, h);
     }
     pos.needsUpdate = true; this.waveGeo.computeVertexNormals();
-    this.waveMat.roughness = mode === "settled" ? 0.42 : 0.1; this.waveMat.clearcoat = mode === "settled" ? 0.3 : 1;
+    this.waveMat.roughness = mode === "settled" ? 0.42 : 0.22; this.waveMat.clearcoat = mode === "settled" ? 0.3 : 0.8;
     // splashes riding the front
     if (this.drops.visible) {
       const r = rng(5), m = new THREE.Matrix4(), q = new THREE.Quaternion(), s = new THREE.Vector3();
@@ -465,10 +465,10 @@ export class North {
     const u = this.skyMat.uniforms;
     const set = (top: string, mid: string, bot: string) => { u.top.value.set(top); u.mid.value.set(mid); u.bot.value.set(bot); };
     const night = kind === "night";
-    this.lampLights.forEach((l) => (l.intensity = night ? 10 : 0)); this.streetLamps.emissiveIntensity = night ? 5 : 0.2;
+    this.lampLights.forEach((l) => (l.intensity = night ? 18 : 0)); this.streetLamps.emissiveIntensity = night ? 5 : 0.2;
     this.windows.forEach((w) => (w.emissiveIntensity = night ? 0.9 : 0.15));
-    if (kind === "noon" || kind === "sepia") { set("#5c9ae0", "#b8d6f2", "#eef4fa"); this.sun.color.set("#fff2dc"); this.sun.intensity = 3.0; this.sun.position.set(-14, 22, 40); this.hemi.intensity = 0.95; this.hemi.color.set("#d6e6ff"); }
-    if (night) { set("#060b1e", "#142446", "#26385e"); this.sun.color.set("#8fb0ff"); this.sun.intensity = 0.55; this.sun.position.set(20, 30, 30); this.hemi.intensity = 0.22; this.hemi.color.set("#5a78c0"); }
+    if (kind === "noon" || kind === "sepia") { set("#5c9ae0", "#b8d6f2", "#eef4fa"); this.sun.color.set("#fff2dc"); this.sun.intensity = 3.0; this.sun.position.set(-40, 25, 12); this.hemi.intensity = 0.95; this.hemi.color.set("#d6e6ff"); }
+    if (night) { set("#060b1e", "#142446", "#26385e"); this.sun.color.set("#8fb0ff"); this.sun.intensity = 1.5; this.sun.position.set(20, 30, 30); this.hemi.intensity = 0.5; this.hemi.color.set("#5a78c0"); }
     if (kind === "summer") { set("#3f8fe8", "#a8d4ff", "#fff4dc"); this.sun.color.set("#fff0c8"); this.sun.intensity = 3.8; this.sun.position.set(-8, 40, 30); this.hemi.intensity = 1.0; this.hemi.color.set("#e6f0ff"); }
     if (kind === "today") { set("#4a98ec", "#b6dcff", "#f4f8ff"); this.sun.color.set("#fff6e0"); this.sun.intensity = 3.4; this.sun.position.set(-20, 30, 34); this.hemi.intensity = 1.0; this.hemi.color.set("#dde9ff"); }
     this.sun.target.position.set(0, 0, -5);
@@ -477,9 +477,13 @@ export class North {
     this.smells.forEach((s, k) => {
       s.visible = on; if (!on) return;
       const ph = (t * 0.25 + k / 14) % 1;
-      s.position.set(-12 + (k % 7) * 3.2, 0.4 + ph * 2.4, 10.6 + Math.floor(k / 7) * 1.6 + Math.sin(k) * 0.4);
+      s.position.set(-6.4 + (k % 7) * 0.85, 0.4 + ph * 2.2, 11.2 + Math.floor(k / 7) * 1.1 + Math.sin(k) * 0.3);
       s.scale.set(0.45, 1.6, 1); (s.material as THREE.SpriteMaterial).opacity = Math.sin(Math.PI * ph) * 0.85;
     });
+  }
+  setBoard(summer: boolean) {
+    if (summer && !this.summerTex) this.summerTex = canvas(768, 512, (g) => { g.fillStyle = "#1c1814"; g.fillRect(0, 0, 768, 512); g.strokeStyle = "#e8cf8a"; g.lineWidth = 10; g.strokeRect(14, 14, 740, 484); text(g, "HOT TODAY!", 384, 120, 96, "#ffd88a"); text(g, "ICE CREAM 5¢", 384, 270, 90, "#f1e6cf"); text(g, "COLD SODA", 384, 400, 70, "#f1e6cf", INTER); });
+    this.dateBoard.map = summer ? this.summerTex! : this.dateTex;
   }
   setScore(msg: string) { this.score.emissiveMap = scoreTex(msg); }
 }

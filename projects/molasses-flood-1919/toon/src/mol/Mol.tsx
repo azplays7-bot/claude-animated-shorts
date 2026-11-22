@@ -51,25 +51,25 @@ type Mode = "flood" | "settled" | "none" | "summer" | "today";
 type Cam = [number, THREE.Vector3, THREE.Vector3, THREE.Vector3, THREE.Vector3, number, number, number?];
 type Shot = { a: number; b: number; light: Light; mode: Mode; ft?: (t: number) => number; grade?: string; cams: Cam[]; truck?: boolean };
 const SHOTS: Shot[] = [
-  { a: 0, b: 2.3, light: "noon", mode: "flood", ft: (t) => 1.05 + t * 0.5, cams: [[0, V(9, 3.4, 13.6), V(-3, 3.2, -6), V(8.4, 3.3, 13.4), V(-3, 3.6, -6), 58, 56]] },
-  { a: 2.3, b: 4.5, light: "noon", mode: "flood", ft: (t) => 2.2 + (t - 2.3) * 0.55, cams: [[2.3, V(34, 30, 40), V(0, 0, -6), V(30, 27, 36), V(0, 0, -6), 50, 48]] },
-  { a: 4.5, b: 7.0, light: "noon", mode: "flood", ft: (t) => 4.6 + (t - 4.5) * 0.4, cams: [[4.5, V(-5.2, 1.25, 4.2), V(-8.2, 0.7, 7.2), V(-5.6, 1.15, 4.7), V(-8.2, 0.7, 7.2), 44, 42]] },
+  { a: 0, b: 2.3, light: "noon", mode: "flood", ft: (t) => 0.6 + t * 0.55, cams: [[0, V(10, 2.3, 13.4), V(-2, 3.4, -6), V(9.6, 2.3, 13.3), V(-2, 3.8, -6), 62, 60]] },
+  { a: 2.3, b: 4.5, light: "noon", mode: "flood", ft: (t) => 2.2 + (t - 2.3) * 0.55, cams: [[2.3, V(-30, 22, -54), V(2, 2, 4), V(-27, 20, -50), V(2, 2, 4), 50, 48]] },
+  { a: 4.5, b: 7.0, light: "noon", mode: "flood", ft: (t) => 6.5 + (t - 4.5) * 0.4, cams: [[4.5, V(-6.3, 2.7, 4.4), V(-8.3, 0.9, 7.3), V(-6.7, 2.4, 4.9), V(-8.3, 0.9, 7.3), 46, 44]] },
   { a: 7.0, b: 9.4, light: "noon", mode: "none", ft: () => -5, cams: [
     [7.0, V(-6.5, 1.8, 8.6), V(-3.2, 2.6, 13.1), V(-5.6, 1.8, 9.2), V(-3.2, 2.7, 13.1), 46, 44],
-    [8.4, V(4.5, 3.0, 6.0), V(4.5, 11.0, 14.3), V(4.5, 3.4, 6.6), V(4.5, 11.4, 14.3), 46, 44, 1]] },
+    [8.4, V(4.5, 1.8, 12.2), V(4.5, 11.6, 14.3), V(4.5, 1.9, 12.0), V(4.5, 11.8, 14.3), 50, 48, 1]] },
   { a: 9.4, b: 11.4, light: "noon", mode: "none", ft: (t) => t - BURST, cams: [[9.4, V(9, 1.6, 10.5), V(0, 8, -19), V(7.5, 1.7, 8.8), V(0, 9, -19), 56, 54]] },
-  { a: 11.4, b: 12.6, light: "noon", mode: "flood", ft: (t) => t - BURST, cams: [[11.4, V(16, 5, 6), V(0, 6, -12), V(16.5, 5.2, 6.6), V(0, 6, -12), 52, 52, 1]] },
-  { a: 12.6, b: 14.6, light: "noon", mode: "flood", ft: (t) => 0.4 + (t - 12.6) * 0.55, cams: [[12.6, V(17, 1.95, 1.0), V(17, 1.95, -3.5), V(17, 1.95, 0.4), V(17, 1.95, -3.5), 42, 42]] },
-  { a: 14.6, b: 17.2, light: "noon", mode: "flood", ft: (t) => t - BURST, cams: [[14.6, V(-16, 8.5, 19), V(2, 0, -6), V(-13, 8, 18), V(2, 0, -6), 52, 50]] },
+  { a: 11.4, b: 12.6, light: "noon", mode: "flood", ft: (t) => t - BURST, cams: [[11.4, V(24, 9, -1), V(0, 7, -19), V(25, 9.3, -0.5), V(0, 7, -19), 55, 55, 1]] },
+  { a: 12.6, b: 14.6, light: "noon", mode: "flood", ft: (t) => 0.2 + (t - 12.6) * 0.6, cams: [[12.6, V(17, 1.95, 1.0), V(17, 1.95, -3.5), V(17, 1.95, 0.4), V(17, 1.95, -3.5), 42, 42]] },
+  { a: 14.6, b: 17.2, light: "noon", mode: "flood", ft: (t) => t - BURST, cams: [[14.6, V(-16, 13, 13), V(0, 0, -4), V(-13.5, 12.5, 12.5), V(0, 0, -4), 54, 52]] },
   { a: 17.2, b: 20.0, light: "noon", mode: "flood", ft: (t) => 0.95 + (t - 17.2) * 0.22, cams: [[17.2, V(-17, 0.9, 13.8), V(-6, 6.5, 0), V(-16.5, 0.9, 13.6), V(-6, 7.2, 0), 60, 60]] },
-  { a: 20.0, b: 22.2, light: "noon", mode: "flood", ft: (t) => 2.6 + (t - 20) * 0.5, truck: true, cams: [[20.0, V(0.05, 2.08, -0.32), V(0.32, 1.72, 0.95), V(0.05, 2.08, -0.3), V(0.32, 1.72, 0.95), 50, 50]] },
+  { a: 20.0, b: 22.2, light: "noon", mode: "flood", ft: (t) => 2.6 + (t - 20) * 0.5, truck: true, cams: [[20.0, V(0.1, 2.15, -0.3), V(0.33, 1.95, 0.95), V(0.1, 2.15, -0.28), V(0.33, 1.95, 0.95), 50, 50]] },
   { a: 22.2, b: 23.5, light: "noon", mode: "flood", ft: (t) => 1.0 + (t - 22.2) * 0.65, cams: [[22.2, V(-12, 3.4, 5.5), V(-25, 2.4, -7), V(-12.6, 3.4, 5.2), V(-25, 2.4, -7), 52, 52, 1]] },
-  { a: 23.5, b: 25.9, light: "noon", mode: "flood", ft: (t) => 0.95 + (t - 23.5) * 0.55, cams: [[23.5, V(15, 3.6, 13.5), V(0, 5.6, 6), V(13.5, 3.6, 13.2), V(0, 5.4, 6), 54, 52]] },
+  { a: 23.5, b: 25.9, light: "noon", mode: "flood", ft: (t) => 0.95 + (t - 23.5) * 0.55, cams: [[23.5, V(18, 3.4, 11.5), V(0, 5.6, 6), V(16.8, 3.4, 11.2), V(0, 5.4, 6), 54, 52]] },
   { a: 25.9, b: 29.6, light: "noon", mode: "none", ft: () => 99, grade: "saturate(0.3) contrast(1.06) brightness(0.96)", cams: [
-    [25.9, V(-6.2, 1.5, 11.0), V(-6.0, 1.25, 13.2), V(-6.15, 1.45, 11.5), V(-6.0, 1.25, 13.2), 46, 42],
-    [27.7, V(-6.05, 1.32, 12.4), V(-6.05, 1.22, 13.25), V(-6.05, 1.3, 12.55), V(-6.05, 1.22, 13.25), 42, 40, 1]] },
+    [25.9, V(-6.2, 1.5, 11.0), V(-6.0, 0.9, 13.2), V(-6.15, 1.45, 11.5), V(-6.0, 0.9, 13.2), 46, 42],
+    [27.7, V(-6.05, 1.32, 12.3), V(-6.05, 0.85, 13.25), V(-6.05, 1.3, 12.45), V(-6.05, 0.85, 13.25), 44, 42, 1]] },
   { a: 29.6, b: 31.8, light: "night", mode: "settled", grade: "saturate(0.85)", cams: [[29.6, V(7.2, 2.35, 12.7), V(7.2, 2.25, 14.45), V(7.2, 2.35, 12.95), V(7.2, 2.25, 14.45), 44, 44]] },
-  { a: 31.8, b: 35.8, light: "night", mode: "settled", grade: "saturate(0.85)", cams: [[31.8, V(3.5, 2.4, 12.2), V(-1, 1.2, 3.5), V(2.8, 2.2, 11.4), V(-1, 1.1, 3.5), 52, 50]] },
+  { a: 31.8, b: 35.8, light: "night", mode: "settled", grade: "saturate(0.85)", cams: [[31.8, V(1.8, 1.9, 9.6), V(-0.6, 1.2, 5.0), V(1.2, 1.8, 8.9), V(-0.6, 1.15, 5.0), 52, 50]] },
   { a: 35.8, b: 38.2, light: "sepia", mode: "none", ft: () => -9, grade: "sepia(0.85) saturate(0.9) contrast(1.06)", cams: [[35.8, V(6.5, 1.5, 2.6), V(-1, 6, -8), V(5.8, 1.5, 2.2), V(-1, 6.6, -8), 54, 52]] },
   { a: 38.2, b: 41.6, light: "sepia", mode: "none", ft: () => -9, grade: "sepia(0.85) saturate(0.9) contrast(1.06)", cams: [[38.2, V(2.6, 2.3, 0.4), V(-0.2, 3.0, -5.4), V(2.2, 2.4, -0.4), V(-0.2, 3.2, -5.4), 50, 48]] },
   { a: 41.6, b: 43.4, light: "court", mode: "none", cams: [[41.6, V(1.2, 2.4, 5.2), V(0, 1.7, -3.5), V(0.8, 2.3, 4.4), V(0.4, 1.9, -3.5), 54, 52]] },
@@ -78,7 +78,7 @@ const SHOTS: Shot[] = [
   { a: 48.4, b: 52.9, light: "summer", mode: "summer", cams: [[48.4, V(-5.0, 1.75, 8.6), V(-3.5, 1.5, 14.0), V(-4.0, 1.75, 9.0), V(-3.5, 1.6, 14.0), 52, 50]] },
   { a: 52.9, b: 55.6, light: "today", mode: "today", cams: [
     [52.9, V(8, 3.2, 7), V(-2, 1.2, -18), V(6.5, 3.0, 5.5), V(-2, 1.2, -18), 54, 52],
-    [54.5, V(-6, 1.05, -2.35), V(-6, 0.72, -3.3), V(-6, 1.0, -2.5), V(-6, 0.72, -3.3), 42, 40, 1]] },
+    [54.5, V(-6.3, 1.3, 1.9), V(-6, 0.68, -1.3), V(-6.25, 1.25, 1.6), V(-6, 0.68, -1.3), 40, 38, 1]] },
   { a: 55.6, b: 60.0, light: "today", mode: "today", cams: [[55.6, V(-8.5, 4.2, -21.5), V(-12, 5.6, -32), V(-4, 8, -8), V(-10, 4.5, -28), 50, 56]] },
 ];
 const shotAt = (t: number) => SHOTS.find((s) => t >= s.a && t < s.b) ?? SHOTS[SHOTS.length - 1];
@@ -181,8 +181,8 @@ const Inner: React.FC = () => {
   N.flood(ft, s.mode === "flood" ? "flood" : s.mode === "settled" ? "settled" : "none", t);
   N.damage(s.mode === "flood" ? ft : s.mode === "settled" ? 99 : -1);
   if (s.mode === "none" && s.light === "noon" && t > 25) { N.flood(99, "none", t); }   // the newspaper shot: tank already gone
-  W.barrel.visible = t >= 4.5 && t < 7.0; W.barrel.position.set(-8.2 + (t - 4.5) * 0.25, 0.72 + 0.04 * Math.sin(t * 3), 7.2); W.barrel.rotation.y = t * 0.2;
-  N.setSmell(s.mode === "summer", t);
+  W.barrel.visible = t >= 4.5 && t < 7.0; W.barrel.position.set(-8.2 + (t - 4.5) * 0.25, 1.05 + 0.04 * Math.sin(t * 3), 7.2); W.barrel.rotation.y = t * 0.2;
+  N.setSmell(s.mode === "summer", t); N.setBoard(s.mode === "summer");
   if (s.mode === "today") { const m = t < 55.6 ? "WELCOME TO THE PARK" : "FOLLOW FOR MORE WEIRD HISTORY"; if (W.scoreMsg !== m) { W.scoreMsg = m; N.setScore(m); } }
   N.setThermo(41 - 13 * ss(29.9, 31.5, t));
   // the truck races the wave (35 mph on the dial)
@@ -212,7 +212,7 @@ const Inner: React.FC = () => {
   }
   if (t >= 25.9 && t < 29.6) {
     place("newsboy", -6.05, 13.55, Math.PI, { L: "hold", R: "hold", mouth: "flat", pitch: 0.05 }, 0.12);
-    W.hold(C.newsboy, 1, W.props.paper); W.props.paper.rotation.set(0, Math.PI, 0);
+    W.hold(C.newsboy, 1, W.props.paper); W.props.paper.rotation.set(0, 0, 0);
     const hp = C.newsboy.hands[1].position; W.props.paper.position.set(hp.x - 0.12, hp.y - 0.05, hp.z + 0.06);
   }
   if (s.light === "night") {
@@ -220,7 +220,7 @@ const Inner: React.FC = () => {
     const r: [string, number, number, string][] = [["sailor1", -2.6 + wade * 0.18, 5.2, "l1"], ["sailor2", -0.9 + wade * 0.15, 6.4, "l2"], ["fire", 0.8 + wade * 0.12, 4.6, "l3"]];
     r.forEach(([k, x, z, l], i) => {
       place(k, x, z, Math.PI / 2 + 0.3 * (i - 1), { walk: t * 2.2 + i, R: "hold", L: i === 1 ? "point" : "rest", mouth: i === 2 ? "talk" : "flat", yaw: 0.4 });
-      W.hold(C[k], 1, W.props[l]); W.lanternLights[i].intensity = 3.5;
+      W.hold(C[k], 1, W.props[l]); W.lanternLights[i].intensity = 7;
       const p = W.puffs[i * 3 + (Math.floor(t * 1.2) % 3)];
       void p;
     });
@@ -248,7 +248,7 @@ const Inner: React.FC = () => {
     place("k1", 4.6, -19.5, Math.PI * 0.75, { L: "raise", R: "raise", mouth: "grin" }, 0.07);
     place("k2", 8.3, -24.6, -Math.PI * 0.25, { L: "hold", R: "hold", mouth: "talk" }, 0.07);
     place("k3", 1.5, -26.5, Math.PI * 0.3, { L: t > 54.3 ? "cheer" : "rest", R: t > 54.3 ? "cheer" : "rest", mouth: t > 54.3 ? "laugh" : "smile" }, 0.07);
-    place("gent", -5.2, -2.6, Math.PI, { mouth: "smile", pitch: 0.3, L: "rest", R: "rest" }, 0.12);
+    place("gent", -4.9, -1.2, -0.6, { mouth: "smile", pitch: 0.3, L: "rest", R: "rest" }, 0.12);
   }
   // ---------------- court ----------------
   if (inCourt) {
