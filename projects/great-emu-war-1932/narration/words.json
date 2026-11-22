@@ -1,0 +1,908 @@
+[
+{
+"start": 0.0,
+"end": 0.24,
+"text": "IN",
+"emph": false
+},
+{
+"start": 0.24,
+"end": 1.06,
+"text": "1932",
+"emph": false
+},
+{
+"start": 1.66,
+"end": 2.0,
+"text": "AUSTRALIA",
+"emph": false
+},
+{
+"start": 2.0,
+"end": 2.44,
+"text": "SENT",
+"emph": false
+},
+{
+"start": 2.44,
+"end": 2.96,
+"text": "SOLDIERS",
+"emph": false
+},
+{
+"start": 2.96,
+"end": 3.26,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 3.26,
+"end": 3.66,
+"text": "MACHINE",
+"emph": true
+},
+{
+"start": 3.66,
+"end": 4.0,
+"text": "GUNS",
+"emph": false
+},
+{
+"start": 4.0,
+"end": 4.24,
+"text": "TO",
+"emph": false
+},
+{
+"start": 4.24,
+"end": 4.48,
+"text": "FIGHT",
+"emph": false
+},
+{
+"start": 4.48,
+"end": 4.66,
+"text": "A",
+"emph": false
+},
+{
+"start": 4.66,
+"end": 4.96,
+"text": "WAR",
+"emph": true
+},
+{
+"start": 4.96,
+"end": 5.54,
+"text": "AGAINST",
+"emph": false
+},
+{
+"start": 5.54,
+"end": 6.04,
+"text": "BIRDS",
+"emph": true
+},
+{
+"start": 6.04,
+"end": 6.36,
+"text": "AND",
+"emph": false
+},
+{
+"start": 6.36,
+"end": 6.46,
+"text": "THE",
+"emph": false
+},
+{
+"start": 6.48,
+"end": 6.72,
+"text": "BIRDS",
+"emph": true
+},
+{
+"start": 6.72,
+"end": 7.04,
+"text": "WON",
+"emph": true
+},
+{
+"start": 7.76,
+"end": 7.96,
+"text": "AFTER",
+"emph": false
+},
+{
+"start": 7.96,
+"end": 8.2,
+"text": "WORLD",
+"emph": false
+},
+{
+"start": 8.2,
+"end": 8.48,
+"text": "WAR",
+"emph": true
+},
+{
+"start": 8.48,
+"end": 8.82,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 9.12,
+"end": 9.26,
+"text": "MANY",
+"emph": false
+},
+{
+"start": 9.26,
+"end": 9.56,
+"text": "VETERANS",
+"emph": false
+},
+{
+"start": 9.56,
+"end": 10.04,
+"text": "BECAME",
+"emph": false
+},
+{
+"start": 10.04,
+"end": 10.36,
+"text": "WHEAT",
+"emph": false
+},
+{
+"start": 10.36,
+"end": 10.74,
+"text": "FARMERS",
+"emph": false
+},
+{
+"start": 10.74,
+"end": 11.1,
+"text": "IN",
+"emph": false
+},
+{
+"start": 11.1,
+"end": 11.4,
+"text": "WESTERN",
+"emph": false
+},
+{
+"start": 11.4,
+"end": 12.02,
+"text": "AUSTRALIA",
+"emph": false
+},
+{
+"start": 12.46,
+"end": 12.58,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 12.58,
+"end": 13.02,
+"text": "THOUSANDS",
+"emph": false
+},
+{
+"start": 13.02,
+"end": 13.24,
+"text": "OF",
+"emph": false
+},
+{
+"start": 13.24,
+"end": 13.54,
+"text": "EMUS",
+"emph": true
+},
+{
+"start": 13.54,
+"end": 13.8,
+"text": "SHOWED",
+"emph": false
+},
+{
+"start": 13.8,
+"end": 14.12,
+"text": "UP",
+"emph": false
+},
+{
+"start": 14.22,
+"end": 14.44,
+"text": "EATING",
+"emph": false
+},
+{
+"start": 14.44,
+"end": 14.72,
+"text": "AND",
+"emph": false
+},
+{
+"start": 14.72,
+"end": 15.08,
+"text": "TRAMPLING",
+"emph": false
+},
+{
+"start": 15.08,
+"end": 15.26,
+"text": "THEIR",
+"emph": false
+},
+{
+"start": 15.26,
+"end": 15.56,
+"text": "CROPS",
+"emph": false
+},
+{
+"start": 16.36,
+"end": 16.44,
+"text": "SO",
+"emph": false
+},
+{
+"start": 16.48,
+"end": 16.58,
+"text": "THE",
+"emph": false
+},
+{
+"start": 16.6,
+"end": 16.84,
+"text": "ARMY",
+"emph": false
+},
+{
+"start": 16.84,
+"end": 17.14,
+"text": "SENT",
+"emph": false
+},
+{
+"start": 17.14,
+"end": 17.58,
+"text": "MAJOR",
+"emph": false
+},
+{
+"start": 17.58,
+"end": 17.98,
+"text": "MEREDITH",
+"emph": false
+},
+{
+"start": 18.28,
+"end": 18.4,
+"text": "2",
+"emph": true
+},
+{
+"start": 18.4,
+"end": 18.88,
+"text": "SOLDIERS",
+"emph": false
+},
+{
+"start": 19.12,
+"end": 19.22,
+"text": "2",
+"emph": true
+},
+{
+"start": 19.24,
+"end": 19.58,
+"text": "MACHINE",
+"emph": true
+},
+{
+"start": 19.58,
+"end": 19.86,
+"text": "GUNS",
+"emph": false
+},
+{
+"start": 19.86,
+"end": 20.14,
+"text": "AND",
+"emph": false
+},
+{
+"start": 20.14,
+"end": 20.8,
+"text": "10,000",
+"emph": true
+},
+{
+"start": 20.8,
+"end": 21.08,
+"text": "BULLETS",
+"emph": true
+},
+{
+"start": 21.6,
+"end": 21.7,
+"text": "IN",
+"emph": false
+},
+{
+"start": 21.72,
+"end": 22.08,
+"text": "NOVEMBER",
+"emph": false
+},
+{
+"start": 22.16,
+"end": 22.34,
+"text": "NEAR",
+"emph": false
+},
+{
+"start": 22.34,
+"end": 22.48,
+"text": "A",
+"emph": false
+},
+{
+"start": 22.48,
+"end": 22.7,
+"text": "TOWN",
+"emph": false
+},
+{
+"start": 22.7,
+"end": 23.0,
+"text": "CALLED",
+"emph": false
+},
+{
+"start": 23.0,
+"end": 23.52,
+"text": "CAMPION",
+"emph": false
+},
+{
+"start": 23.64,
+"end": 23.76,
+"text": "THE",
+"emph": false
+},
+{
+"start": 23.76,
+"end": 24.02,
+"text": "BATTLE",
+"emph": false
+},
+{
+"start": 24.02,
+"end": 24.42,
+"text": "BEGAN",
+"emph": false
+},
+{
+"start": 25.08,
+"end": 25.2,
+"text": "THE",
+"emph": false
+},
+{
+"start": 25.2,
+"end": 25.6,
+"text": "EMUS",
+"emph": true
+},
+{
+"start": 25.6,
+"end": 25.9,
+"text": "SCATTERED",
+"emph": false
+},
+{
+"start": 25.9,
+"end": 26.16,
+"text": "IN",
+"emph": false
+},
+{
+"start": 26.16,
+"end": 26.44,
+"text": "EVERY",
+"emph": false
+},
+{
+"start": 26.44,
+"end": 26.92,
+"text": "DIRECTION",
+"emph": false
+},
+{
+"start": 27.22,
+"end": 27.4,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 27.4,
+"end": 27.58,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 27.58,
+"end": 27.68,
+"text": "OF",
+"emph": false
+},
+{
+"start": 27.7,
+"end": 27.8,
+"text": "THE",
+"emph": false
+},
+{
+"start": 27.82,
+"end": 28.08,
+"text": "GUNS",
+"emph": false
+},
+{
+"start": 28.08,
+"end": 28.44,
+"text": "JAMMED",
+"emph": true
+},
+{
+"start": 28.44,
+"end": 29.04,
+"text": "THEY",
+"emph": false
+},
+{
+"start": 29.04,
+"end": 29.32,
+"text": "TRIED",
+"emph": false
+},
+{
+"start": 29.32,
+"end": 29.68,
+"text": "SHOOTING",
+"emph": false
+},
+{
+"start": 29.68,
+"end": 29.94,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 29.94,
+"end": 30.06,
+"text": "A",
+"emph": false
+},
+{
+"start": 30.06,
+"end": 30.32,
+"text": "TRUCK",
+"emph": false
+},
+{
+"start": 30.54,
+"end": 30.64,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 30.66,
+"end": 30.76,
+"text": "THE",
+"emph": false
+},
+{
+"start": 30.78,
+"end": 31.02,
+"text": "GROUND",
+"emph": false
+},
+{
+"start": 31.02,
+"end": 31.2,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 31.2,
+"end": 31.46,
+"text": "TOO",
+"emph": false
+},
+{
+"start": 31.46,
+"end": 31.8,
+"text": "BUMPY",
+"emph": true
+},
+{
+"start": 31.8,
+"end": 31.9,
+"text": "TO",
+"emph": false
+},
+{
+"start": 31.92,
+"end": 32.12,
+"text": "AIM",
+"emph": false
+},
+{
+"start": 32.86,
+"end": 33.04,
+"text": "SIX",
+"emph": false
+},
+{
+"start": 33.04,
+"end": 33.26,
+"text": "DAYS",
+"emph": false
+},
+{
+"start": 33.26,
+"end": 33.56,
+"text": "IN",
+"emph": false
+},
+{
+"start": 33.64,
+"end": 33.72,
+"text": "THEY",
+"emph": false
+},
+{
+"start": 33.76,
+"end": 33.86,
+"text": "HAD",
+"emph": false
+},
+{
+"start": 33.88,
+"end": 34.18,
+"text": "FIRED",
+"emph": false
+},
+{
+"start": 34.18,
+"end": 35.0,
+"text": "2,500",
+"emph": true
+},
+{
+"start": 35.0,
+"end": 35.58,
+"text": "BULLETS",
+"emph": true
+},
+{
+"start": 36.08,
+"end": 36.24,
+"text": "SOME",
+"emph": false
+},
+{
+"start": 36.24,
+"end": 36.64,
+"text": "REPORTS",
+"emph": false
+},
+{
+"start": 36.64,
+"end": 36.96,
+"text": "SAY",
+"emph": false
+},
+{
+"start": 36.96,
+"end": 37.28,
+"text": "ONLY",
+"emph": false
+},
+{
+"start": 37.28,
+"end": 37.64,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 37.64,
+"end": 38.08,
+"text": "50",
+"emph": true
+},
+{
+"start": 38.08,
+"end": 38.48,
+"text": "EMUS",
+"emph": true
+},
+{
+"start": 38.48,
+"end": 38.8,
+"text": "FELL",
+"emph": false
+},
+{
+"start": 39.24,
+"end": 39.36,
+"text": "A",
+"emph": false
+},
+{
+"start": 39.36,
+"end": 39.5,
+"text": "BIRD",
+"emph": false
+},
+{
+"start": 39.5,
+"end": 39.9,
+"text": "EXPERT",
+"emph": false
+},
+{
+"start": 39.9,
+"end": 40.2,
+"text": "LATER",
+"emph": false
+},
+{
+"start": 40.2,
+"end": 40.5,
+"text": "JOKED",
+"emph": false
+},
+{
+"start": 40.5,
+"end": 40.78,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 40.78,
+"end": 40.96,
+"text": "THE",
+"emph": false
+},
+{
+"start": 40.96,
+"end": 41.32,
+"text": "EMUS",
+"emph": true
+},
+{
+"start": 41.32,
+"end": 41.66,
+"text": "USED",
+"emph": false
+},
+{
+"start": 41.66,
+"end": 41.96,
+"text": "GUERRILLA",
+"emph": true
+},
+{
+"start": 41.96,
+"end": 42.48,
+"text": "TACTICS",
+"emph": false
+},
+{
+"start": 43.16,
+"end": 43.3,
+"text": "THE",
+"emph": false
+},
+{
+"start": 43.3,
+"end": 43.5,
+"text": "ARMY",
+"emph": false
+},
+{
+"start": 43.5,
+"end": 43.76,
+"text": "PULLED",
+"emph": false
+},
+{
+"start": 43.76,
+"end": 44.0,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 44.02,
+"end": 44.2,
+"text": "CAME",
+"emph": false
+},
+{
+"start": 44.2,
+"end": 44.5,
+"text": "BACK",
+"emph": false
+},
+{
+"start": 44.68,
+"end": 44.84,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 44.84,
+"end": 45.04,
+"text": "QUIT",
+"emph": true
+},
+{
+"start": 45.04,
+"end": 45.24,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 45.24,
+"end": 45.46,
+"text": "GOOD",
+"emph": false
+},
+{
+"start": 45.9,
+"end": 46.02,
+"text": "IN",
+"emph": false
+},
+{
+"start": 46.02,
+"end": 46.12,
+"text": "THE",
+"emph": false
+},
+{
+"start": 46.14,
+"end": 46.36,
+"text": "END",
+"emph": false
+},
+{
+"start": 46.66,
+"end": 46.72,
+"text": "MEREDITH",
+"emph": false
+},
+{
+"start": 46.78,
+"end": 47.12,
+"text": "CLAIMED",
+"emph": false
+},
+{
+"start": 47.12,
+"end": 48.42,
+"text": "986",
+"emph": true
+},
+{
+"start": 48.42,
+"end": 48.98,
+"text": "EMUS",
+"emph": true
+},
+{
+"start": 49.26,
+"end": 49.46,
+"text": "THAT'S",
+"emph": false
+},
+{
+"start": 49.46,
+"end": 49.68,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 49.68,
+"end": 50.0,
+"text": "10",
+"emph": true
+},
+{
+"start": 50.0,
+"end": 50.32,
+"text": "BULLETS",
+"emph": true
+},
+{
+"start": 50.32,
+"end": 50.56,
+"text": "PER",
+"emph": false
+},
+{
+"start": 50.56,
+"end": 50.86,
+"text": "BIRD",
+"emph": false
+},
+{
+"start": 51.46,
+"end": 51.68,
+"text": "THE",
+"emph": false
+},
+{
+"start": 51.68,
+"end": 52.04,
+"text": "EMUS",
+"emph": true
+},
+{
+"start": 52.04,
+"end": 52.18,
+"text": "ARE",
+"emph": false
+},
+{
+"start": 52.18,
+"end": 52.44,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 52.44,
+"end": 52.76,
+"text": "THERE",
+"emph": false
+},
+{
+"start": 53.06,
+"end": 53.22,
+"text": "FOLLOW",
+"emph": true
+},
+{
+"start": 53.22,
+"end": 53.5,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 53.5,
+"end": 53.7,
+"text": "MORE",
+"emph": false
+},
+{
+"start": 53.7,
+"end": 53.96,
+"text": "WEIRD",
+"emph": false
+},
+{
+"start": 53.96,
+"end": 54.4,
+"text": "HISTORY",
+"emph": false
+}
+]

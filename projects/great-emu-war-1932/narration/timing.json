@@ -1,0 +1,170 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   7.203
+  ],
+  "2": [
+   7.703,
+   15.803
+  ],
+  "3": [
+   16.303,
+   24.596
+  ],
+  "4": [
+   25.096,
+   32.279
+  ],
+  "5": [
+   32.779,
+   42.693
+  ],
+  "6": [
+   43.193,
+   51.059
+  ],
+  "7": [
+   51.559,
+   54.567
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 7.203
+  },
+  {
+   "scene": 2,
+   "start": 7.703,
+   "end": 12.183
+  },
+  {
+   "scene": 2,
+   "start": 12.433,
+   "end": 15.803
+  },
+  {
+   "scene": 3,
+   "start": 16.303,
+   "end": 21.338
+  },
+  {
+   "scene": 3,
+   "start": 21.588,
+   "end": 24.596
+  },
+  {
+   "scene": 4,
+   "start": 25.096,
+   "end": 28.701
+  },
+  {
+   "scene": 4,
+   "start": 28.951,
+   "end": 32.279
+  },
+  {
+   "scene": 5,
+   "start": 32.779,
+   "end": 38.966
+  },
+  {
+   "scene": 5,
+   "start": 39.216,
+   "end": 42.693
+  },
+  {
+   "scene": 6,
+   "start": 43.193,
+   "end": 45.647
+  },
+  {
+   "scene": 6,
+   "start": 45.897,
+   "end": 51.059
+  },
+  {
+   "scene": 7,
+   "start": 51.559,
+   "end": 54.567
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 7.203,
+   "text": "In 1932, Australia sent soldiers with machine guns to fight a war. Against birds. And the birds won."
+  },
+  {
+   "scene": 2,
+   "start": 7.703,
+   "end": 12.183,
+   "text": "After World War One, many veterans became wheat farmers in Western Australia."
+  },
+  {
+   "scene": 2,
+   "start": 12.433,
+   "end": 15.803,
+   "text": "Then thousands of emus showed up, eating and trampling their crops."
+  },
+  {
+   "scene": 3,
+   "start": 16.303,
+   "end": 21.338,
+   "text": "So the army sent Major Meredith, two soldiers, two machine guns, and ten thousand bullets."
+  },
+  {
+   "scene": 3,
+   "start": 21.588,
+   "end": 24.596,
+   "text": "In November, near a town called Campion, the battle began."
+  },
+  {
+   "scene": 4,
+   "start": 25.096,
+   "end": 28.701,
+   "text": "The emus scattered in every direction. Then one of the guns jammed."
+  },
+  {
+   "scene": 4,
+   "start": 28.951,
+   "end": 32.279,
+   "text": "They tried shooting from a truck, but the ground was too bumpy to aim."
+  },
+  {
+   "scene": 5,
+   "start": 32.779,
+   "end": 38.966,
+   "text": "Six days in, they had fired twenty-five hundred bullets. Some reports say only about fifty emus fell."
+  },
+  {
+   "scene": 5,
+   "start": 39.216,
+   "end": 42.693,
+   "text": "A bird expert later joked that the emus used guerrilla tactics."
+  },
+  {
+   "scene": 6,
+   "start": 43.193,
+   "end": 45.647,
+   "text": "The army pulled out, came back, then quit for good."
+  },
+  {
+   "scene": 6,
+   "start": 45.897,
+   "end": 51.059,
+   "text": "In the end, Meredith claimed nine hundred eighty-six emus. That's about ten bullets per bird."
+  },
+  {
+   "scene": 7,
+   "start": 51.559,
+   "end": 54.567,
+   "text": "The emus are still there. Follow for more weird history."
+  }
+ ]
+}
