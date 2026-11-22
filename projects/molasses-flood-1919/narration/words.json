@@ -1,0 +1,980 @@
+[
+{
+"start": 0.0,
+"end": 0.24,
+"text": "IN",
+"emph": false
+},
+{
+"start": 0.24,
+"end": 0.86,
+"text": "1919",
+"emph": false
+},
+{
+"start": 1.6,
+"end": 1.66,
+"text": "A",
+"emph": false
+},
+{
+"start": 1.72,
+"end": 2.02,
+"text": "GIANT",
+"emph": false
+},
+{
+"start": 2.02,
+"end": 2.38,
+"text": "WAVE",
+"emph": true
+},
+{
+"start": 2.38,
+"end": 2.74,
+"text": "CRASHED",
+"emph": false
+},
+{
+"start": 2.74,
+"end": 3.1,
+"text": "THROUGH",
+"emph": false
+},
+{
+"start": 3.1,
+"end": 3.3,
+"text": "A",
+"emph": false
+},
+{
+"start": 3.3,
+"end": 3.62,
+"text": "BOSTON",
+"emph": false
+},
+{
+"start": 3.62,
+"end": 4.14,
+"text": "NEIGHBORHOOD",
+"emph": false
+},
+{
+"start": 4.46,
+"end": 4.58,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 4.58,
+"end": 4.7,
+"text": "IT",
+"emph": false
+},
+{
+"start": 4.7,
+"end": 4.96,
+"text": "WASN'T",
+"emph": false
+},
+{
+"start": 4.96,
+"end": 5.38,
+"text": "WATER",
+"emph": true
+},
+{
+"start": 5.66,
+"end": 5.74,
+"text": "IT",
+"emph": false
+},
+{
+"start": 5.78,
+"end": 5.92,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 5.92,
+"end": 6.36,
+"text": "MOLASSES",
+"emph": true
+},
+{
+"start": 7.22,
+"end": 7.32,
+"text": "ON",
+"emph": false
+},
+{
+"start": 7.34,
+"end": 7.66,
+"text": "JANUARY",
+"emph": false
+},
+{
+"start": 7.66,
+"end": 8.22,
+"text": "15TH",
+"emph": false
+},
+{
+"start": 8.48,
+"end": 8.7,
+"text": "JUST",
+"emph": false
+},
+{
+"start": 8.7,
+"end": 9.06,
+"text": "AFTER",
+"emph": false
+},
+{
+"start": 9.06,
+"end": 9.32,
+"text": "LUNCH",
+"emph": false
+},
+{
+"start": 9.62,
+"end": 9.72,
+"text": "A",
+"emph": false
+},
+{
+"start": 9.74,
+"end": 10.04,
+"text": "50-FOOT",
+"emph": true
+},
+{
+"start": 10.24,
+"end": 10.58,
+"text": "STEEL",
+"emph": false
+},
+{
+"start": 10.58,
+"end": 10.9,
+"text": "TANK",
+"emph": true
+},
+{
+"start": 10.9,
+"end": 11.14,
+"text": "BY",
+"emph": false
+},
+{
+"start": 11.14,
+"end": 11.26,
+"text": "THE",
+"emph": false
+},
+{
+"start": 11.26,
+"end": 11.48,
+"text": "HARBOR",
+"emph": false
+},
+{
+"start": 11.48,
+"end": 11.82,
+"text": "BURST",
+"emph": true
+},
+{
+"start": 11.82,
+"end": 12.26,
+"text": "OPEN",
+"emph": false
+},
+{
+"start": 12.68,
+"end": 12.86,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 12.86,
+"end": 13.98,
+"text": "2.3 MILLION",
+"emph": true
+},
+{
+"start": 13.98,
+"end": 14.48,
+"text": "GALLONS",
+"emph": false
+},
+{
+"start": 14.48,
+"end": 14.7,
+"text": "OF",
+"emph": false
+},
+{
+"start": 14.7,
+"end": 15.0,
+"text": "THICK",
+"emph": false
+},
+{
+"start": 15.2,
+"end": 15.42,
+"text": "STICKY",
+"emph": false
+},
+{
+"start": 15.42,
+"end": 15.78,
+"text": "SYRUP",
+"emph": false
+},
+{
+"start": 15.78,
+"end": 16.12,
+"text": "POURED",
+"emph": false
+},
+{
+"start": 16.12,
+"end": 16.38,
+"text": "INTO",
+"emph": false
+},
+{
+"start": 16.38,
+"end": 16.52,
+"text": "THE",
+"emph": false
+},
+{
+"start": 16.52,
+"end": 16.76,
+"text": "STREETS",
+"emph": false
+},
+{
+"start": 17.34,
+"end": 17.6,
+"text": "THE",
+"emph": false
+},
+{
+"start": 17.6,
+"end": 17.88,
+"text": "WAVE",
+"emph": true
+},
+{
+"start": 17.88,
+"end": 18.08,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 18.08,
+"end": 18.28,
+"text": "UP",
+"emph": false
+},
+{
+"start": 18.28,
+"end": 18.46,
+"text": "TO",
+"emph": false
+},
+{
+"start": 18.46,
+"end": 19.0,
+"text": "25",
+"emph": true
+},
+{
+"start": 19.0,
+"end": 19.28,
+"text": "FEET",
+"emph": false
+},
+{
+"start": 19.28,
+"end": 19.64,
+"text": "TALL",
+"emph": false
+},
+{
+"start": 19.64,
+"end": 19.96,
+"text": "AND",
+"emph": false
+},
+{
+"start": 19.96,
+"end": 20.2,
+"text": "MOVED",
+"emph": false
+},
+{
+"start": 20.2,
+"end": 20.5,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 20.5,
+"end": 21.1,
+"text": "35",
+"emph": true
+},
+{
+"start": 21.1,
+"end": 21.46,
+"text": "MILES",
+"emph": false
+},
+{
+"start": 21.46,
+"end": 21.72,
+"text": "AN",
+"emph": false
+},
+{
+"start": 21.72,
+"end": 21.98,
+"text": "HOUR",
+"emph": false
+},
+{
+"start": 22.34,
+"end": 22.48,
+"text": "IT",
+"emph": false
+},
+{
+"start": 22.48,
+"end": 22.8,
+"text": "SMASHED",
+"emph": false
+},
+{
+"start": 22.8,
+"end": 23.3,
+"text": "BUILDINGS",
+"emph": false
+},
+{
+"start": 23.3,
+"end": 23.64,
+"text": "AND",
+"emph": false
+},
+{
+"start": 23.64,
+"end": 23.82,
+"text": "BENT",
+"emph": false
+},
+{
+"start": 23.82,
+"end": 24.0,
+"text": "THE",
+"emph": false
+},
+{
+"start": 24.0,
+"end": 24.24,
+"text": "STEEL",
+"emph": false
+},
+{
+"start": 24.24,
+"end": 24.56,
+"text": "TRACKS",
+"emph": false
+},
+{
+"start": 24.56,
+"end": 24.74,
+"text": "OF",
+"emph": false
+},
+{
+"start": 24.74,
+"end": 24.86,
+"text": "THE",
+"emph": false
+},
+{
+"start": 24.86,
+"end": 25.26,
+"text": "ELEVATED",
+"emph": false
+},
+{
+"start": 25.26,
+"end": 25.7,
+"text": "TRAIN",
+"emph": false
+},
+{
+"start": 26.14,
+"end": 26.48,
+"text": "21",
+"emph": true
+},
+{
+"start": 26.48,
+"end": 26.88,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 26.88,
+"end": 27.24,
+"text": "DIED",
+"emph": false
+},
+{
+"start": 27.24,
+"end": 27.56,
+"text": "AND",
+"emph": false
+},
+{
+"start": 27.56,
+"end": 27.74,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 27.74,
+"end": 28.54,
+"text": "150",
+"emph": true
+},
+{
+"start": 28.54,
+"end": 28.92,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 28.92,
+"end": 29.22,
+"text": "HURT",
+"emph": false
+},
+{
+"start": 29.84,
+"end": 30.0,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 30.0,
+"end": 30.24,
+"text": "CAME",
+"emph": false
+},
+{
+"start": 30.24,
+"end": 30.4,
+"text": "THE",
+"emph": false
+},
+{
+"start": 30.4,
+"end": 30.76,
+"text": "COLD",
+"emph": true
+},
+{
+"start": 31.08,
+"end": 31.24,
+"text": "AS",
+"emph": false
+},
+{
+"start": 31.24,
+"end": 31.44,
+"text": "NIGHT",
+"emph": false
+},
+{
+"start": 31.44,
+"end": 31.78,
+"text": "FELL",
+"emph": false
+},
+{
+"start": 31.94,
+"end": 31.98,
+"text": "THE",
+"emph": false
+},
+{
+"start": 32.06,
+"end": 32.42,
+"text": "MOLASSES",
+"emph": true
+},
+{
+"start": 32.42,
+"end": 32.7,
+"text": "GOT",
+"emph": false
+},
+{
+"start": 32.7,
+"end": 32.98,
+"text": "EVEN",
+"emph": false
+},
+{
+"start": 32.98,
+"end": 33.32,
+"text": "THICKER",
+"emph": true
+},
+{
+"start": 33.68,
+"end": 33.8,
+"text": "TRAPPING",
+"emph": false
+},
+{
+"start": 33.8,
+"end": 34.18,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 34.18,
+"end": 34.4,
+"text": "AND",
+"emph": false
+},
+{
+"start": 34.4,
+"end": 34.74,
+"text": "SLOWING",
+"emph": false
+},
+{
+"start": 34.74,
+"end": 35.3,
+"text": "RESCUERS",
+"emph": false
+},
+{
+"start": 36.0,
+"end": 36.16,
+"text": "AND",
+"emph": false
+},
+{
+"start": 36.16,
+"end": 36.28,
+"text": "THE",
+"emph": false
+},
+{
+"start": 36.28,
+"end": 36.54,
+"text": "TANK",
+"emph": true
+},
+{
+"start": 36.54,
+"end": 36.98,
+"text": "NEIGHBORS",
+"emph": false
+},
+{
+"start": 36.98,
+"end": 37.2,
+"text": "HAD",
+"emph": false
+},
+{
+"start": 37.2,
+"end": 37.46,
+"text": "SEEN",
+"emph": false
+},
+{
+"start": 37.46,
+"end": 37.62,
+"text": "IT",
+"emph": false
+},
+{
+"start": 37.62,
+"end": 37.9,
+"text": "LEAKING",
+"emph": false
+},
+{
+"start": 38.26,
+"end": 38.36,
+"text": "THE",
+"emph": false
+},
+{
+"start": 38.38,
+"end": 38.88,
+"text": "COMPANY'S",
+"emph": false
+},
+{
+"start": 38.88,
+"end": 39.06,
+"text": "FIX",
+"emph": false
+},
+{
+"start": 39.06,
+"end": 39.3,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 39.3,
+"end": 39.5,
+"text": "TO",
+"emph": false
+},
+{
+"start": 39.5,
+"end": 39.7,
+"text": "PAINT",
+"emph": false
+},
+{
+"start": 39.7,
+"end": 39.9,
+"text": "IT",
+"emph": false
+},
+{
+"start": 39.9,
+"end": 40.16,
+"text": "BROWN",
+"emph": true
+},
+{
+"start": 40.16,
+"end": 40.44,
+"text": "SO",
+"emph": false
+},
+{
+"start": 40.44,
+"end": 40.58,
+"text": "THE",
+"emph": false
+},
+{
+"start": 40.58,
+"end": 40.86,
+"text": "DRIPS",
+"emph": false
+},
+{
+"start": 40.86,
+"end": 41.14,
+"text": "WOULDN'T",
+"emph": false
+},
+{
+"start": 41.14,
+"end": 41.4,
+"text": "SHOW",
+"emph": false
+},
+{
+"start": 41.82,
+"end": 42.0,
+"text": "AFTER",
+"emph": false
+},
+{
+"start": 42.0,
+"end": 42.26,
+"text": "YEARS",
+"emph": false
+},
+{
+"start": 42.26,
+"end": 42.54,
+"text": "IN",
+"emph": false
+},
+{
+"start": 42.54,
+"end": 42.78,
+"text": "COURT",
+"emph": false
+},
+{
+"start": 42.98,
+"end": 43.04,
+"text": "THE",
+"emph": false
+},
+{
+"start": 43.1,
+"end": 43.32,
+"text": "OWNERS",
+"emph": false
+},
+{
+"start": 43.32,
+"end": 43.54,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 43.54,
+"end": 43.82,
+"text": "FOUND",
+"emph": false
+},
+{
+"start": 43.82,
+"end": 44.38,
+"text": "RESPONSIBLE",
+"emph": true
+},
+{
+"start": 45.08,
+"end": 45.2,
+"text": "THE",
+"emph": false
+},
+{
+"start": 45.2,
+"end": 45.5,
+"text": "DISASTER",
+"emph": false
+},
+{
+"start": 45.5,
+"end": 45.94,
+"text": "HELPED",
+"emph": false
+},
+{
+"start": 45.94,
+"end": 46.22,
+"text": "BRING",
+"emph": false
+},
+{
+"start": 46.22,
+"end": 46.64,
+"text": "STRICTER",
+"emph": true
+},
+{
+"start": 46.64,
+"end": 46.92,
+"text": "BUILDING",
+"emph": false
+},
+{
+"start": 46.92,
+"end": 47.32,
+"text": "RULES",
+"emph": false
+},
+{
+"start": 47.32,
+"end": 47.68,
+"text": "ACROSS",
+"emph": false
+},
+{
+"start": 47.68,
+"end": 47.9,
+"text": "THE",
+"emph": false
+},
+{
+"start": 47.9,
+"end": 48.22,
+"text": "COUNTRY",
+"emph": false
+},
+{
+"start": 48.6,
+"end": 48.76,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 48.76,
+"end": 49.12,
+"text": "DECADES",
+"emph": false
+},
+{
+"start": 49.4,
+"end": 49.58,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 49.58,
+"end": 49.92,
+"text": "SAID",
+"emph": false
+},
+{
+"start": 49.92,
+"end": 50.08,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 50.08,
+"end": 50.26,
+"text": "ON",
+"emph": false
+},
+{
+"start": 50.26,
+"end": 50.48,
+"text": "HOT",
+"emph": false
+},
+{
+"start": 50.48,
+"end": 50.82,
+"text": "DAYS",
+"emph": false
+},
+{
+"start": 50.82,
+"end": 51.02,
+"text": "THE",
+"emph": false
+},
+{
+"start": 51.02,
+"end": 51.32,
+"text": "NEIGHBORHOOD",
+"emph": false
+},
+{
+"start": 51.32,
+"end": 51.68,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 51.68,
+"end": 52.1,
+"text": "SMELLED",
+"emph": false
+},
+{
+"start": 52.1,
+"end": 52.5,
+"text": "SWEET",
+"emph": true
+},
+{
+"start": 53.16,
+"end": 53.38,
+"text": "TODAY",
+"emph": false
+},
+{
+"start": 53.38,
+"end": 53.56,
+"text": "THE",
+"emph": false
+},
+{
+"start": 53.56,
+"end": 53.84,
+"text": "SPOT",
+"emph": false
+},
+{
+"start": 53.84,
+"end": 54.04,
+"text": "IS",
+"emph": false
+},
+{
+"start": 54.04,
+"end": 54.18,
+"text": "A",
+"emph": false
+},
+{
+"start": 54.18,
+"end": 54.42,
+"text": "PARK",
+"emph": false
+},
+{
+"start": 54.42,
+"end": 54.62,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 54.62,
+"end": 54.74,
+"text": "A",
+"emph": false
+},
+{
+"start": 54.74,
+"end": 55.04,
+"text": "SMALL",
+"emph": false
+},
+{
+"start": 55.04,
+"end": 55.38,
+"text": "PLAQUE",
+"emph": false
+},
+{
+"start": 55.78,
+"end": 55.92,
+"text": "FOLLOW",
+"emph": true
+},
+{
+"start": 55.92,
+"end": 56.2,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 56.2,
+"end": 56.42,
+"text": "MORE",
+"emph": false
+},
+{
+"start": 56.42,
+"end": 56.66,
+"text": "WEIRD",
+"emph": false
+},
+{
+"start": 56.66,
+"end": 57.12,
+"text": "HISTORY",
+"emph": false
+}
+]

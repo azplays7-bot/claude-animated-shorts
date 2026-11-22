@@ -1,0 +1,170 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   6.691
+  ],
+  "2": [
+   7.191,
+   16.998
+  ],
+  "3": [
+   17.498,
+   29.347
+  ],
+  "4": [
+   29.847,
+   35.565
+  ],
+  "5": [
+   36.065,
+   44.613
+  ],
+  "6": [
+   45.113,
+   52.617
+  ],
+  "7": [
+   53.117,
+   57.298
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 6.691
+  },
+  {
+   "scene": 2,
+   "start": 7.191,
+   "end": 12.396
+  },
+  {
+   "scene": 2,
+   "start": 12.646,
+   "end": 16.998
+  },
+  {
+   "scene": 3,
+   "start": 17.498,
+   "end": 22.127
+  },
+  {
+   "scene": 3,
+   "start": 22.377,
+   "end": 25.833
+  },
+  {
+   "scene": 3,
+   "start": 26.083,
+   "end": 29.347
+  },
+  {
+   "scene": 4,
+   "start": 29.847,
+   "end": 35.565
+  },
+  {
+   "scene": 5,
+   "start": 36.065,
+   "end": 41.569
+  },
+  {
+   "scene": 5,
+   "start": 41.819,
+   "end": 44.613
+  },
+  {
+   "scene": 6,
+   "start": 45.113,
+   "end": 48.377
+  },
+  {
+   "scene": 6,
+   "start": 48.627,
+   "end": 52.617
+  },
+  {
+   "scene": 7,
+   "start": 53.117,
+   "end": 57.298
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 6.691,
+   "text": "In 1919, a giant wave crashed through a Boston neighborhood. But it wasn't water. It was molasses."
+  },
+  {
+   "scene": 2,
+   "start": 7.191,
+   "end": 12.396,
+   "text": "On January 15th, just after lunch, a fifty-foot steel tank by the harbor burst open."
+  },
+  {
+   "scene": 2,
+   "start": 12.646,
+   "end": 16.998,
+   "text": "About two point three million gallons of thick, sticky syrup poured into the streets."
+  },
+  {
+   "scene": 3,
+   "start": 17.498,
+   "end": 22.127,
+   "text": "The wave was up to twenty-five feet tall, and moved about thirty-five miles an hour."
+  },
+  {
+   "scene": 3,
+   "start": 22.377,
+   "end": 25.833,
+   "text": "It smashed buildings and bent the steel tracks of the elevated train."
+  },
+  {
+   "scene": 3,
+   "start": 26.083,
+   "end": 29.347,
+   "text": "Twenty-one people died, and about a hundred and fifty were hurt."
+  },
+  {
+   "scene": 4,
+   "start": 29.847,
+   "end": 35.565,
+   "text": "Then came the cold. As night fell, the molasses got even thicker, trapping people and slowing rescuers."
+  },
+  {
+   "scene": 5,
+   "start": 36.065,
+   "end": 41.569,
+   "text": "And the tank? Neighbors had seen it leaking. The company's fix was to paint it brown, so the drips wouldn't show."
+  },
+  {
+   "scene": 5,
+   "start": 41.819,
+   "end": 44.613,
+   "text": "After years in court, the owners were found responsible."
+  },
+  {
+   "scene": 6,
+   "start": 45.113,
+   "end": 48.377,
+   "text": "The disaster helped bring stricter building rules across the country."
+  },
+  {
+   "scene": 6,
+   "start": 48.627,
+   "end": 52.617,
+   "text": "For decades, people said that on hot days, the neighborhood still smelled sweet."
+  },
+  {
+   "scene": 7,
+   "start": 53.117,
+   "end": 57.298,
+   "text": "Today the spot is a park with a small plaque. Follow for more weird history."
+  }
+ ]
+}
