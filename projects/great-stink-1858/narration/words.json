@@ -1,0 +1,932 @@
+[
+{
+"start": 0.0,
+"end": 0.24,
+"text": "IN",
+"emph": false
+},
+{
+"start": 0.24,
+"end": 0.36,
+"text": "THE",
+"emph": false
+},
+{
+"start": 0.36,
+"end": 0.64,
+"text": "SUMMER",
+"emph": false
+},
+{
+"start": 0.64,
+"end": 0.84,
+"text": "OF",
+"emph": false
+},
+{
+"start": 0.84,
+"end": 2.58,
+"text": "1858",
+"emph": false
+},
+{
+"start": 2.9,
+"end": 3.06,
+"text": "LONDON",
+"emph": false
+},
+{
+"start": 3.06,
+"end": 3.48,
+"text": "SMELLED",
+"emph": true
+},
+{
+"start": 3.48,
+"end": 3.76,
+"text": "SO",
+"emph": false
+},
+{
+"start": 3.76,
+"end": 4.04,
+"text": "BAD",
+"emph": false
+},
+{
+"start": 4.04,
+"end": 4.18,
+"text": "IT",
+"emph": false
+},
+{
+"start": 4.18,
+"end": 4.34,
+"text": "GOT",
+"emph": false
+},
+{
+"start": 4.34,
+"end": 4.5,
+"text": "ITS",
+"emph": false
+},
+{
+"start": 4.5,
+"end": 4.7,
+"text": "OWN",
+"emph": false
+},
+{
+"start": 4.7,
+"end": 5.0,
+"text": "NAME",
+"emph": false
+},
+{
+"start": 5.24,
+"end": 5.4,
+"text": "THE",
+"emph": false
+},
+{
+"start": 5.4,
+"end": 5.64,
+"text": "GREAT",
+"emph": false
+},
+{
+"start": 5.64,
+"end": 6.08,
+"text": "STINK",
+"emph": true
+},
+{
+"start": 6.72,
+"end": 6.82,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 6.84,
+"end": 7.14,
+"text": "YEARS",
+"emph": false
+},
+{
+"start": 7.38,
+"end": 7.44,
+"text": "THE",
+"emph": false
+},
+{
+"start": 7.5,
+"end": 7.74,
+"text": "CITY'S",
+"emph": false
+},
+{
+"start": 7.74,
+"end": 8.04,
+"text": "TOILETS",
+"emph": false
+},
+{
+"start": 8.04,
+"end": 8.3,
+"text": "AND",
+"emph": false
+},
+{
+"start": 8.3,
+"end": 8.64,
+"text": "DRAINS",
+"emph": false
+},
+{
+"start": 8.64,
+"end": 8.86,
+"text": "HAD",
+"emph": false
+},
+{
+"start": 8.86,
+"end": 9.22,
+"text": "EMPTIED",
+"emph": false
+},
+{
+"start": 9.22,
+"end": 9.62,
+"text": "STRAIGHT",
+"emph": false
+},
+{
+"start": 9.62,
+"end": 9.84,
+"text": "INTO",
+"emph": false
+},
+{
+"start": 9.84,
+"end": 10.0,
+"text": "THE",
+"emph": false
+},
+{
+"start": 10.0,
+"end": 10.18,
+"text": "RIVER",
+"emph": false
+},
+{
+"start": 10.18,
+"end": 10.42,
+"text": "THAMES",
+"emph": true
+},
+{
+"start": 10.92,
+"end": 11.08,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 11.08,
+"end": 11.3,
+"text": "CAME",
+"emph": false
+},
+{
+"start": 11.3,
+"end": 11.46,
+"text": "A",
+"emph": false
+},
+{
+"start": 11.46,
+"end": 11.62,
+"text": "HEATWAVE",
+"emph": true
+},
+{
+"start": 12.16,
+"end": 12.24,
+"text": "THE",
+"emph": false
+},
+{
+"start": 12.28,
+"end": 12.42,
+"text": "RIVER",
+"emph": false
+},
+{
+"start": 12.42,
+"end": 12.74,
+"text": "BAKED",
+"emph": false
+},
+{
+"start": 12.74,
+"end": 12.96,
+"text": "AND",
+"emph": false
+},
+{
+"start": 12.96,
+"end": 13.1,
+"text": "THE",
+"emph": false
+},
+{
+"start": 13.1,
+"end": 13.34,
+"text": "SMELL",
+"emph": true
+},
+{
+"start": 13.34,
+"end": 13.74,
+"text": "DRIFTED",
+"emph": false
+},
+{
+"start": 13.74,
+"end": 14.24,
+"text": "EVERYWHERE",
+"emph": false
+},
+{
+"start": 14.92,
+"end": 15.08,
+"text": "THE",
+"emph": false
+},
+{
+"start": 15.08,
+"end": 15.28,
+"text": "WORST",
+"emph": false
+},
+{
+"start": 15.28,
+"end": 15.64,
+"text": "SPOT",
+"emph": false
+},
+{
+"start": 15.92,
+"end": 16.08,
+"text": "PARLIAMENT",
+"emph": true
+},
+{
+"start": 16.3,
+"end": 16.54,
+"text": "RIGHT",
+"emph": false
+},
+{
+"start": 16.54,
+"end": 16.72,
+"text": "ON",
+"emph": false
+},
+{
+"start": 16.72,
+"end": 16.82,
+"text": "THE",
+"emph": false
+},
+{
+"start": 16.84,
+"end": 17.26,
+"text": "RIVERBANK",
+"emph": false
+},
+{
+"start": 17.84,
+"end": 18.12,
+"text": "LAWMAKERS",
+"emph": false
+},
+{
+"start": 18.12,
+"end": 18.52,
+"text": "SOAKED",
+"emph": false
+},
+{
+"start": 18.52,
+"end": 18.72,
+"text": "THE",
+"emph": false
+},
+{
+"start": 18.72,
+"end": 19.0,
+"text": "CURTAINS",
+"emph": true
+},
+{
+"start": 19.0,
+"end": 19.28,
+"text": "IN",
+"emph": false
+},
+{
+"start": 19.28,
+"end": 19.66,
+"text": "CHEMICALS",
+"emph": false
+},
+{
+"start": 19.66,
+"end": 19.94,
+"text": "TO",
+"emph": false
+},
+{
+"start": 19.94,
+"end": 20.14,
+"text": "BLOCK",
+"emph": false
+},
+{
+"start": 20.14,
+"end": 20.32,
+"text": "THE",
+"emph": false
+},
+{
+"start": 20.32,
+"end": 20.58,
+"text": "SMELL",
+"emph": true
+},
+{
+"start": 20.86,
+"end": 20.96,
+"text": "IT",
+"emph": false
+},
+{
+"start": 20.98,
+"end": 21.16,
+"text": "DIDN'T",
+"emph": false
+},
+{
+"start": 21.16,
+"end": 21.38,
+"text": "WORK",
+"emph": false
+},
+{
+"start": 22.1,
+"end": 22.2,
+"text": "BACK",
+"emph": false
+},
+{
+"start": 22.22,
+"end": 22.48,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 22.62,
+"end": 22.72,
+"text": "MANY",
+"emph": false
+},
+{
+"start": 22.74,
+"end": 23.08,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 23.08,
+"end": 23.36,
+"text": "THOUGHT",
+"emph": false
+},
+{
+"start": 23.36,
+"end": 23.66,
+"text": "BAD",
+"emph": false
+},
+{
+"start": 23.66,
+"end": 24.02,
+"text": "SMELLS",
+"emph": false
+},
+{
+"start": 24.02,
+"end": 24.36,
+"text": "SPREAD",
+"emph": false
+},
+{
+"start": 24.36,
+"end": 24.78,
+"text": "DISEASES",
+"emph": false
+},
+{
+"start": 24.78,
+"end": 25.12,
+"text": "LIKE",
+"emph": false
+},
+{
+"start": 25.12,
+"end": 25.64,
+"text": "CHOLERA",
+"emph": true
+},
+{
+"start": 25.94,
+"end": 26.08,
+"text": "A",
+"emph": false
+},
+{
+"start": 26.08,
+"end": 26.42,
+"text": "DOCTOR",
+"emph": false
+},
+{
+"start": 26.42,
+"end": 26.78,
+"text": "NAMED",
+"emph": false
+},
+{
+"start": 26.78,
+"end": 27.12,
+"text": "JOHN",
+"emph": false
+},
+{
+"start": 27.12,
+"end": 27.46,
+"text": "SNOW",
+"emph": false
+},
+{
+"start": 27.46,
+"end": 27.72,
+"text": "HAD",
+"emph": false
+},
+{
+"start": 27.72,
+"end": 27.98,
+"text": "SHOWN",
+"emph": false
+},
+{
+"start": 27.98,
+"end": 28.22,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 28.22,
+"end": 28.66,
+"text": "CHOLERA",
+"emph": true
+},
+{
+"start": 28.66,
+"end": 29.18,
+"text": "ACTUALLY",
+"emph": false
+},
+{
+"start": 29.18,
+"end": 29.52,
+"text": "SPREAD",
+"emph": false
+},
+{
+"start": 29.52,
+"end": 29.82,
+"text": "THROUGH",
+"emph": false
+},
+{
+"start": 29.82,
+"end": 30.14,
+"text": "DIRTY",
+"emph": false
+},
+{
+"start": 30.14,
+"end": 30.48,
+"text": "WATER",
+"emph": true
+},
+{
+"start": 30.76,
+"end": 30.92,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 30.92,
+"end": 31.14,
+"text": "FEW",
+"emph": false
+},
+{
+"start": 31.14,
+"end": 31.54,
+"text": "LISTENED",
+"emph": false
+},
+{
+"start": 32.28,
+"end": 32.46,
+"text": "NOW",
+"emph": false
+},
+{
+"start": 32.62,
+"end": 32.66,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 32.74,
+"end": 32.8,
+"text": "THEIR",
+"emph": false
+},
+{
+"start": 32.86,
+"end": 33.08,
+"text": "OWN",
+"emph": false
+},
+{
+"start": 33.08,
+"end": 33.48,
+"text": "NOSES",
+"emph": false
+},
+{
+"start": 33.48,
+"end": 34.0,
+"text": "SUFFERING",
+"emph": false
+},
+{
+"start": 34.26,
+"end": 34.46,
+"text": "PARLIAMENT",
+"emph": true
+},
+{
+"start": 34.46,
+"end": 34.9,
+"text": "MOVED",
+"emph": false
+},
+{
+"start": 34.9,
+"end": 35.32,
+"text": "FAST",
+"emph": true
+},
+{
+"start": 35.74,
+"end": 35.82,
+"text": "A",
+"emph": false
+},
+{
+"start": 35.86,
+"end": 36.02,
+"text": "BIG",
+"emph": false
+},
+{
+"start": 36.02,
+"end": 36.34,
+"text": "SEWER",
+"emph": true
+},
+{
+"start": 36.34,
+"end": 36.7,
+"text": "PLAN",
+"emph": false
+},
+{
+"start": 36.7,
+"end": 37.04,
+"text": "BECAME",
+"emph": false
+},
+{
+"start": 37.04,
+"end": 37.4,
+"text": "LAW",
+"emph": false
+},
+{
+"start": 37.4,
+"end": 37.58,
+"text": "IN",
+"emph": false
+},
+{
+"start": 37.58,
+"end": 37.78,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 37.78,
+"end": 38.16,
+"text": "18",
+"emph": true
+},
+{
+"start": 38.16,
+"end": 38.64,
+"text": "DAYS",
+"emph": false
+},
+{
+"start": 39.74,
+"end": 39.74,
+"text": "ENGINEER",
+"emph": false
+},
+{
+"start": 39.86,
+"end": 40.2,
+"text": "JOSEPH",
+"emph": false
+},
+{
+"start": 40.2,
+"end": 41.0,
+"text": "BAZALGETTE",
+"emph": false
+},
+{
+"start": 41.0,
+"end": 41.18,
+"text": "BUILT",
+"emph": false
+},
+{
+"start": 41.18,
+"end": 41.66,
+"text": "GIANT",
+"emph": false
+},
+{
+"start": 41.66,
+"end": 42.02,
+"text": "TUNNELS",
+"emph": true
+},
+{
+"start": 42.02,
+"end": 42.3,
+"text": "TO",
+"emph": false
+},
+{
+"start": 42.3,
+"end": 42.52,
+"text": "CARRY",
+"emph": false
+},
+{
+"start": 42.52,
+"end": 42.72,
+"text": "THE",
+"emph": false
+},
+{
+"start": 42.72,
+"end": 42.96,
+"text": "WASTE",
+"emph": false
+},
+{
+"start": 42.96,
+"end": 43.3,
+"text": "AWAY",
+"emph": false
+},
+{
+"start": 43.3,
+"end": 43.56,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 43.56,
+"end": 43.72,
+"text": "THE",
+"emph": false
+},
+{
+"start": 43.72,
+"end": 43.96,
+"text": "CITY",
+"emph": false
+},
+{
+"start": 44.3,
+"end": 44.46,
+"text": "PLUS",
+"emph": false
+},
+{
+"start": 44.46,
+"end": 44.8,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 44.8,
+"end": 45.44,
+"text": "1,100",
+"emph": true
+},
+{
+"start": 45.44,
+"end": 45.94,
+"text": "MILES",
+"emph": false
+},
+{
+"start": 45.94,
+"end": 46.24,
+"text": "OF",
+"emph": false
+},
+{
+"start": 46.24,
+"end": 46.44,
+"text": "STREET",
+"emph": false
+},
+{
+"start": 46.44,
+"end": 47.02,
+"text": "SEWERS",
+"emph": false
+},
+{
+"start": 47.46,
+"end": 47.54,
+"text": "THE",
+"emph": false
+},
+{
+"start": 47.58,
+"end": 47.74,
+"text": "PIPES",
+"emph": false
+},
+{
+"start": 47.74,
+"end": 48.0,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 48.0,
+"end": 48.22,
+"text": "HIDDEN",
+"emph": false
+},
+{
+"start": 48.22,
+"end": 48.48,
+"text": "UNDER",
+"emph": false
+},
+{
+"start": 48.48,
+"end": 48.74,
+"text": "BRAND",
+"emph": false
+},
+{
+"start": 48.74,
+"end": 49.04,
+"text": "NEW",
+"emph": false
+},
+{
+"start": 49.04,
+"end": 49.6,
+"text": "RIVERSIDE",
+"emph": false
+},
+{
+"start": 49.6,
+"end": 50.14,
+"text": "EMBANKMENTS",
+"emph": true
+},
+{
+"start": 50.14,
+"end": 50.66,
+"text": "MUCH",
+"emph": false
+},
+{
+"start": 50.66,
+"end": 50.82,
+"text": "OF",
+"emph": false
+},
+{
+"start": 50.82,
+"end": 50.94,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 50.94,
+"end": 51.26,
+"text": "SYSTEM",
+"emph": false
+},
+{
+"start": 51.26,
+"end": 51.58,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 51.58,
+"end": 51.88,
+"text": "WORKS",
+"emph": false
+},
+{
+"start": 51.88,
+"end": 52.14,
+"text": "UNDER",
+"emph": false
+},
+{
+"start": 52.14,
+"end": 52.42,
+"text": "LONDON",
+"emph": false
+},
+{
+"start": 52.42,
+"end": 52.8,
+"text": "TODAY",
+"emph": true
+},
+{
+"start": 53.64,
+"end": 53.72,
+"text": "FOLLOW",
+"emph": true
+},
+{
+"start": 53.76,
+"end": 53.94,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 53.94,
+"end": 54.1,
+"text": "MORE",
+"emph": false
+},
+{
+"start": 54.1,
+"end": 54.32,
+"text": "WEIRD",
+"emph": false
+},
+{
+"start": 54.32,
+"end": 54.74,
+"text": "HISTORY",
+"emph": false
+}
+]

@@ -1,0 +1,170 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   6.221
+  ],
+  "2": [
+   6.721,
+   14.481
+  ],
+  "3": [
+   14.981,
+   21.545
+  ],
+  "4": [
+   22.045,
+   31.725
+  ],
+  "5": [
+   32.225,
+   38.774
+  ],
+  "6": [
+   39.274,
+   53.001
+  ],
+  "7": [
+   53.501,
+   54.93
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 6.221
+  },
+  {
+   "scene": 2,
+   "start": 6.721,
+   "end": 10.689
+  },
+  {
+   "scene": 2,
+   "start": 10.939,
+   "end": 14.481
+  },
+  {
+   "scene": 3,
+   "start": 14.981,
+   "end": 17.413
+  },
+  {
+   "scene": 3,
+   "start": 17.663,
+   "end": 21.545
+  },
+  {
+   "scene": 4,
+   "start": 22.045,
+   "end": 25.736
+  },
+  {
+   "scene": 4,
+   "start": 25.986,
+   "end": 31.725
+  },
+  {
+   "scene": 5,
+   "start": 32.225,
+   "end": 38.774
+  },
+  {
+   "scene": 6,
+   "start": 39.274,
+   "end": 47.189
+  },
+  {
+   "scene": 6,
+   "start": 47.439,
+   "end": 50.297
+  },
+  {
+   "scene": 6,
+   "start": 50.547,
+   "end": 53.001
+  },
+  {
+   "scene": 7,
+   "start": 53.501,
+   "end": 54.93
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 6.221,
+   "text": "In the summer of 1858, London smelled so bad it got its own name: the Great Stink."
+  },
+  {
+   "scene": 2,
+   "start": 6.721,
+   "end": 10.689,
+   "text": "For years, the city's toilets and drains had emptied straight into the River Thames."
+  },
+  {
+   "scene": 2,
+   "start": 10.939,
+   "end": 14.481,
+   "text": "Then came a heatwave. The river baked, and the smell drifted everywhere."
+  },
+  {
+   "scene": 3,
+   "start": 14.981,
+   "end": 17.413,
+   "text": "The worst spot? Parliament, right on the riverbank."
+  },
+  {
+   "scene": 3,
+   "start": 17.663,
+   "end": 21.545,
+   "text": "Lawmakers soaked the curtains in chemicals to block the smell. It didn't work."
+  },
+  {
+   "scene": 4,
+   "start": 22.045,
+   "end": 25.736,
+   "text": "Back then, many people thought bad smells spread diseases like cholera."
+  },
+  {
+   "scene": 4,
+   "start": 25.986,
+   "end": 31.725,
+   "text": "A doctor named John Snow had shown that cholera actually spread through dirty water. But few listened."
+  },
+  {
+   "scene": 5,
+   "start": 32.225,
+   "end": 38.774,
+   "text": "Now, with their own noses suffering, Parliament moved fast. A big sewer plan became law in about eighteen days."
+  },
+  {
+   "scene": 6,
+   "start": 39.274,
+   "end": 47.189,
+   "text": "Engineer Joseph Bazalgette built giant tunnels to carry the waste away from the city, plus about eleven hundred miles of street sewers."
+  },
+  {
+   "scene": 6,
+   "start": 47.439,
+   "end": 50.297,
+   "text": "The pipes were hidden under brand new riverside embankments."
+  },
+  {
+   "scene": 6,
+   "start": 50.547,
+   "end": 53.001,
+   "text": "Much of his system still works under London today."
+  },
+  {
+   "scene": 7,
+   "start": 53.501,
+   "end": 54.93,
+   "text": "Follow for more weird history."
+  }
+ ]
+}
