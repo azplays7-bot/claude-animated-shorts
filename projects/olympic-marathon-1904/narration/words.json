@@ -1,0 +1,1040 @@
+[
+{
+"start": 0.0,
+"end": 0.22,
+"text": "THE",
+"emph": false
+},
+{
+"start": 0.22,
+"end": 1.06,
+"text": "1904",
+"emph": false
+},
+{
+"start": 1.06,
+"end": 1.7,
+"text": "OLYMPIC",
+"emph": false
+},
+{
+"start": 1.7,
+"end": 2.32,
+"text": "MARATHON",
+"emph": false
+},
+{
+"start": 2.32,
+"end": 2.62,
+"text": "MIGHT",
+"emph": false
+},
+{
+"start": 2.62,
+"end": 2.84,
+"text": "BE",
+"emph": false
+},
+{
+"start": 2.84,
+"end": 2.94,
+"text": "THE",
+"emph": false
+},
+{
+"start": 2.96,
+"end": 3.58,
+"text": "STRANGEST",
+"emph": true
+},
+{
+"start": 3.58,
+"end": 3.86,
+"text": "RACE",
+"emph": false
+},
+{
+"start": 3.86,
+"end": 4.18,
+"text": "EVER",
+"emph": false
+},
+{
+"start": 4.18,
+"end": 4.56,
+"text": "RUN",
+"emph": false
+},
+{
+"start": 5.22,
+"end": 5.3,
+"text": "ST",
+"emph": false
+},
+{
+"start": 5.52,
+"end": 5.64,
+"text": "LOUIS",
+"emph": false
+},
+{
+"start": 5.8,
+"end": 5.98,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 5.98,
+"end": 6.44,
+"text": "90\u00b0",
+"emph": true
+},
+{
+"start": 6.44,
+"end": 6.78,
+"text": "DEGREES",
+"emph": false
+},
+{
+"start": 7.32,
+"end": 7.54,
+"text": "DUSTY",
+"emph": false
+},
+{
+"start": 7.54,
+"end": 7.78,
+"text": "DIRT",
+"emph": false
+},
+{
+"start": 7.78,
+"end": 8.18,
+"text": "ROADS",
+"emph": false
+},
+{
+"start": 8.18,
+"end": 8.42,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 8.42,
+"end": 8.8,
+"text": "CARS",
+"emph": false
+},
+{
+"start": 8.8,
+"end": 9.14,
+"text": "KICKING",
+"emph": false
+},
+{
+"start": 9.14,
+"end": 9.38,
+"text": "UP",
+"emph": false
+},
+{
+"start": 9.38,
+"end": 9.66,
+"text": "DUST",
+"emph": true
+},
+{
+"start": 9.66,
+"end": 9.86,
+"text": "IN",
+"emph": false
+},
+{
+"start": 9.86,
+"end": 9.98,
+"text": "THE",
+"emph": false
+},
+{
+"start": 9.98,
+"end": 10.2,
+"text": "RUNNERS'",
+"emph": false
+},
+{
+"start": 10.34,
+"end": 10.6,
+"text": "FACES",
+"emph": false
+},
+{
+"start": 11.18,
+"end": 11.26,
+"text": "AND",
+"emph": false
+},
+{
+"start": 11.3,
+"end": 11.5,
+"text": "ONLY",
+"emph": false
+},
+{
+"start": 11.5,
+"end": 11.76,
+"text": "2",
+"emph": true
+},
+{
+"start": 11.76,
+"end": 12.12,
+"text": "PLACES",
+"emph": false
+},
+{
+"start": 12.12,
+"end": 12.38,
+"text": "TO",
+"emph": false
+},
+{
+"start": 12.38,
+"end": 12.52,
+"text": "GET",
+"emph": false
+},
+{
+"start": 12.52,
+"end": 12.8,
+"text": "WATER",
+"emph": true
+},
+{
+"start": 12.8,
+"end": 13.02,
+"text": "ON",
+"emph": false
+},
+{
+"start": 13.02,
+"end": 13.12,
+"text": "THE",
+"emph": false
+},
+{
+"start": 13.14,
+"end": 13.32,
+"text": "WHOLE",
+"emph": false
+},
+{
+"start": 13.32,
+"end": 13.66,
+"text": "COURSE",
+"emph": false
+},
+{
+"start": 14.36,
+"end": 14.5,
+"text": "32",
+"emph": true
+},
+{
+"start": 14.72,
+"end": 14.88,
+"text": "MEN",
+"emph": false
+},
+{
+"start": 14.88,
+"end": 15.28,
+"text": "STARTED",
+"emph": false
+},
+{
+"start": 15.56,
+"end": 15.78,
+"text": "ONLY",
+"emph": false
+},
+{
+"start": 15.78,
+"end": 16.2,
+"text": "14",
+"emph": true
+},
+{
+"start": 16.2,
+"end": 16.66,
+"text": "FINISHED",
+"emph": false
+},
+{
+"start": 17.38,
+"end": 17.62,
+"text": "FRED",
+"emph": false
+},
+{
+"start": 17.62,
+"end": 17.88,
+"text": "LORZ",
+"emph": false
+},
+{
+"start": 17.88,
+"end": 18.28,
+"text": "CROSSED",
+"emph": false
+},
+{
+"start": 18.28,
+"end": 18.48,
+"text": "THE",
+"emph": false
+},
+{
+"start": 18.48,
+"end": 18.7,
+"text": "LINE",
+"emph": false
+},
+{
+"start": 18.7,
+"end": 19.06,
+"text": "FIRST",
+"emph": true
+},
+{
+"start": 19.42,
+"end": 19.58,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 19.58,
+"end": 19.68,
+"text": "HE",
+"emph": false
+},
+{
+"start": 19.7,
+"end": 19.8,
+"text": "HAD",
+"emph": false
+},
+{
+"start": 19.82,
+"end": 19.96,
+"text": "QUIT",
+"emph": false
+},
+{
+"start": 19.96,
+"end": 20.36,
+"text": "AROUND",
+"emph": false
+},
+{
+"start": 20.36,
+"end": 20.64,
+"text": "MILE",
+"emph": false
+},
+{
+"start": 20.64,
+"end": 21.0,
+"text": "9",
+"emph": true
+},
+{
+"start": 21.0,
+"end": 21.32,
+"text": "AND",
+"emph": false
+},
+{
+"start": 21.32,
+"end": 21.54,
+"text": "RIDDEN",
+"emph": false
+},
+{
+"start": 21.54,
+"end": 21.76,
+"text": "IN",
+"emph": false
+},
+{
+"start": 21.76,
+"end": 21.88,
+"text": "A",
+"emph": false
+},
+{
+"start": 21.88,
+"end": 22.12,
+"text": "CAR",
+"emph": true
+},
+{
+"start": 22.12,
+"end": 22.34,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 22.34,
+"end": 22.58,
+"text": "MOST",
+"emph": false
+},
+{
+"start": 22.58,
+"end": 22.74,
+"text": "OF",
+"emph": false
+},
+{
+"start": 22.74,
+"end": 22.84,
+"text": "THE",
+"emph": false
+},
+{
+"start": 22.86,
+"end": 23.08,
+"text": "NEXT",
+"emph": false
+},
+{
+"start": 23.08,
+"end": 23.32,
+"text": "10",
+"emph": true
+},
+{
+"start": 23.32,
+"end": 23.72,
+"text": "MILES",
+"emph": false
+},
+{
+"start": 24.22,
+"end": 24.36,
+"text": "WHEN",
+"emph": false
+},
+{
+"start": 24.36,
+"end": 24.62,
+"text": "PEOPLE",
+"emph": false
+},
+{
+"start": 24.62,
+"end": 24.86,
+"text": "FOUND",
+"emph": false
+},
+{
+"start": 24.86,
+"end": 25.06,
+"text": "OUT",
+"emph": false
+},
+{
+"start": 25.06,
+"end": 25.2,
+"text": "HE",
+"emph": false
+},
+{
+"start": 25.2,
+"end": 25.34,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 25.34,
+"end": 25.64,
+"text": "BANNED",
+"emph": true
+},
+{
+"start": 26.02,
+"end": 26.16,
+"text": "HE",
+"emph": false
+},
+{
+"start": 26.16,
+"end": 26.26,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 26.28,
+"end": 26.5,
+"text": "LATER",
+"emph": false
+},
+{
+"start": 26.5,
+"end": 26.88,
+"text": "FORGIVEN",
+"emph": false
+},
+{
+"start": 26.88,
+"end": 27.2,
+"text": "AND",
+"emph": false
+},
+{
+"start": 27.2,
+"end": 27.48,
+"text": "WON",
+"emph": false
+},
+{
+"start": 27.48,
+"end": 27.6,
+"text": "THE",
+"emph": false
+},
+{
+"start": 27.6,
+"end": 27.94,
+"text": "BOSTON",
+"emph": true
+},
+{
+"start": 27.94,
+"end": 28.46,
+"text": "MARATHON",
+"emph": false
+},
+{
+"start": 28.46,
+"end": 28.7,
+"text": "THE",
+"emph": false
+},
+{
+"start": 28.7,
+"end": 28.96,
+"text": "NEXT",
+"emph": false
+},
+{
+"start": 28.96,
+"end": 29.22,
+"text": "YEAR",
+"emph": false
+},
+{
+"start": 29.82,
+"end": 29.98,
+"text": "THE",
+"emph": false
+},
+{
+"start": 29.98,
+"end": 30.22,
+"text": "REAL",
+"emph": false
+},
+{
+"start": 30.22,
+"end": 30.54,
+"text": "WINNER",
+"emph": false
+},
+{
+"start": 30.72,
+"end": 30.98,
+"text": "THOMAS",
+"emph": false
+},
+{
+"start": 30.98,
+"end": 31.2,
+"text": "HICKS",
+"emph": false
+},
+{
+"start": 31.36,
+"end": 31.58,
+"text": "GOT",
+"emph": false
+},
+{
+"start": 31.58,
+"end": 32.18,
+"text": "STRYCHNINE",
+"emph": true
+},
+{
+"start": 32.4,
+"end": 32.52,
+"text": "A",
+"emph": false
+},
+{
+"start": 32.52,
+"end": 32.74,
+"text": "RAT",
+"emph": false
+},
+{
+"start": 32.74,
+"end": 33.2,
+"text": "POISON",
+"emph": true
+},
+{
+"start": 33.2,
+"end": 33.64,
+"text": "MIXED",
+"emph": false
+},
+{
+"start": 33.64,
+"end": 33.92,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 33.92,
+"end": 34.34,
+"text": "BRANDY",
+"emph": true
+},
+{
+"start": 34.34,
+"end": 34.5,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 34.5,
+"end": 34.64,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 34.64,
+"end": 35.0,
+"text": "TRAINERS",
+"emph": false
+},
+{
+"start": 35.0,
+"end": 35.26,
+"text": "TO",
+"emph": false
+},
+{
+"start": 35.26,
+"end": 35.42,
+"text": "KEEP",
+"emph": false
+},
+{
+"start": 35.42,
+"end": 35.6,
+"text": "HIM",
+"emph": false
+},
+{
+"start": 35.6,
+"end": 35.92,
+"text": "GOING",
+"emph": false
+},
+{
+"start": 36.32,
+"end": 36.42,
+"text": "HE",
+"emph": false
+},
+{
+"start": 36.44,
+"end": 36.7,
+"text": "FINISHED",
+"emph": false
+},
+{
+"start": 36.7,
+"end": 37.26,
+"text": "HALLUCINATING",
+"emph": true
+},
+{
+"start": 37.26,
+"end": 37.6,
+"text": "AND",
+"emph": false
+},
+{
+"start": 37.6,
+"end": 37.86,
+"text": "BARELY",
+"emph": false
+},
+{
+"start": 37.86,
+"end": 38.32,
+"text": "STANDING",
+"emph": false
+},
+{
+"start": 38.76,
+"end": 38.9,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 38.9,
+"end": 39.22,
+"text": "TIME",
+"emph": false
+},
+{
+"start": 39.32,
+"end": 39.54,
+"text": "ABOUT",
+"emph": false
+},
+{
+"start": 39.54,
+"end": 39.84,
+"text": "THREE",
+"emph": false
+},
+{
+"start": 39.84,
+"end": 40.0,
+"text": "AND",
+"emph": false
+},
+{
+"start": 40.0,
+"end": 40.06,
+"text": "A",
+"emph": false
+},
+{
+"start": 40.12,
+"end": 40.24,
+"text": "HALF",
+"emph": false
+},
+{
+"start": 40.24,
+"end": 40.56,
+"text": "HOURS",
+"emph": false
+},
+{
+"start": 40.66,
+"end": 40.88,
+"text": "IS",
+"emph": false
+},
+{
+"start": 40.88,
+"end": 41.12,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 41.12,
+"end": 41.32,
+"text": "THE",
+"emph": false
+},
+{
+"start": 41.32,
+"end": 41.8,
+"text": "SLOWEST",
+"emph": true
+},
+{
+"start": 41.8,
+"end": 42.0,
+"text": "WINNING",
+"emph": false
+},
+{
+"start": 42.0,
+"end": 42.38,
+"text": "TIME",
+"emph": false
+},
+{
+"start": 42.38,
+"end": 42.6,
+"text": "IN",
+"emph": false
+},
+{
+"start": 42.6,
+"end": 42.94,
+"text": "OLYMPIC",
+"emph": false
+},
+{
+"start": 42.94,
+"end": 43.44,
+"text": "MARATHON",
+"emph": false
+},
+{
+"start": 43.44,
+"end": 43.96,
+"text": "HISTORY",
+"emph": false
+},
+{
+"start": 44.56,
+"end": 44.8,
+"text": "A",
+"emph": false
+},
+{
+"start": 44.8,
+"end": 45.0,
+"text": "CUBAN",
+"emph": false
+},
+{
+"start": 45.0,
+"end": 45.52,
+"text": "MAILMAN",
+"emph": false
+},
+{
+"start": 45.52,
+"end": 45.74,
+"text": "RAN",
+"emph": false
+},
+{
+"start": 45.74,
+"end": 45.96,
+"text": "IN",
+"emph": false
+},
+{
+"start": 45.96,
+"end": 46.22,
+"text": "STREET",
+"emph": false
+},
+{
+"start": 46.22,
+"end": 46.74,
+"text": "CLOTHES",
+"emph": false
+},
+{
+"start": 47.0,
+"end": 47.16,
+"text": "ATE",
+"emph": false
+},
+{
+"start": 47.16,
+"end": 47.5,
+"text": "ROTTEN",
+"emph": false
+},
+{
+"start": 47.5,
+"end": 47.88,
+"text": "APPLES",
+"emph": true
+},
+{
+"start": 48.04,
+"end": 48.14,
+"text": "TOOK",
+"emph": false
+},
+{
+"start": 48.16,
+"end": 48.3,
+"text": "A",
+"emph": false
+},
+{
+"start": 48.3,
+"end": 48.48,
+"text": "NAP",
+"emph": true
+},
+{
+"start": 48.48,
+"end": 48.72,
+"text": "AND",
+"emph": false
+},
+{
+"start": 48.72,
+"end": 48.96,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 48.96,
+"end": 49.3,
+"text": "FINISHED",
+"emph": false
+},
+{
+"start": 49.3,
+"end": 49.6,
+"text": "FOURTH",
+"emph": true
+},
+{
+"start": 50.1,
+"end": 50.28,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 50.28,
+"end": 50.52,
+"text": "RUNNER",
+"emph": false
+},
+{
+"start": 50.52,
+"end": 50.72,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 50.72,
+"end": 50.96,
+"text": "CHASED",
+"emph": false
+},
+{
+"start": 50.96,
+"end": 51.18,
+"text": "A",
+"emph": false
+},
+{
+"start": 51.18,
+"end": 51.36,
+"text": "MILE",
+"emph": false
+},
+{
+"start": 51.36,
+"end": 51.56,
+"text": "OFF",
+"emph": false
+},
+{
+"start": 51.56,
+"end": 51.82,
+"text": "COURSE",
+"emph": false
+},
+{
+"start": 51.82,
+"end": 52.06,
+"text": "BY",
+"emph": false
+},
+{
+"start": 52.06,
+"end": 52.4,
+"text": "WILD",
+"emph": false
+},
+{
+"start": 52.4,
+"end": 52.82,
+"text": "DOGS",
+"emph": true
+},
+{
+"start": 52.82,
+"end": 53.42,
+"text": "ANOTHER",
+"emph": false
+},
+{
+"start": 53.42,
+"end": 53.76,
+"text": "NEARLY",
+"emph": false
+},
+{
+"start": 53.76,
+"end": 54.04,
+"text": "DIED",
+"emph": false
+},
+{
+"start": 54.04,
+"end": 54.26,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 54.26,
+"end": 54.4,
+"text": "ALL",
+"emph": false
+},
+{
+"start": 54.4,
+"end": 54.56,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 54.56,
+"end": 54.86,
+"text": "DUST",
+"emph": true
+},
+{
+"start": 55.72,
+"end": 55.74,
+"text": "FOLLOW",
+"emph": true
+},
+{
+"start": 55.84,
+"end": 55.96,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 55.96,
+"end": 56.12,
+"text": "MORE",
+"emph": false
+},
+{
+"start": 56.12,
+"end": 56.34,
+"text": "WEIRD",
+"emph": false
+},
+{
+"start": 56.34,
+"end": 56.74,
+"text": "HISTORY",
+"emph": false
+}
+]

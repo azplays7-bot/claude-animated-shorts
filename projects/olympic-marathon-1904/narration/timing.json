@@ -1,0 +1,192 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   4.621
+  ],
+  "2": [
+   5.121,
+   13.841
+  ],
+  "3": [
+   14.341,
+   16.858
+  ],
+  "4": [
+   17.358,
+   29.335
+  ],
+  "5": [
+   29.835,
+   44.138
+  ],
+  "6": [
+   44.638,
+   55.015
+  ],
+  "7": [
+   55.515,
+   56.945
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.621
+  },
+  {
+   "scene": 2,
+   "start": 5.121,
+   "end": 10.924
+  },
+  {
+   "scene": 2,
+   "start": 11.174,
+   "end": 13.841
+  },
+  {
+   "scene": 3,
+   "start": 14.341,
+   "end": 16.858
+  },
+  {
+   "scene": 4,
+   "start": 17.358,
+   "end": 23.993
+  },
+  {
+   "scene": 4,
+   "start": 24.243,
+   "end": 25.821
+  },
+  {
+   "scene": 4,
+   "start": 26.071,
+   "end": 29.335
+  },
+  {
+   "scene": 5,
+   "start": 29.835,
+   "end": 36.086
+  },
+  {
+   "scene": 5,
+   "start": 36.336,
+   "end": 38.512
+  },
+  {
+   "scene": 5,
+   "start": 38.762,
+   "end": 44.138
+  },
+  {
+   "scene": 6,
+   "start": 44.638,
+   "end": 49.822
+  },
+  {
+   "scene": 6,
+   "start": 50.072,
+   "end": 52.973
+  },
+  {
+   "scene": 6,
+   "start": 53.223,
+   "end": 55.015
+  },
+  {
+   "scene": 7,
+   "start": 55.515,
+   "end": 56.945
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.621,
+   "text": "The 1904 Olympic marathon might be the strangest race ever run."
+  },
+  {
+   "scene": 2,
+   "start": 5.121,
+   "end": 10.924,
+   "text": "St. Louis. About ninety degrees. Dusty dirt roads, with cars kicking up dust in the runners' faces."
+  },
+  {
+   "scene": 2,
+   "start": 11.174,
+   "end": 13.841,
+   "text": "And only two places to get water on the whole course."
+  },
+  {
+   "scene": 3,
+   "start": 14.341,
+   "end": 16.858,
+   "text": "Thirty-two men started. Only fourteen finished."
+  },
+  {
+   "scene": 4,
+   "start": 17.358,
+   "end": 23.993,
+   "text": "Fred Lorz crossed the line first. But he had quit around mile nine, and ridden in a car for most of the next ten miles."
+  },
+  {
+   "scene": 4,
+   "start": 24.243,
+   "end": 25.821,
+   "text": "When people found out, he was banned."
+  },
+  {
+   "scene": 4,
+   "start": 26.071,
+   "end": 29.335,
+   "text": "He was later forgiven, and won the Boston Marathon the next year."
+  },
+  {
+   "scene": 5,
+   "start": 29.835,
+   "end": 36.086,
+   "text": "The real winner, Thomas Hicks, got strychnine, a rat poison, mixed with brandy from his trainers to keep him going."
+  },
+  {
+   "scene": 5,
+   "start": 36.336,
+   "end": 38.512,
+   "text": "He finished hallucinating and barely standing."
+  },
+  {
+   "scene": 5,
+   "start": 38.762,
+   "end": 44.138,
+   "text": "His time, about three and a half hours, is still the slowest winning time in Olympic marathon history."
+  },
+  {
+   "scene": 6,
+   "start": 44.638,
+   "end": 49.822,
+   "text": "A Cuban mailman ran in street clothes, ate rotten apples, took a nap, and still finished fourth."
+  },
+  {
+   "scene": 6,
+   "start": 50.072,
+   "end": 52.973,
+   "text": "One runner was chased a mile off course by wild dogs."
+  },
+  {
+   "scene": 6,
+   "start": 53.223,
+   "end": 55.015,
+   "text": "Another nearly died from all that dust."
+  },
+  {
+   "scene": 7,
+   "start": 55.515,
+   "end": 56.945,
+   "text": "Follow for more weird history."
+  }
+ ]
+}
