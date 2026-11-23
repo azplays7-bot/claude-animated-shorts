@@ -1,0 +1,170 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   7.288
+  ],
+  "2": [
+   7.788,
+   14.417
+  ],
+  "3": [
+   14.917,
+   26.687
+  ],
+  "4": [
+   27.187,
+   35.138
+  ],
+  "5": [
+   35.638,
+   45.759
+  ],
+  "6": [
+   46.259,
+   51.955
+  ],
+  "7": [
+   52.455,
+   53.885
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 7.288
+  },
+  {
+   "scene": 2,
+   "start": 7.788,
+   "end": 10.753
+  },
+  {
+   "scene": 2,
+   "start": 11.003,
+   "end": 14.417
+  },
+  {
+   "scene": 3,
+   "start": 14.917,
+   "end": 21.082
+  },
+  {
+   "scene": 3,
+   "start": 21.332,
+   "end": 26.687
+  },
+  {
+   "scene": 4,
+   "start": 27.187,
+   "end": 30.451
+  },
+  {
+   "scene": 4,
+   "start": 30.701,
+   "end": 35.138
+  },
+  {
+   "scene": 5,
+   "start": 35.638,
+   "end": 40.267
+  },
+  {
+   "scene": 5,
+   "start": 40.517,
+   "end": 42.8
+  },
+  {
+   "scene": 5,
+   "start": 43.05,
+   "end": 45.759
+  },
+  {
+   "scene": 6,
+   "start": 46.259,
+   "end": 51.955
+  },
+  {
+   "scene": 7,
+   "start": 52.455,
+   "end": 53.885
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 7.288,
+   "text": "In 1726, an English woman convinced some of the top doctors in the country that she was giving birth to rabbits."
+  },
+  {
+   "scene": 2,
+   "start": 7.788,
+   "end": 10.753,
+   "text": "Her name was Mary Toft, from a small town called Godalming."
+  },
+  {
+   "scene": 2,
+   "start": 11.003,
+   "end": 14.417,
+   "text": "A local surgeon, John Howard, believed her, and spread the news."
+  },
+  {
+   "scene": 3,
+   "start": 14.917,
+   "end": 21.082,
+   "text": "The story reached King George the First himself. So he sent his own surgeon, Nathaniel St. Andr\u00e9, to check."
+  },
+  {
+   "scene": 3,
+   "start": 21.332,
+   "end": 26.687,
+   "text": "St. Andr\u00e9 arrived just as she was said to be on rabbit number fifteen. And he believed it too."
+  },
+  {
+   "scene": 4,
+   "start": 27.187,
+   "end": 30.451,
+   "text": "Mary was brought to London, and curious crowds gathered outside."
+  },
+  {
+   "scene": 4,
+   "start": 30.701,
+   "end": 35.138,
+   "text": "Then a porter told the truth: she had tried to bribe him to sneak rabbits into her room."
+  },
+  {
+   "scene": 5,
+   "start": 35.638,
+   "end": 40.267,
+   "text": "A doctor threatened her with a painful operation, and she confessed. It was all a hoax."
+  },
+  {
+   "scene": 5,
+   "start": 40.517,
+   "end": 42.8,
+   "text": "She was jailed as a notorious and vile cheat."
+  },
+  {
+   "scene": 5,
+   "start": 43.05,
+   "end": 45.759,
+   "text": "Months later, she was released and went home to Godalming."
+  },
+  {
+   "scene": 6,
+   "start": 46.259,
+   "end": 51.955,
+   "text": "And the doctors who fell for it were mocked all over London, even by the famous artist William Hogarth."
+  },
+  {
+   "scene": 7,
+   "start": 52.455,
+   "end": 53.885,
+   "text": "Follow for more weird history."
+  }
+ ]
+}
