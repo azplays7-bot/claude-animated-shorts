@@ -34,7 +34,7 @@ const chainTex = () => {
   t.wrapS = t.wrapT = THREE.RepeatWrapping; return t;
 };
 const matTex = () => canvas(1024, 1024, (g) => {
-  g.fillStyle = "#d6d9de"; g.fillRect(0, 0, 1024, 1024);
+  g.fillStyle = "#b4b8c0"; g.fillRect(0, 0, 1024, 1024);
   const r = rng(5); for (let k = 0; k < 3000; k++) { g.fillStyle = `rgba(0,0,0,${r() * 0.05})`; g.fillRect(r() * 1024, r() * 1024, 3, 3); }
   g.strokeStyle = "rgba(20,30,60,0.6)"; g.lineWidth = 10; g.beginPath(); g.arc(512, 512, 170, 0, 7); g.stroke();
   text(g, "WORLD", 512, 470, 110, "rgba(20,30,60,0.75)"); text(g, "TITLE", 512, 575, 110, "rgba(170,20,30,0.8)");
@@ -151,7 +151,7 @@ export class World {
     this.scale = grp(R, 0, 1.0, -1.6); put(this.scale, rbox(0.8, 0.12, 0.8, 0.03), MP("#c8ccd4", 0.3, { metalness: 0.6 }), 0, 0.06, 0); put(this.scale, cyl(0.05, 0.05, 1.1, 12), MP("#c8ccd4", 0.3, { metalness: 0.6 }), 0, 0.6, -0.35);
     put(this.scale, rbox(0.4, 0.25, 0.08, 0.02), glow(screenTex([["155.0", 260, "#7dff9a"]], 512, 256, ["#000", "#000"], "#000"), 1.4), 0, 1.2, -0.35, { cast: false });
     this.pressTable = grp(R, 0, 1.0, -1.4);
-    put(this.pressTable, rbox(6.4, 0.08, 1.0, 0.02), M("#101014", 0.4), 0, 0.78, 0); put(this.pressTable, rbox(6.4, 0.74, 0.05, 0.01), MP("#ffffff", 0.4, { map: screenTex([["PRESS CONFERENCE", 120, "#ffffff"]], 2048, 256, ["#101018", "#2a0a12"]) }), 0, 0.4, 0.48);
+    put(this.pressTable, rbox(6.4, 0.08, 1.0, 0.02), M("#101014", 0.4), 0, 0.78, 0); put(this.pressTable, rbox(6.4, 0.74, 0.05, 0.01), MP("#ffffff", 0.4, { map: screenTex([["FIGHT NIGHT · PRESS CONFERENCE", 60, "#ffffff"]], 2048, 256, ["#101018", "#2a0a12"]) }), 0, 0.4, 0.48);
     for (const x of [-2.2, 2.2]) { put(this.pressTable, cyl(0.012, 0.012, 0.3, 8), M("#111", 0.4), x, 0.95, 0.15, { rx: -0.3 }); put(this.pressTable, new THREE.SphereGeometry(0.035, 12, 10), M("#222", 0.4), x, 1.1, 0.2); }
     this.pressTable.visible = false;
     // crowd in front of the stage
@@ -263,8 +263,8 @@ export class World {
     put(this.interview, cyl(0.4, 0.4, 0.05, 24), MP("#0e0e12", 0.2), 0, 0.45, 0.3); put(this.interview, cyl(0.03, 0.03, 0.42, 8), M("#888", 0.3, 0.9), 0, 0.22, 0.3);
     // news desk
     this.newsDesk = grp(R, 0, 0, -2.6);
-    put(this.newsDesk, rbox(3.2, 1.0, 0.9, 0.08), MP("#0e1426", 0.25, { clearcoat: 1 }), 0, 0.5, 0); put(this.newsDesk, rbox(3.3, 0.06, 1.0, 0.02), MP("#c8ccd4", 0.3, { metalness: 0.7 }), 0, 1.02, 0);
-    put(this.newsDesk, rbox(3.0, 0.12, 0.02, 0.01), glow(strip, 2.5), 0, 0.7, 0.46, { cast: false }); this.newsDesk.visible = false;
+    put(this.newsDesk, rbox(3.2, 0.76, 0.9, 0.08), MP("#0e1426", 0.25, { clearcoat: 1 }), 0, 0.38, 0); put(this.newsDesk, rbox(3.3, 0.06, 1.0, 0.02), MP("#c8ccd4", 0.3, { metalness: 0.7 }), 0, 0.78, 0);
+    put(this.newsDesk, rbox(3.0, 0.12, 0.02, 0.01), glow(strip, 2.5), 0, 0.55, 0.46, { cast: false }); this.newsDesk.visible = false;
     // studio camera on a tripod
     const cam = grp(R, 3.6, 0, 1.6, -0.9); put(cam, rbox(0.4, 0.35, 0.7, 0.04), M("#1a1a1e", 0.4), 0, 1.5, 0); put(cam, cyl(0.1, 0.12, 0.3, 16), M("#111", 0.3), 0, 1.5, 0.45, { rx: Math.PI / 2 }); for (let k = 0; k < 3; k++) put(cam, cyl(0.02, 0.02, 1.5, 6), M("#333", 0.4), Math.sin(k * 2.1) * 0.3, 0.7, Math.cos(k * 2.1) * 0.3, { rz: Math.sin(k * 2.1) * 0.2, rx: -Math.cos(k * 2.1) * 0.2 });
     put(cam, rbox(0.14, 0.08, 0.02, 0.01), glow(canvas(8, 8, (g) => { g.fillStyle = "#ff2a2a"; g.fillRect(0, 0, 8, 8); }), 5), 0, 1.72, 0.36, { cast: false });
@@ -294,7 +294,7 @@ export class World {
     this.cardBoard = new THREE.MeshStandardMaterial({ color: "#000", emissive: "#ffffff", emissiveIntensity: 1.2, emissiveMap: screenTex([["", 10]]) });
     put(R, rbox(3.2, 4.4, 0.2, 0.05), M("#111", 0.5), 8.5, 2.6, -4.0); put(R, new THREE.PlaneGeometry(3.0, 4.2), this.cardBoard, 8.5, 2.6, -3.88, { cast: false });
     // a small jet that crosses the sky
-    this.plane = grp(R, -40, 22, -30);
+    this.plane = grp(R, -40, 19, -7.5); this.plane.scale.setScalar(0.6);
     put(this.plane, cyl(0.5, 0.4, 7, 14), MP("#e8ecf2", 0.3), 0, 0, 0, { rz: Math.PI / 2 }); put(this.plane, rbox(1.4, 0.12, 8, 0.05), MP("#e8ecf2", 0.3), 0.2, 0, 0); put(this.plane, rbox(1.0, 1.6, 0.12, 0.04), MP("#e8ecf2", 0.3), -3.2, 0.9, 0);
     for (const [z, c] of [[-4, "#ff2a2a"], [4, "#2aff6a"]] as const) put(this.plane, new THREE.SphereGeometry(0.15, 8, 6), new THREE.MeshStandardMaterial({ color: "#000", emissive: c, emissiveIntensity: 6 }), 0.2, 0, z, { cast: false });
     const sky = new THREE.Mesh(new THREE.SphereGeometry(70, 32, 16), new THREE.ShaderMaterial({ side: THREE.BackSide, depthWrite: false, vertexShader: "varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }", fragmentShader: "varying vec3 vP; void main(){ float h = clamp(vP.y, 0.0, 1.0); vec3 c = mix(vec3(0.32, 0.12, 0.30), vec3(0.03, 0.03, 0.10), smoothstep(0.0, 0.5, h)); gl_FragColor = vec4(c, 1.0); }" }));

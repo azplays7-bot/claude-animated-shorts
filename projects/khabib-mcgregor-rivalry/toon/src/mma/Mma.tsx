@@ -44,7 +44,7 @@ const CAST: Record<string, CharSpec> = {
   borg: P({ skin: "#e8b58f", hair: "#2a1a12", shirt: "#6a3a3a" }),
   cop1: P({ skin: "#a8714f", shirt: "#1d2a4a", hat: "officer", hatColor: "#1d2a4a" }),
   cop2: P({ skin: "#f1c7a2", shirt: "#1d2a4a", hat: "officer", hatColor: "#1d2a4a" }),
-  anchor: P({ skin: "#e8b58f", hair: "#3a2416", hairStyle: "long", shortHair: false, shirt: "#b8232c", bodyR: 0.19 }),
+  anchor: P({ skin: "#e8b58f", hair: "#3a2416", hairStyle: "bun", shortHair: false, shirt: "#b8232c", bodyR: 0.19 }),
   host: P({ skin: "#f1c7a2", hair: "#5a5a60", shirt: "#3a3a4a", glasses: "#1a1a1a" }),
   iaq: P({ skin: "#f1c7a2", hair: "#2a1a12", bare: true, shorts: "#b8232c", gloves: "#141416" }),
 };
@@ -175,11 +175,12 @@ const PART1: Shot[] = [
 // ---- PART 2: the bus
 const S2 = SCN(T2), w2 = wt(W2);
 const PART2: Shot[] = [
-  { a: 0, b: S2(2), set: "street", keys: [[0, V(-3.4, 1.5, -1.5), V(-6, 1.4, -5.2), 44], [0.6, V(0.4, 1.5, -1.7), V(-1.6, 1.4, -5.2), 44], [1, V(5.3, 1.8, -0.4), V(8.5, 2.5, -3.9), 44]],
-    act: ({ t, place, W }) => {
+  { a: 0, b: S2(2), set: "street", keys: [[0, V(-2.6, 1.1, -0.6), V(-4.5, 2.6, -8), 50], [0.55, V(0.2, 1.2, -0.8), V(-1.5, 2.2, -7), 48], [1, V(5.6, 1.9, 0.6), V(8.5, 2.6, -3.9), 46]],
+    act: ({ t, place, W, cam }) => {
       W.billboard.emissiveMap = screenTex([["FIGHT WEEK", 150, "#ffffff"], ["BROOKLYN · APRIL 2018", 80, "#ffd23a"]]);
       W.cardBoard.emissiveMap = screenTex([["FIGHT CARD", 90, "#ffd23a"], ["LIGHTWEIGHT", 70, "#ffffff"], ["TITLE FIGHT", 70, "#ffffff"], ["NURMAGOMEDOV", 74, "#7dff9a"]], 576, 800);
-      const x = -6 + t * 1.0;
+      const x = -6 + t * 1.0, u = ss(5.0, 6.3, t), O = SETS.street;
+      cam.pos.copy(V(x + 1.9, 1.3, -2.0).lerp(V(5.9, 1.8, 0.4), u)).add(O); cam.look.copy(V(x - 0.2, 1.9, -6.8).lerp(V(8.5, 2.6, -3.9), u)).add(O); cam.fov = 48;
       track(place("khabib", x, -5.2, Math.PI / 2, 0.12), t, [{ t: 0, L: "rest", R: "rest", mouth: "flat", yaw: 0.5 }], { walk: t * 6.5 });
       track(place("tm1", x - 0.9, -5.9, Math.PI / 2, 0.12), t, [{ t: 0, L: "rest", R: "rest", mouth: "talk", yaw: 0.3 }], { walk: t * 6.5 + 1 });
       track(place("tm2", x - 1.1, -4.6, Math.PI / 2, 0.12), t, [{ t: 0, L: "rest", R: "rest", mouth: "flat" }], { walk: t * 6.5 + 2 });
@@ -195,10 +196,10 @@ const PART2: Shot[] = [
       track(place("tm1", 0.55, -7.4, -Math.PI / 2 - 0.4), t, [{ t: 0, L: "hip", R: "rest", mouth: "flat", brow: 1 }, { t: slapT, L: "hip", R: "point", mouth: "o" }]);
       track(place("tm2", 0.5, -8.85, -Math.PI / 2 + 0.4), t, [{ t: 0, L: "rest", R: "rest", mouth: "flat", brow: 1 }]);
     } },
-  { a: S2(3), b: S2(4), set: "street", keys: [[0, V(-6.7, 1.55, -3.7), V(-8.0, 1.5, -5.0), 40], [0.24, V(-6.4, 1.4, -3.0), V(-3, 8, -24), 50], [0.5, V(-5.4, 1.5, -2.4), V(-6.5, 1.5, -5.2), 46], [1, V(0.6, 1.55, -1.6), V(-1.8, 1.4, -5.2), 44]],
+  { a: S2(3), b: S2(4), set: "street", keys: [[0, V(-6.7, 1.55, -3.7), V(-8.0, 1.5, -5.0), 40], [0.24, V(-6.6, 1.4, -2.6), V(-2, 12, -6.5), 54], [0.5, V(-5.4, 1.5, -2.4), V(-6.5, 1.5, -5.2), 46], [1, V(0.6, 1.55, -1.6), V(-1.8, 1.4, -5.2), 44]],
     act: ({ t, place, W, hold }) => {
       W.billboard.emissiveMap = screenTex([["MEDIA DAY", 150, "#ffffff"], ["BROOKLYN ARENA", 80, "#ffd23a"]]);
-      W.plane.visible = true; W.plane.position.x = -32 + (t - 14.9) * 20;
+      W.plane.visible = true; W.plane.position.x = -28 + (t - 14.9) * 18;
       const t0 = w2("HE", 2) - 0.1, x = -8 + Math.max(0, t - t0) * 1.3, walking = t > t0;
       const c = place("conor", x, -5.2, walking ? Math.PI / 2 : 0.7, 0.12);
       track(c, t, [{ t: 0, L: "rest", R: "ear", mouth: "o", brow: 1 }, { t: w2("FLEW") - 0.2, L: "rest", R: "ear", mouth: "talk", brow: 1 }, { t: t0, L: "rest", R: "point", mouth: "talk", brow: 1 }], walking ? { walk: t * 7.5 } : {});
@@ -206,14 +207,14 @@ const PART2: Shot[] = [
       track(place("crew1", x - 1.0, -5.9, Math.PI / 2, 0.12), t, [{ t: 0, L: "rest", R: "rest", mouth: "flat" }], walking ? { walk: t * 7.5 + 1 } : {});
       track(place("crew2", x - 1.2, -4.5, Math.PI / 2, 0.12), t, [{ t: 0, L: "rest", R: "rest", mouth: "talk" }], walking ? { walk: t * 7.5 + 2 } : {});
     } },
-  { a: S2(4), b: S2(5), set: "dock", keys: [[0, V(1.9, 2.4, 0.3), V(1.2, 2.3, -2.3), 44], [0.42, V(3.2, 1.9, 3.6), V(6.8, 1.3, 0.8), 46], [0.68, V(3.6, 1.7, 3.7), V(5.4, 1.45, 1.3), 44], [0.86, V(2.6, 2.2, 3.4), V(2.2, 2.3, -1.0), 46], [1, V(2.1, 2.45, 1.5), V(1.2, 2.35, -2.25), 44]],
+  { a: S2(4), b: S2(5), set: "dock", keys: [[0, V(2.2, 2.3, 0.9), V(1.2, 2.3, -2.3), 46], [0.42, V(3.6, 2.0, 5.0), V(8.4, 1.4, 1.4), 48], [0.68, V(3.0, 1.9, 4.8), V(5.4, 1.4, 1.4), 48], [0.86, V(2.8, 2.3, 4.2), V(2.6, 2.1, -1.0), 48], [1, V(2.3, 2.5, 2.1), V(1.2, 2.35, -2.25), 46]],
     act: ({ t, place, W, seat, hold }) => busScene(t, place, W, seat, hold, w2) },
-  { a: S2(5), b: S2(6), set: "dock", keys: [[0, V(1.6, 2.4, 0.9), V(0.8, 2.25, -2.5), 44], [0.3, V(-0.4, 2.55, 1.5), V(-1.0, 2.25, -2.6), 42], [1, V(-6.6, 3.8, -1.5), V(-9, 4.45, -7.8), 44]],
+  { a: S2(5), b: S2(6), set: "dock", keys: [[0, V(1.8, 2.4, 1.2), V(0.8, 2.25, -2.5), 46], [0.3, V(-0.2, 2.55, 1.6), V(-0.6, 2.25, -2.6), 46], [0.6, V(-4.0, 3.4, 1.4), V(-7, 4.2, -6), 46], [1, V(-6.4, 3.9, -1.2), V(-9, 4.45, -7.8), 46]],
     act: ({ t, place, W, seat, hold }) => {
       busScene(t, place, W, seat, hold, w2);
       W.board.emissiveMap = screenTex(pick(t, [[0, [["FIGHT CARD", 110, "#ffd23a"]]], [w2("FIGHTS", 0) - 0.3, [["CHIESA · CANCELLED", 80, "#ff5a5a"], ["BORG · CANCELLED", 80, "#ff5a5a"]]], [w2("LOBOV", 1) - 0.1, [["CHIESA · CANCELLED", 80, "#ff5a5a"], ["BORG · CANCELLED", 80, "#ff5a5a"], ["LOBOV · PULLED", 80, "#ffd23a"]]]]) as Line[]);
     } },
-  { a: S2(6), b: w2("HE", 3) - 0.3, set: "dock", keys: [[0, V(-6.0, 1.6, 6.3), V(-8.4, 1.3, 3.2), 44], [1, V(-6.6, 1.5, 5.6), V(-8.6, 1.3, 3.0), 42]],
+  { a: S2(6), b: w2("HE", 3) - 0.3, set: "dock", keys: [[0, V(-5.6, 1.6, 1.6), V(-7.4, 1.35, 4.8), 46], [1, V(-5.9, 1.6, 1.3), V(-7.6, 1.35, 4.2), 46]],
     act: ({ t, place, W }) => {
       W.police.visible = true; W.glassOk.visible = false; W.glassBroken.visible = true;
       const fl = Math.floor(t * 6) % 2; W.policeLights[0].emissiveIntensity = fl ? 6 : 0.5; W.policeLights[1].emissiveIntensity = fl ? 0.5 : 6;
@@ -222,13 +223,13 @@ const PART2: Shot[] = [
       track(place("cop1", -7.95, z + 0.2, Math.PI + 0.3), t, [{ t: 0, L: "rest", R: "hold", mouth: "flat" }], { walk: t * 6 + 1 });
       track(place("cop2", -6.65, z + 0.25, Math.PI + 0.3), t, [{ t: 0, L: "hold", R: "rest", mouth: "flat" }], { walk: t * 6 + 2 });
     } },
-  { a: w2("HE", 3) - 0.3, b: S2(7), set: "studio", keys: [[0, V(0.95, 1.6, 1.7), V(0, 1.55, -3.4), 44], [1, V(0.25, 1.85, 0.7), V(0, 2.5, -5.9), 46]],
+  { a: w2("HE", 3) - 0.3, b: S2(7), set: "studio", keys: [[0, V(1.0, 1.5, 1.2), V(0, 1.7, -3.6), 50], [1, V(0.35, 1.6, 0.6), V(0, 2.2, -5.0), 50]],
     act: ({ t, place, W }) => {
       W.interview.visible = false; W.newsDesk.visible = true;
       W.tv.emissiveMap = screenTex(pick(t, [[0, [["CONOR McGREGOR", 100, "#ffffff"], ["GUILTY PLEA", 100, "#ffd23a"], ["DISORDERLY CONDUCT", 70, "#ffffff"]]], [w2("COMMUNITY") - 0.2, [["GUILTY PLEA", 90, "#ffd23a"], ["COMMUNITY SERVICE", 72, "#ffffff"], ["+ ANGER MANAGEMENT", 72, "#ffffff"]]]]) as Line[]);
       track(place("anchor", 0, -3.25, 0), t, [{ t: 0, L: "rest", R: "point", mouth: "talk", yaw: 0.3 }, { t: 42.0, L: "shrug", R: "rest", mouth: "talk", yaw: -0.3 }]);
     } },
-  { a: S2(7), b: 60, set: "arena", keys: [[0, V(1.8, 1.35, 2.1), V(0, 1.5, 0), 44], [0.35, V(-1.6, 1.45, 1.8), V(0, 1.55, 0), 42], [0.62, V(0.4, 3.2, 4.8), V(0, 3.5, 0), 48], [1, V(0, 5.6, 9.6), V(0, 9.4, 0), 50]],
+  { a: S2(7), b: 60, set: "arena", keys: [[0, V(2.4, 1.5, 2.9), V(0, 1.45, 0), 46], [0.35, V(-2.2, 1.5, 2.6), V(0, 1.5, 0), 46], [0.55, V(0.4, 3.4, 5.2), V(0, 4.0, 0), 50], [0.85, V(0, 6.5, 8.6), V(0, 10.1, 0), 50], [1, V(0, 6.5, 8.7), V(0, 10.15, 0), 50]],
     act: ({ t, place, W, hold }) => {
       big(W, pick(t, [[0, [["BROOKLYN · APRIL 2018", 80, "#ffffff"], ["NEW CHAMPION", 120, "#ffd23a"]]], [w2("HE", 5) - 0.2, [["KHABIB 26-0", 120, "#7dff9a"], ["DEF. AL IAQUINTA · 5 ROUNDS", 60, "#ffffff"]]], [w2("NOW") - 0.2, [["KHABIB", 120, "#ffffff"], ["vs", 70, "#d8262e"], ["McGREGOR ?", 120, "#ffffff"]]], [w2("PART") - 0.2, [["PART 3", 150, "#ffd23a"], ["LAS VEGAS", 100, "#ffffff"]]]]));
       const k = place("khabibF", 0, 0.1, 0.2); track(k, t, [{ t: 0, L: "cheer", R: "rest", mouth: "grin" }, { t: w2("ANYWAY"), L: "cheer", R: "cheer", mouth: "laugh" }, { t: 50.4, L: "cheer", R: "wave", mouth: "grin", yaw: -0.5 }]);
@@ -285,7 +286,7 @@ const PART3: Shot[] = [
       track(place("crew2", -1.6 + t * 0.6, -4.8, Math.PI / 2, 0.12), t, [{ t: 0, L: "rest", R: "point", mouth: "talk", yaw: -0.6, pitch: -0.4 }], { walk: t * 6 });
       track(place("borg", 1.6 - t * 0.5, -5.6, -Math.PI / 2, 0.12), t, [{ t: 0, L: "phone", R: "rest", mouth: "o", pitch: -0.4 }], { walk: t * 6 + 1 });
     } },
-  { a: S3(2), b: S3(3), set: "stage", keys: [[0, V(0, 2.45, 4.6), V(0, 2.0, -1.9), 46], [0.48, V(1.5, 2.15, 1.5), V(2.1, 2.1, -1.9), 42], [0.78, V(-1.0, 2.05, 0.6), V(-2.1, 1.95, -1.9), 42], [1, V(-1.55, 2.0, 0.05), V(-2.15, 1.95, -1.9), 40]],
+  { a: S3(2), b: S3(3), set: "stage", keys: [[0, V(0, 2.9, 5.0), V(0, 2.5, -1.9), 46], [0.48, V(1.2, 2.75, 1.4), V(2.1, 2.55, -1.9), 44], [0.86, V(-0.9, 2.65, 0.9), V(-2.1, 2.45, -1.9), 44], [1, V(-1.4, 2.6, 0.5), V(-2.15, 2.45, -1.9), 42]],
     act: ({ t, place, W, seat }) => {
       W.stageWall.emissiveMap = screenTex([["PRESS CONFERENCE", 100, "#ffffff"], ["NEW YORK · SEPT 2018", 70, "#ffd23a"]]);
       W.scale.visible = false; W.pressTable.visible = true;
@@ -308,7 +309,7 @@ const PART3: Shot[] = [
       if (down > 0.5) kneel(k);
       track(place("ref", 1.5, -0.9, -0.6), t, [{ t: 0, L: "rest", R: "rest", mouth: "flat", pitch: 0.3 }, { t: w3("TAPPED") + 0.3, L: "wave", R: "wave", mouth: "talk" }]);
     } },
-  { a: S3(4), b: S3(5), set: "arena", keys: [[0, V(1.8, 1.6, 1.5), V(0, 1.3, 0.3), 44], [0.2, V(1.6, 1.75, 2.6), V(0.2, 1.7, 4.1), 46], [0.34, V(1.9, 2.55, 3.6), V(0.4, 1.6, 6.1), 46], [0.55, V(1.5, 2.1, 4.75), V(0.4, 1.5, 6.4), 44], [0.72, V(1.2, 2.35, 3.2), V(-0.5, 1.3, 0.3), 46], [1, V(0.85, 1.85, 2.3), V(-0.4, 1.3, 0.2), 44]],
+  { a: S3(4), b: S3(5), set: "arena", keys: [[0, V(2.6, 1.6, 1.8), V(0.1, 1.3, 0.3), 46], [0.12, V(2.6, 1.65, 2.2), V(0.1, 1.4, 1.0), 46], [0.24, V(2.4, 1.9, 2.4), V(0.2, 1.7, 4.0), 48], [0.36, V(2.2, 2.6, 3.4), V(0.4, 1.6, 6.1), 48], [0.55, V(1.5, 2.1, 4.75), V(0.4, 1.5, 6.4), 44], [0.72, V(1.2, 2.35, 3.2), V(-0.5, 1.3, 0.3), 46], [1, V(0.85, 1.85, 2.3), V(-0.4, 1.3, 0.2), 44]],
     act: ({ t, place, W }) => {
       big(W, [["KHABIB WINS", 120, "#7dff9a"], ["STILL UNBEATEN · 27-0", 70, "#ffffff"]]);
       const climb = ss(w3("CLIMBED") - 0.1, w3("FENCE") + 0.2, t), over = ss(w3("FENCE") + 0.2, w3("JUMPED") + 0.4, t), chase = ss(w3("JUMPED") + 0.4, w3("DANIS") + 0.6, t);
@@ -326,14 +327,14 @@ const PART3: Shot[] = [
       track(place("sec1", sx_, 0.45, -Math.PI / 2), t, [{ t: 0, L: "rest", R: "rest", mouth: "o" }, { t: w3("SECURITY"), L: "grab", R: "grab", mouth: "talk" }], { walk: t * 9 });
       track(place("ref", 2.0, -1.4, -0.9), t, [{ t: 0, L: "rest", R: "raise", mouth: "o" }, { t: w3("MEMBERS"), L: "wave", R: "wave", mouth: "talk" }]);
     } },
-  { a: S3(5), b: S3(6), set: "studio", keys: [[0, V(-0.9, 1.6, 1.8), V(0, 1.6, -3.4), 44], [0.5, V(-0.3, 1.75, 1.1), V(0, 2.2, -5.0), 44], [1, V(0.3, 1.95, 0.6), V(0, 2.75, -5.9), 46]],
+  { a: S3(5), b: S3(6), set: "studio", keys: [[0, V(-1.0, 1.5, 1.2), V(0, 1.7, -3.6), 50], [0.5, V(-0.3, 1.6, 0.9), V(0, 2.0, -4.6), 50], [1, V(0.3, 1.7, 0.6), V(0, 2.4, -5.4), 50]],
     act: ({ t, place, W }) => {
       W.interview.visible = false; W.newsDesk.visible = true;
       const L1: Line = ["KHABIB · 9 MONTHS · $500,000", 64, "#ffd23a"], L2: Line = ["CONOR · 6 MONTHS · $50,000", 64, "#ffffff"], L3: Line = ["2 TEAMMATES · 1 YEAR", 64, "#ff8a8a"];
       W.tv.emissiveMap = screenTex(pick(t, [[0, [["SUSPENDED + FINED", 90, "#ffffff"], L1]], [w3("CONOR", 5) - 0.2, [["SUSPENDED + FINED", 90, "#ffffff"], L1, L2]], [w3("TWO") - 0.2, [["SUSPENDED + FINED", 90, "#ffffff"], L1, L2, L3]]]) as Line[]);
       track(place("anchor", 0, -3.25, 0), t, [{ t: 0, L: "rest", R: "point", mouth: "talk", yaw: -0.3 }, { t: 38.0, L: "shrug", R: "rest", mouth: "talk", yaw: 0.3 }, { t: 40.6, L: "rest", R: "point", mouth: "talk" }]);
     } },
-  { a: S3(6), b: S3(7), set: "arena", keys: [[0, V(0, 4.6, 4.2), V(0, 0.5, 0), 46], [0.5, V(0.95, 1.05, 1.7), V(0, 0.6, -0.25), 42], [1, V(0.55, 1.3, 1.25), V(0, 1.35, -0.5), 40]],
+  { a: S3(6), b: S3(7), set: "arena", keys: [[0, V(0, 3.4, 3.4), V(0, 0.6, 0), 46], [0.5, V(1.3, 1.2, 2.4), V(0, 0.7, -0.25), 46], [1, V(0.8, 1.5, 2.2), V(0, 1.3, -0.5), 46]],
     act: ({ t, place, W, kneel }) => {
       big(W, [["29-0", 170, "#7dff9a"], ["RETIRED · OCT 2020", 70, "#ffffff"]]);
       W.gloves.visible = true; W.gloves.position.set(0, 0, 0.25);
@@ -344,14 +345,14 @@ const PART3: Shot[] = [
       if (up < 0.5) kneel(k);
       W.arenaKey.angle = 0.45;
     } },
-  { a: S3(7), b: 60, set: "phone", keys: [[0, V(0, 1.75, 5.2), V(0, 1.75, -1), 46], [1, V(0, 1.7, 3.6), V(0, 2.2, -1), 46]],
+  { a: S3(7), b: 60, set: "phone", keys: [[0, V(0, 1.7, 5.6), V(0, 1.6, -1), 46], [1, V(0, 1.65, 4.4), V(0, 1.9, -1), 46]],
     act: ({ t, place, W, hold }) => {
       const n = Math.max(1, Math.min(4, 1 + Math.floor((t - 54.2) / 0.5)));
       const seq: ("Lmad" | "Rmad" | "L" | "R")[] = ["Lmad", "R", "Rmad", "Lmad"];
       W.phoneL.emissiveMap = chatTex("TODAY", seq.slice(0, n), "#d8262e");
       W.phoneR.emissiveMap = t > w3("FOLLOW") - 0.1 ? screenTex([["FOLLOW", 120, "#ffffff"], ["FOR MORE", 70, "#ffd23a"], ["FIGHT", 120, "#ffffff"], ["HISTORY", 110, "#ffffff"]], 512, 1024) : chatTex("TODAY", seq.slice(0, n).map((b) => (b[0] === "L" ? "R" + b.slice(1) : "L" + b.slice(1))) as never, "#d8262e");
-      const k = place("khabib", -0.95, 0.9, 0.35); track(k, t, [{ t: 0, L: "rest", R: "phone", mouth: "flat", brow: 1, pitch: 0.3 }, { t: 55.5, L: "hip", R: "phone", mouth: "talk", brow: 1 }]); hold(k, 1, W.extra.ph1);
-      const c = place("conor", 0.95, 0.9, -0.35); track(c, t, [{ t: 0, L: "phone", R: "rest", mouth: "talk", brow: 1, pitch: 0.3 }, { t: 55.0, L: "phone", R: "point", mouth: "grin" }]); hold(c, 0, W.extra.ph2);
+      const k = place("khabib", -0.6, 0.9, 0.35); track(k, t, [{ t: 0, L: "rest", R: "phone", mouth: "flat", brow: 1, pitch: 0.3 }, { t: 55.5, L: "hip", R: "phone", mouth: "talk", brow: 1 }]); hold(k, 1, W.extra.ph1);
+      const c = place("conor", 0.6, 0.9, -0.35); track(c, t, [{ t: 0, L: "phone", R: "rest", mouth: "talk", brow: 1, pitch: 0.3 }, { t: 55.0, L: "phone", R: "point", mouth: "grin" }]); hold(c, 0, W.extra.ph2);
     } },
 ];
 const PARTS = { 1: PART1, 2: PART2, 3: PART3 };
@@ -361,7 +362,7 @@ type XWorld = World & { extra: { ph1: THREE.Group; ph2: THREE.Group } };
 const shotCam = (s: Shot, t: number, cv: Map<Shot, { p: THREE.CatmullRomCurve3; l: THREE.CatmullRomCurve3 }>) => {
   if (!cv.has(s)) { const ext = (i: number) => s.keys.map((k) => k[i] as THREE.Vector3); cv.set(s, { p: new THREE.CatmullRomCurve3(ext(1), false, "centripetal"), l: new THREE.CatmullRomCurve3(ext(2), false, "centripetal") }); }
   const c = cv.get(s)!, K = s.keys;
-  const g = Math.min(1, Math.max(0, (t - s.a) / (s.b - s.a))), w = g * g * (3 - 2 * g) * 0.35 + g * 0.65;
+  const g = Math.min(1, Math.max(0, (t - s.a) / (s.b - s.a))), w = g * g * (3 - 2 * g) * 0.08 + g * 0.92;
   let i = 0; while (i + 2 < K.length && w >= K[i + 1][0]) i++;
   const fr = Math.min(1, Math.max(0, (w - K[i][0]) / (K[i + 1][0] - K[i][0]))), u = (i + fr) / (K.length - 1);
   const o = SETS[s.set];
