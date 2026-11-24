@@ -25,3 +25,11 @@ Smoothness work:
 Unconfirmed details (the Disraeli quote, a plan to move Parliament) are left out.
 
 Code: `toon/src/stink` (composition `StinkShort`, 60 fps) plus the shared `toon/src/look`. Audio: `audio/make_audio.py`. Narration: `narration/`.
+
+## V2: remade in the reference style
+
+`deliverables/great_stink_1858_v2_60fps.mp4` (composition `Stink2Short`, `toon/src/stink/StinkV2.tsx`). Same narration, captions timing and facts. It follows the pacing and look of the reference short on Drive, but it is not a copy of it:
+- 11 long shots instead of 20 cuts, with the camera gliding on a smooth path the whole time (no stops)
+- close framing: 2–4 characters reacting in most shots, with constant idle sway and head motion
+- hot evening sky, darker ambient, a cool rim light that always sits behind the subject plus a warm second rim, stronger bloom
+- bigger captions (96 px, nearer the middle), with key words in yellow
