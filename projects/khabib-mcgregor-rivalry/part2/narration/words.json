@@ -1,0 +1,992 @@
+[
+{
+"start": 0.0,
+"end": 0.36,
+"text": "APRIL",
+"emph": false
+},
+{
+"start": 0.36,
+"end": 1.18,
+"text": "2018",
+"emph": false
+},
+{
+"start": 1.68,
+"end": 1.84,
+"text": "BROOKLYN",
+"emph": true
+},
+{
+"start": 2.08,
+"end": 2.12,
+"text": "NEW",
+"emph": false
+},
+{
+"start": 2.2,
+"end": 2.46,
+"text": "YORK",
+"emph": false
+},
+{
+"start": 3.06,
+"end": 3.18,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 3.18,
+"end": 3.34,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 3.34,
+"end": 3.54,
+"text": "DAYS",
+"emph": false
+},
+{
+"start": 3.54,
+"end": 3.84,
+"text": "AWAY",
+"emph": false
+},
+{
+"start": 3.84,
+"end": 4.08,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 4.08,
+"end": 4.42,
+"text": "FIGHTING",
+"emph": false
+},
+{
+"start": 4.42,
+"end": 4.68,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 4.68,
+"end": 4.8,
+"text": "THE",
+"emph": false
+},
+{
+"start": 4.8,
+"end": 5.14,
+"text": "TITLE",
+"emph": true
+},
+{
+"start": 5.78,
+"end": 5.78,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 5.9,
+"end": 6.08,
+"text": "WASN'T",
+"emph": false
+},
+{
+"start": 6.08,
+"end": 6.32,
+"text": "EVEN",
+"emph": false
+},
+{
+"start": 6.32,
+"end": 6.46,
+"text": "ON",
+"emph": false
+},
+{
+"start": 6.46,
+"end": 6.6,
+"text": "THE",
+"emph": false
+},
+{
+"start": 6.6,
+"end": 6.78,
+"text": "FIGHT",
+"emph": false
+},
+{
+"start": 6.78,
+"end": 7.08,
+"text": "CARD",
+"emph": false
+},
+{
+"start": 8.0,
+"end": 8.2,
+"text": "THAT",
+"emph": false
+},
+{
+"start": 8.2,
+"end": 8.42,
+"text": "WEEK",
+"emph": false
+},
+{
+"start": 8.42,
+"end": 8.7,
+"text": "HE",
+"emph": false
+},
+{
+"start": 8.7,
+"end": 8.86,
+"text": "AND",
+"emph": false
+},
+{
+"start": 8.86,
+"end": 9.02,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 9.02,
+"end": 9.26,
+"text": "TEAM",
+"emph": false
+},
+{
+"start": 9.26,
+"end": 9.54,
+"text": "TRACKED",
+"emph": false
+},
+{
+"start": 9.54,
+"end": 9.82,
+"text": "DOWN",
+"emph": false
+},
+{
+"start": 9.82,
+"end": 10.22,
+"text": "CONOR'S",
+"emph": false
+},
+{
+"start": 10.22,
+"end": 10.54,
+"text": "FRIEND",
+"emph": false
+},
+{
+"start": 10.84,
+"end": 11.0,
+"text": "ARTEM",
+"emph": false
+},
+{
+"start": 11.0,
+"end": 11.4,
+"text": "LOBOV",
+"emph": true
+},
+{
+"start": 11.84,
+"end": 12.22,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 12.22,
+"end": 12.5,
+"text": "GRABBED",
+"emph": false
+},
+{
+"start": 12.5,
+"end": 12.7,
+"text": "HIM",
+"emph": false
+},
+{
+"start": 12.7,
+"end": 12.84,
+"text": "BY",
+"emph": false
+},
+{
+"start": 12.84,
+"end": 12.96,
+"text": "THE",
+"emph": false
+},
+{
+"start": 12.96,
+"end": 13.16,
+"text": "NECK",
+"emph": true
+},
+{
+"start": 13.16,
+"end": 13.38,
+"text": "AND",
+"emph": false
+},
+{
+"start": 13.38,
+"end": 13.6,
+"text": "SLAPPED",
+"emph": true
+},
+{
+"start": 13.6,
+"end": 14.02,
+"text": "HIM",
+"emph": false
+},
+{
+"start": 14.94,
+"end": 14.98,
+"text": "WORD",
+"emph": false
+},
+{
+"start": 15.06,
+"end": 15.22,
+"text": "REACHED",
+"emph": false
+},
+{
+"start": 15.22,
+"end": 15.6,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 15.82,
+"end": 15.94,
+"text": "HE",
+"emph": false
+},
+{
+"start": 15.94,
+"end": 16.1,
+"text": "FLEW",
+"emph": false
+},
+{
+"start": 16.1,
+"end": 16.26,
+"text": "TO",
+"emph": false
+},
+{
+"start": 16.26,
+"end": 16.38,
+"text": "NEW",
+"emph": false
+},
+{
+"start": 16.38,
+"end": 16.68,
+"text": "YORK",
+"emph": false
+},
+{
+"start": 17.14,
+"end": 17.26,
+"text": "HE",
+"emph": false
+},
+{
+"start": 17.26,
+"end": 17.42,
+"text": "HEADED",
+"emph": false
+},
+{
+"start": 17.42,
+"end": 17.8,
+"text": "STRAIGHT",
+"emph": false
+},
+{
+"start": 17.8,
+"end": 18.02,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 18.02,
+"end": 18.16,
+"text": "THE",
+"emph": false
+},
+{
+"start": 18.16,
+"end": 18.46,
+"text": "ARENA",
+"emph": false
+},
+{
+"start": 18.78,
+"end": 18.9,
+"text": "WHERE",
+"emph": false
+},
+{
+"start": 18.9,
+"end": 19.28,
+"text": "FIGHTERS",
+"emph": false
+},
+{
+"start": 19.28,
+"end": 19.54,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 19.54,
+"end": 19.76,
+"text": "DOING",
+"emph": false
+},
+{
+"start": 19.76,
+"end": 20.08,
+"text": "MEDIA",
+"emph": true
+},
+{
+"start": 20.08,
+"end": 20.42,
+"text": "DAY",
+"emph": false
+},
+{
+"start": 21.24,
+"end": 21.46,
+"text": "AT",
+"emph": false
+},
+{
+"start": 21.46,
+"end": 21.62,
+"text": "THE",
+"emph": false
+},
+{
+"start": 21.62,
+"end": 22.02,
+"text": "ARENA'S",
+"emph": false
+},
+{
+"start": 22.02,
+"end": 22.3,
+"text": "LOADING",
+"emph": false
+},
+{
+"start": 22.3,
+"end": 22.66,
+"text": "DOCK",
+"emph": false
+},
+{
+"start": 23.02,
+"end": 23.18,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 23.18,
+"end": 23.38,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 23.38,
+"end": 23.56,
+"text": "SITTING",
+"emph": false
+},
+{
+"start": 23.56,
+"end": 23.76,
+"text": "ON",
+"emph": false
+},
+{
+"start": 23.76,
+"end": 23.88,
+"text": "A",
+"emph": false
+},
+{
+"start": 23.88,
+"end": 24.1,
+"text": "BUS",
+"emph": true
+},
+{
+"start": 24.1,
+"end": 24.32,
+"text": "WITH",
+"emph": false
+},
+{
+"start": 24.32,
+"end": 24.52,
+"text": "OTHER",
+"emph": false
+},
+{
+"start": 24.52,
+"end": 24.9,
+"text": "FIGHTERS",
+"emph": false
+},
+{
+"start": 25.58,
+"end": 25.7,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 25.7,
+"end": 25.86,
+"text": "AND",
+"emph": false
+},
+{
+"start": 25.86,
+"end": 25.98,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 25.98,
+"end": 26.16,
+"text": "CREW",
+"emph": false
+},
+{
+"start": 26.16,
+"end": 26.4,
+"text": "RUSHED",
+"emph": false
+},
+{
+"start": 26.4,
+"end": 26.68,
+"text": "IN",
+"emph": false
+},
+{
+"start": 27.14,
+"end": 27.36,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 27.36,
+"end": 27.72,
+"text": "GRABBED",
+"emph": false
+},
+{
+"start": 27.72,
+"end": 27.88,
+"text": "A",
+"emph": false
+},
+{
+"start": 27.88,
+"end": 28.08,
+"text": "METAL",
+"emph": false
+},
+{
+"start": 28.08,
+"end": 28.52,
+"text": "DOLLY",
+"emph": true
+},
+{
+"start": 28.52,
+"end": 28.76,
+"text": "AND",
+"emph": false
+},
+{
+"start": 28.76,
+"end": 28.98,
+"text": "THREW",
+"emph": false
+},
+{
+"start": 28.98,
+"end": 29.08,
+"text": "IT",
+"emph": false
+},
+{
+"start": 29.1,
+"end": 29.28,
+"text": "THROUGH",
+"emph": false
+},
+{
+"start": 29.28,
+"end": 29.42,
+"text": "A",
+"emph": false
+},
+{
+"start": 29.42,
+"end": 29.66,
+"text": "WINDOW",
+"emph": true
+},
+{
+"start": 30.36,
+"end": 30.88,
+"text": "GLASS",
+"emph": true
+},
+{
+"start": 30.88,
+"end": 31.16,
+"text": "FLEW",
+"emph": false
+},
+{
+"start": 31.7,
+"end": 31.7,
+"text": "FIGHTERS",
+"emph": false
+},
+{
+"start": 31.82,
+"end": 32.08,
+"text": "MICHAEL",
+"emph": false
+},
+{
+"start": 32.08,
+"end": 32.6,
+"text": "CHIESA",
+"emph": false
+},
+{
+"start": 32.6,
+"end": 32.78,
+"text": "AND",
+"emph": false
+},
+{
+"start": 32.78,
+"end": 32.98,
+"text": "RAY",
+"emph": false
+},
+{
+"start": 32.98,
+"end": 33.24,
+"text": "BORG",
+"emph": false
+},
+{
+"start": 33.24,
+"end": 33.48,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 33.48,
+"end": 33.72,
+"text": "HURT",
+"emph": true
+},
+{
+"start": 33.72,
+"end": 33.9,
+"text": "AND",
+"emph": false
+},
+{
+"start": 33.9,
+"end": 34.04,
+"text": "THEIR",
+"emph": false
+},
+{
+"start": 34.04,
+"end": 34.32,
+"text": "FIGHTS",
+"emph": false
+},
+{
+"start": 34.32,
+"end": 34.56,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 34.56,
+"end": 34.94,
+"text": "CANCELLED",
+"emph": true
+},
+{
+"start": 35.58,
+"end": 35.72,
+"text": "LOBOV",
+"emph": true
+},
+{
+"start": 35.72,
+"end": 35.9,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 35.9,
+"end": 36.08,
+"text": "PULLED",
+"emph": false
+},
+{
+"start": 36.08,
+"end": 36.28,
+"text": "FROM",
+"emph": false
+},
+{
+"start": 36.28,
+"end": 36.4,
+"text": "THE",
+"emph": false
+},
+{
+"start": 36.4,
+"end": 36.56,
+"text": "SHOW",
+"emph": false
+},
+{
+"start": 36.56,
+"end": 36.9,
+"text": "TOO",
+"emph": false
+},
+{
+"start": 38.02,
+"end": 38.1,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 38.14,
+"end": 38.36,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 38.36,
+"end": 38.82,
+"text": "ARRESTED",
+"emph": true
+},
+{
+"start": 39.16,
+"end": 39.24,
+"text": "HE",
+"emph": false
+},
+{
+"start": 39.28,
+"end": 39.44,
+"text": "LATER",
+"emph": false
+},
+{
+"start": 39.44,
+"end": 39.7,
+"text": "PLEADED",
+"emph": false
+},
+{
+"start": 39.7,
+"end": 40.12,
+"text": "GUILTY",
+"emph": true
+},
+{
+"start": 40.12,
+"end": 40.4,
+"text": "TO",
+"emph": false
+},
+{
+"start": 40.4,
+"end": 40.78,
+"text": "DISORDERLY",
+"emph": false
+},
+{
+"start": 40.78,
+"end": 41.36,
+"text": "CONDUCT",
+"emph": false
+},
+{
+"start": 41.82,
+"end": 41.94,
+"text": "HE",
+"emph": false
+},
+{
+"start": 41.94,
+"end": 42.1,
+"text": "HAD",
+"emph": false
+},
+{
+"start": 42.1,
+"end": 42.24,
+"text": "TO",
+"emph": false
+},
+{
+"start": 42.24,
+"end": 42.42,
+"text": "DO",
+"emph": false
+},
+{
+"start": 42.42,
+"end": 42.76,
+"text": "COMMUNITY",
+"emph": true
+},
+{
+"start": 42.76,
+"end": 43.22,
+"text": "SERVICE",
+"emph": false
+},
+{
+"start": 43.22,
+"end": 43.58,
+"text": "AND",
+"emph": false
+},
+{
+"start": 43.58,
+"end": 43.7,
+"text": "AN",
+"emph": false
+},
+{
+"start": 43.7,
+"end": 43.98,
+"text": "ANGER",
+"emph": false
+},
+{
+"start": 43.98,
+"end": 44.42,
+"text": "MANAGEMENT",
+"emph": false
+},
+{
+"start": 44.42,
+"end": 44.88,
+"text": "COURSE",
+"emph": false
+},
+{
+"start": 45.78,
+"end": 45.98,
+"text": "TWO",
+"emph": false
+},
+{
+"start": 45.98,
+"end": 46.14,
+"text": "DAYS",
+"emph": false
+},
+{
+"start": 46.14,
+"end": 46.44,
+"text": "AFTER",
+"emph": false
+},
+{
+"start": 46.44,
+"end": 46.6,
+"text": "THE",
+"emph": false
+},
+{
+"start": 46.6,
+"end": 46.98,
+"text": "ATTACK",
+"emph": false
+},
+{
+"start": 47.3,
+"end": 47.46,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 47.46,
+"end": 47.66,
+"text": "WON",
+"emph": false
+},
+{
+"start": 47.66,
+"end": 47.8,
+"text": "THE",
+"emph": false
+},
+{
+"start": 47.8,
+"end": 48.06,
+"text": "TITLE",
+"emph": true
+},
+{
+"start": 48.06,
+"end": 48.46,
+"text": "ANYWAY",
+"emph": true
+},
+{
+"start": 48.96,
+"end": 49.1,
+"text": "HE",
+"emph": false
+},
+{
+"start": 49.1,
+"end": 49.3,
+"text": "BEAT",
+"emph": false
+},
+{
+"start": 49.3,
+"end": 49.56,
+"text": "AL",
+"emph": false
+},
+{
+"start": 49.56,
+"end": 50.18,
+"text": "IAQUINTA",
+"emph": true
+},
+{
+"start": 50.38,
+"end": 50.48,
+"text": "A",
+"emph": false
+},
+{
+"start": 50.5,
+"end": 50.66,
+"text": "LATE",
+"emph": false
+},
+{
+"start": 50.66,
+"end": 51.2,
+"text": "REPLACEMENT",
+"emph": false
+},
+{
+"start": 51.2,
+"end": 51.54,
+"text": "OVER",
+"emph": false
+},
+{
+"start": 51.54,
+"end": 51.86,
+"text": "FIVE",
+"emph": false
+},
+{
+"start": 51.86,
+"end": 52.24,
+"text": "ROUNDS",
+"emph": false
+},
+{
+"start": 52.78,
+"end": 52.94,
+"text": "NOW",
+"emph": false
+},
+{
+"start": 52.94,
+"end": 53.22,
+"text": "EVERYONE",
+"emph": false
+},
+{
+"start": 53.22,
+"end": 53.58,
+"text": "WANTED",
+"emph": false
+},
+{
+"start": 53.58,
+"end": 53.84,
+"text": "ONE",
+"emph": false
+},
+{
+"start": 53.84,
+"end": 54.16,
+"text": "FIGHT",
+"emph": false
+},
+{
+"start": 54.8,
+"end": 54.8,
+"text": "PART",
+"emph": false
+},
+{
+"start": 54.92,
+"end": 55.02,
+"text": "THREE",
+"emph": false
+},
+{
+"start": 55.04,
+"end": 55.22,
+"text": "LAS",
+"emph": false
+},
+{
+"start": 55.22,
+"end": 55.64,
+"text": "VEGAS",
+"emph": true
+}
+]

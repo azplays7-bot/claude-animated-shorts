@@ -1,0 +1,225 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   4.772
+  ],
+  "2": [
+   5.572,
+   13.66
+  ],
+  "3": [
+   14.46,
+   20.029
+  ],
+  "4": [
+   20.829,
+   32.779
+  ],
+  "5": [
+   33.579,
+   42.989
+  ],
+  "6": [
+   43.789,
+   53.327
+  ],
+  "7": [
+   54.127,
+   57.456
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.787
+  },
+  {
+   "scene": 1,
+   "start": 3.087,
+   "end": 4.772
+  },
+  {
+   "scene": 2,
+   "start": 5.572,
+   "end": 8.111
+  },
+  {
+   "scene": 2,
+   "start": 8.411,
+   "end": 12.315
+  },
+  {
+   "scene": 2,
+   "start": 12.615,
+   "end": 13.66
+  },
+  {
+   "scene": 3,
+   "start": 14.46,
+   "end": 16.999
+  },
+  {
+   "scene": 3,
+   "start": 17.299,
+   "end": 20.029
+  },
+  {
+   "scene": 4,
+   "start": 20.829,
+   "end": 26.611
+  },
+  {
+   "scene": 4,
+   "start": 26.911,
+   "end": 30.921
+  },
+  {
+   "scene": 4,
+   "start": 31.221,
+   "end": 32.779
+  },
+  {
+   "scene": 5,
+   "start": 33.579,
+   "end": 37.824
+  },
+  {
+   "scene": 5,
+   "start": 38.124,
+   "end": 40.257
+  },
+  {
+   "scene": 5,
+   "start": 40.557,
+   "end": 42.989
+  },
+  {
+   "scene": 6,
+   "start": 43.789,
+   "end": 50.488
+  },
+  {
+   "scene": 6,
+   "start": 50.788,
+   "end": 53.327
+  },
+  {
+   "scene": 7,
+   "start": 54.127,
+   "end": 55.748
+  },
+  {
+   "scene": 7,
+   "start": 56.048,
+   "end": 57.456
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.787,
+   "text": "October 6th, 2018. Las Vegas."
+  },
+  {
+   "scene": 1,
+   "start": 3.087,
+   "end": 4.772,
+   "text": "Khabib versus McGregor, at last."
+  },
+  {
+   "scene": 2,
+   "start": 5.572,
+   "end": 8.111,
+   "text": "At the press conference, Conor did most of the talking."
+  },
+  {
+   "scene": 2,
+   "start": 8.411,
+   "end": 12.315,
+   "text": "In the build-up, Conor took aim at Khabib's family, his team, and his beliefs."
+  },
+  {
+   "scene": 2,
+   "start": 12.615,
+   "end": 13.66,
+   "text": "Khabib stayed calm."
+  },
+  {
+   "scene": 3,
+   "start": 14.46,
+   "end": 16.999,
+   "text": "In the cage, Khabib took Conor down again and again."
+  },
+  {
+   "scene": 3,
+   "start": 17.299,
+   "end": 20.029,
+   "text": "In round four, he locked in a neck crank. Conor tapped."
+  },
+  {
+   "scene": 4,
+   "start": 20.829,
+   "end": 26.611,
+   "text": "Khabib was still unbeaten. But then, he climbed over the fence, and jumped at Conor's teammate, Dillon Danis."
+  },
+  {
+   "scene": 4,
+   "start": 26.911,
+   "end": 30.921,
+   "text": "At the same time, members of Khabib's team got into the cage, and hit Conor."
+  },
+  {
+   "scene": 4,
+   "start": 31.221,
+   "end": 32.779,
+   "text": "Security pulled everyone apart."
+  },
+  {
+   "scene": 5,
+   "start": 33.579,
+   "end": 37.824,
+   "text": "Khabib was suspended for nine months, and fined five hundred thousand dollars."
+  },
+  {
+   "scene": 5,
+   "start": 38.124,
+   "end": 40.257,
+   "text": "Conor got six months, and fifty thousand."
+  },
+  {
+   "scene": 5,
+   "start": 40.557,
+   "end": 42.989,
+   "text": "Two of Khabib's teammates were suspended for a year."
+  },
+  {
+   "scene": 6,
+   "start": 43.789,
+   "end": 50.488,
+   "text": "In 2020, Khabib retired, undefeated at 29 and 0. He left his gloves in the middle of the cage."
+  },
+  {
+   "scene": 6,
+   "start": 50.788,
+   "end": 53.327,
+   "text": "He said he'd promised his mother it was his last fight."
+  },
+  {
+   "scene": 7,
+   "start": 54.127,
+   "end": 55.748,
+   "text": "The feud? It still goes on online."
+  },
+  {
+   "scene": 7,
+   "start": 56.048,
+   "end": 57.456,
+   "text": "Follow for more fight history."
+  }
+ ]
+}

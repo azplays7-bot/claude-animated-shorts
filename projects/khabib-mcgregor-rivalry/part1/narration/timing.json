@@ -1,0 +1,225 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   12.433
+  ],
+  "2": [
+   12.933,
+   16.794
+  ],
+  "3": [
+   17.294,
+   29.415
+  ],
+  "4": [
+   29.915,
+   34.901
+  ],
+  "5": [
+   35.401,
+   42.968
+  ],
+  "6": [
+   43.468,
+   51.206
+  ],
+  "7": [
+   51.706,
+   56.713
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 3.043
+  },
+  {
+   "scene": 1,
+   "start": 3.293,
+   "end": 4.551
+  },
+  {
+   "scene": 1,
+   "start": 4.801,
+   "end": 8.727
+  },
+  {
+   "scene": 1,
+   "start": 8.977,
+   "end": 12.433
+  },
+  {
+   "scene": 2,
+   "start": 12.933,
+   "end": 16.794
+  },
+  {
+   "scene": 3,
+   "start": 17.294,
+   "end": 18.83
+  },
+  {
+   "scene": 3,
+   "start": 19.08,
+   "end": 23.667
+  },
+  {
+   "scene": 3,
+   "start": 23.917,
+   "end": 26.818
+  },
+  {
+   "scene": 3,
+   "start": 27.068,
+   "end": 29.415
+  },
+  {
+   "scene": 4,
+   "start": 29.915,
+   "end": 32.795
+  },
+  {
+   "scene": 4,
+   "start": 33.045,
+   "end": 34.901
+  },
+  {
+   "scene": 5,
+   "start": 35.401,
+   "end": 38.601
+  },
+  {
+   "scene": 5,
+   "start": 38.851,
+   "end": 42.968
+  },
+  {
+   "scene": 6,
+   "start": 43.468,
+   "end": 49.911
+  },
+  {
+   "scene": 6,
+   "start": 50.161,
+   "end": 51.206
+  },
+  {
+   "scene": 7,
+   "start": 51.706,
+   "end": 55.034
+  },
+  {
+   "scene": 7,
+   "start": 55.284,
+   "end": 56.713
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 3.043,
+   "text": "Khabib versus McGregor. The biggest grudge in fighting."
+  },
+  {
+   "scene": 1,
+   "start": 3.293,
+   "end": 4.551,
+   "text": "But it didn't start that way."
+  },
+  {
+   "scene": 1,
+   "start": 4.801,
+   "end": 8.727,
+   "text": "Khabib, a wrestler from Dagestan in Russia, had never lost a fight."
+  },
+  {
+   "scene": 1,
+   "start": 8.977,
+   "end": 12.433,
+   "text": "Conor, from Dublin, Ireland, was the loudest talker in the sport."
+  },
+  {
+   "scene": 2,
+   "start": 12.933,
+   "end": 16.794,
+   "text": "Back in 2014, the two swapped friendly messages online."
+  },
+  {
+   "scene": 3,
+   "start": 17.294,
+   "end": 18.83,
+   "text": "Then Conor became a superstar."
+  },
+  {
+   "scene": 3,
+   "start": 19.08,
+   "end": 23.667,
+   "text": "In 2016, Khabib was unbeaten, and pushing hard for a title shot."
+  },
+  {
+   "scene": 3,
+   "start": 23.917,
+   "end": 26.818,
+   "text": "Instead, the big November show in New York went to Conor."
+  },
+  {
+   "scene": 3,
+   "start": 27.068,
+   "end": 29.415,
+   "text": "Khabib said he'd been used as a bargaining chip."
+  },
+  {
+   "scene": 4,
+   "start": 29.915,
+   "end": 32.795,
+   "text": "Backstage at the weigh-ins, they finally met face to face."
+  },
+  {
+   "scene": 4,
+   "start": 33.045,
+   "end": 34.901,
+   "text": "Words flew, and staff pulled them apart."
+  },
+  {
+   "scene": 5,
+   "start": 35.401,
+   "end": 38.601,
+   "text": "That night, Conor won the lightweight belt. The one Khabib wanted."
+  },
+  {
+   "scene": 5,
+   "start": 38.851,
+   "end": 42.968,
+   "text": "He became the first fighter to hold two of the promotion's belts at the same time."
+  },
+  {
+   "scene": 6,
+   "start": 43.468,
+   "end": 49.911,
+   "text": "Later, Conor's friend and training partner, Artem Lobov, criticized Khabib in an interview on Russian TV."
+  },
+  {
+   "scene": 6,
+   "start": 50.161,
+   "end": 51.206,
+   "text": "Khabib didn't forget."
+  },
+  {
+   "scene": 7,
+   "start": 51.706,
+   "end": 55.034,
+   "text": "In April 2018, he found Lobov in New York."
+  },
+  {
+   "scene": 7,
+   "start": 55.284,
+   "end": 56.713,
+   "text": "Part two: the day it exploded."
+  }
+ ]
+}

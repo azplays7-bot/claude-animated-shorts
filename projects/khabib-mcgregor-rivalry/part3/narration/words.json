@@ -1,0 +1,992 @@
+[
+{
+"start": 0.0,
+"end": 0.46,
+"text": "OCTOBER",
+"emph": false
+},
+{
+"start": 0.46,
+"end": 0.78,
+"text": "6TH",
+"emph": false
+},
+{
+"start": 0.92,
+"end": 1.74,
+"text": "2018",
+"emph": false
+},
+{
+"start": 2.1,
+"end": 2.2,
+"text": "LAS",
+"emph": false
+},
+{
+"start": 2.22,
+"end": 2.6,
+"text": "VEGAS",
+"emph": true
+},
+{
+"start": 3.28,
+"end": 3.38,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 3.4,
+"end": 3.68,
+"text": "VERSUS",
+"emph": false
+},
+{
+"start": 3.68,
+"end": 4.04,
+"text": "MCGREGOR",
+"emph": false
+},
+{
+"start": 4.04,
+"end": 4.28,
+"text": "AT",
+"emph": false
+},
+{
+"start": 4.28,
+"end": 4.62,
+"text": "LAST",
+"emph": false
+},
+{
+"start": 5.2,
+"end": 5.68,
+"text": "AT",
+"emph": false
+},
+{
+"start": 5.68,
+"end": 5.8,
+"text": "THE",
+"emph": false
+},
+{
+"start": 5.8,
+"end": 5.96,
+"text": "PRESS",
+"emph": false
+},
+{
+"start": 5.96,
+"end": 6.48,
+"text": "CONFERENCE",
+"emph": false
+},
+{
+"start": 6.8,
+"end": 6.82,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 6.92,
+"end": 7.08,
+"text": "DID",
+"emph": false
+},
+{
+"start": 7.08,
+"end": 7.34,
+"text": "MOST",
+"emph": false
+},
+{
+"start": 7.34,
+"end": 7.5,
+"text": "OF",
+"emph": false
+},
+{
+"start": 7.5,
+"end": 7.58,
+"text": "THE",
+"emph": false
+},
+{
+"start": 7.62,
+"end": 7.94,
+"text": "TALKING",
+"emph": false
+},
+{
+"start": 8.32,
+"end": 8.5,
+"text": "IN",
+"emph": false
+},
+{
+"start": 8.5,
+"end": 8.6,
+"text": "THE",
+"emph": false
+},
+{
+"start": 8.62,
+"end": 8.78,
+"text": "BUILD-UP",
+"emph": false
+},
+{
+"start": 9.22,
+"end": 9.28,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 9.34,
+"end": 9.52,
+"text": "TOOK",
+"emph": false
+},
+{
+"start": 9.52,
+"end": 9.7,
+"text": "AIM",
+"emph": false
+},
+{
+"start": 9.7,
+"end": 9.88,
+"text": "AT",
+"emph": false
+},
+{
+"start": 9.88,
+"end": 10.28,
+"text": "KHABIB'S",
+"emph": false
+},
+{
+"start": 10.28,
+"end": 10.52,
+"text": "FAMILY",
+"emph": false
+},
+{
+"start": 10.86,
+"end": 11.0,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 11.0,
+"end": 11.34,
+"text": "TEAM",
+"emph": false
+},
+{
+"start": 11.44,
+"end": 11.56,
+"text": "AND",
+"emph": false
+},
+{
+"start": 11.56,
+"end": 11.72,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 11.72,
+"end": 12.04,
+"text": "BELIEFS",
+"emph": false
+},
+{
+"start": 12.74,
+"end": 12.88,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 12.88,
+"end": 13.14,
+"text": "STAYED",
+"emph": false
+},
+{
+"start": 13.14,
+"end": 13.52,
+"text": "CALM",
+"emph": true
+},
+{
+"start": 14.46,
+"end": 14.54,
+"text": "IN",
+"emph": false
+},
+{
+"start": 14.58,
+"end": 14.66,
+"text": "THE",
+"emph": false
+},
+{
+"start": 14.7,
+"end": 14.86,
+"text": "CAGE",
+"emph": false
+},
+{
+"start": 15.2,
+"end": 15.36,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 15.36,
+"end": 15.56,
+"text": "TOOK",
+"emph": false
+},
+{
+"start": 15.56,
+"end": 15.86,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 15.86,
+"end": 16.12,
+"text": "DOWN",
+"emph": false
+},
+{
+"start": 16.12,
+"end": 16.4,
+"text": "AGAIN",
+"emph": false
+},
+{
+"start": 16.4,
+"end": 16.58,
+"text": "AND",
+"emph": false
+},
+{
+"start": 16.58,
+"end": 16.86,
+"text": "AGAIN",
+"emph": false
+},
+{
+"start": 17.3,
+"end": 17.44,
+"text": "IN",
+"emph": false
+},
+{
+"start": 17.44,
+"end": 17.58,
+"text": "ROUND",
+"emph": false
+},
+{
+"start": 17.58,
+"end": 17.86,
+"text": "FOUR",
+"emph": true
+},
+{
+"start": 17.96,
+"end": 18.06,
+"text": "HE",
+"emph": false
+},
+{
+"start": 18.08,
+"end": 18.3,
+"text": "LOCKED",
+"emph": false
+},
+{
+"start": 18.3,
+"end": 18.48,
+"text": "IN",
+"emph": false
+},
+{
+"start": 18.48,
+"end": 18.6,
+"text": "A",
+"emph": false
+},
+{
+"start": 18.6,
+"end": 18.74,
+"text": "NECK",
+"emph": true
+},
+{
+"start": 18.74,
+"end": 18.98,
+"text": "CRANK",
+"emph": true
+},
+{
+"start": 19.38,
+"end": 19.52,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 19.52,
+"end": 19.82,
+"text": "TAPPED",
+"emph": true
+},
+{
+"start": 20.82,
+"end": 21.2,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 21.2,
+"end": 21.38,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 21.38,
+"end": 21.66,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 21.66,
+"end": 22.18,
+"text": "UNBEATEN",
+"emph": true
+},
+{
+"start": 22.5,
+"end": 22.72,
+"text": "BUT",
+"emph": false
+},
+{
+"start": 22.72,
+"end": 22.96,
+"text": "THEN",
+"emph": false
+},
+{
+"start": 23.02,
+"end": 23.24,
+"text": "HE",
+"emph": false
+},
+{
+"start": 23.24,
+"end": 23.5,
+"text": "CLIMBED",
+"emph": false
+},
+{
+"start": 23.5,
+"end": 23.76,
+"text": "OVER",
+"emph": false
+},
+{
+"start": 23.76,
+"end": 23.92,
+"text": "THE",
+"emph": false
+},
+{
+"start": 23.92,
+"end": 24.14,
+"text": "FENCE",
+"emph": true
+},
+{
+"start": 24.14,
+"end": 24.38,
+"text": "AND",
+"emph": false
+},
+{
+"start": 24.38,
+"end": 24.64,
+"text": "JUMPED",
+"emph": false
+},
+{
+"start": 24.64,
+"end": 24.88,
+"text": "AT",
+"emph": false
+},
+{
+"start": 24.88,
+"end": 25.28,
+"text": "CONOR'S",
+"emph": false
+},
+{
+"start": 25.28,
+"end": 25.62,
+"text": "TEAMMATE",
+"emph": false
+},
+{
+"start": 25.84,
+"end": 25.96,
+"text": "DILLON",
+"emph": false
+},
+{
+"start": 25.96,
+"end": 26.44,
+"text": "DANIS",
+"emph": true
+},
+{
+"start": 26.9,
+"end": 27.02,
+"text": "AT",
+"emph": false
+},
+{
+"start": 27.02,
+"end": 27.16,
+"text": "THE",
+"emph": false
+},
+{
+"start": 27.16,
+"end": 27.4,
+"text": "SAME",
+"emph": false
+},
+{
+"start": 27.4,
+"end": 27.78,
+"text": "TIME",
+"emph": false
+},
+{
+"start": 27.92,
+"end": 28.1,
+"text": "MEMBERS",
+"emph": false
+},
+{
+"start": 28.1,
+"end": 28.44,
+"text": "OF",
+"emph": false
+},
+{
+"start": 28.44,
+"end": 28.78,
+"text": "KHABIB'S",
+"emph": false
+},
+{
+"start": 28.78,
+"end": 28.94,
+"text": "TEAM",
+"emph": false
+},
+{
+"start": 28.94,
+"end": 29.2,
+"text": "GOT",
+"emph": false
+},
+{
+"start": 29.2,
+"end": 29.4,
+"text": "INTO",
+"emph": false
+},
+{
+"start": 29.4,
+"end": 29.54,
+"text": "THE",
+"emph": false
+},
+{
+"start": 29.54,
+"end": 29.78,
+"text": "CAGE",
+"emph": false
+},
+{
+"start": 29.78,
+"end": 30.2,
+"text": "AND",
+"emph": false
+},
+{
+"start": 30.2,
+"end": 30.4,
+"text": "HIT",
+"emph": false
+},
+{
+"start": 30.4,
+"end": 30.76,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 31.26,
+"end": 31.5,
+"text": "SECURITY",
+"emph": true
+},
+{
+"start": 31.5,
+"end": 31.86,
+"text": "PULLED",
+"emph": false
+},
+{
+"start": 31.86,
+"end": 32.24,
+"text": "EVERYONE",
+"emph": false
+},
+{
+"start": 32.24,
+"end": 32.6,
+"text": "APART",
+"emph": false
+},
+{
+"start": 33.74,
+"end": 33.92,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 33.92,
+"end": 34.08,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 34.08,
+"end": 34.48,
+"text": "SUSPENDED",
+"emph": false
+},
+{
+"start": 34.48,
+"end": 34.82,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 34.82,
+"end": 35.08,
+"text": "NINE",
+"emph": true
+},
+{
+"start": 35.08,
+"end": 35.42,
+"text": "MONTHS",
+"emph": true
+},
+{
+"start": 35.42,
+"end": 35.72,
+"text": "AND",
+"emph": false
+},
+{
+"start": 35.72,
+"end": 36.0,
+"text": "FINED",
+"emph": false
+},
+{
+"start": 36.0,
+"end": 36.74,
+"text": "FIVE",
+"emph": false
+},
+{
+"start": 36.12,
+"end": 36.74,
+"text": "HUNDRED",
+"emph": false
+},
+{
+"start": 36.74,
+"end": 37.3,
+"text": "THOUSAND",
+"emph": false
+},
+{
+"start": 36.86,
+"end": 37.3,
+"text": "DOLLARS",
+"emph": false
+},
+{
+"start": 38.12,
+"end": 38.32,
+"text": "CONOR",
+"emph": false
+},
+{
+"start": 38.32,
+"end": 38.58,
+"text": "GOT",
+"emph": false
+},
+{
+"start": 38.58,
+"end": 38.84,
+"text": "SIX",
+"emph": false
+},
+{
+"start": 38.84,
+"end": 39.12,
+"text": "MONTHS",
+"emph": true
+},
+{
+"start": 39.12,
+"end": 39.38,
+"text": "AND",
+"emph": false
+},
+{
+"start": 39.38,
+"end": 39.72,
+"text": "FIFTY",
+"emph": false
+},
+{
+"start": 39.72,
+"end": 40.22,
+"text": "THOUSAND",
+"emph": false
+},
+{
+"start": 40.6,
+"end": 40.68,
+"text": "TWO",
+"emph": false
+},
+{
+"start": 40.72,
+"end": 40.8,
+"text": "OF",
+"emph": false
+},
+{
+"start": 40.84,
+"end": 41.28,
+"text": "KHABIB'S",
+"emph": false
+},
+{
+"start": 41.28,
+"end": 41.54,
+"text": "TEAMMATES",
+"emph": false
+},
+{
+"start": 41.54,
+"end": 41.78,
+"text": "WERE",
+"emph": false
+},
+{
+"start": 41.78,
+"end": 42.22,
+"text": "SUSPENDED",
+"emph": false
+},
+{
+"start": 42.22,
+"end": 42.5,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 42.5,
+"end": 42.66,
+"text": "A",
+"emph": false
+},
+{
+"start": 42.66,
+"end": 42.88,
+"text": "YEAR",
+"emph": false
+},
+{
+"start": 43.78,
+"end": 43.9,
+"text": "IN",
+"emph": false
+},
+{
+"start": 43.9,
+"end": 44.72,
+"text": "2020",
+"emph": false
+},
+{
+"start": 45.18,
+"end": 45.38,
+"text": "KHABIB",
+"emph": false
+},
+{
+"start": 45.38,
+"end": 45.94,
+"text": "RETIRED",
+"emph": false
+},
+{
+"start": 45.94,
+"end": 46.6,
+"text": "UNDEFEATED",
+"emph": false
+},
+{
+"start": 46.6,
+"end": 46.9,
+"text": "AT",
+"emph": false
+},
+{
+"start": 46.9,
+"end": 47.42,
+"text": "29",
+"emph": false
+},
+{
+"start": 47.42,
+"end": 47.52,
+"text": "AND",
+"emph": false
+},
+{
+"start": 47.54,
+"end": 47.88,
+"text": "0",
+"emph": false
+},
+{
+"start": 48.26,
+"end": 48.42,
+"text": "HE",
+"emph": false
+},
+{
+"start": 48.42,
+"end": 48.6,
+"text": "LEFT",
+"emph": false
+},
+{
+"start": 48.6,
+"end": 48.82,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 48.82,
+"end": 49.1,
+"text": "GLOVES",
+"emph": true
+},
+{
+"start": 49.1,
+"end": 49.36,
+"text": "IN",
+"emph": false
+},
+{
+"start": 49.36,
+"end": 49.48,
+"text": "THE",
+"emph": false
+},
+{
+"start": 49.48,
+"end": 49.6,
+"text": "MIDDLE",
+"emph": false
+},
+{
+"start": 49.6,
+"end": 49.82,
+"text": "OF",
+"emph": false
+},
+{
+"start": 49.82,
+"end": 49.94,
+"text": "THE",
+"emph": false
+},
+{
+"start": 49.94,
+"end": 50.18,
+"text": "CAGE",
+"emph": false
+},
+{
+"start": 50.18,
+"end": 50.82,
+"text": "HE",
+"emph": false
+},
+{
+"start": 50.82,
+"end": 51.06,
+"text": "SAID",
+"emph": false
+},
+{
+"start": 51.06,
+"end": 51.32,
+"text": "HE'D",
+"emph": false
+},
+{
+"start": 51.32,
+"end": 51.62,
+"text": "PROMISED",
+"emph": false
+},
+{
+"start": 51.62,
+"end": 51.86,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 51.86,
+"end": 52.1,
+"text": "MOTHER",
+"emph": true
+},
+{
+"start": 52.1,
+"end": 52.32,
+"text": "IT",
+"emph": false
+},
+{
+"start": 52.32,
+"end": 52.42,
+"text": "WAS",
+"emph": false
+},
+{
+"start": 52.44,
+"end": 52.58,
+"text": "HIS",
+"emph": false
+},
+{
+"start": 52.58,
+"end": 52.88,
+"text": "LAST",
+"emph": false
+},
+{
+"start": 52.88,
+"end": 53.2,
+"text": "FIGHT",
+"emph": false
+},
+{
+"start": 54.1,
+"end": 54.24,
+"text": "THE",
+"emph": false
+},
+{
+"start": 54.24,
+"end": 54.5,
+"text": "FEUD",
+"emph": false
+},
+{
+"start": 54.5,
+"end": 54.7,
+"text": "IT",
+"emph": false
+},
+{
+"start": 54.7,
+"end": 54.86,
+"text": "STILL",
+"emph": false
+},
+{
+"start": 54.86,
+"end": 55.06,
+"text": "GOES",
+"emph": false
+},
+{
+"start": 55.06,
+"end": 55.24,
+"text": "ON",
+"emph": false
+},
+{
+"start": 55.24,
+"end": 55.58,
+"text": "ONLINE",
+"emph": true
+},
+{
+"start": 56.14,
+"end": 56.28,
+"text": "FOLLOW",
+"emph": true
+},
+{
+"start": 56.28,
+"end": 56.5,
+"text": "FOR",
+"emph": false
+},
+{
+"start": 56.5,
+"end": 56.66,
+"text": "MORE",
+"emph": false
+},
+{
+"start": 56.66,
+"end": 56.88,
+"text": "FIGHT",
+"emph": false
+},
+{
+"start": 56.88,
+"end": 57.28,
+"text": "HISTORY",
+"emph": false
+}
+]

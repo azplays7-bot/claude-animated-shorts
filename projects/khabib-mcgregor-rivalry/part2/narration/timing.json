@@ -1,0 +1,236 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   7.269
+  ],
+  "2": [
+   8.069,
+   14.001
+  ],
+  "3": [
+   14.801,
+   20.563
+  ],
+  "4": [
+   21.363,
+   29.835
+  ],
+  "5": [
+   30.635,
+   37.057
+  ],
+  "6": [
+   37.857,
+   45.027
+  ],
+  "7": [
+   45.827,
+   55.836
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.595
+  },
+  {
+   "scene": 1,
+   "start": 2.895,
+   "end": 5.284
+  },
+  {
+   "scene": 1,
+   "start": 5.584,
+   "end": 7.269
+  },
+  {
+   "scene": 2,
+   "start": 8.069,
+   "end": 11.611
+  },
+  {
+   "scene": 2,
+   "start": 11.911,
+   "end": 14.001
+  },
+  {
+   "scene": 3,
+   "start": 14.801,
+   "end": 16.849
+  },
+  {
+   "scene": 3,
+   "start": 17.149,
+   "end": 20.563
+  },
+  {
+   "scene": 4,
+   "start": 21.363,
+   "end": 25.181
+  },
+  {
+   "scene": 4,
+   "start": 25.481,
+   "end": 26.847
+  },
+  {
+   "scene": 4,
+   "start": 27.147,
+   "end": 29.835
+  },
+  {
+   "scene": 5,
+   "start": 30.635,
+   "end": 35.136
+  },
+  {
+   "scene": 5,
+   "start": 35.436,
+   "end": 37.057
+  },
+  {
+   "scene": 6,
+   "start": 37.857,
+   "end": 41.548
+  },
+  {
+   "scene": 6,
+   "start": 41.848,
+   "end": 45.027
+  },
+  {
+   "scene": 7,
+   "start": 45.827,
+   "end": 48.685
+  },
+  {
+   "scene": 7,
+   "start": 48.985,
+   "end": 52.484
+  },
+  {
+   "scene": 7,
+   "start": 52.784,
+   "end": 54.32
+  },
+  {
+   "scene": 7,
+   "start": 54.62,
+   "end": 55.836
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 2.595,
+   "text": "April 2018. Brooklyn, New York."
+  },
+  {
+   "scene": 1,
+   "start": 2.895,
+   "end": 5.284,
+   "text": "Khabib was days away from fighting for the title."
+  },
+  {
+   "scene": 1,
+   "start": 5.584,
+   "end": 7.269,
+   "text": "Conor wasn't even on the fight card."
+  },
+  {
+   "scene": 2,
+   "start": 8.069,
+   "end": 11.611,
+   "text": "That week, he and his team tracked down Conor's friend, Artem Lobov."
+  },
+  {
+   "scene": 2,
+   "start": 11.911,
+   "end": 14.001,
+   "text": "Khabib grabbed him by the neck, and slapped him."
+  },
+  {
+   "scene": 3,
+   "start": 14.801,
+   "end": 16.849,
+   "text": "Word reached Conor. He flew to New York."
+  },
+  {
+   "scene": 3,
+   "start": 17.149,
+   "end": 20.563,
+   "text": "He headed straight for the arena, where fighters were doing media day."
+  },
+  {
+   "scene": 4,
+   "start": 21.363,
+   "end": 25.181,
+   "text": "At the arena's loading dock, Khabib was sitting on a bus with other fighters."
+  },
+  {
+   "scene": 4,
+   "start": 25.481,
+   "end": 26.847,
+   "text": "Conor and his crew rushed in."
+  },
+  {
+   "scene": 4,
+   "start": 27.147,
+   "end": 29.835,
+   "text": "Conor grabbed a metal dolly, and threw it through a window."
+  },
+  {
+   "scene": 5,
+   "start": 30.635,
+   "end": 35.136,
+   "text": "Glass flew. Fighters Michael Chiesa and Ray Borg were hurt, and their fights were cancelled."
+  },
+  {
+   "scene": 5,
+   "start": 35.436,
+   "end": 37.057,
+   "text": "Lobov was pulled from the show too."
+  },
+  {
+   "scene": 6,
+   "start": 37.857,
+   "end": 41.548,
+   "text": "Conor was arrested. He later pleaded guilty to disorderly conduct."
+  },
+  {
+   "scene": 6,
+   "start": 41.848,
+   "end": 45.027,
+   "text": "He had to do community service, and an anger management course."
+  },
+  {
+   "scene": 7,
+   "start": 45.827,
+   "end": 48.685,
+   "text": "Two days after the attack, Khabib won the title anyway."
+  },
+  {
+   "scene": 7,
+   "start": 48.985,
+   "end": 52.484,
+   "text": "He beat Al Iaquinta, a late replacement, over five rounds."
+  },
+  {
+   "scene": 7,
+   "start": 52.784,
+   "end": 54.32,
+   "text": "Now everyone wanted one fight."
+  },
+  {
+   "scene": 7,
+   "start": 54.62,
+   "end": 55.836,
+   "text": "Part three: Las Vegas."
+  }
+ ]
+}
