@@ -1,0 +1,214 @@
+{
+ "voice": "am_fenrir",
+ "speed": 1.15,
+ "scenes": {
+  "1": [
+   0.12,
+   5.669
+  ],
+  "2": [
+   6.369,
+   14.415
+  ],
+  "3": [
+   15.115,
+   23.395
+  ],
+  "4": [
+   24.095,
+   33.316
+  ],
+  "5": [
+   34.016,
+   38.968
+  ],
+  "6": [
+   39.668,
+   48.14
+  ],
+  "7": [
+   48.84,
+   55.459
+  ]
+ },
+ "sentences": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.643
+  },
+  {
+   "scene": 1,
+   "start": 4.923,
+   "end": 5.669
+  },
+  {
+   "scene": 2,
+   "start": 6.369,
+   "end": 8.631
+  },
+  {
+   "scene": 2,
+   "start": 8.911,
+   "end": 14.415
+  },
+  {
+   "scene": 3,
+   "start": 15.115,
+   "end": 19.36
+  },
+  {
+   "scene": 3,
+   "start": 19.64,
+   "end": 23.395
+  },
+  {
+   "scene": 4,
+   "start": 24.095,
+   "end": 28.425
+  },
+  {
+   "scene": 4,
+   "start": 28.705,
+   "end": 31.009
+  },
+  {
+   "scene": 4,
+   "start": 31.289,
+   "end": 33.316
+  },
+  {
+   "scene": 5,
+   "start": 34.016,
+   "end": 36.917
+  },
+  {
+   "scene": 5,
+   "start": 37.197,
+   "end": 38.968
+  },
+  {
+   "scene": 6,
+   "start": 39.668,
+   "end": 43.529
+  },
+  {
+   "scene": 6,
+   "start": 43.809,
+   "end": 48.14
+  },
+  {
+   "scene": 7,
+   "start": 48.84,
+   "end": 51.187
+  },
+  {
+   "scene": 7,
+   "start": 51.467,
+   "end": 54.112
+  },
+  {
+   "scene": 7,
+   "start": 54.392,
+   "end": 55.459
+  }
+ ],
+ "chunks": [
+  {
+   "scene": 1,
+   "start": 0.12,
+   "end": 4.643,
+   "text": "In 2000, Blockbuster had the chance to buy Netflix for fifty million dollars."
+  },
+  {
+   "scene": 1,
+   "start": 4.923,
+   "end": 5.669,
+   "text": "It said no."
+  },
+  {
+   "scene": 2,
+   "start": 6.369,
+   "end": 8.631,
+   "text": "Back then, Blockbuster was the king of movie night."
+  },
+  {
+   "scene": 2,
+   "start": 8.911,
+   "end": 14.415,
+   "text": "Thousands of stores. And in 2000, nearly eight hundred million dollars from late fees alone."
+  },
+  {
+   "scene": 3,
+   "start": 15.115,
+   "end": 19.36,
+   "text": "Netflix started in 1997, renting DVDs by mail."
+  },
+  {
+   "scene": 3,
+   "start": 19.64,
+   "end": 23.395,
+   "text": "Its founders, Reed Hastings and Marc Randolph, were losing money fast."
+  },
+  {
+   "scene": 4,
+   "start": 24.095,
+   "end": 28.425,
+   "text": "So they flew to Dallas, and offered to sell Netflix to Blockbuster for fifty million."
+  },
+  {
+   "scene": 4,
+   "start": 28.705,
+   "end": 31.009,
+   "text": "Blockbuster's boss, John Antioco, said no."
+  },
+  {
+   "scene": 4,
+   "start": 31.289,
+   "end": 33.316,
+   "text": "Randolph says he was struggling not to laugh."
+  },
+  {
+   "scene": 5,
+   "start": 34.016,
+   "end": 36.917,
+   "text": "Netflix kept growing. A monthly plan. No late fees."
+  },
+  {
+   "scene": 5,
+   "start": 37.197,
+   "end": 38.968,
+   "text": "Then, in 2007, streaming."
+  },
+  {
+   "scene": 6,
+   "start": 39.668,
+   "end": 43.529,
+   "text": "Blockbuster peaked in 2004, with over nine thousand stores."
+  },
+  {
+   "scene": 6,
+   "start": 43.809,
+   "end": 48.14,
+   "text": "But customers moved online, and in 2010, Blockbuster went bankrupt."
+  },
+  {
+   "scene": 7,
+   "start": 48.84,
+   "end": 51.187,
+   "text": "Today, Netflix is worth hundreds of billions."
+  },
+  {
+   "scene": 7,
+   "start": 51.467,
+   "end": 54.112,
+   "text": "And just one Blockbuster is left, in Bend, Oregon."
+  },
+  {
+   "scene": 7,
+   "start": 54.392,
+   "end": 55.459,
+   "text": "Be kind. Rewind."
+  }
+ ]
+}
